@@ -15,6 +15,10 @@ import re
 nltk_data_dir = os.path.join(os.getcwd(), "nltk_data")
 nltk.data.path.append(nltk_data_dir)
 
+# Download stopwords and punkt tokenizer
+nltk.download('stopwords', download_dir=nltk_data_dir)
+nltk.download('punkt', download_dir=nltk_data_dir)
+
 # Check if the stopwords corpus is available, if not, download it
 if not os.path.exists(os.path.join(nltk_data_dir, "corpora/stopwords")):
     nltk.download('stopwords', download_dir=nltk_data_dir)
@@ -27,7 +31,7 @@ def clean_title(title):
     # Remove invalid characters from the title
     return re.sub(r'[\/:*?"<>|]', '', title)
 
-def get_top_keywords(text, top_n=50):
+def get_top_keywords(text, top_n=100):
     words = word_tokenize(text.lower())
     stop_words = set(stopwords.words('english'))
     words = [word for word in words if word.isalnum() and word not in stop_words]
@@ -61,8 +65,12 @@ def save_to_excel(link, title, top_keywords):
 
     # Save top keywords to Excel file
     excel_file_path = os.path.join(directory_path, f"{title}_keywords.xlsx")
-    df.to_excel(excel_file_path, index=False)
-    print(f"Top keywords for {title} saved to {excel_file_path}")
+
+    try:
+        df.to_excel(excel_file_path, index=False)
+        print(f"Top keywords for {title} saved to {excel_file_path}")
+    except PermissionError as e:
+        print(f"Skipping link: {link} - {e}")
 
 def consolidated_process_link(link):
     response = requests.get(link)
@@ -91,10 +99,10 @@ for link in data:
     consolidated_text += blog_text
 
 # Extract top keywords from consolidated text
-top_keywords = get_top_keywords(consolidated_text, top_n=50)
+top_keywords = get_top_keywords(consolidated_text, top_n=100)
 
 # Save top keywords to Excel file
 df = pd.DataFrame(list(top_keywords.items()), columns=['Keyword', 'Frequency'])
-excel_file_path = "C:/Documents/Purdue and Anthrop document/Spring Mod 1/Megaputer/consolidated_keywords_top50.xlsx"
+excel_file_path = "C:/Documents/Purdue and Anthrop document/Spring Mod 1/Megaputer/consolidated_keywords_top100.xlsx"
 df.to_excel(excel_file_path, index=False)
-print(f"Top 50 keywords for all blogs consolidated together saved to {excel_file_path}")
+print(f"Top 100 keywords for all blogs consolidated together saved to {excel_file_path}")
