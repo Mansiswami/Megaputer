@@ -1,0 +1,53 @@
+I have wanted to build a robot for decades and now I have my chance! To me, the big challenge has always been the sheer number of different parts that need to connect and interoperate. Complex hardware, software, sensors, communication systems, and a “robot brain” must all work together in order for the robot to function as desired.
+Today I would like to tell you about AWS RoboMaker. This new service will help you to develop, simulate, test, and deploy the robot of your dreams. You can develop your code inside of a cloud-based development environment, test it in a Gazebo simulation, and then deploy your finished code to a fleet of one or more robots. Once your code is deployed, you can push updates and bug fixes out to your entire fleet with a couple of clicks. Your code can make use of AWS services such as Amazon Lex, Polly, Amazon Rekognition, Amazon Kinesis Video Streams, and Amazon CloudWatch to build a sophisticated robot brain, accessible as a set of packages for ROS (Robotic Operating System). You can also build and train Amazon SageMaker models in order to make use of Machine Learning in your robot brain.
+RoboMaker is designed to work with robots of many different shapes and sizes running in many different physical environments: a home workshop, a factory floor, a classroom, a restaurant, a hotel, or even another planet!
+Let’s take a look…
+AWS RoboMaker in Action – Running a Simulation My robot adventure starts at the RoboMaker Console (API and CLI access is also available); I click on Try sample application to get started:
+
+RoboMaker includes a nice selection of sample applications that I can use to get started. I’ll choose the second one, Robot Monitoring, and click Launch:
+
+A CloudFormation stack is launched to create a VPC, a RoboMaker Simulation Job, and a Lambda function. This takes just a few minutes and I can see my job in the Console:
+
+I click on the job and I can learn more about it:
+
+The next part of the page is the most interesting. The simulation is running in the background and I have four tools to view and interact with it:
+
+Gazebo is the actual robot simulator. I can watch the robot wander through the scene and interact with the Gazebo UI in the usual way:
+
+Rqt is a GUI tool for ROS development. I can use it to inspect various aspects of my robot, such as the computation graph:
+
+I can also get a robot’s-eye view of the simulation:
+
+Rviz gives me another view of the state of my simulation and my robot:
+
+Terminal gives me shell access to the EC2 instance that is running my job:
+
+I can also watch all four of them at once:
+
+Remember that the name of this sample is Monitor Fleets of Robots with Amazon CloudWatch. The code is running in the simulator and I can check the CloudWatch metrics. The most interesting one is the distance between the robot and the goal:
+
+AWS RoboMaker in Action – Running a Development Environment I actually started in the middle of the story by showing you how to run a simulation. Let’s back up a step, create a development environment, and see how the story starts. RoboMaker helps me to create and manage multiple development environments. I click on Create environment to get started:
+I give my environment a name, use the default instance type, choose a VPC and subnet, and click Create to proceed:
+
+When my environment is ready I click Open environment to proceed:
+
+Cloud9 is up and running within a minute or so, and I can access the sample RoboMaker applications with a click:
+
+Each sample includes all of the files for the code that will run on the robot and for simulator environment:
+
+I can modify the code, build and package it into a bundle, and then restart the simulator to see my modifications in action.
+AWS RoboMaker in Action – Deploying Code and Managing a Robot Fleet The next step is to create the application and deploy it to a genuine robot. Back when the days were long, AWS re:Invent was months away, and I seemingly had all the time in the world, I purchased and assembled a TurtleBot3 robot with the intention of showing it in action as the final episode in this story. However, time passed way too quickly and I have not had time to do the final setup. The robot itself was fun to assemble (tweezers, a steady hand, and a good light are recommended):
+
+RoboMaker lets me create my robot and assign it to an AWS IoT Greengrass group:
+
+Then I would create a fleet, add Johnny5 to it, and deploy my code! Behind the scenes, the deployment system makes use of the Greengrass OTA (Over the Air) update mechanism.
+Rolling Ahead I’ve done my best to show you some of the more interesting aspects of AWS RoboMaker, but there’s a lot more to talk about. Here are a few quick notes:
+Programmability – RoboMaker includes a rich set of functions that allow you to create, list, and manage simulation jobs, applications, robots, and fleets.
+Parallel Simulation – After you design and code an algorithm for your robot, you can create parallel simulation jobs in order to quickly see how your algorithm performs in different conditions or environments. For example, you could use tens or hundreds of real-world models of streets or offices to test a wayfinding or driving algorithm.
+Powered by AWS – The code that you write for execution on your robot can use our ROS packages for access to relevant AWS services such as Rekognition, Lex, and Kinesis Video Streams.
+ROS – ROS is an open source project. We are contributing code and expertise, including the packages that provide access to AWS. To learn more about ROS, read The Open Source Robot Operating System (ROS) and AWS RoboMaker.
+Pricing – There’s no charge to use ROS in your robot apps. Cloud9 makes use of EC2 and EBS and you pay for any usage beyond the AWS Free Tier. Your simulations are billed based on Simulation Units. You also pay for the use of Greengrass and for any AWS services (Lex, Polly, and so forth) that your code uses.
+Available Now AWS RoboMaker is available now and you can start building cool robot apps today! We are launching in the US East (N. Virginia), US West (Oregon), and Europe (Ireland) regions, with Asia Pacific (Tokyo) next on the list.
+— Jeff;
+PS – I will find the time to write and share a cool app for the TurtleBot3, so stay tuned!
+Jeff Barr is Chief Evangelist for AWS. He started this blog in 2004 and has been writing posts just about non-stop ever since.

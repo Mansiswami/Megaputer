@@ -1,0 +1,26 @@
+
+The Amazon QuickSight Community serves as a one-stop-shop where business intelligence (BI) authors and developers from across the globe can access learning content, ask and answer questions, stay up to date, network, and learn together about Amazon QuickSight. QuickSight powers data-driven organizations with unified BI at hyperscale. With QuickSight, all users can meet varying analytic needs from the same source of truth through modern interactive dashboards, paginated reports, embedded analytics, and natural language queries.
+In this post, we walk through the new QuickSight Arena—an embedded instance of QuickSight on the QuickSight Community—and explain its use cases and how to get started.
+Arena enables you to do the following:
+Check out the following video walkthrough of QuickSight Arena.
+
+To start using QuickSight Arena, go to the QuickSight Community, and click on Arena and then Console from the top navigation bar. You will be taken through a quick tour and provided with information regarding restrictions, terms, and conditions. After you agree to the terms and conditions, you’ll be redirected to the Arena console. Arena automatically links to your QuickSight Community profile and your content persists across sessions.
+
+You can upload your own sample data into Arena. Keep in mind that you are uploading data into a public forum. Therefore, you should only use data that doesn’t contain any sensitive information, that you have full rights to use, and that you can share in its entirety.
+Arena supports only CSV files up to 1 GB in size, and the upload needs to be done via the Arena interface.
+
+When your dashboard is ready, take a screenshot to include in your Gallery post. Then enable public access from the Arena share page and copy the dashboard link. Create a new topic in the Gallery, and follow the instructions provided there to format and submit it.
+
+When you ask questions in the QuickSight Community Q&A that involve data and calculations, it is a best practice to include a sample dashboard that shows the issue. This helps other Community members understand and answer your question. The process is similar to how you publish to the Gallery: include the dashboard link along with your question. Be sure to explain the issue in as much detail as possible—the dashboard is meant as a supplement to your question and not as a replacement for the issue description.
+
+Click on an Arena link that is included in a QuickSight Community question to open the dashboard for you. Click on the copy icon to create a copy of the underlying analysis. After you figure out a solution, publish the dashboard and include a link to your solution dashboard in your reply. For examples of Arena links included in answers, see the following question posts, on calculated fields and percent differences, and look for “Arena: Click the link to view dashboard.”
+
+If you want to bring in a dashboard from your own account, you can upload sample data that matches your current dashboard and create an empty analysis in Arena. Open the code editor, select the empty analysis, and enter your definition. Note that the dataset identifier declaration section shouldn’t be edited; instead, replace the identifier used in other sections. Likewise, you can use the code editor to export content out of Arena.
+
+You should refrain from deleting dashboards (and their underlying datasets) after you share the dashboard link in a Q&A question, answer, or Gallery post. If you disable public access to a dashboard, other viewers will get an error stating that the author has revoked access. Your datasets are used to drive your dashboard and all copies made out of it. Therefore, be very careful when deleting content.
+The following shortcut keys will help you switch between Arena and Community pages:
+Arena allows you to explore QuickSight for free, showcase your talent to the world, and improve your learning experience within the QuickSight Community. We hope you will find Arena to be a helpful addition to the QuickSight Community, and you will utilize it to the fullest.
+Join the Quicksight Community to get started and explore Arena.
+Arun Santhosh is a Principal Solutions Architect for Amazon QuickSight. Arun started his career at IBM as a developer and progressed on to be an Application Architect. Later, he worked as a Technical Architect at Cognizant. Business intelligence has been his core focus in these prior roles as well.
+Kristin Mandia is the Senior Online Community Manager for Amazon QuickSight, an AWS cloud-native, fully managed BI service.
+View Comments

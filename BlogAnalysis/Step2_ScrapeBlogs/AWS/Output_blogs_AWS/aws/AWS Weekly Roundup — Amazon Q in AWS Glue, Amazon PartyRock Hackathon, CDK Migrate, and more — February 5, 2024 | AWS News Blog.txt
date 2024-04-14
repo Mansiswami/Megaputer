@@ -1,0 +1,19 @@
+With all the generative AI announcements at AWS re:invent 2023, I’ve committed to dive deep into this technology and learn as much as I can. If you are too, I’m happy that among other resources available, the AWS community also has a space that I can access for generative AI tools and guides.
+Last week’s launches Here are some launches that got my attention during the previous week.
+Amazon Q data integration in AWS Glue (Preview) – Now you can use natural language to ask Amazon Q to author jobs, troubleshoot issues, and answer questions about AWS Glue and data integration. Amazon Q was launched in preview at AWS re:invent 2023, and is a generative AI–powered assistant to help you solve problems, generate content, and take action.
+General availability of CDK Migrate – CDK Migrate is a component of the AWS Cloud Development Kit (CDK) that enables you to migrate AWS CloudFormation templates, previously deployed CloudFormation stacks, or resources created outside of Infrastructure as Code (IaC) into a CDK application. This feature was launched alongside the CloudFormation IaC Generator to give you an end-to-end experience that enables you to create an IaC configuration based off a resource, as well as its relationships. You can expect the IaC generator to have a huge impact for a common use case we’ve seen.
+For a full list of AWS announcements, be sure to keep an eye on the What’s New at AWS page.
+Other AWS news Here are some additional projects, programs, and news items that you might find interesting:
+
+Join the PartyRock Generative AI Hackathon by AWS. This is a challenge for you to get hands-on building generative AI-powered apps. You’ll use Amazon PartyRock, an Amazon Bedrock Playground, as a fast and fun way to learn about Prompt Engineering and Foundational Models (FMs) to build a functional app with generative AI.
+AWS open source news and updates – My colleague Ricardo writes this weekly open source newsletter in which he highlights new open source projects, tools, and demos from the AWS Community.
+Upcoming AWS events Whether you’re in the Americas, Asia Pacific & Japan, or EMEA region, there’s an upcoming AWS Innovate Online event that fits your timezone. Innovate Online events are free, online, and designed to inspire and educate you about AWS.
+AWS Summits are a series of free online and in-person events that bring the cloud computing community together to connect, collaborate, and learn about AWS. These events are designed to educate you about AWS products and services and help you develop the skills needed to build, deploy, and operate your infrastructure and applications. Find an AWS Summit near you and register or set a notification to know when registration opens for a Summit that interests you.
+AWS Community re:Invent re:Caps – Join a Community re:Cap event organized by volunteers from AWS User Groups and AWS Cloud Clubs around the world to learn about the latest announcements from AWS re:Invent.
+You can browse all upcoming in-person and virtual events.
+That’s all for this week. Check back next Monday for another Weekly Roundup!
+Update Feb. 5, 2024: An Amazon API Gateway metric was removed from this weekly roundup post shortly after publication, updated report coming soon!
+– Veliswa
+This post is part of our Weekly Roundup series. Check back each week for a quick roundup of interesting news and announcements from AWS!
+Veliswa Boya is a Senior Developer Advocate, based in South Africa and working closely with the builder community in Sub-Saharan Africa. She has fulfilled many roles in tech, which range from developer to analyst, architect to cloud engineer, and now a developer advocate. Veliswa especially enjoys working with those who are new to tech—and those getting started with AWS.
+View Comments

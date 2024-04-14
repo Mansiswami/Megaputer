@@ -1,0 +1,14 @@
+Amazon QuickSight powers data-driven organizations with unified business intelligence (BI) at hyperscale. With Amazon Q in QuickSight, business analysts and business users can use natural language to build, discover, and share meaningful insights in seconds, turning insights into impact faster.
+We host both in-person and virtual events across the globe to bring direct learning resources to our customers. Explore our recurring QuickSight Learning Series, PartnerCast, and Immersion Day events, sign-up for ones that fit your interests, and share this post with others!
+To sign up, check the events page on the QuickSight Community.
+
+
+Did you miss out on last month’s sessions? Watch them on demand here.
+
+Walk through of the QuickSight author workshop
+
+
+ Check out our QuickSight events calendar for a chronological order of these sessions
+Events are subject to change/cancellation. Check the events page on the QuickSight Community for the most up-to-date calendar. The QuickSight Community is the official one-stop-shop where BI enthusiasts from around the globe can access over 300 learning resources, explore QuickSight for free with Arena, get updated on feature launches, and ask/answer questions with other QuickSight users. Bookmark the calendar view and subscribe by clicking on the bell icon to be notified when new events get posted.
+Madi Hsieh is a Program Manager with Amazon QuickSight at AWS. As a recent graduate from UCLA and previous intern for the QuickSight Customer Success team, Madi is excited to step into this full-time role. She works with evangelizing the QuickSight Community and the enablement of learning resources available to Amazon QuickSight customers.
+View Comments

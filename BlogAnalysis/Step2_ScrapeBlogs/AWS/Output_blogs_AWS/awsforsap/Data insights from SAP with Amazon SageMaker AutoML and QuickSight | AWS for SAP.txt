@@ -1,0 +1,51 @@
+Enterprise applications generate a lot of data. Analyzing this data helps stakeholders make informed decisions. Enterprises use AI/ML for automating business processes, finding patterns at scale, and more.
+SAP is one of the most extensively used ERP solutions for different industries of varied scales and complexities. SAP systems are often integrated with external systems to pull data into SAP systems for different business processes. Customers need a unified view of their data to drive real-time visibility and better decision-making beyond their SAP ecosystem.
+AWS helps customer at every stage of their ML adoption journey with the most comprehensive set of artificial intelligence (AI) and ML services, infrastructure, and implementation resource along with other 200+ AWS services.
+In this blog, I will describe and illustrate  how you can leverage Amazon Sagemaker and Amazon QuickSight to break data silos and integrate AI/ML and intelligent data visualisation of external data ingested into SAP systems. I will use a publicly available housing dataset ingested into SAP system to predict housing prices for future periods and different locations.
+I will start with data extraction from SAP system with AWS native ETL service Amazon AppFlow and stage it on Amazon Simple Storage Service (Amazon S3).  I will use Amazon Sagemaker Autopilot, a fully managed ML development environment to prepare the ML data along with building, training and deploying the ML model. Then I will use QuickSight for intelligent visualization of the predicted data for better analysis. Finally, I will use SageMaker with QuickSight to augment newly extracted SAP data through batch transformation.
+Figure 1. Data Pipelines Architecture
+I have divided the solution into 4 steps
+Step 1 – Data preparation and feature engineering Step 2 – Model development, training, tuning and deployment with SageMaker AutoML Step 3 – Data inference and visualisation of predicted data with QuickSight Step 4 – Data augmentation with predicted data of newly ingested QuickSight Enterprise edition data with SageMaker
+Step 1 – Data preparation and feature engineering
+I.   SAP data preparation and Extraction to AWS
+You may use the below two options to prepare your sample SAP dataset
+There are different options for Data Extraction from SAP systems to AWS, here I am using Amazon AppFlow. Amazon Appflow extracts data from the application layer using SAP OData services, preserves business logic and captures delta changes while also writing back to SAP. For more details on Amazon AppFlow data extraction, please refer to Extract data from SAP ERP and BW with Amazon AppFlow.
+I have configured two data flows for data extraction to Amazon S3.
+II.   ML Data preparation
+I am using Sagemaker notebooks to perform feature engineering and split the data into train and test datasets. You may also use Sagemaker Data Wrangler  which simplifies the process of data preparation and feature engineering and completes each step of the data preparation workflow from a single visual interface.
+Notebook Code Snippet
+Step 2 – Data modeling, training, tuning and deployment with Amazon Sagemaker AutoML
+In Step2, I will use the training data available in the S3 bucket – sagemaker/automl-dm/input/ (Figure 1) to prepare a ML model with Amazon Sagemaker AutoML.
+Steps to run AutoML with SageMaker.
+
+
+
+
+
+
+
+Notebook Code Snippet
+Step 3 – Data inference and visualisation of predicted data with Amazon QuickSight
+
+
+Here’s what my my_Sagemaker_model_schema.jsonlooks like:
+
+
+
+Below is a representation of Visual types as tabular with House Median Value vs. all fields.
+
+Visual types – AutoGraph, helps with real time visualisation of data as per coordinates, here I have used House Median Value vs. locations (latitude, longitude)
+
+Step 4. Data augmentation of newly ingested QuickSight Enterprise edition data with Amazon SageMaker
+In this section I will show how you can use the ML model prepared in Step 2 for inference of new data from the SAP system.
+Amazon AppFlow captures new data from SAP system. Once new data is extracted to the Amazon S3, a Lambda function triggers data ingestion to QuickSight and with batch transformation from Amazon SageMaker, the predicted data is populated in the analysis dashboard with low latency.
+Lambda sends a notification once the data ingestion is completed and predicted data is available, it also notifies of any errors during data ingestion.
+
+Here’s what my California_Housing_Data_Ingest_QuickSight lambda function looks like:
+Amazon SNS configuration for notification on failure of the Lambda function
+
+Amazon S3 configuration to configure trigger for the Lambda function
+
+Amazon Sagemaker AutoML, a low-code/no-code ML development environment, helps companies to start their ML journey and accelerate delivery of ML solutions down to hours or days without much prior ML knowledge. Amazon SageMaker pay-as-you-go options allow customers to explore AI/ML without any significant upfront investment, increasing business agility. This blog demonstrates one of many possible options to integrate your SAP environment with AWS and use it with AWS broad portfolio of AI/ML and analytics services along with other 200+ AWS services.
+You may also explore our other ML services like Amazon Forecast,  Amazon Textract, Amazon Translate, Amazon Comprehend which can be integrated with SAP for different use cases.
+Visit the AWS for SAP page to learn why thousands of customers trust AWS to migrate and innovate with SAP.

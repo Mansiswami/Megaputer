@@ -1,0 +1,50 @@
+Amazon QuickSight is a cloud-scale business intelligence (BI) service that you can use to deliver easy-to-understand insights to the people you work with, wherever they are. Users can import data into SPICE (Super-fast, Parallel, In-memory Calculation Engine) in scheduled or programmatic ways.
+When setting up QuickSight dataset refresh, you can email owners when a refresh has failed, but there is no way to natively retry them, because refreshes can fail due to transient errors.
+In this post, we show how to use AWS CloudFormation to deploy all the necessary resources to automate the retry of the ingestion of a failed dataset refresh. This can help speed up the time to have the data available to the users by either completing the refresh successfully or providing more information on the cause of the failure to the dataset owner.
+Additionally, QuickSight assets can be monitored using Amazon CloudWatch metrics. QuickSight developers and administrators can use these metrics to observe and respond to the availability and performance of their QuickSight ecosystem in near-real time.
+We use CloudWatch metrics to capture near-real-time events from QuickSight, and set up a CloudWatch metric alarm and an Amazon EventBridge rule that targets an AWS Step Functions state machine that starts a new ingestion of the failed dataset refresh.
+The following diagram illustrates the architecture used for this post. The Step Functions state machine and related AWS Lambda functions are deployed through a CloudFormation template.
+
+In the following sections, we demonstrate how to find the dataset ID that you want to monitor, then deploy the CloudFormation template, review the created resources, test the solution, and clean up to avoid unnecessary charges.
+To complete this walkthrough, you need the following:
+Complete the following steps to locate your dataset ID:
+https://us-west-2.quicksight.aws.amazon.com/sn/data-sets/4712aba2-6ecc-4521-b009-deb5b276a5f6/view
+If you don’t have a dataset available for testing, you can create one following these steps where we create an Amazon Athena table. We use this table to create a QuickSight dataset that we import into SPICE. To simulate a refresh failure, we drop the table, which causes the dataset refresh to fail. This failure triggers the state machine we created, retrying the refresh automatically.
+
+
+
+
+
+On the Refresh tab, you can see the status of the refresh when the dataset was created, which is Completed.
+
+In this step, we create the Step Functions state machine and Lambda functions to manage the automated ingestion after a failure. Complete the following steps:
+
+
+
+The stack creation takes around 2 minutes to complete.
+Complete the following steps to review your resources:
+When the state machine runs, the first Lambda function in the Check Previous Ingestions state is run to check the status of the previous ingestions. If the latest status is completed, the state machine will send the status of COMPLETED and will end through the Success state. If the Lambda function detects that there have been more than a specific number (six by default) of failed attempts on the refresh, it will send the status of TOO_MANY_FAILURES and will end through the Failed state. The number of retries is configurable on the Lambda function.
+
+If the status is neither COMPLETED or TOO_MANY_FAILURES, then the state machine moves through the Default state to run the next Lambda function in the Start New Ingestion state. Then the flow will wait for 60 seconds before checking the status of the ingestion by running the Lambda function in the Get Ingestion Status state. If this Lambda function returns the status COMPLETED, then the state machine will end through the Success state. If the status is FAILED, it will end through the Failed state. If the status is neither of those, it will wait again for 60 seconds and check again.
+The type of refresh that is started will be the same as the last refresh. Because there is a possibility that an error will also happen when we are editing a dataset, which will create an error with refresh type EDIT, the code will not retry an ingestion at this point because it’s not an automated refresh process that is failing.
+
+This will open the CloudWatch alarm that is related to the dataset we are monitoring.
+
+
+The dataset refresh will show as Failed.
+
+It will be in state In alarm.
+
+This will open the Step Functions state machine that runs the retry logic.
+
+In this run, the ingestion was retried but it failed, that is why the status is set to Failed.
+
+
+If you have chosen this option on the dataset, the owner will get a notification of all the failures via email.
+
+To avoid incurring future charges, delete the resources you created:
+This will delete all the resources created by the stack.
+In this walkthrough, you successfully created all the resources needed to automatically retry the ingestion of a failed refresh on a QuickSight data source. We showed how these resources are related to each other and how this solution can improve the QuickSight user experience by ensuring the data is refreshed in an automated fashion and improve the QuickSight operator experience by automating their manual work when a dataset refresh fails.
+To learn more, visit Amazon QuickSight. Join the QuickSight Community to ask, answer, and learn with others.
+Andres Castro is a Global Solutions Architect in Global Financial Services. He has been working in the consulting and financial sector for the past 25 as a DevOps Engineer, Finance Data Solutions Architect, and Cloud Engineer before joining AWS. He is passionate about business intelligence, data governance, data analytics, and everything cloud.
+View Comments

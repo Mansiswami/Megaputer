@@ -1,0 +1,36 @@
+By Nir Shney-Dor, Director of Solutions Architecture & AI/ML – Automat-IT By Guillaume Goutaudier, Sr. Enterprise Architect – AWS
+There are many ways you can embark on your machine learning (ML) journey using Amazon Web Services (AWS), as infusing your application with ML opens many exciting new horizons and can enrich users’ experience.
+Many startups are eager to kickstart their journey and get a minimum viable product (MVP) running on AWS. Yet, they frequently find that building a machine learning operations (MLOps) pipeline that maximizes the value of their existing data and integrates with their developer tools can be challenging.
+In the race to meet market demands, startups must remain agile and work with evolutive solutions that support their continued growth.
+This post covers typical challenges startups face with developing an MLOps pipeline and how they can use Automat-IT’s MLOps Accelerator to fast-track their machine learning journey on AWS.
+Automat-IT is an AWS Premier Tier Services Partner and AWS Marketplace Seller with Competencies in DevOps, Security, and Migration. It specializes in cloud migration, complex DevOps, and machine learning projects.
+Automat-IT works globally and serves hundreds of tech-savvy startups, spanning a variety of use cases and technologies, from security to cloud migration and modernization.
+When it comes to machine learning, data pipelines are managed manually and take hours if not days to set up. While the availability of large language models (LLMs) allows startups to integrate generative artificial intelligence (AI) capabilities into applications, customizations are often required to leverage the full capabilities of those models.
+Automat-IT’s MLOps Accelerator was designed to address the aforementioned challenges. As an end-to-end solution, it takes care of every step of the MLOps pipeline and offers CI/CD capabilities. This process, orchestrated by Amazon SageMaker Pipelines and GitHub Actions, offers the following capabilities that are built on the following components:
+Automat-IT’s team of AI/ML experts will work with you to identify the right models for your use cases, customize the pipeline to your needs, and provide a technical overview of your AWS account. They’ll help you secure and optimize the cost of your workloads, following the AWS Well-Architected Framework and leveraging Automat-ITs experience helping 600+ customers in EMEA.
+Looking at the MLOps Maturity Model, customers may want to move fast on the operating model curve once an MVP has been established. Moving from the “initial” stage to the “repeatable” and “reliable” stages is a process that requires expertise and domain knowledge.
+
+Figure 1 – MLOps Maturity Model.
+Many startups face a significant hurdle in getting the machine learning process to work at scale. How do you automate the ML lifecycle and streamline the ML process, so you can get to the reliable stage of MLOps maturity in the least amount of time?
+Automat-IT understands the unique needs of a startup organization, and the MLOps Accelerator offers the most flexibility.
+
+Figure 2 – Automat-IT’s MLOps Accelerator.
+Getting started with the MLOps Accelerator is easy. Get in touch with Automat-IT via AWS Marketplace and you’ll get the following:
+First, Automat-IT will meet with you and run a comprehensive assessment session (1-2 hours long). This session helps the team understand your day-to-day operations, challenges, and specific requirements.
+Next, the team of MLOps engineers will customize the solution to your requirements, whether it’s adapting the code to leverage Amazon SageMaker or making it more robust and automated. Every part of the solution can be customized or replaced to better fit your needs.
+The Accelerator uses GitHub for source control and GitHub Actions to orchestrate the workflow. ClearML, an open-source MLOps platform, is integrated with the solution to help you visualize your experiments’ results.
+Subsequently, Automat-IT will support you in seamlessly integrating the MLOps Accelerator into both product and daily operations. This ensures you have a functional solution and the capability to utilize the CI/CD pipeline tailored to your specific requirements.
+Automat-ITs experienced team (with 200+ active AWS Certifications) will continue to support you through your onboarding experience, whether it’s a technical review, FinOps review, or architecture office hours.
+The MLOps Accelerator serves various personas and roles in your organization:
+
+Figure 3 – Logical view of the MLOps Accelerator.
+Here are some examples of how AWS data engineering tools help you prepare your data that’s specific to your needs:
+Figure 4 – AWS Glue Studio.
+Figure 5 – Elaborate ETL pipeline using AWS Glue Studio.
+Figure 6 – Spark code run in a Jupyter Notebook.
+In this post, we covered some common pitfalls startups face when working with machine learning applications. By working with the MLOps Accelerator from Automat-IT, startups can reduce the learning curve, avoid mistakes and surprises, and get specialized support.
+Automat-IT will work with you to set up your MLOps pipeline and continue supporting you as part of a service packaged offering. Learn more about Automat-IT in AWS Marketplace.
+.  .
+Automat-IT is an AWS Premier Tier Services Partner that specializes in cloud migration, complex DevOps, and machine learning projects.
+Contact Automat-IT | Partner Overview | AWS Marketplace
+View Comments

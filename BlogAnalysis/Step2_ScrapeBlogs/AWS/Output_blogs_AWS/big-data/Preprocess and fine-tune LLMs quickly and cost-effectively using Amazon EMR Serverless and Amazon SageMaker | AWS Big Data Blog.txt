@@ -1,0 +1,85 @@
+Large language models (LLMs) are becoming increasing popular, with new use cases constantly being explored. In general, you can build applications powered by LLMs by incorporating prompt engineering into your code. However, there are cases where prompting an existing LLM falls short. This is where model fine-tuning can help. Prompt engineering is about guiding the model’s output by crafting input prompts, whereas fine-tuning is about training the model on custom datasets to make it better suited for specific tasks or domains.
+Before you can fine-tune a model, you need to find a task-specific dataset. One dataset that is commonly used is the Common Crawl dataset. The Common Crawl corpus contains petabytes of data, regularly collected since 2008, and contains raw webpage data, metadata extracts, and text extracts. In addition to determining which dataset should be used, cleansing and processing the data to the fine-tuning’s specific need is required.
+We recently worked with a customer who wanted to preprocess a subset of the latest Common Crawl dataset and then fine-tune their LLM with cleaned data. The customer was looking for how they could achieve this in the most cost-effective way on AWS. After discussing the requirements, we recommended using Amazon EMR Serverless as their platform for data preprocessing. EMR Serverless is well suited for large-scale data processing and eliminates the need for infrastructure maintenance. In terms of cost, it only charges based on the resources and duration used for each job. The customer was able to preprocess hundreds of TBs of data within a week using EMR Serverless. After they preprocessed the data, they used Amazon SageMaker to fine-tune the LLM.
+In this post, we walk you through the customer’s use case and architecture used.
+In the following sections, we first introduce the Common Crawl dataset and how to explore and filter the data we need. Amazon Athena only charges for the data size it scans and is used to explore and filter the data quickly, while being cost-effective. EMR Serverless provides a cost-efficient and no-maintenance option for Spark data processing, and is used to process the filtered data. Next, we use Amazon SageMaker JumpStart to fine-tune the Llama 2 model with the preprocessed dataset. SageMaker JumpStart provides a set of solutions for the most common use cases that can be deployed with just a few clicks. You don’t need to write any code to fine-tune an LLM such as Llama 2. Finally, we deploy the fine-tuned model using Amazon SageMaker and compare the differences in text output for the same question between the original and fine-tuned Llama 2 models.
+The following diagram illustrates the architecture of this solution.
+
+Before you dive deep into the solution details, complete the following prerequisite steps:
+Common Crawl is an open corpus dataset obtained by crawling over 50 billion webpages. It includes massive amounts of unstructured data in multiple languages, starting from 2008 and reaching the petabyte level. It is continuously updated.
+In the training of GPT-3, the Common Crawl dataset accounts for 60% of its training data, as shown in the following diagram (source: Language Models are Few-Shot Learners).
+
+Another important dataset worth mentioning is the C4 dataset. C4, short for Colossal Clean Crawled Corpus, is a dataset derived from postprocessing the Common Crawl dataset. In Meta’s LLaMA paper, they outlined the datasets used, with Common Crawl accounting for 67% (utilizing 3.3 TB of data) and C4 for 15% (utilizing 783 GB of data). The paper emphasizes the significance of incorporating differently preprocessed data for enhancing model performance. Despite the original C4 data being part of Common Crawl, Meta opted for the reprocessed version of this data.
+In this section, we cover common ways to interact, filter, and process the Common Crawl dataset.
+The Common Crawl raw dataset includes three types of data files: raw webpage data (WARC), metadata (WAT), and text extraction (WET).
+Data collected after 2013 is stored in WARC format and includes corresponding metadata (WAT) and text extraction data (WET). The dataset is located in Amazon S3, updated on a monthly basis, and can be accessed directly through AWS Marketplace.
+For example, the following snippet is data from June of 2023:
+The Common Crawl dataset also provides an index table for filtering data, which is called cc-index-table.
+The cc-index-table is an index of the existing data, providing a table-based index of WARC files. It allows for easy lookup of information, such as which WARC file corresponds to a specific URL.
+The Common Crawl GitHub repo provides corresponding Athena statements to query the index. For explanations of each field, refer to Common Crawl Index Athena.
+For example, you can create an Athena table to map cc-index data with the following code:
+The preceding SQL statements demonstrate how to create an Athena table, add partitions, and run a query.
+As you can see from the create table SQL statement, there are several fields that can help filter the data. For example, if you want to get the count of Chinese documents during a specific period, then the SQL statement could be as follows:
+If you want to do further processing, you can save the results to another S3 bucket.
+The Common Crawl GitHub repository provides several PySpark examples for processing the raw data.
+Let’s look at an example of running server_count.py (example script provided by the Common Crawl GitHub repo) on the data located in s3://commoncrawl/crawl-data/CC-MAIN-2023-23/segments/1685224643388.45/warc/.
+First, you need a Spark environment, such as EMR Spark. For example, you can launch an Amazon EMR on EC2 cluster in us-east-1 (because the dataset is in us-east-1). Using an EMR on EC2 cluster can help you carry out tests before submitting jobs to the production environment.
+After launching an EMR on EC2 cluster, you need to do an SSH login to the primary node of the cluster. Then, package the Python environment and submit the script (refer to the Conda documentation to install Miniconda):
+It can take time to process all references in the warc.path. For demo purposes, you can improve the processing time with the following strategies:
+After the job is complete, you can see the result in s3://xxxx-common-crawl/output/, in Parquet format.
+The Common Crawl GitHub repo provides a common approach to process WARC files. Generally, you can extend the CCSparkJob to override a single method (process_record), which is sufficient for many cases.
+Let’s look at an example to get the IMDB reviews of recent movies. First, you need to filter out files on the IMDB site:
+Then you can get WARC file lists that contain IMDB review data, and save the WARC file names as a list in a text file.
+
+Alternatively, you can use EMR Spark get the WARC file list and store it in Amazon S3. For example:
+The output file should look similar to s3://xxxx-common-crawl/warclist/imdb_warclist/part-00000-6af12797-0cdc-4ef2-a438-cf2b935f2ffd-c000.txt.
+The next step is to extract user reviews from these WARC files. You can extend the CCSparkJob to override the process_record() method:
+You can save the preceding script as imdb_extractor.py, which you’ll use in the following steps. After you have prepared the data and scripts, you can use EMR Serverless to process the filtered data.
+EMR Serverless is a serverless deployment option to run big data analytics applications using open source frameworks like Apache Spark and Hive without configuring, managing, and scaling clusters or servers.
+With EMR Serverless, you can run analytics workloads at any scale with automatic scaling that resizes resources in seconds to meet changing data volumes and processing requirements. EMR Serverless automatically scales resources up and down to provide the right amount of capacity for your application, and you only pay for what you use.
+Processing the Common Crawl dataset is generally a one-time processing task, making it suitable for EMR Serverless workloads.
+You can create an EMR Serverless application on the EMR Studio console. Complete the following steps:
+
+
+
+Your Spark serverless environment will then be ready.
+Before you can submit a job to EMR Spark Serverless, you still need to create an execution role. Refer to Getting started with Amazon EMR Serverless for more details.
+After your EMR Spark Serverless application is ready, complete the following steps to process the data:
+See the following code:
+After the job is complete, the extracted reviews are stored in Amazon S3. To check the contents, you can use Amazon S3 Select, as shown in the following screenshot.
+
+The following are the points to consider when dealing with massive amounts of data with customized code:
+After the data is prepared, you can fine-tune a Llama 2 model with it. You can do so using SageMaker JumpStart, without writing any code. For more information, refer to Fine-tune Llama 2 for text generation on Amazon SageMaker JumpStart.
+In this scenario, you carry out a domain adaption fine-tuning. With this dataset, input consists of a CSV, JSON, or TXT file. You need to put all review data in a TXT file. To do so, you can submit a straightforward Spark job to EMR Spark Serverless. See the following sample code snippet:
+After you prepare the training data, enter the data location for Training data set, then choose Train.
+
+You can track the training job status.
+
+After training is complete, choose Deploy in SageMaker JumpStart to deploy your fine-tuned model.
+
+After the model is successfully deployed, choose Open Notebook, which redirects you to a prepared Jupyter notebook where you can run your Python code.
+
+You can use the image Data Science 2.0 and the Python 3 kernel for the notebook.
+
+Then, you can evaluate the fine-tuned model and the original model in this notebook.
+
+The following are two responses returned by the original model and fine-tuned model for the same question.
+
+We provided both models with the same sentence: “The review of movie ‘A Woman of Paris: A Drama of Fate’ is” and let them complete the sentence.
+The original model outputs meaningless sentences:
+"The review of movie 'A woman of Paris: A Drama of Fate' is 3.0/5.
+A Woman of Paris: A Drama of Fate(1923)
+A Woman of Paris: A Drama of Fate movie released on 17 October, 1992. The movie is directed by. A Woman of Paris: A Drama of Fate featured Jeanne Eagles, William Haines, Burr McIntosh and Jack Rollens in lead rols.
+..."
+In contrast, the fine-tuned model’s outputs are more like a movie review:
+" The review of movie 'A Woman of Paris: A Drama of Fate' is 6.3/10. I liked the story, the plot, the character, the background. The performances are amazing. Rory (Judy Davis) is an Australian photographer who travels to Africa to photograph the people, wildlife, and scenery. She meets Peter (Donald Sutherland), a zoologist, and they begin a relationship..."
+Obviously, the fine-tuned model performs better in this specific scenario.
+After you finish this exercise, complete the following steps to clean up your resources:
+The application you created should stop automatically after 15 minutes of inactivity by default.
+Generally, you don’t need to clean up the Athena environment because there are no charges when you’re not using it.
+In this post, we introduced the Common Crawl dataset and how to use EMR Serverless to process the data for LLM fine-tuning. Then we demonstrated how to use SageMaker JumpStart to fine-tune the LLM and deploy it without any code. For more use cases of EMR Serverless, refer to Amazon EMR Serverless. For more information about hosting and fine-tuning models on Amazon SageMaker JumpStart, refer to the Sagemaker JumpStart documentation.
+Shijian Tang is a Analytics Specialist Solution Architect at Amazon Web Services.
+Matthew Liem is a Senior Solution Architecture Manager at Amazon Web Services.
+Dalei Xu is a Analytics Specialist Solution Architect at Amazon Web Services.
+Yuanjun Xiao is a Senior Solution Architect at Amazon Web Services.
+View Comments

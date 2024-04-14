@@ -1,0 +1,8 @@
+If you are using Internet Explorer 11 (IE 11) to access the AWS Management Console, web-based services such as Amazon Chime or Amazon Honeycode, or other parts of the AWS web site (AWS Documentation, AWS Marketing, AWS Marketplace, or AWS Support), it is time to upgrade to a more modern & secure browser such as Edge, Firefox, or Chrome.
+Here are the dates that you need to know:
+July 31, 2021 – Effective today, we will no longer ensure that new AWS Management Console features and web pages function properly on IE 11. We will fix bugs that are specific to IE 11 for existing features and pages.
+Late 2021 – Later this year you will receive a pop-up notification (and a reminder to upgrade your browser) if you use IE 11 to access any of the services or pages listed above.
+July 31, 2022 – One year from today we will discontinue our support for IE 11 and you will need to use a browser that we support.
+— Jeff;
+ 
+Jeff Barr is Chief Evangelist for AWS. He started this blog in 2004 and has been writing posts just about non-stop ever since.

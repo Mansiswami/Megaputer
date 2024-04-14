@@ -1,0 +1,72 @@
+With Amazon EMR 6.15, we launched AWS Lake Formation based fine-grained access controls (FGAC) on Open Table Formats (OTFs), including Apache Hudi, Apache Iceberg, and Delta lake. This allows you to simplify security and governance over transactional data lakes by providing access controls at table-, column-, and row-level permissions with your Apache Spark jobs. Many large enterprise companies seek to use their transactional data lake to gain insights and improve decision-making. You can build a lake house architecture using Amazon EMR integrated with Lake Formation for FGAC. This combination of services allows you to conduct data analysis on your transactional data lake while ensuring secure and controlled access.
+The Amazon EMR record server component supports table-, column-, row-, cell-, and nested attribute-level data filtering functionality. It extends support to Hive, Apache Hudi, Apache Iceberg, and Delta lake formats for both reading (including time travel and incremental query) and write operations (on DML statements such as INSERT). Additionally, with version 6.15, Amazon EMR introduces access control protection for its application web interface such as on-cluster Spark History Server, Yarn Timeline Server, and Yarn Resource Manager UI.
+In this post, we demonstrate how to implement FGAC on Apache Hudi tables using Amazon EMR integrated with Lake Formation.
+Amazon EMR customers often use Open Table Formats to support their ACID transaction and time travel needs in a data lake. By preserving historical versions, data lake time travel provides benefits such as auditing and compliance, data recovery and rollback, reproducible analysis, and data exploration at different points in time.
+Another popular transaction data lake use case is incremental query. Incremental query refers to a query strategy that focuses on processing and analyzing only the new or updated data within a data lake since the last query. The key idea behind incremental queries is to use metadata or change tracking mechanisms to identify the new or modified data since the last query. By identifying these changes, the query engine can optimize the query to process only the relevant data, significantly reducing the processing time and resource requirements.
+In this post, we demonstrate how to implement FGAC on Apache Hudi tables using Amazon EMR on Amazon Elastic Compute Cloud (Amazon EC2) integrated with Lake Formation. Apache Hudi is an open source transactional data lake framework that greatly simplifies incremental data processing and the development of data pipelines. This new FGAC feature supports all OTF. Besides demonstrating with Hudi here, we will follow up with other OTF tables with other blogs. We use notebooks in Amazon SageMaker Studio to read and write Hudi data via different user access permissions through an EMR cluster. This reflects real-world data access scenarios—for example, if an engineering user needs full data access to troubleshoot on a data platform, whereas data analysts may only need to access a subset of that data that doesn’t contain personally identifiable information (PII). Integrating with Lake Formation via the Amazon EMR runtime role further enables you to improve your data security posture and simplifies data control management for Amazon EMR workloads. This solution ensures a secure and controlled environment for data access, meeting the diverse needs and security requirements of different users and roles in an organization.
+The following diagram illustrates the solution architecture.
+
+We conduct a data ingestion process to upsert (update and insert) a Hudi dataset to an Amazon Simple Storage Service (Amazon S3) bucket, and persist or update the table schema in the AWS Glue Data Catalog. With zero data movement, we can query the Hudi table governed by Lake Formation via various AWS services, such as Amazon Athena, Amazon EMR, and Amazon SageMaker.
+When users submit a Spark job through any EMR cluster endpoints (EMR Steps, Livy, EMR Studio, and SageMaker), Lake Formation validates their privileges and instructs the EMR cluster to filter out sensitive data such as PII data.
+This solution has three different types of users with different levels of permissions to access the Hudi data:
+You can download the three notebooks used in this post from the GitHub repo.
+Before you deploy the solution, make sure you have the following:
+Complete the following steps to set up your permissions:
+Make sure you are in theus-east-1Region.
+Next, we enable Lake Formation by changing the default permission model.
+
+Alternatively, you need to revoke IAMAllowedPrincipals on resources (databases and tables) created if you started Lake Formation with the default option.
+Finally, we create a key pair for Amazon EMR.
+
+The generated key pair (for this post, emr-fgac-hudi-keypair.pem) will save to your local computer.
+Next, we create an AWS Cloud9 interactive development environment (IDE).
+
+
+
+
+Note that the example code is a proof of concept for demonstration purposes only. For production systems, use a trusted certification authority (CA) to issue certificates. Refer to Providing certificates for encrypting data in transit with Amazon EMR encryption for details.
+We provide an AWS CloudFormation template that automatically sets up the following services and components:
+Complete the following steps to deploy the resources:
+
+The CloudFormation stack deployment takes around 10 minutes.
+Complete the following steps to set up Lake Formation:
+
+
+
+To use Hudi with Jupyter notebooks, you need to complete the following steps for the EMR cluster, which includes copying a Hudi JAR file from the Amazon EMR local directory to its HDFS storage, so that you can configure a Spark session to use Hudi:
+
+Now we’re ready to create the Hudi database and tables with FGAC enabled by the EMR runtime role. The EMR runtime role is an IAM role that you can specify when you submit a job or query to an EMR cluster.
+First, let’s grant the Lake Formation database creator permission to<STACK-NAME>-hudi-db-creator-role:
+Next, let’s register the S3 data lake location in Lake Formation:
+
+Next, we need to grant<STACK-NAME>-hudi-db-creator-rolethe data location permission:
+
+Now, let’s use a Jupyter notebook in SageMaker Studio to connect to the EMR cluster with the database creator EMR runtime role:
+
+
+
+
+Now you can follow the steps in the notebook to create the Hudi database and tables. The major steps are as follows:
+After you create the Hudi database and tables, you’re ready to query the tables using fine-grained access control with Lake Formation. We have created two types of Hudi tables: Copy-On-Write (COW) and Merge-On-Read (MOR). The COW table stores data in a columnar format (Parquet), and each update creates a new version of files during a write. This means that for every update, Hudi rewrites the entire file, which can be more resource-intensive but provides faster read performance. MOR, on the other hand, is introduced for cases where COW may not be optimal, particularly for write- or change-heavy workloads. In a MOR table, each time there is an update, Hudi writes only the row for the changed record, which reduces cost and enables low-latency writes. However, the read performance might be slower compared to COW tables.
+We use the IAM role<STACK-NAME>-hudi-table-pii-roleto query Hudi COW and MOR containing PII columns. We first grant the table access permission via Lake Formation:
+
+
+Now you’re ready to run the notebook to query the Hudi tables. Let’s follow similar steps to the previous section to run the notebook in SageMaker Studio:
+In the current stage, FGAC-enabled EMR cluster needs to query Hudi’s commit time column for performing incremental queries and time travel. It does not support Spark’s “timestamp as of” syntax and Spark.read(). We are actively working on incorporating support for both actions in future Amazon EMR releases with FGAC enabled.
+You can now follow the steps in the notebook. The following are some highlighted steps:
+We use the IAM role<STACK-NAME>-hudi-table-non-pii-roleto query Hudi tables. This role is not allowed to query any columns containing PII. We use the Lake Formation column-level and row-level data filters to implement fine-grained access control:
+
+
+Let’s follow similar steps to run the notebook in SageMaker Studio:
+You can now follow the steps in the notebook. From the query results, you can see that FGAC via the Lake Formation data filter has been applied. The role can’t see the PII columnsc_customer_id,c_last_name, andc_email_address. Also, the rows fromHONG KONGhave been filtered.
+
+After you’re done experimenting with the solution, we recommend cleaning up resources with the following steps to avoid unexpected costs:
+The EMR cluster will be automatically deleted after the idle timeout value.
+In this post, we used Apachi Hudi, one type of OTF tables, to demonstrate this new feature to enforce fine-grained access control on Amazon EMR. You can define granular permissions in Lake Formation for OTF tables and apply them via Spark SQL queries on EMR clusters. You also can use transactional data lake features such as running snapshot queries, incremental queries, time travel, and DML query. Please note that this new feature covers all OTF tables.
+This feature is launched starting from Amazon EMR release 6.15 in all Regions where Amazon EMR is available. With the Amazon EMR integration with Lake Formation, you can confidently manage and process big data, unlocking insights and facilitating informed decision-making while upholding data security and governance.
+To learn more, refer to Enable Lake Formation with Amazon EMR and feel free to contact your AWS Solutions Architects, who can be of assistance alongside your data journey.
+Raymond Lai is a Senior Solutions Architect who specializes in catering to the needs of large enterprise customers. His expertise lies in assisting customers with migrating intricate enterprise systems and databases to AWS, constructing enterprise data warehousing and data lake platforms. Raymond excels in identifying and designing solutions for AI/ML use cases, and he has a particular focus on AWS Serverless solutions and Event Driven Architecture design.
+Bin Wang, PhD, is a Senior Analytic Specialist Solutions Architect at AWS, boasting over 12 years of experience in the ML industry, with a particular focus on advertising. He possesses expertise in natural language processing (NLP), recommender systems, diverse ML algorithms, and ML operations. He is deeply passionate about applying ML/DL and big data techniques to solve real-world problems.
+Aditya Shah is a Software Development Engineer at AWS. He is interested in Databases and Data warehouse engines and has worked on performance optimisations, security compliance and ACID compliance for engines like Apache Hive and Apache Spark.
+Melody Yang is a Senior Big Data Solution Architect for Amazon EMR at AWS. She is an experienced analytics leader working with AWS customers to provide best practice guidance and technical advice in order to assist their success in data transformation. Her areas of interests are open-source frameworks and automation, data engineering and DataOps.
+View Comments
