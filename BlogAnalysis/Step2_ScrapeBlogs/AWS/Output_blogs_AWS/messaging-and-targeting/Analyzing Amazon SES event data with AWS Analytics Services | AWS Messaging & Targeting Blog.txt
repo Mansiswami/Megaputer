@@ -1,0 +1,115 @@
+In this post, we will walk through using AWS Services, such as, Amazon Kinesis Firehose, Amazon Athena and Amazon QuickSight to monitor Amazon SES email sending events with the granularity and level of detail required to get insights from your customers engage with the emails you send.
+Nowadays, email Marketers rely on internal applications to create their campaigns or any communications requirements, such us newsletters or promotional content. From those activities, they need to collect as much information as possible to analyze and improve their pipeline to get better interaction with the customers. Data such us bounces, rejections, success reception, delivery delays, complaints or open rate can be a powerful tool to understand the customers. Usually applications work with high-level data points without detailed logging or granular information that could help improve even better the effectiveness of their campaigns.
+Amazon Simple Email Service (SES) is a smart tool for companies that wants a cost-effective, flexible, and scalable email service solution to easily integrate with their own products. Amazon SES provides methods to control your sending activity with built-in integration with Amazon CloudWatch Metrics and also provides a mechanism to collect the email sending events data.
+In this post, we propose an architecture and step-by-step guide to track your email sending activities at a granular level, where you can configure several types of email sending events, including sends, deliveries, opens, clicks, bounces, complaints, rejections, rendering failures, and delivery delays. We will use the configuration set feature of Amazon SES to send detailed logging to our analytics services to store, query and create dashboards for a detailed view.
+Overview of solution 
+This architecture uses Amazon SES built-in features and AWS analytics services to provide a quick and cost-effective solution to address your mail tracking requirements. The following services will be implemented or configured:
+The following diagram shows the architecture of the solution:
+Figure 1. Serverless Architecture to Analyze Amazon SES events
+The flow of the events starts when a customer uses Amazon SES to send an email. Each of those send events will be capture by the configuration set feature and forward the events to a Kinesis Firehose delivery stream to buffer and store those events on an Amazon S3 bucket.
+After storing the events, it will be required to create a database and table schema and store it on AWS Glue Data Catalog in order for Amazon Athena to be able to properly query those events on S3. Finally, we will use Amazon QuickSight to create interactive dashboard to search and visualize all your sending activity with an email level of detailed.
+Prerequisites 
+For this walkthrough, you should have the following prerequisites:
+Walkthrough
+Step 1: Use AWS CloudFormation to deploy some additional prerequisites
+You can get started with our sample AWS CloudFormation template that includes some prerequisites. This template creates an Amazon S3 Bucket, an IAM role needed to access from Amazon SES to Amazon Kinesis Data Firehose.
+To download the CloudFormation template, run one of the following commands, depending on your operating system:
+In Windows:
+curl https://raw.githubusercontent.com/aws-samples/amazon-ses-analytics-blog/main/SES-Blog-PreRequisites.yml -o SES-Blog-PreRequisites.yml
+In MacOS
+wget https://raw.githubusercontent.com/aws-samples/amazon-ses-analytics-blog/main/SES-Blog-PreRequisites.yml
+To deploy the template, use the following AWS CLI command:
+aws cloudformation deploy --template-file ./SES-Blog-PreRequisites.yml --stack-name ses-dashboard-prerequisites --capabilities CAPABILITY_NAMED_IAM
+After the template finishes creating resources, you see the IAM Service role and the Delivery Stream on the stack Outputs tab. You are going to use these resources in the following steps.
+Figure 2. CloudFormation template outputs
+Step 2: Creating a configuration set in SES and setting the default configuration set for a verified identity 
+SES can track the number of send, delivery, open, click, bounce, and complaint events for each email you send. You can use event publishing to send information about these events to other AWS service. In this case we are going to send the events to Kinesis Firehose. To do this, a configuration set is required.
+To create a configuration set, complete the following steps:
+
+Figure 3. Amazon SES Create Configuration Set
+
+Figure 4. Configuration Set Name
+
+
+Figure 5. Configuration set created successfully
+
+
+Figure 6. Sending Events to analyze
+
+Figure 7. Destination for Amazon SES sending events
+
+Figure 8 Amazon SES Verified Identity
+
+Figure 9. Edit Configuration Set for Verified Identity
+
+Figure 10. Assign default configuration set
+
+Figure 11. Amazon S3 bucket structure
+Step 3: Using Amazon Athena to query the SES event logs
+Amazon SES publishes email sending event records to Amazon Kinesis Data Firehose in JSON format. The top-level JSON object contains an eventType string, a mail object, and either a Bounce, Complaint, Delivery, Send, Reject, Open, Click, Rendering Failure, or DeliveryDelay object, depending on the type of event.
+The sesmaster table uses the org.openx.data.jsonserde.JsonSerDe SerDe library to deserialize the JSON data.
+We have leveraged the support for JSON arrays and maps and the support for nested data structures. Those features ease the process of preparation and visualization of data.
+In the sesmaster table, the following mappings were applied to avoid errors due to name of JSON fields containing colons.
+The sesmaster table contains some fields which are represented by nested arrays, so it is necessary to flatten them into multiples rows. Following you can see the event types and the fields which need to be flatten.
+To flatten those arrays into multiple rows, we used the CROSS JOIN in conjunction with the UNNEST operator using the following strategy for all the three events:
+To create those views, follow the next steps.
+At the end we have one table and four views which can be used in Amazon QuickSight to analyze email sending events:
+Step 4: Analyze and visualize data with Amazon QuickSight
+ In this blog post, we use Amazon QuickSight to analyze and to visualize email sending events from the sesmaster and the four curated views created previously. Amazon QuickSight can directly access data through Athena. Its pay-per-session pricing enables you to put analytical insights into the hands of everyone in your organization.
+Let’s set this up together. We first need to select our table and our views to create new data sources in Athena and then we use these data sources to populate the visualization. We are creating just an example of visualization. Feel free to create your own visualization based on your information needs.
+Before we can use the data in Amazon QuickSight, we need to first grant access to the underlying S3 bucket. If you haven’t done so already for other analyses, see our documentation on how to do so.
+
+Figure 12. Create New Athena Data Source
+
+
+Figure 13. Select Sesmaster Table
+
+Figure 14. QuickSight Visualize Data
+
+Figure 15. QuickSight Visual Types
+
+Figure 16. Add Send field to visualization
+Figure 17. Add a new visual
+
+Figure 18. Key Performance Indicator Visual Type
+
+Figure 19. Add Delivery Field to visualization
+
+Figure 20. Preview of Key Performance Indicators
+
+Figure 21. Add a New Dataset
+
+Figure 22. Add a New Dataset
+Figure 23. Add vwsesmaster dataset
+Now you can see all the available fields of the vwsesmaster view.
+
+Figure 24. New fields from vwsesmaster dataset
+
+Figure 25. QuickSight Visual Types
+
+Figure 26. Add eventtype, mailmessageid and mailsubject fields
+
+Figure 27. Add a Filter
+
+Figure 28. Create eventtype filter
+
+Figure 29. Add filter to sheet
+
+
+Figure 30. Apply filters with default values
+
+Figure 31. Filter vwsesmasterview by eventtype
+Figure 32. Final visualization 1
+Figure 33. Final visualization 2
+
+Figure 34. Final visualization 3
+Clean up
+To avoid ongoing charges, clean up the resources you created as part of this post:
+Conclusion 
+In this blog we showed how you can use AWS native services and features to quickly create an email tracking solution based on Amazon SES events to have a more detailed view on your sending activities. This solution uses a full serverless architecture without having to manage the underlying infrastructure and giving you the flexibility to use the solution for small, medium or intense Amazon SES usage, without having to take care of any servers.
+We showed you some samples of dashboards and analysis that can be built for most of customers requirements, but of course you can evolve this solution and customize it according to your needs, adding or removing charts, filters or events to the dashboard. Please refer to the following documentation for the available Amazon SES Events, their structure and also how to create analysis and dashboards on Amazon QuickSight:
+From a performance and cost efficiency perspective there are still several configurations that can be done to improve the solution, for example using a columnar file formant like parquet, compressing with snappy or setting your S3 partition strategy according to your email sending usage. Another improvement could be importing data into SPICE to read data in Amazon Quicksight. Using SPICE results in the data being loaded from Athena only once, until it is either manually refreshed or automatically refreshed using a schedule.
+You can use this walkthrough to configure your first SES dashboard and start visualizing events detail. You can adjust the services described in this blog according to your company requirements.
+About the authors
+
+View Comments

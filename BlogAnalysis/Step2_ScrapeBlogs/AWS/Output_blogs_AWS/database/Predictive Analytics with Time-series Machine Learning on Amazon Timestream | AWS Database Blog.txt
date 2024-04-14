@@ -1,0 +1,49 @@
+Capacity planning for large applications can be difficult due to constantly changing requirements and the dynamic nature of modern infrastructures. Traditional reactive approaches, for instance, relying on static thresholds for some DevOps metrics like CPU and memory, fall short in such environments. In this post, we show how you can perform predictive analysis on aggregated DevOps data (CPU, memory, transactions per second) stored in Amazon Timestream by using Amazon SageMaker built-in algorithms. This enables proactive capacity planning to prevent potential business interruptions. This approach can be used to run machine learning on any time-series data stored in Timestream with SageMaker.
+Timestream is a fast, scalable, and serverless time-series database service that makes it simple to store and analyze trillions of events per day. Timestream automatically scales up or down to adjust capacity and performance, so that you don’t have to manage the underlying infrastructure.
+SageMaker is a fully managed machine learning (ML) service. With SageMaker, data scientists and developers can quickly and effortlessly build and train ML models, and then directly deploy them into a production-ready hosted environment. It provides an integrated Jupyter authoring notebook instance for quick access to your data sources for exploration and analysis, so you don’t have to manage servers. It also provides common ML algorithms that are optimized to run efficiently against extremely large data in a distributed environment.
+DevOps teams can use Timestream to store metrics, logs, and other time-series data. You can then query this data to gain insights into your systems’ behaviors. Timestream can handle high volumes of incoming data with low latency, which enables teams to perform real-time analytics. DevOps teams can analyze performance metrics and other operational data in real time to facilitate quick decision-making.
+The following reference architecture shows how you can use Timestream for DevOps use cases.
+
+The solution consists of the following key components:
+To follow this post, you should be familiar with the key concepts of Timestream, SageMaker, Amazon Simple Storage Service (Amazon S3), AWS Identity and Access Management (IAM), and Python. This post also includes a hands-on lab for using an AWS CloudFormation template and Jupyter notebook to provision and interact with the relevant AWS services. An AWS account with the necessary IAM privileges is required.
+Complete the following steps to launch the hands-on lab:
+
+
+You can now start analyzing the data and preparing it for training by running the cells in the notebook. Complete the following steps:
+
+The following is a plot of CPU usage.
+
+The following is a plot of memory usage.
+
+The following is a plot of transactions per second (TPS).
+
+The solution uses the SageMaker DeepAR forecasting algorithm, which has been chosen because of its effectiveness in predicting one-dimensional time-series data using recurrent neural networks (RNN). DeepAR stands out for its ability to adapt to diverse time-series patterns, making it a versatile and powerful choice. It employs a supervised learning approach, using labeled historical data for training, and takes advantage of the strengths of RNN architecture to capture temporal dependencies in sequential data.
+Looking at the earlier graphs, you’ll notice that the pattern looks similar for all three metrics. Because of this, we just use the CPU metrics for training. However, we can use the trained model to predict other metrics besides CPU. If the pattern of data is different, then we have to train each dataset separately and predict accordingly.
+We have about 16 days of data in a 24-hour cycle period. We train the model with the first 14 days over a 3-days (72-hours) context window, and we use the last 2 days (48 hours) for testing our predictions.
+The following plot shows the data and overlays it with the test data.
+
+You can validate the files test.json and train.json by navigating to the Amazon S3 console and looking for the bucket that was created earlier (for example, s3://sagemaker-<region>-<account_number>/sagemaker/DEMO-deepar/data).
+This step trains the model using a generic estimator. It launches an ML instance (instance type ml.c4.xlarge) using a SageMaker image containing the DeepAR algorithm:
+Wait for the model training to finish (around 5 minutes) before running predictions.
+When the training job is complete, you will see the following response.
+
+With the model training phase is successfully complete, the next step involves initiating the prediction instance by deploying an endpoint.
+Launching the instance can take some time. Initially, there is only one hyphen (–) shown in the output. Wait until the status line finishes with an exclamation mark (!).
+
+The following plot shows our CPU prediction.
+
+The following plot shows our memory prediction.
+
+The following plot shows our TPS prediction.
+
+The outcome of our prediction closely matches with the test data. We can use these predictions to plan capacity. You can follow the steps in this post to seamlessly extend this solution to predict other time-series data stored in Timestream. It provides a flexible and applicable solution for users looking to apply accurate predictions across a spectrum of time-series datasets in real-world scenarios.
+In general, it’s best practice to aggregate time-series data at a lower frequency before training a model. Using raw data can make the model run slow and be less accurate.
+With the Timestream scheduled query feature, you can aggregate data and store it in a different Timestream table. You can use scheduled queries for business reports that summarize the end-user activity from your applications, so you can train ML models for personalization. You can also use scheduled queries for alarms that detect anomalies, network intrusions, or fraudulent activity, so you can take immediate remedial actions. The following is a sample SQL query that can be run as a scheduled query to aggregate/upsample data in 1-hour time intervals:
+To avoid incurring charges, use the AWS Management Console to delete the resources that you created while running this exercise:
+In this post, we showed you how to improve capacity planning by running predictive analysis on DevOps time-series data stored in Timestream using the SageMaker DeepAR algorithm. By combining the capabilities of SageMaker and Timestream, you can make predictions and gain valuable insights for your time-series datasets.
+For more information about Timestream aggregation, refer to Queries with aggregate functions. For advanced time-series analytical functions, see Time-series functions. To learn more about using the DeepAR algorithm, refer to Best practices for using the DeepAR Algorithm.
+We welcome your feedback. If you have questions or suggestions, leave them in the comment section.
+Balwanth Reddy Bobilli is a Timestream Specialist Solutions Architect at AWS based out of Utah. Prior to joining AWS, he worked at Goldman Sachs as a Cloud Database Architect. He is passionate about databases and cloud computing. He has great experience in building secure, scalable, and resilient solutions in cloud, specifically with cloud databases.
+Norbert Funke is a Sr. Timestream Specialist Solutions Architect at AWS based out of New York. Prior to joining AWS, he was working for a data consulting company owned by PwC on data architecture and data analytics.
+Renuka Uttarala is a Senior Leader at AWS since 2019, leading global teams specializing in data services architecture solutions. She has 20+ years of IT industry experience specialized in Advanced Analytics and Data Science fields. Prior to joining AWS, she worked in product development, enterprise architecture, and solution engineering leadership roles at various companies, including HCL Technologies, Amdocs Openet, Warner Bros. Discovery, and Oracle Corporation.
+View Comments

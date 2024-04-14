@@ -1,0 +1,68 @@
+Chris Christou, Craig Bossie, and Saurabh Ajmera contributed to this post.
+Amazon CodeWhisperer (CodeWhisperer) is an AI-powered developer productivity tool that generates code suggestions. CodeWhisperer integration with Visual Studio is now available in preview. The AWS Toolkit for Visual Studio provides the integration to CodeWhisperer. In this post, I’ll walk you through installing, configuring, and basic use of CodeWhisperer in Visual Studio. I’ll also write a complete program assisted by CodeWhisperer and share a step-by-step account of the experience.
+CodeWhisperer can be used with Visual Studio 2022, and currently supports these languages: C, C++, and C#. It’s available in two tiers, Professional and Individual (which is free to use). Refer to Amazon CodeWhisperer Pricing for more information on tiers and pricing.
+To use CodeWhisperer with Visual Studio, you’ll need the Visual Studio 2022 IDE (any edition) on your Windows development machine.
+Next, install the latest edition of the AWS Toolkit for Visual Studio 2022 from the Visual Studio Marketplace. If you already have the toolkit installed, confirm you’re on the latest version. You can install or upgrade the toolkit from Visual Studio by navigating to Extensions > Manage Extensions.
+You’ll need to configure the toolkit for CodeWhisperer authentication.
+1. Launch Visual Studio. If the Getting Started with the AWS Toolkit page is not displayed, navigate there by choosing Extensions > AWS Toolkit > Getting Started from the menu.
+2. In Step 1 of 2: Select a feature setup, select Amazon CodeWhisperer.
+3. In Step 2 of 2: Authenticate with AWS, use the sign-in method that matches the CodeWhisperer tier you plan to use:
+a. My organization has enabled CodeWhisperer: If your organization has licensed the CodeWhisperer Professional Tier, sign in with IAM Identity Center. Refer any credential questions to your CodeWhisperer administrator.
+b. I’m using CodeWhisperer on my own: To use the free CodeWhisperer Individual Tier, choose Sign up or Sign in. Follow the prompts to sign in with a new or existing AWS Builder ID, which is free of charge. You’ll also grant permissions to the AWS Toolkit for Visual Studio.
+Figure 1: Configuring CodeWhisperer authentication
+Once you’re authenticated, the Getting Started with the AWS Toolkit page in Visual Studio will show the message CodeWhisperer enabled and connected to AWS Builder ID.
+CodeWhisperer connected confirmation message
+4. If you’re new to the AWS Toolkit for Visual Studio, you’ll also want to connect it to an AWS profile so you can deploy to AWS and manage your cloud assets from Visual Studio. Refer to Connecting to AWS in the AWS Toolkit for Visual Studio User Guide for instructions.
+Let’s take a tour of what it’s like to code with CodeWhisperer assisting. In this example, I want to write a C# command line program that can create and update items in a product catalog, stored in an Amazon DynamoDB table. I already have a default AWS profile on my development machine with permissions to perform DynamoDB actions, and the AWS Toolkit has been configured to use it.
+I create the console program and add the Amazon.DynamoDBv2 package using dotnet commands.
+dotnet new console --use-program-main --name catalog cd catalog dotnet add package AWSSDK.DynamoDBv2
+dotnet commands to create console project and add AWS .NET DynamoDB SDK
+Next, I open the project in Visual Studio and open Program.cs in the code editor. At the top I add using statements for DynamoDB. Now CodeWhisperer knows I’m using DynamoDB.
+The primary way you will interact with CodeWhisperer is requesting and responding to code recommendations, for which you can use keyboard shortcuts. Note there is also a CodeWhisperer icon at the lower left hand side of the editor you can interact with as shown in the following figure. Right-click the icon for a context menu from which you can generate code suggestions, pause/resume auto-suggestions, open a code reference log, configure options, view the documentation, or submit feedback. The code reference log lets you view accepted suggestions that have references, and shows you the code location, code fragment, license, and referenced source code.
+CodeWhisperer icon and context menu
+As you are coding, CodeWhisperer will periodically make code recommendations. Code recommendations can vary from a single statement to a block of code. You can also manually trigger a recommendation with the keyboard shortcut Alt+C. When CodeWhisperer has a recommendation, it appears in the code editor in gray and awaits your decision whether to accept it or not. If there are multiple recommendations, you can scroll forward with Alt+. (Alt-period) or back with Alt+, (Alt-comma). You accept the currently displayed recommendation by pressing Tab. To reject the recommendation, press Esc. If you prefer different keyboard shortcuts, they are configurable through Visual Studio key bindings.
+My DynamoDB experience is a little rusty, so I’m hoping CodeWhisperer will help me out. Since I’m using DynamoDB, I’ll need an SDK client for it. I begin typing: var dynamoClient = CodeWhisperer infers I want to work with DynamoDB, and suggests completion to create an AmazonDynamoDBClient, which I accept by pressing TAB.
+var dynamoClient = new AmazonDynamoDBClient();
+Animation of CodeWhisperer statement completion to create a DynamoDB client
+CodeWhisperer is studying both your code and your comments to understand what you’re up to. You can communicate intent in your code comments in natural language.
+My next task is to create a class that will represent a DynamoDB record for a catalog item. I can use the .NET Object Persistence Model in the SDK, which will make it easy to go between a catalog item class in my code and the backing DynamoDB table. Below the Main method, I type in these comments to make CodeWhisperer aware of my intent.
+When I press Alt+C, CodeWhisperer suggests a class, complete with DynamoDB attributes that identify the table, partition key (also called hash key), and sort key (also called range key). It’s just what I want, so I press TAB to accept.
+CodeWhisperer generating a class with DynamoDB attributes
+I didn’t get exactly the result I was after initially. I started with a different comment, and the class that was offered didn’t have the DynamoDB attributes. I had to experiment before I had the comment text that gave me the result I was after. That iteration and refinement will be common at first, but there will be less of it as CodeWhisperer and you get to know each other. For the sake of brevity, I’m showing only the prompts and results that I accepted throughout this tour. The CodeWhisperer team works continuously to improve suggestions, so you’re likely to receive even better suggestions over time.
+To eliminate compiler warning CS8618, Non-nullable variable must contain a non-null value when exiting constructor. Consider declaring it as nullable, I initialize the string properties.
+Back in the Main method, it’s time to perform different actions based on the command line arguments. If the user specifies create on the command line, I want to create the DynamoDB table catalog if it doesn’t already exist. I enter this comment:
+// If the first command line argument is "create", create the DynamoDB table "catalog" if it doesn't already exist.
+On Alt+C, CodeWhisperer gives me an if statement with the code to create the table, correctly assuming I want the catalog table attributes to match the CatalogItem class that was defined earlier.
+Animation of CodeWhisperer generating a code block to create a DynamoDB table
+I add a return statement before the closing brace so the program will exit.
+I’ll be adding more actions, but this is a good place to stop, ensure the code builds, and test the create function that was just added. In a command window, I run
+dotnet build dotnet run –- create
+Testing the create action
+It builds fine, and there are no errors during the run. Using the AWS Explorer view in the AWS Toolkit for Visual Studio, I confirm that the DynamoDB table catalog was indeed created in my AWS account.
+Viewing the created DynamoDB table in the AWS Explorer
+So far, so good. CodeWhisperer has written all of the code we’re using, and we’ve seen it create a DynamoDB table for us. Let’s move on to the next action.
+The next action I want to implement is add <category> <SKU> <description> <quantity> to add an item to the catalog table. I start writing another comment, and this time CodeWhisperer auto-completes the comment for me, correctly understanding where I am going. I am surprised but delighted to see this.
+Excited that we’re on the same page, I accept and amend the comment to clarify that the record data will also come from the command line. An Alt+C gets me an if statement, and another Alt+C gets me a complete code block. This will add the item as I intended, with the CatalogItem class created earlier. CodeWhisperer also intelligently noticed the return statement to exit the program in the earlier action, and matched that here.
+Returning to the command window, I again run the program to test the add action with
+dotnet run –- add "electronics" "8146545" "Amazon Fire Max tablet 11 inch" 14
+There are no errors, so I add a few more items:
+dotnet run -– add "kitchen" "6326471" "Supreme Coffee Maker" 5 dotnet run -– add "kitchen" "6406421" "4 slice toaster" 8 dotnet run -– add "electronics" "2496562" "Amazon Echo Show 8" 22
+Testing the add action
+There are no errors, a good sign. Back in Visual Studio in the AWS Explorer, I select the DynamoDB catalog table and run “Scan Table” to view the items. They’re all there.
+Confirming items have been added to the DynamoDB table
+So far so good. Twice now CodeWhisperer has given me the code I needed for two different actions, and both worked correctly.
+The final action we want to implement is list, which will list the contents of the DynamoDB table. I’m gaining confidence in CodeWhisperer’s capabilities and getting better at expressing intent, getting the code I need in just one or two tries. I rejected the first code I was given because it did not leverage the CatalogItem class and the .NET object persistence model. I solved this by expanding the comment to drop a hint to use the DynamoDBContext.Scan method. This time, I got the code I wanted.
+I test the new action in a command window with dotnet run –- list, and there are the items, in category order.
+Testing the list action
+I add just one more thing: console help if the command line doesn’t match the create, add, or list actions. Here’s my comment:
+// Display to the console the available commands.
+CodeWhisperer gives me the following, a statement at a time:
+In the if statements for the 3 actions, I also add a length check so they don’t fail when the command line is empty. I now realize that if I changed the first action code this way early on, CodeWhisperer would likely have replicated that when generating the additional actions.
+if (args.Length > 0 && args[0] == "create") …
+Now, when there are no command line arguments or an unrecognized action, help is displayed:
+Testing command help
+Here’s the final code. The code highlighted in green was generated by CodeWhisperer. The code highlighted in orange was written by me.
+In this post, I shared how to install and configure Amazon CodeWhisperer using the AWS Toolkit for Visual Studio. I then used it to create a program for working with catalog items. Incidentally, this was the first time I’ve used CodeWhisperer to write a complete program.
+I wrote comments, and CodeWhisperer wrote the code. It wrote virtually every line of code, the code worked, and very few modifications were needed. It was sometimes necessary to refine comments and iterate until I got the code I wanted. There was less of this as the coding went on and CodeWhisperer understood more.
+I invite you to take CodeWhisperer for a spin and evaluate what it can do for your coding productivity. For more information, refer to the CodeWhisperer User Guide.
+David Pallmann is a senior product manager on the EC2 team at AWS. His mission is to make AWS a world class experience for .NET developers. David has previously served in engineering, consulting, product, and tech manager roles. He worked on WCF, and later created Neuron ESB, the first .NET-based enterprise service bus. Follow him on X at @davidpallmann.

@@ -1,0 +1,49 @@
+With the advent of generative AI, today’s foundation models (FMs), such as the large language models (LLMs) Claude 2 and Llama 2, can perform a range of generative tasks such as question answering, summarization, and content creation on text data. However, real-world data exists in multiple modalities, such as text, images, video, and audio. Take a PowerPoint slide deck, for example. It could contain information in the form of text, or embedded in graphs, tables, and pictures.
+In this post, we present a solution that uses multimodal FMs such as the Amazon Titan Multimodal Embeddings model and LLaVA 1.5 and AWS services including Amazon Bedrock and Amazon SageMaker to perform similar generative tasks on multimodal data.
+The solution provides an implementation for answering questions using information contained in the text and visual elements of a slide deck. The design relies on the concept of Retrieval Augmented Generation (RAG). Traditionally, RAG has been associated with textual data that can be processed by LLMs. In this post, we extend RAG to include images as well. This provides a powerful search capability to extract contextually relevant content from visual elements like tables and graphs along with text.
+There are different ways to design a RAG solution that includes images. We have presented one approach here and will follow up with an alternate approach in the second post of this three-part series.
+This solution includes the following components:
+The solution design consists of two parts: ingestion and user interaction. During ingestion, we process the input slide deck by converting each slide into an image, generate embeddings for these images, and then populate the vector data store. These steps are completed prior to the user interaction steps.
+In the user interaction phase, a question from the user is converted into embeddings and a similarity search is run on the vector database to find a slide that could potentially contain answers to user question. We then provide this slide (in the form of an image file) to the LLaVA model and the user question as a prompt to generate an answer to the query. All the code for this post is available in the GitHub repo.
+The following diagram illustrates the ingestion architecture.
+
+The workflow steps are as follows:
+The following diagram illustrates the user interaction architecture.
+
+The workflow steps are as follows:
+These steps are discussed in detail in the following sections. See the Results section for screenshots and details on the output.
+To implement the solution provided in this post, you should have an AWS account and familiarity with FMs, Amazon Bedrock, SageMaker, and OpenSearch Service.
+This solution uses the Titan Multimodal Embeddings model. Ensure that this model is enabled for use in Amazon Bedrock. On the Amazon Bedrock console, choose Model access in the navigation pane. If Titan Multimodal Embeddings is enabled, the access status will state Access granted.
+
+If the model is not available, enable access to the model by choosing Manage Model Access, selecting Titan Multimodal Embeddings G1, and choosing Request model access. The model is enabled for use immediately.
+
+Use one of the following AWS CloudFormation templates (depending on your Region) to launch the solution resources.
+After the stack is created successfully, navigate to the stack’s Outputs tab on the AWS CloudFormation console and note the value for MultimodalCollectionEndpoint, which we use in subsequent steps.
+
+The CloudFormation template creates the following resources:
+The CloudFormation template configures the OSI pipeline with Amazon S3 and Amazon SQS processing as source and an OpenSearch Serverless index as sink. Any objects created in the specified S3 bucket and prefix (multimodal/osi-embeddings-json) will trigger SQS notifications, which are used by the OSI pipeline to ingest data into OpenSearch Serverless.
+The CloudFormation template also creates network, encryption, and data access policies required for the OpenSearch Serverless collection. Update these policies to apply least-privilege permissions.
+Note that the CloudFormation template name is referenced in SageMaker notebooks. If the default template name is changed, make sure you update the same in globals.py
+After the prerequisite steps are complete and the CloudFormation stack has been created successfully, you’re now ready to test the solution:
+The notebooks are numbered in the sequence in which they’re run. Instructions and comments in each notebook describe the actions performed by that notebook. We run these notebooks one by one.
+This notebook deploys the LLaVA-v1.5-7B model to a SageMaker endpoint. In this notebook, we download the LLaVA-v1.5-7B model from HuggingFace Hub, replace the inference.py script with llava_inference.py, and create a model.tar.gz file for this model. The model.tar.gz file is uploaded to Amazon S3 and used for deploying the model on SageMaker endpoint. The llava_inference.py script has additional code to allow reading an image file from Amazon S3 and running inference on it.
+This notebook downloads the slide deck, converts each slide into JPG file format, and uploads these to the S3 bucket used for this post.
+We do the following in this notebook:
+This notebook implements the RAG solution: we convert the user question into embeddings, find a similar image (slide) from the vector database, and provide the retrieved image to LLaVA to generate an answer to the user question. We use the following prompt template:
+The following code snippet provides the RAG workflow:
+The following is a compilation of some user questions and responses generated by our implementation. The Question column captures the user question, and the Answer column is the textual response generated by LLaVA. Image is the k-nearest (k=1) slide match returned by the OpenSearch Serverless vector search. This slide is interpreted by LLaVA to provide the answer.
+Multimodal RAG results
+Feel free to extend this solution to your slide decks. Simply update the SLIDE_DECK variable in globals.py with a URL to your slide deck and run the ingestion steps detailed in the previous section.
+You can use OpenSearch Dashboards to interact with the OpenSearch API to run quick tests on your index and ingested data. The following screenshot shows an OpenSearch dashboard GET example.
+
+To avoid incurring future charges, delete the resources you created. You can do this by deleting the stack via the CloudFormation console.
+
+Additionally, delete the SageMaker inference endpoint created for LLaVA inferencing. You can do this by uncommenting the cleanup step in 3_rag_inference.ipynb and running the cell, or by deleting the endpoint via the SageMaker console: choose Inference and Endpoints in the navigation pane, then select the endpoint and delete it.
+Enterprises generate new content all the time, and slide decks are a common mechanism used to share and disseminate information internally with the organization and externally with customers or at conferences. Over time, rich information can remain buried and hidden in non-text modalities like graphs and tables in these slide decks. You can use this solution and the power of multimodal FMs such as the Titan Multimodal Embeddings model and LLaVA to discover new information or uncover new perspectives on content in slide decks.
+We encourage you to learn more by exploring Amazon SageMaker JumpStart, Amazon Titan models, Amazon Bedrock, and OpenSearch Service, and building a solution using the sample implementation provided in this post.
+Look out for two additional posts as part of this series. Part 2 covers another approach you could take to talk to your slide deck. This approach generates and stores LLaVA inferences and uses those stored inferences to respond to user queries. Part 3 compares the two approaches.
+Amit Arora is an AI and ML Specialist Architect at Amazon Web Services, helping enterprise customers use cloud-based machine learning services to rapidly scale their innovations. He is also an adjunct lecturer in the MS data science and analytics program at Georgetown University in Washington D.C.
+Manju Prasad is a Senior Solutions Architect within Strategic Accounts at Amazon Web Services. She focuses on providing technical guidance in a variety of domains, including AI/ML to a marquee M&E customer. Prior to joining AWS, she designed and built solutions for companies in the financial services sector and also for a startup.
+Archana Inapudi is a Senior Solutions Architect at AWS supporting strategic customers. She has over a decade of experience helping customers design and build data analytics and database solutions. She is passionate about using technology to provide value to customers and achieve business outcomes.
+Antara Raisa is an AI and ML Solutions Architect at Amazon Web Services supporting strategic customers based out of Dallas, Texas. She also has previous experience working with large enterprise partners at AWS, where she worked as a Partner Success Solutions Architect for digital native customers.
+View Comments
