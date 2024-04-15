@@ -1,0 +1,47 @@
+
+  4 min read - LinuxONE is built to be an open and cloud-ready system that integrates into an existing hybrid cloud strategy.                        
+
+  5 min read - What is customer service vs customer experience? Here are the key differences, and why your business needs to excel at both.                        
+
+  3 min read - In this article, explore six ways you can elevate your Salesforce experience for customers, partners and employees.                        
+
+  2 min read - The retail industry employs millions of people, and next-generation retail employees will be impacted by the rise of generative AI.                        
+
+  4 min read - The common thread across all these solution architecture and design domains, as you’ll notice, is one of cost savings for clients.                        
+
+  4 min read - An evolution of customer experience (CX) was to be expected. Throughout modern history, organizations have encountered internal and external challenges that changed how they interact with customers and how customers view those organizations. Advancements in technology mean customers can order virtually any product and receive it in less than a week. For software solutions, they can get access immediately and often in a seamless experience. Across arguably every industry, business leaders view a great customer experience strategy as a key…                        
+
+  6 min read - Customer experience (CX) defines a customer’s journey with a company, including both direct and indirect touchpoints. Businesses that place the emotional needs of the buyer persona at the forefront of the customer experience strategy fosters great relationships. Forrester reports that customer experience is a high priority for about 75% of global business and technology professionals and their organizations. However, finding ways to increase customer engagement and brand loyalty can be a challenge. Here are seven customer experience trends that can…                        
+
+  12 min read - 2022 was the year that generative artificial intelligence (AI) exploded into the public consciousness, and 2023 was the year it began to take root in the business world. 2024 thus stands to be a pivotal year for the future of AI, as researchers and enterprises seek to establish how this evolutionary leap in technology can be most practically integrated into our everyday lives. The evolution of generative AI has mirrored that of computers, albeit on a dramatically accelerated timeline. Massive,…                        
+
+  2 min read - We are pleased to announce that IBM products have earned 17 placements in G2’s 2024 Best Software Awards. IBM’s dedication to putting clients first continues to be the driving force behind its success, including but not limited to industry awards like these. The G2 2024 Best Software Awards rank the world’s best software companies and products based on authentic, timely reviews from real users. Over ninety million people from all over the world visited G2 in 2023 to conduct research,…                        
+
+  2 min read - The G2 2024 Best Software Awards rank the world’s best software companies and products based on authentic, timely reviews from real users.                        
+
+  3 min read - Working with financial institutions to harness the flexibility and security of the cloud to transform payments to meet customers' needs today.                        
+
+  3 min read - A successful data center implementation can best be described as a distributed, dynamic, efficient and resilient IT nucleus.                        
+
+  6 min read - Explore four real-world digital transformation examples and the technology solutions that made them possible.                        
+
+
+                                                            Learn what sets apart a spear phishing attack from a bulk phishing attack—and how you can…                                                      
+
+                                                            In this post, we're delving into another misconception about observability—that it's solely applicable to a specific…                                                      
+
+                                                            IBM's Accelerated Incremental Mainframe Modernization (AIMM) technology is transforming support for caseworkers, children and their families.                                                      
+
+                                                            Based on 14 years of development and input from electric utility experts, IBM has created the…                                                      
+
+                                                            Learn more about the benefits, risks and business use cases of open source large language models…                                                      
+
+                                                            Explore best practices for building an effective vulnerability management program to better secure your organization's IT…                                                      
+
+                                                            The Log4j vulnerability—dubbed "Log4Shell"—still persists nearly two years later. Learn how to detect and patch the…                                                      
+
+                                                            Today’s app environments demand an observability solution that provides real-time monitoring of containers, microservices and Kubernetes…                                                      
+
+                                                            Reinvent how your business works with AI, transforming customer care, IT, network optimization and digital labor.                                                      
+
+                                                            Selecting manufacturing execution system (MES) software is a critical decision for any manufacturing organization.                                                      

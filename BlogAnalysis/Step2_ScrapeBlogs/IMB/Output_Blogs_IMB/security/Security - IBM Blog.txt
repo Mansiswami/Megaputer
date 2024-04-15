@@ -1,0 +1,47 @@
+
+  4 min read - Breach and attack simulation (BAS) provides organizations with continuous offensive security testing. See how it works and why it's important.                        
+
+  < 1 min read - On this episode of IBM Tech Now, we're covering the role of IBM watsonx at the GRAMMYs and audio-jacking with gen AI.                        
+
+  7 min read - Cybersecurity and cyber recovery are types of disaster recovery practices that focus on attempts to steal, expose, alter, disable or destroy critical data.                        
+
+  5 min read - Explore the advantages of deploying FICAM systems, and provides insights into best practices for implementation.                        
+
+  3 min read - To address DORA effectively, financial institutions are advised to concentrate on mastering foundational capabilities in four key domains.                        
+
+  5 min read - Ever since the COVID-19 pandemic, cash usage has been decreasing worldwide and digital payments based on cryptocurrencies or legacy digital payment systems have prevailed. As a result, new forms of centrally managed digital currencies are emerging alongside cryptocurrencies like Bitcoin, the notorious volatility of which has challenged their acceptance worldwide. More prominently, central bank digital currencies (CBDCs) have come to offer digital forms of central bank money, while tokenized deposits tokenize the lifecycle of commercial bank money in both the…                        
+
+  3 min read - Cyberattacks are becoming increasingly sophisticated. Read about the concerns that industry leaders have for the future and three approaches organizations can take to build up their defenses. Cyber workforce shortage There are over four million unfilled cybersecurity jobs in the world today. Filling these vacancies has become a security imperative, and several global compliance mandates have been established to tackle the issue. For example, in the US, the 2023-2025 CISA Cybersecurity Strategic Plan aims to increase basic-level cyber skills across…                        
+
+  5 min read - The distinction between “internal” and “external” networks has always been somewhat false. Clients are accustomed to thinking about firewalls as the barrier between network elements we expose to the internet and back-end systems that are only accessible to insiders. Yet as the delivery mechanisms for applications, websites and content become more decentralized, that barrier is becoming more permeable. The same is true for the people managing those network elements. Quite often, the same team (or the same person!) is responsible…                        
+
+  2 min read - IBM Security® MaaS360®, one of the unified endpoint management (UEM) leaders1, joins forces with Zimperium, a global leader in mobile device and app security, to offer organizations a comprehensive solution to manage and protect their mobile ecosystem. Starting 30 January, IBM Security will sell to organizations Zimperium’s Mobile Threat Defense (Zimperium MTD) product together with its own MaaS360 editions. To get work done anytime, anywhere, employees are increasingly relying on mobile apps and conducting over 80% of their daily work…                        
+
+  2 min read - Realizing the potential of a mobile-powered business while mitigating the risks associated with advanced mobile threats.                        
+
+  7 min read - Business continuity and disaster recovery plans are risk management strategies that businesses rely on to prepare for unexpected incidents.                        
+
+  9 min read - How can you ensure your organization is GDPR compliant? Follow the principles laid out in this GDPR compliance checklist.                        
+
+  5 min read - With ransomware becoming more prevalent, learn how your organization can swiftly respond to these cyberattacks.                        
+
+
+                                                            Learn what sets apart a spear phishing attack from a bulk phishing attack—and how you can…                                                      
+
+                                                            In this post, we're delving into another misconception about observability—that it's solely applicable to a specific…                                                      
+
+                                                            IBM's Accelerated Incremental Mainframe Modernization (AIMM) technology is transforming support for caseworkers, children and their families.                                                      
+
+                                                            Based on 14 years of development and input from electric utility experts, IBM has created the…                                                      
+
+                                                            Learn more about the benefits, risks and business use cases of open source large language models…                                                      
+
+                                                            Explore best practices for building an effective vulnerability management program to better secure your organization's IT…                                                      
+
+                                                            The Log4j vulnerability—dubbed "Log4Shell"—still persists nearly two years later. Learn how to detect and patch the…                                                      
+
+                                                            Today’s app environments demand an observability solution that provides real-time monitoring of containers, microservices and Kubernetes…                                                      
+
+                                                            Reinvent how your business works with AI, transforming customer care, IT, network optimization and digital labor.                                                      
+
+                                                            Selecting manufacturing execution system (MES) software is a critical decision for any manufacturing organization.                                                      

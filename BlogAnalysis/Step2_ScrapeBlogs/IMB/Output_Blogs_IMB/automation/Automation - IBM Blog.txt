@@ -1,0 +1,47 @@
+
+  5 min read - Learn how Kubernetes observability works, and how organizations can use it to optimize cloud-native IT architectures.                        
+
+  3 min read - For larger enterprises or businesses with a worldwide user footprint, GSLB is an essential service to keep traffic distributed efficiently.                        
+
+  4 min read - Optimizing application development and performance is a must in a world where a user’s experience can control a business’ trajectory.                        
+
+  4 min read - Businesses are increasingly turning to event-driven architecture (EDA) as a strategic approach to harness real-time data.                        
+
+  3 min read - One of the more complex challenges banks must solve is to make payments more efficient. Recent news headlines show significant shifts from physical identification and physical forms of payments to digital forms in many jurisdictions. Europe recently announced a mandate…                        
+
+  4 min read - Cloud computing continues to grow in popularity, and its scalability, functionality, cost-effectiveness and other potential benefits have helped transform traditional business models and update legacy systems, creating opportunities for various organizations. A cloud migration, however, is a huge undertaking that requires thorough planning and execution of a comprehensive strategy to successfully achieve business goals. Cloud services are readily available and come in all shapes and sizes—it’s important to determine which is best for your organization. Though it can deliver many benefits, a…                        
+
+  2 min read - What can your organization achieve with a modern observability solution? Data from a new Forrester Consulting study showed that a composite organization that used the IBM Instana™ Observability platform achieved a 219% ROI over three years. Likewise, it saw a 90% reduction in troubleshooting time by providing high fidelity data to the right people at the right time. About the study IBM commissioned Forrester to conduct the Total Economic Impact™ (TEI) study by interviewing four clients about the value of their…                        
+
+  5 min read - Telecommunications industry, a cornerstone of global connectivity, has been going through a technological renaissance for some time, driven by innovations such as 5G, IoT, cloud computing and AI. As a result, networks have become increasingly hard to manage. There is a need for automation to handle routine tasks, monitor network health and respond to issues in real-time. However, the existing skill sets within communication service providers (CSPs) may not align with the evolving demands of this dynamic landscape. To succeed in…                        
+
+  7 min read - You asked, and we delivered! At Instana, addressing our customers' needs and creating a simple tool that is easy to use is fundamental to helping our DevOps and SRE teams reduce burnout rates, allowing them to excel in what they do best. Taking all your feedback and market insights into perspective and careful consideration, we are thrilled to announce that in 2023. Our team announced different product capabilities designed to simplify your teams' ability to observe, debug, remediate and enhance…                        
+
+  7 min read - A comprehensive recap of what we launched in 2023, awards and links to the latest update and how you can get started with each enhancement.                        
+
+  5 min read - Enterprises now recognize the importance of leveraging innovative technologies to drive digital transformation and achieve cost efficiency. However, a lack of precise top-level planning and a narrow focus on technology without integration with business needs led to significant investments with…                        
+
+  3 min read - In this blog, we dive into architectural modernization and explain how IBM Mono2Micro™ tool accelerates transformation.                        
+
+  7 min read - Business events allow companies to become more adaptable and able to recognize and respond to opportunities or threats as they occur.                        
+
+
+                                                            Learn what sets apart a spear phishing attack from a bulk phishing attack—and how you can…                                                      
+
+                                                            In this post, we're delving into another misconception about observability—that it's solely applicable to a specific…                                                      
+
+                                                            IBM's Accelerated Incremental Mainframe Modernization (AIMM) technology is transforming support for caseworkers, children and their families.                                                      
+
+                                                            Based on 14 years of development and input from electric utility experts, IBM has created the…                                                      
+
+                                                            Learn more about the benefits, risks and business use cases of open source large language models…                                                      
+
+                                                            Explore best practices for building an effective vulnerability management program to better secure your organization's IT…                                                      
+
+                                                            The Log4j vulnerability—dubbed "Log4Shell"—still persists nearly two years later. Learn how to detect and patch the…                                                      
+
+                                                            Today’s app environments demand an observability solution that provides real-time monitoring of containers, microservices and Kubernetes…                                                      
+
+                                                            Reinvent how your business works with AI, transforming customer care, IT, network optimization and digital labor.                                                      
+
+                                                            Selecting manufacturing execution system (MES) software is a critical decision for any manufacturing organization.                                                      

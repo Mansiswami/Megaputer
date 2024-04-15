@@ -1,0 +1,47 @@
+
+  6 min read - Empowering organizations to use their data assets and artificial intelligence (AI) capabilities to create tangible economic value.                        
+
+  3 min read - IBM harnesses the power of data and AI to drive real-time, predictive business insights to help clients make intelligent decisions.                        
+
+  4 min read - With IBM® watsonx™ Orders, we have created an AI-powered voice agent to take drive-thru orders without human intervention.                        
+
+  2 min read - The retail industry employs millions of people, and next-generation retail employees will be impacted by the rise of generative AI.                        
+
+  10 min read - We’re all amazed by what AI can do. But the question for those of us in business is what are the best business uses?                        
+
+  < 1 min read - ​Welcome IBM Tech Now, our video web series featuring the latest and greatest news and announcements in the world of technology. Make sure you subscribe to our YouTube channel to be notified every time a new IBM Tech Now video is published. IBM Tech Now: Episode 92 On this episode, we're covering the following topics: The GRAMMYs + IBM watsonx Audio-jacking with generative AI Stay plugged in You can check out the IBM Blog Announcements for a full rundown of…                        
+
+  9 min read - Remember how cool it felt when you first held a smartphone in your hand? The compact design and touch-based interactivity seemed like a leap into the future. Before long, smartphones became a way of life for organizations worldwide because of all they offer for business productivity and communication. Generative AI (artificial intelligence) promises a similar leap in productivity and the emergence of new modes of working and creating. Tools such as Midjourney and ChatGPT are gaining attention for their capabilities…                        
+
+  4 min read - In today’s rapidly evolving digital landscape, enterprises are facing the complexities of information overload. This leaves them grappling to extract meaningful insights from the vast digital footprints they leave behind.Recognizing the need to harness real-time data, businesses are increasingly turning to event-driven architecture (EDA) as a strategic approach to stay ahead of the curve.  Companies and executives are realizing how they need to stay ahead by deriving actionable insights from the sheer amount of data generated every minute in their…                        
+
+  12 min read - 2022 was the year that generative artificial intelligence (AI) exploded into the public consciousness, and 2023 was the year it began to take root in the business world. 2024 thus stands to be a pivotal year for the future of AI, as researchers and enterprises seek to establish how this evolutionary leap in technology can be most practically integrated into our everyday lives. The evolution of generative AI has mirrored that of computers, albeit on a dramatically accelerated timeline. Massive,…                        
+
+  12 min read - Adapting to emerging trends is essential to maximizing potential, minimizing risk and responsibly scaling generative AI adoption.                        
+
+  4 min read - The EU AI Act aims to meet the challenge to develop and deploy AI responsibly across industries including those that are highly regulated.                        
+
+  4 min read - HR leaders think of the workforce in a holistic sense, including current employees, contractors, candidates and past employees.                        
+
+  3 min read - 6 ways generative AI can optimize your enterprise asset management operations, including field service, maintenance and compliance.                        
+
+
+                                                            Learn what sets apart a spear phishing attack from a bulk phishing attack—and how you can…                                                      
+
+                                                            In this post, we're delving into another misconception about observability—that it's solely applicable to a specific…                                                      
+
+                                                            IBM's Accelerated Incremental Mainframe Modernization (AIMM) technology is transforming support for caseworkers, children and their families.                                                      
+
+                                                            Based on 14 years of development and input from electric utility experts, IBM has created the…                                                      
+
+                                                            Learn more about the benefits, risks and business use cases of open source large language models…                                                      
+
+                                                            Explore best practices for building an effective vulnerability management program to better secure your organization's IT…                                                      
+
+                                                            The Log4j vulnerability—dubbed "Log4Shell"—still persists nearly two years later. Learn how to detect and patch the…                                                      
+
+                                                            Today’s app environments demand an observability solution that provides real-time monitoring of containers, microservices and Kubernetes…                                                      
+
+                                                            Reinvent how your business works with AI, transforming customer care, IT, network optimization and digital labor.                                                      
+
+                                                            Selecting manufacturing execution system (MES) software is a critical decision for any manufacturing organization.                                                      

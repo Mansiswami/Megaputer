@@ -1,0 +1,42 @@
+
+  4 min read - The common thread across all these solution architecture and design domains, as you’ll notice, is one of cost savings for clients.                        
+
+  3 min read - IBM® offers a choice of hybrid cloud options, and is the only IaaS provider offering SAP-certified instances on Power and Intel x86.                        
+
+  4 min read - Let’s unpack where core storage and compute density make a difference inside this latest IBM Cloud® and Intel release.                        
+
+  6 min read - Exploring the common patterns, management aspects and components needed to create private wireless networks and their architecture.                         
+
+  4 min read - Team can now lean on GenAI and automation to assist developers in application discovery, auto-refactoring and COBOL-to-Java transformation.                        
+
+  3 min read - Picture this: your business is a dynamic player in your industry at the brink of a pivotal juncture. Struggling with the limitations of conventional approaches, you recognize the imperative to embrace IT-as-a-service to stay ahead, with the infusion of AI becoming the catalyst for change. The result? A revolution across revenue operations, customer engagement, employee satisfaction and the seamless flow of product development and delivery. Welcome to a new era—where the infusion of AI into every facet of operations is…                        
+
+  3 min read - In the realm of urban transportation, precision is pivotal. Downer, a leading provider of integrated services in Australia and New Zealand, considers itself a guardian of the elaborate transportation matrix, and it continually seeks to enhance its operational efficiency. With over 200 trains and a multitude of sensors, Downer has accumulated a vast amount of data. While Downer regularly uncovers actionable insights from their data, their partnership with IBM® Client Engineering aimed to explore the additional potential of this vast dataset,…                        
+
+  10 min read - Apache Kafka is a high-performance, highly scalable event streaming platform. To unlock Kafka’s full potential, you need to carefully consider the design of your application. It’s all too easy to write Kafka applications that perform poorly or eventually hit a scalability brick wall. Since 2015, IBM has provided the IBM Event Streams service, which is a fully-managed Apache Kafka service running on IBM Cloud®. Since then, the service has helped many customers, as well as teams within IBM, resolve scalability…                        
+
+  6 min read - At the beginning of the year, we laid out a new strategy for IBM Power under the leadership of Ken King, who will be retiring by the end of 2023 after forty years with IBM. It is with immense gratitude that I thank Ken for his leadership not only across IBM Power, but for his service to IBM in various roles spanning IP, strategy and software during his distinguished IBM career. I am excited to announce, therefore, that a few…                        
+
+  6 min read - As Ken King passes the baton, we take a look at the progress IBM has made across four critical areas to help drive transformation.                        
+
+  7 min read - The following are two major topics in the minds of CxOs of any Telco operator: 5G: Accelerating 5G to give a better experience to the customer and the possibility of increased revenue growth/market share. Energy management: Worrying about the carbon…                        
+
+                                                            Learn what sets apart a spear phishing attack from a bulk phishing attack—and how you can…                                                      
+
+                                                            In this post, we're delving into another misconception about observability—that it's solely applicable to a specific…                                                      
+
+                                                            IBM's Accelerated Incremental Mainframe Modernization (AIMM) technology is transforming support for caseworkers, children and their families.                                                      
+
+                                                            Based on 14 years of development and input from electric utility experts, IBM has created the…                                                      
+
+                                                            Learn more about the benefits, risks and business use cases of open source large language models…                                                      
+
+                                                            Explore best practices for building an effective vulnerability management program to better secure your organization's IT…                                                      
+
+                                                            The Log4j vulnerability—dubbed "Log4Shell"—still persists nearly two years later. Learn how to detect and patch the…                                                      
+
+                                                            Today’s app environments demand an observability solution that provides real-time monitoring of containers, microservices and Kubernetes…                                                      
+
+                                                            Reinvent how your business works with AI, transforming customer care, IT, network optimization and digital labor.                                                      
+
+                                                            Selecting manufacturing execution system (MES) software is a critical decision for any manufacturing organization.                                                      

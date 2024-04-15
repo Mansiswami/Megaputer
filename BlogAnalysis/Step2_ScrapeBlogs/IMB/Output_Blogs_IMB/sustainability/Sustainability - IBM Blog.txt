@@ -1,0 +1,47 @@
+
+  4 min read - Here’s how companies are using different strategies to address supply chain management and meet their business goals.                        
+
+  4 min read - A wide range of organizations from the public and private sector are working on climate actions to address the causes of climate change.                        
+
+  2 min read - “It is no exaggeration to say that this initiative has just begun. With IBM, we hope to develop it into a standard in Japan and globally."                        
+
+  5 min read - The next generation of clean energy needs innovative technology and power generation to help the world reach net-zero emissions.                        
+
+  5 min read - Strength and resilience across the entire value chain is no longer a nice-to-have—it’s a survival tactic for sourcing teams.                        
+
+  < 1 min read - IBM® Envizi™ is pleased to announce the release of additional functionality as we continue to build out our Scope 3 emissions accounting solution. The new Supply Chain Intelligence module, part of the IBM Envizi ESG Suite, captures and aggregates high-volume supplier and product-level transactional data along with product carbon footprint data (PCF) for the purpose of Scope 3 calculation and reporting. Transactional data, including spend, is directly integrated from the client's ERP system. The emissions calculation engine automates Scope 3 emissions…                        
+
+  4 min read - The term ESG, or environmental, social and governance, is well-known in the investor community. It refers to a set of metrics used to measure an organization’s environmental and social impact and has become increasingly important in investment decision-making over the years. But while the term ESG was first coined in 2004 by the United Nations Global Compact, the concept has been around for much longer. The roots of responsible investment In the 1970s, socially responsible investing (SRI) emerged as a…                        
+
+  6 min read - Tackling global climate change and tracking greenhouse gas emissions has become an all-hands-on-deck endeavor. The World Bank recently launched an initiative, in collaboration with NASA and the European Space Agency, to collect and organize satellite-based measurements of concentrations of greenhouse gases in the atmosphere.1 Back on Earth’s surface, companies around the world are also tracking greenhouse gas emissions—the ones produced by their businesses and value chains. Some are using software tools to gauge their progress in achieving reductions in carbon…                        
+
+  7 min read - Renewable energy is critical to combatting climate change and global warming. The use of clean energy and renewable energy resources—such as solar, wind and hydropower—originates in early human history; how the world has harnessed power from these resources to meet its energy needs has evolved over time. Here’s a quick look at how different forms of renewable power generation evolved to diversify the global energy sector and the world’s energy supply. Solar energy Efforts to harness the power of the…                        
+
+  7 min read - Different forms of renewable power generation evolved to diversify the global energy sector and the world’s energy supply.                        
+
+  5 min read - In pursuit of net zero, companies will focus their sustainability efforts on two paths in 2024: clean energy and sustainable supply chains.                        
+
+  5 min read - A group of 56 students has embarked on a unique journey into the world of model-based systems engineering.                        
+
+  5 min read - With new tools and technologies in hand, organizations can find new ways to use it to reach their own goals—and a more sustainable future.                        
+
+
+                                                            Learn what sets apart a spear phishing attack from a bulk phishing attack—and how you can…                                                      
+
+                                                            In this post, we're delving into another misconception about observability—that it's solely applicable to a specific…                                                      
+
+                                                            IBM's Accelerated Incremental Mainframe Modernization (AIMM) technology is transforming support for caseworkers, children and their families.                                                      
+
+                                                            Based on 14 years of development and input from electric utility experts, IBM has created the…                                                      
+
+                                                            Learn more about the benefits, risks and business use cases of open source large language models…                                                      
+
+                                                            Explore best practices for building an effective vulnerability management program to better secure your organization's IT…                                                      
+
+                                                            The Log4j vulnerability—dubbed "Log4Shell"—still persists nearly two years later. Learn how to detect and patch the…                                                      
+
+                                                            Today’s app environments demand an observability solution that provides real-time monitoring of containers, microservices and Kubernetes…                                                      
+
+                                                            Reinvent how your business works with AI, transforming customer care, IT, network optimization and digital labor.                                                      
+
+                                                            Selecting manufacturing execution system (MES) software is a critical decision for any manufacturing organization.                                                      

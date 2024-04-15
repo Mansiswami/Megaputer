@@ -1,0 +1,47 @@
+
+  4 min read - Breach and attack simulation (BAS) provides organizations with continuous offensive security testing. See how it works and why it's important.                        
+
+  4 min read - When it comes to distinguishing actual distributed denial of service (DDoS) attack activity, consider DNS data.                        
+
+  2 min read - DNSSEC protects networks against man-in-the-middle attacks through public key cryptography, which is different from encrypted DNS.                        
+
+  5 min read - Discover the top penetration testing methodologies used to find security vulnerabilities and mitigate cyberattack risks.                        
+
+  9 min read - How can you ensure your organization is GDPR compliant? Follow the principles laid out in this GDPR compliance checklist.                        
+
+  5 min read - It’s the news no organization wants to hear―you’ve been the victim of a ransomware attack, and now you’re wondering what to do next.  The first thing to keep in mind is you’re not alone. Over 17 percent of all cyberattacks involve ransomware—a type of malware that keeps a victim’s data or device locked unless the victim pays the hacker a ransom. Of the 1,350 organizations surveyed in a recent study, 78 percent suffered a successful ransomware attack (link resides outside…                        
+
+  3 min read - A cybersecurity strategy is not solely about managing risk across a business’ IT infrastructure. The stakes are especially high for organizations in highly regulated industries because they can be exploited through their digital supply chain, giving hackers access to consumers’ valuable and sensitive data. Consequently, these data breaches can rattle customer trust and the confidence of regulators.   When done correctly, cybersecurity can be a strategic initiative that supports product capability, organizational effectiveness and customer relationships. As enterprises scale infrastructure and…                        
+
+  3 min read - In today's digital age, the threat landscape continues to evolve and organizations are increasingly vulnerable to cyberattacks. To combat these ever-growing risks, the concept of cyber resiliency has gained significant importance. Cyber resiliency refers to an organization's ability to prepare for, respond to, and recover from cyber threats while maintaining the continuity of operations. In this blog, we will explore the concept of cyber resiliency from an IBM® perspective and how our approach can help organizations protect themselves in an…                        
+
+  9 min read - Malware, a portmanteau of "malicious software," refers to any software, code, or computer program intentionally designed to cause harm to a computer system or its users. Virtually every modern cyberattack involves some type of malware. These harmful programs can range in severity from highly destructive and costly (ransomware) to merely annoying, but otherwise innocuous (adware). Every year, there are billions of malware attacks on businesses and individuals. Malware can infect any type of device or operating system including Windows, Mac,…                        
+
+  9 min read - Theoretically, malware has been around since the 1960s. Explore how malware has evolved throughout its history.                        
+
+  2 min read - IBM Security QRadar SIEM has been named the "SIEM Solution Provider of the Year" for 2023 by the CyberSecurity Breakthrough Awards program.                        
+
+  5 min read - Unified Endpoint Management (UEM) and medical device risk management have deep synergies. When a healthcare organization develops a risk management framework, cybersecurity is a must.                        
+
+  3 min read - For retailers, AI and automation can significantly reduce the impact of a cybersecurity data breach—financially and beyond.                        
+
+
+                                                            Learn what sets apart a spear phishing attack from a bulk phishing attack—and how you can…                                                      
+
+                                                            In this post, we're delving into another misconception about observability—that it's solely applicable to a specific…                                                      
+
+                                                            IBM's Accelerated Incremental Mainframe Modernization (AIMM) technology is transforming support for caseworkers, children and their families.                                                      
+
+                                                            Based on 14 years of development and input from electric utility experts, IBM has created the…                                                      
+
+                                                            Learn more about the benefits, risks and business use cases of open source large language models…                                                      
+
+                                                            Explore best practices for building an effective vulnerability management program to better secure your organization's IT…                                                      
+
+                                                            The Log4j vulnerability—dubbed "Log4Shell"—still persists nearly two years later. Learn how to detect and patch the…                                                      
+
+                                                            Today’s app environments demand an observability solution that provides real-time monitoring of containers, microservices and Kubernetes…                                                      
+
+                                                            Reinvent how your business works with AI, transforming customer care, IT, network optimization and digital labor.                                                      
+
+                                                            Selecting manufacturing execution system (MES) software is a critical decision for any manufacturing organization.                                                      
