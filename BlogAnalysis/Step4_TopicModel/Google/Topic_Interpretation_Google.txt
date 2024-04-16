@@ -1,0 +1,205 @@
+﻿Google
+
+- Used NLTK + GENSIM libraries
+
+Results: 
+Topics found via LDA:
+Topic 0: 0.008*"cloud" + 0.008*"data" + 0.007*"ai" + 0.006*"google" + 0.006*"minute" + 0.004*"n" + 0.004*"read" + 0.004*"use" + 0.003*"using" + 0.003*"r"
+Topic 1: 0.010*"google" + 0.010*"cloud" + 0.007*"ai" + 0.007*"data" + 0.007*"minute" + 0.005*"read" + 0.004*"n" + 0.004*"security" + 0.004*"service" + 0.003*"use"
+Topic 2: 0.012*"cloud" + 0.008*"ai" + 0.006*"data" + 0.006*"google" + 0.005*"minute" + 0.005*"read" + 0.004*"n" + 0.004*"new" + 0.003*"security" + 0.003*"model"
+Topic 3: 0.010*"cloud" + 0.009*"google" + 0.007*"ai" + 0.006*"data" + 0.006*"read" + 0.005*"minute" + 0.004*"n" + 0.004*"use" + 0.003*"using" + 0.003*"new"
+Topic 4: 0.009*"cloud" + 0.008*"ai" + 0.008*"google" + 0.007*"data" + 0.006*"read" + 0.005*"n" + 0.004*"minute" + 0.004*"using" + 0.003*"new" + 0.003*"use"
+Topic 5: 0.009*"data" + 0.009*"google" + 0.009*"cloud" + 0.008*"ai" + 0.007*"minute" + 0.005*"read" + 0.004*"n" + 0.003*"use" + 0.003*"service" + 0.003*"model"
+Topic 6: 0.009*"cloud" + 0.009*"data" + 0.007*"google" + 0.006*"ai" + 0.006*"minute" + 0.005*"read" + 0.005*"n" + 0.004*"customers" + 0.003*"new" + 0.003*"also"
+Topic 7: 0.009*"cloud" + 0.008*"ai" + 0.007*"google" + 0.007*"data" + 0.005*"n" + 0.004*"read" + 0.004*"model" + 0.003*"minute" + 0.003*"security" + 0.003*"use"
+Topic 8: 0.009*"google" + 0.007*"data" + 0.006*"ai" + 0.006*"cloud" + 0.006*"minute" + 0.005*"read" + 0.004*"n" + 0.003*"security" + 0.003*"use" + 0.003*"using"
+Topic 9: 0.007*"cloud" + 0.007*"google" + 0.006*"ai" + 0.005*"data" + 0.005*"n" + 0.004*"minute" + 0.003*"read" + 0.003*"new" + 0.003*"service" + 0.003*"using"
+Topic 10: 0.009*"google" + 0.007*"cloud" + 0.007*"data" + 0.007*"ai" + 0.006*"n" + 0.006*"read" + 0.004*"minute" + 0.003*"use" + 0.003*"using" + 0.003*"new"
+Topic 11: 0.011*"cloud" + 0.009*"google" + 0.007*"data" + 0.006*"ai" + 0.005*"minute" + 0.005*"n" + 0.004*"read" + 0.004*"use" + 0.003*"new" + 0.003*"customers"
+Topic 12: 0.010*"data" + 0.008*"cloud" + 0.008*"google" + 0.007*"ai" + 0.005*"read" + 0.005*"minute" + 0.004*"n" + 0.003*"use" + 0.003*"service" + 0.003*"customers"
+Topic 13: 0.015*"cloud" + 0.008*"data" + 0.006*"google" + 0.006*"ai" + 0.005*"n" + 0.004*"minute" + 0.004*"read" + 0.004*"use" + 0.003*"database" + 0.003*"using"
+Topic 14: 0.012*"cloud" + 0.009*"google" + 0.009*"data" + 0.005*"minute" + 0.004*"read" + 0.004*"security" + 0.004*"ai" + 0.003*"n" + 0.003*"new" + 0.003*"use"
+
+
+Interpretation: 
+
+
+Topic 1: Cloud Computing and Data Infrastructure: Explores the infrastructure requirements and configurations necessary to support Google Cloud NLP services, including considerations for data storage, networking, and computational resources optimized for natural language processing tasks.
+
+
+Topic 2: Cloud Security and Data Management: Discusses the security measures and data management practices specific to Google Cloud NLP, such as encryption of sensitive text data, access control policies for NLP APIs, and secure handling of linguistic resources.
+
+
+Topic 3: Cloud Services and Security: Focuses on the security features and protocols implemented within Google Cloud NLP, including authentication mechanisms, data encryption during transit and at rest, and compliance with industry standards and regulations related to text data processing.
+
+
+Topic 4: Google Cloud and AI: Highlights the integration of Google Cloud NLP APIs with other AI services and tools available on the Google Cloud Platform, showcasing how natural language processing capabilities enhance AI-driven applications and workflows.
+
+
+Topic 5: Cloud and AI Integration: Explores the seamless integration of Google Cloud NLP functionalities within cloud-based AI solutions, such as sentiment analysis, entity recognition, and content classification, enabling developers to build sophisticated NLP-driven applications.
+
+
+Topic 6: Cloud and AI Development: Discusses the ongoing development and advancements in Google Cloud NLP services, including updates to NLP models, improvements in accuracy and performance, and support for new languages and text analysis features.
+
+
+Topic 7: Cloud Computing and BigQuery: Focuses on leveraging Google Cloud BigQuery for analyzing large volumes of text data processed by Google Cloud NLP, enabling real-time insights and data-driven decision-making based on linguistic patterns and trends.
+
+
+Topic 8: Cloud Services and Spanner: Explores how Google Cloud Spanner can be used to store and manage structured text data processed by Google Cloud NLP, ensuring high availability, scalability, and transactional consistency for NLP-driven applications.
+
+
+Topic 9: Cloud Adoption and Customer Satisfaction: Investigates the adoption trends and customer satisfaction levels of Google Cloud NLP services, including user experiences, feedback, and success stories from organizations leveraging NLP capabilities for various use cases.
+
+
+Topic 10: Cloud Services and Usage: Provides insights into best practices and usage scenarios for deploying Google Cloud NLP services effectively, including recommendations for optimizing API usage, managing costs, and scaling NLP applications based on demand.
+
+
+Topic 11: Data Management and Customer Service: Discusses strategies for effective data management and customer service in the context of Google Cloud NLP, covering topics such as data preprocessing, model training, API usage guidelines, and responsive support channels.
+
+
+Topic 12: Cloud Services and Innovation: Highlights innovative applications and new features within Google Cloud NLP, showcasing advancements in text analysis techniques, support for domain-specific NLP tasks, and integration with emerging technologies like machine learning and conversational AI.
+
+
+Topic 13: AI Models and Security: Explores security considerations specific to deploying AI models for natural language processing on Google Cloud, including data privacy protections, model vulnerability assessments, and compliance with regulatory requirements for text data processing.
+
+
+Topic 14: Data Analysis and Modeling: Focuses on data analysis and modeling techniques tailored to Google Cloud NLP, such as sentiment analysis, entity recognition, and syntax parsing, enabling organizations to derive actionable insights from unstructured text data.
+
+
+Topic 15: Database Management and New Features: Explores new features and enhancements in database management for Google Cloud NLP, including optimizations for storing and querying linguistic data, integration with Google Cloud databases, and support for real-time text analytics applications.
+
+
+ 
+- Used NLTK + SCIKIT
+
+
+Results
+
+
+Topics found via LDA:
+Topic 0:
+spanner read service google using cloud data ai
+
+
+Topic 1:
+read service spanner ai google using cloud data
+
+
+Topic 2:
+spanner service read data using google cloud ai
+
+
+Topic 3:
+spanner ai data read cloud google service using
+
+
+Topic 4:
+read spanner ai data using google cloud service
+
+
+Topic 5:
+spanner ai read data using google cloud service
+
+
+Topic 6:
+spanner read service data cloud using google ai
+
+
+Topic 7:
+service ai spanner using data google cloud read
+
+
+Topic 8:
+read spanner service google cloud data ai using
+
+
+Topic 9:
+read spanner service data using ai cloud google
+
+
+Topic 10:
+read spanner using data ai service google cloud
+
+
+Topic 11:
+spanner read service using ai data cloud google
+
+
+Topic 12:
+read spanner ai service using data google cloud
+
+
+Topic 13:
+ai service read using cloud google data spanner
+
+
+Topic 14:
+spanner read service ai using cloud google data
+
+
+
+
+* Interpretation: 
+
+
+Here's an interpretation of the topics:
+
+
+Topic 0: Spanner Read Service Google Using Cloud Data AI
+Interpretation: Utilizing Google Cloud Spanner service for reading and analyzing data, integrating AI capabilities within the cloud environment.
+
+
+Topic 1: Read Service Spanner AI Google Using Cloud Data
+Interpretation: Emphasizing the usage of Google Cloud Spanner service and AI for reading and processing data stored in the cloud.
+
+
+Topic 2: Spanner Service Read Data Using Google Cloud AI
+Interpretation: Focusing on using Google Cloud Spanner service for reading and processing data, leveraging AI capabilities within the cloud environment.
+
+
+Topic 3: Spanner AI Data Read Cloud Google Service Using
+Interpretation: Highlighting the use of Google Cloud Spanner service and AI for reading and managing data stored in the cloud.
+
+
+Topic 4: Read Spanner AI Data Using Google Cloud Service
+Interpretation: Emphasizing reading and processing data from Google Cloud Spanner service, potentially involving AI-driven analysis.
+
+
+Topic 5: Spanner AI Read Data Using Google Cloud Service
+Interpretation: Utilizing Google Cloud Spanner service and AI for reading and processing data within the cloud environment.
+
+
+Topic 6: Spanner Read Service Data Cloud Using Google AI
+Interpretation: Using Google Cloud Spanner service for reading and managing data in the cloud, integrating AI functionalities provided by Google.
+
+
+Topic 7: Service AI Spanner Using Data Google Cloud Read
+Interpretation: Leveraging AI and Google Cloud Spanner service for reading and processing data stored in the Google Cloud platform.
+
+
+Topic 8: Read Spanner Service Google Cloud Data AI Using
+Interpretation: Emphasizing reading and processing data from Google Cloud Spanner service, potentially involving AI-driven analysis within the Google Cloud ecosystem.
+
+
+Topic 9: Read Spanner Service Data Using AI Cloud Google
+Interpretation: Highlighting the usage of Google Cloud Spanner service for reading and managing data, potentially integrating AI functionalities within the cloud environment.
+
+
+Topic 10: Spanner Read Service Using AI Data Cloud Google
+Interpretation: Utilizing AI and Google Cloud Spanner service for reading and managing data within the cloud environment.
+
+
+Topic 11: Read Spanner AI Service Using Data Google Cloud
+Interpretation: Emphasizing reading and processing data from Google Cloud Spanner service, potentially involving AI-driven functionalities within the Google Cloud platform.
+
+
+Topic 12: AI Service Read Using Cloud Google Data Spanner
+Interpretation: Using AI services within the Google Cloud environment for reading and processing data, particularly mentioning Google Cloud Spanner.
+
+
+Topic 13: Spanner Read Service AI Using Cloud Google Data
+Interpretation: Highlighting the usage of Google Cloud Spanner service and AI within the cloud environment for reading and managing data.
+
+
+Topic 14: Spanner Read Service AI Using Cloud Google Data
+Interpretation: Utilizing Google Cloud Spanner service and AI functionalities within the cloud environment for reading and processing data.
