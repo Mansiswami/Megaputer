@@ -1,0 +1,19 @@
+Chief Digital Officer, Domino’s
+Unlock access to real world data and insights with a monthly $200 Google Maps Platform credit.
+Editor’s note: Today’s blog post comes from Christopher Thomas-Moore, Chief Digital Officer at Domino’s. Thomas-Moore shares how Domino’s relies on Google Maps Platform Mobility services to bring Domino’s Pinpoint Delivery to their customers.
+Domino's has been a leader in innovation for a very long time—from car toppers so our customers could see our logo as we arrive for delivery, to building out the first autonomous vehicle for food delivery in partnership with Ford. There have been so many big and small innovations that this organization has been a part of and helped propel the overall food industry forward.
+Over 80% of our customers purchase via our digital platforms and that means technology is paramount. Our goal is to facilitate a streamlined, rewarding experience for our customers on our digital platforms and we do that through continuous optimization and innovation.
+Prior to 2018, to order and deliver a pizza you needed a traditional, physical street address—whether it be a home or an office location. But in 2018, we launched what we called Domino’s Hotspots, which was the first time our customers could get pizza delivered to a location that wasn't a physical address. Our franchisees pre-selected thousands of locations around the country where customers could meet drivers without requiring a traditional address. It was an innovation, but was a little constraining because it was completely manual.
+Ultimately, we wanted to put the power of the delivery location in the customer’s hands. That’s when we came up with the idea of Domino’s Pinpoint Delivery to make the experience more dynamic and allow the customer to tell us where they were so we could meet them where they are. Giving them the ability within the Domino’s app, to drop a pin, place the order, and have the driver meet them wherever they are was a massive evolution.
+Customers can simply drop a pin and and place their order
+We had been wanting to do this for a while, but the technology just wasn’t there yet. When we learned that Google Maps Platform launched Mobility services it was the perfect time for us to build on the innovation of Hotspots.
+Mobility services provided the framework and the underpinnings to actually make Domino’s Pinpoint Delivery a reality. First, being able to use that technology to help the delivery driver identify accessible locations to pull over to meet the customer was really critical to make that experience happen. Then Integrating Mobility services into our consumer app enabled customers to know where their pizza was throughout the delivery journey.
+Domino’s Pinpoint Delivery provides customers with full transparency throughout the delivery journey
+Pizzas have been delivered to places from parks and pools to campgrounds and army bases. But something that's been really exciting to see is how we’re delivering pizzas to new residential developments. Before those new homes are even recognized as a traditional, physical address, customers can use Pinpoint Delivery to have their Domino's order delivered to them at their new home.
+Domino’s Pinpoint Delivery allows customers to order and enjoy pizza on the go
+At Domino's, one of our sayings is “sell more pizza, have more fun.” This project has been such a fun, exciting,and very rewarding one that unlocks what we call “the power of possible.” Who would have thought that you could drop a pin and have a pizza come to just about anywhere? We did.
+For more information on Google Maps Platform, visit our website.
+By Pavel Matveev • 3-minute read
+By Erik Forman • 5-minute read
+By Saleem Van Groenou • 3-minute read
+By Nicolas Adrian • 2-minute read

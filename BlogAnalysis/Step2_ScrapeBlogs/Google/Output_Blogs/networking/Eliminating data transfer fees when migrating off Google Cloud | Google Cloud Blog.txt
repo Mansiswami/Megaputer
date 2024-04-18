@@ -1,0 +1,14 @@
+GM/VP, Head of Platform, Google Cloud
+Coming to Las Vegas, April 9–11.
+At Google Cloud, we work to support a thriving cloud ecosystem that is open, secure, and interoperable. When customers’ business needs evolve, the cloud should be flexible enough to accommodate those changes.
+Starting today, Google Cloud customers who wish to stop using Google Cloud and migrate their data to another cloud provider and/or on premises, can take advantage of free network data transfer to migrate their data out of Google Cloud. This applies to all customers globally. You can learn more here.
+Eliminating data transfer fees for switching cloud providers will make it easier for customers to change their cloud provider; however, it does not solve the fundamental issue that prevents many customers from working with their preferred cloud provider in the first place: restrictive and unfair licensing practices.
+Certain legacy providers leverage their on-premises software monopolies to create cloud monopolies, using restrictive licensing practices that lock in customers and warp competition.
+The complex web of licensing restrictions includes picking and choosing who their customers can work with and how; charging 5x the cost if customers decide to use certain competitors’ clouds; and limiting interoperability of must-have software with competitors’ cloud infrastructure. These and other restrictions have no technical basis and may impose a 300% cost increase to customers. In contrast, the cost for customers to migrate data out of a cloud provider is minimal.
+Making it easier for customers to move from one provider to another does little to improve choice if customers remain locked in with restrictive licenses. Customers should choose a cloud provider because it makes sense for their business, not because their legacy provider has locked them in with overly restrictive contracting terms or punitive licensing practices.
+The promise of the cloud is to allow businesses and governments to seamlessly scale their technology use. Today’s announcement builds on the multiple measures in recent months to provide more value and improve data transfer for large and small organizations running workloads on Google Cloud.
+We will continue to be vocal in our efforts to advocate on behalf of our cloud customers — many of whom raise concerns about legacy providers’ licensing restrictions directly with us. Much more must be done to end the restrictive licensing practices that are the true barrier to customer choice and competition in the cloud market.
+By Mahesh Narayanan • 5-minute read
+By Ammett Williams • 2-minute read
+By Sudhanshu Jain • 2-minute read
+By Max Saltonstall • 2-minute read

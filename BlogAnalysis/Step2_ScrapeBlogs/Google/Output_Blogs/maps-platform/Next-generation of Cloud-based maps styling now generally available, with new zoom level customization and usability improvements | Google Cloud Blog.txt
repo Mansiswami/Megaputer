@@ -1,0 +1,25 @@
+UX Designer, Google Maps Platform
+Product Manager, Google Maps Platform
+Unlock access to real world data and insights with a monthly $200 Google Maps Platform credit.
+Today we’re moving our next-generation of Cloud-based maps styling into general availability. Since the Preview release, we’ve added and updated styling elements, and included new customization features. We’ve also made improvements to the user experience that give you even more control over styling your basemap. This is in addition to previous changes like adding 100+ styleable map elements that help you style and customize your basemap, introducing features like POI density, and removing the limitation on the number of features you can customize at once.
+You can now tailor the map across zoom levels to focus on the most relevant information at a particular zoom level. For instance, you can make all the map features lighter at a specific zoom level or add custom markers at another zoom level.
+Across industries, customers can use this feature to deliver a better experience for their end users. A travel company can now easily highlight only the most prominent POIs around a property when the user zooms in to better understand the area surrounding the property. You can also define a style only for the highest and lowest zoom levels and zoom-level styling will pick the right style for all the zoom levels in between to ensure a smooth transition as a user zooms in or out. In the image below, you can see that the color of the Ocean is defined as a dark shade of blue at zoom level 0 and a light shade of blue at level 22. As you zoom in, zoom-level styling enables interpolation from dark blue to light blue without having to define the shade of blue at each zoom level.
+Zoom-level styling enables automatic interpolation of the fill color across zoom levels for the Arctic Ocean
+Zoom-level styling enables automatic interpolation of the fill color across zoom levels for the Arctic Ocean
+Zoom-level styling enables automatic interpolation of the fill color across zoom levels for the Arctic Ocean
+Zoom-level styling enables automatic interpolation of the fill color across zoom levels for the Arctic Ocean
+Zoom-level styling enables automatic interpolation of the fill color across zoom levels for the Arctic Ocean
+Zoom-level styling enables automatic interpolation of the fill color across zoom levels for the Arctic Ocean
+You can now easily filter map features to quickly find the ones you want to customize. In Preview, we added high-level categories to help you style similar features together. Now you can also easily expand or collapse categories to only focus on the ones you want to customize. Additionally, any changes made to the default settings in the style editor will be retained, letting you pick up where you left off across styling sessions.
+Another update lets you see more of the map area you’re customizing by consolidating the styleable features, element types, and styles into just two panels. This gives you more screen real-estate to visualize the results of your map customizations.
+BEFORE
+AFTER: Showing simplified styling panels increase screen real-estate for maps customizations
+Now that the next-generation of Cloud-based maps styling is generally available, billing will reflect a tiered pricing model. These capabilities will be available to all customers using the Dynamic Maps product.
+If you’re ready to get started, head to the Cloud console. If you would like to learn more about Cloud-based maps styling, check out the documentation.
+We have also made it easier for customers who are using the older version of Cloud-based maps styling to upgrade to the next-generation of Cloud-based maps styling. Learn more about how to update in this guide.
+For more information on Google Maps Platform, visit our website.
+Stas Kuvshinov, Engineering Manager, Google Maps Platform and Bret Peterson, Software Engineer, Google Maps Platform also contributed to this article.
+By Pavel Matveev • 3-minute read
+By Erik Forman • 5-minute read
+By Christopher Thomas Moore • 3-minute read
+By Saleem Van Groenou • 3-minute read

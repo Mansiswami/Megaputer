@@ -1,0 +1,28 @@
+Principal Architect, Google Cloud
+Principal Architect, Google Cloud
+Coming to Las Vegas, April 9–11.
+Storage systems are a fundamental resource for technological solutions development, essential for running applications and retaining information over time.
+Google Cloud and NetApp are partners in the cloud data services market. And we have collaborated on a number of innovative solutions, such as bursting EDA workloads and animation production pipelines that help customers migrate, modernize, and manage their data in the cloud. Google Cloud storage offerings provide a variety of benefits over traditional on-premises storage solutions, including maintenance, scalability, reliability, and cost-effectiveness.
+In this blog we’ll take a closer look at some of the NetApp Cloud Volumes ONTAP (NetApp CVO) features that utilize Google Cloud infrastructure to address the applications performance challenges while providing the best solution for file storage in cloud computing.
+Google Cloud offers a variety of compute instance configuration types, each optimized for different workloads. The instance types vary by the number of virtual CPUs (vCPUs), disk types, and memory size. These different configurations indicate the instance IOPS and BW limitations.
+NetApp CVO is a customer managed software-defined storage offering that delivers advanced data management for file and block workloads in Google Cloud.
+Recently NetApp introduced two more VM types to support CVO single-node and high availability (HA) deployments: n2-standard-48 and n2-standard-64.
+Choosing the right Google Cloud VM configuration for NetApp CVO deployment can affect the performance of your application in a number of ways. For example:
+NetApp has also introduced Flash Cache for CVO that reduces latency for accessing frequently used data and improves performance for random read-intensive workloads. Flash Cache uses high-performance Local SSDs to cache frequently accessed data and augments the persistent disks used by the CVO VMs.
+Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. When a user requests data that is cached in Local SSD, it is served directly from the NVMe storage, which is faster than reading the data from a persistent disk.
+Figure 1: NetApp Cloud Volumes ONTAP Flash Cache architecture
+Recently NetApp introduced a temperature sensitive storage efficiency capability (enabled by default) which allows CVO to perform inline block-level features including compression and compaction.
+Inline storage efficiencies can mitigate the impact of Google Cloud infrastructure performance limitations by reducing the amount of data that needs to be written to disk and allow CVO to handle higher application IOPS and Throughput.
+Following our previous 2022 blog where we discussed bursting EDA Workloads to Google Cloud with NetApp CVO FlexCache, we wanted to rerun the same tests using a synthetic EDA workload benchmark suite but this time with both high write speed and Flash Cache enabled. The benchmark was developed to simulate real application behavior and real data processing file system environments, where each workload has a set of pass/fail criteria that must be met to successfully pass the benchmark.
+The results presented below show performance for top valid/successful run using CVO-HA Active/Active configuration and as it can be clearly seen using high write speed mode in conjunction with Flash Cache introduces ~3x improvement in performance.
+Figure 2: NetApp CVO performance testing
+In addition, to present potential performance benefits of the new NetApp CVO features, together with the NetApp team we used a synthetic load tool to simulate widely deployed application workloads and compare different CVO configurations loaded with unique I/O mixture and access patterns.
+Following chart presents a comparison of performance between default n2-standard-32, n2-standard-64 CVO HA (active/active) deployments with and without high write speed and Flash Cache enabled. NetApp CVO high write speed is a feature that improves the write performance by buffering data in memory before it is written to a persistent disk. Since the application receives the write acknowledgement before the data is persisted to storage, this can be a good option, but you must verify that your application can tolerate data loss and you should ensure write protection at the application level.
+Figure 3: NetApp CVO performance testing comparison for various workloads
+Assuming high compression rate (>=50) and modest Flash Cache hit ratio (25-30%), we can see:
+Try the Google Cloud and NetApp CVO Solution. You can also learn more and get started with Cloud Volumes ONTAP for Google Cloud.
+A special thanks to Sean Derrington from Google Cloud, Chad Morgenstern, Jim Holl and Michele Pardini from NetApp for their contributions.
+By Arun Singh • 5-minute read
+By Qiurui Zeng • 7-minute read
+By Saikat Roychowdhury • 4-minute read
+By Jiaxun Song • 4-minute read

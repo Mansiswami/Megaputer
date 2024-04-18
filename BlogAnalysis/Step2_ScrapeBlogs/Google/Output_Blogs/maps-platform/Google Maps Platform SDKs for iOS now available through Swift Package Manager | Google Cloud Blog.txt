@@ -1,0 +1,13 @@
+Software Engineer, Google Maps Platform
+Unlock access to real world data and insights with a monthly $200 Google Maps Platform credit.
+Bringing the power of Google Maps Platform into an iOS app begins with loading the SDKs into your project. Today, we’re announcing new dependency management support through Swift Package Manager for the Maps, Places, and Navigation SDKs for iOS. With Xcode's integration of Swift Package Manager as the primary way to add packages to iOS projects, this enables easier maintenance of dependencies when using Google Maps Platform SDKs for iOS.
+The ability to install and maintain Google Maps Platform SDK dependencies through Swift Package Manager is one of the most common feature requests from developers. With direct integration in the Xcode IDE, developers can add package dependencies to their iOS projects simply by adding the URL for the corresponding SDK's GitHub repository. Swift Package Manager in Xcode also allows you to specify package versions, which match the versions of the corresponding SDKs.
+Xcode's Add Package Dependencies screen showing the addition of GoogleMaps package
+Before being able to support Swift Package Manager for the Google Maps Platform SDKs for iOS, we needed Swift Package Manager to support binary targets in the form of XCFrameworks and the capability to add resources like images and strings in a Swift package. With Swift tools version 5.3, both of these became available to Swift packages. In addition, we updated our build and release infrastructure to accommodate releasing Swift packages alongside the existing CocoaPods and XCFrameworks publishing workflows without introducing any additional latency to the release process.
+Xcode project navigator showing GoogleMaps package dependency
+Swift Package Manager support is available for Google Maps Platform SDKs beginning with version 8.3.1 of the Maps SDK for iOS, version 8.3.0 of Places SDK for iOS, and version 5.3.1 of the Navigation SDK for iOS. See the instructions and URLs for adding Swift packages in the documentation for Maps, Places, and Navigation SDKs for iOS. For existing projects that are migrating from another dependency manager to Swift Package Manager, the documentation also provides instructions for deleting the binaries that were installed through other package managers. Developers also continue to have the option of adding SDK dependencies manually or through CocoaPods.
+For more information on Google Maps Platform, visit our website.
+By Pavel Matveev • 3-minute read
+By Erik Forman • 5-minute read
+By Christopher Thomas Moore • 3-minute read
+By Saleem Van Groenou • 3-minute read

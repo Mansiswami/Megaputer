@@ -1,0 +1,20 @@
+Software Engineer
+Senior Product Manager
+Coming to Las Vegas, April 9–11.
+In today’s world, a reliable online presence is critical to the success of any business. Websites serve as virtual storefronts, showcasing expertise, fostering credibility, and establishing a business’s identity. However, a website's effectiveness hinges on its functionality. Broken links on web pages, high latencies, and errors can swiftly erode user trust and lead to missed business opportunities. For any business that relies on its website as a source of information, customer engagement or sales, a well-maintained digital presence is a necessity.
+Announced in November 2023 Google Cloud Monitoring's synthetic monitoring offering helps organizations achieve application reliability by proactively monitoring the performance of their web applications, APIs, and key business workflows from the perspective of a real user, on a continuous basis, even during times when traffic is low due to time and seasonality, e.g., nights and weekends. At General Availability, the offering introduced the concept of templates, starting with a Mocha.js-based template that makes it easy for users to create JavaScript test scripts with the Mocha.js framework. Mocha.js is a popular and versatile testing framework that offers a clean and intuitive syntax and rich functionality.
+Today, we are excited to announce Cloud Monitoring’s newest synthetic monitoring template: a broken link checker. A broken link checker makes it possible for application owners to easily detect and get alerted, if and when their website or any embedded links or hosted content on their website, such as images, videos, and document files are no longer available, have been deleted, or moved. Additionally, application owners can view a comprehensive report that provides details such as whether the link passed or failed, the HTTP response code, latency, and so on for each link. By using a broken link checker, businesses can actively monitor the quality of the end-user experience delivered by their website to their end users on an ongoing basis.
+To get started, you can head to Monitoring > Synthetic Monitoring, then select “+ Create Synthetic Monitor”, then select “Broken link checker”.
+Fill in URI Configuration and explore all other possible options.
+Click “+ Create Function” which pulls in all of the options you have set then creates and deploys a script to Cloud Functions.
+Google Cloud's synthetic monitoring is highly scalable. You can monitor thousands of URIs with a single account. And because it's powered by Google Cloud, you can be confident that your synthetic monitors will be reliable and accurate.
+From the synthetic monitoring details page, you can drill down into specific executions to gain granular insights into what transpired during each run.
+Each execution includes the following:
+Visit our documentation where you can get additional information and step-by-step instructions for creating your first broken link checker.
+Lastly, if you have questions or feedback about this new feature, head to the Cloud Operations Community page and let us know!
+Synthetic monitoring in Cloud Monitoring tests the availability, consistency, and performance of a web application from a real user’s perspective.
+By Amol Devgan • 3-minute read
+By Lee Yanco • 3-minute read
+By Lee Yanco • 3-minute read
+By Joy Wang • 3-minute read
+By Sudhanshu Jain • 2-minute read

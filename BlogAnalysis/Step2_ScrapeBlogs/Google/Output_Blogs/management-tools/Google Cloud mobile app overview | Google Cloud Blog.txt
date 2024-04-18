@@ -1,0 +1,19 @@
+Customer Engineer, Google Cloud
+Product Manager, Google Cloud mobile experience
+Coming to Las Vegas, April 9–11.
+The Google Cloud mobile app is a powerful tool that can help you troubleshoot and manage your cloud applications from anywhere. With the app, you can quickly and easily check the status of your resources, view billing details, and take action on issues.
+The app is available for iOS and Android devices, and it's free to download. To get started, simply sign in with your Google Cloud credentials.
+With the Google Cloud mobile app, you can easily monitor the status and access services such as the Compute Engine, App Engine, Cloud Storage and Cloud SQL. You can also track the health of your services over time with monitoring uptime checks directly in the mobile app, that can further inform your SLAs and SLOs.
+On top of managing and monitoring cloud services, you can also manage permissions using IAM, view logs, and manage your billing in the Google Cloud mobile app.
+You can view and manage incidents, and be alerted right on your Android or iOS device anytime there is a production issue in your application. With Error Reporting you can then quickly understand the issue, triage it, and bring in your team to help.
+You can also view latency trace data Cloud Trace, where the Analysis Reports in Cloud Trace inspects requests made to your application and shows you an overall view of the latency for requests.
+The Google Cloud mobile app helps you to take action and address issues directly from your mobile device, anytime and anywhere. For example, suspending, stopping or restarting a VM, searching logs, connecting to a VM via SSH or using any gCloud (CLI) commands to do even more.
+The Google Cloud mobile app offers a variety of features that can help you manage cloud applications more effectively. These features include:
+The Google Cloud mobile app team is working hard to bring new features to the product every month. Just recently we’ve launched:
+Download the Google Cloud mobile app from Google Play or the Apple App Store. To get started, simply sign in with your Google Cloud credentials. Once you're signed in, you'll see a dashboard that provides a quick overview of your resources. To learn more about how to use the app, you can visit the Google Cloud documentation.
+Check your Google Cloud uptime on your mobile device.
+By Kamil Brzezinski • 2-minute read
+By Lee Yanco • 3-minute read
+By Lee Yanco • 3-minute read
+By Joy Wang • 3-minute read
+By Sudhanshu Jain • 2-minute read

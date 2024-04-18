@@ -1,0 +1,21 @@
+Support Engineering Lead, Google Maps Platform
+Program Manager, Google Maps Platform
+Unlock access to real world data and insights with a monthly $200 Google Maps Platform credit.
+As part of our efforts to offer a best-in-class support experience, we launched Enhanced Support for Google Maps Platform in 2023. For customers with business-critical mapping workloads, Enhanced Support includes weekend coverage, escalations, communication with highly trained Google support engineers, and support for complex data issues.
+“We’re happy to be able to now provide enterprise-grade support to organizations with mission-critical maps use cases,” says Jamie Erbes, Technical Customer Experience Director for Google Maps Platform.
+Enhanced Support provides enterprise development teams with the responsive support they need to avoid impactful issues. With Enhanced Support, businesses get:
+We offer a seamless support experience for customers using both Google Cloud Platform and Google Maps Platform by aligning service level objectives and pricing. Google Maps Platform Enhanced Support is priced at $500/month + 3% of your Google Maps Platform monthly charges. Enhanced support customers can also:
+Communicate with Google engineers via voice or video
+Need to talk through an issue? Enhanced Support customers receive responsive communication from Google support engineers via voice or video, using Google Meet or the conferencing platform of your choice. We can pull in Google experts as needed to talk with your team and reach a resolution as quickly as possible.
+Receive SLA incident reports
+We keep our Enhanced Support customers informed during outages and provide follow-up Incident Reports that explain the impact, mitigation, and prevention steps, to help you enhance your application’s resilience.
+Get help with map data quality issues
+Enhanced Support customers receive individualized support for even the most complex requests; e.g., widespread systemic issues or situations where you don’t know the expected behavior. We’ll look into any issue you experience and swiftly escalate it to the correct team to investigate the quality of business-critical location data.
+The value of Enhanced Support
+Serious businesses need the enterprise-grade solutions provided by Google Maps Platform Enhanced Support. Contact your sales representative today or reach out to your Google Maps Platform or Partner point of contact to discuss Enhanced Support.
+Standard Support is still available for customers who don’t require Enhanced Support. To determine which support level is right for your business, you can review the offerings in the chart below.
+If your organization needs additional proactive assistance, ask your sales representative about our Developer Advisor Service, which provides API onboarding, implementation reviews, and additional proactive services.
+By Pavel Matveev • 3-minute read
+By Erik Forman • 5-minute read
+By Christopher Thomas Moore • 3-minute read
+By Saleem Van Groenou • 3-minute read

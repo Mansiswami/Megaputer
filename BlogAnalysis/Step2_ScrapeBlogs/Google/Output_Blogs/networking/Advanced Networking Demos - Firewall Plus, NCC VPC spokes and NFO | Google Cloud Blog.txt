@@ -1,0 +1,15 @@
+Developer Relations Engineer
+Coming to Las Vegas, April 9–11.
+In this blog we dive into the world of enhanced networking in Google Cloud. You will explore three updates in network security, seamless VPC spoke connectivity, and robust multi-network support. In addition to reviewing the documentation, you can learn visually by checking out the hands-on demo videos for each in the advanced networking demo playlist.
+This video touches on the topic of intrusion prevention systems. Google Cloud has previewed its Cloud Firewall Plus offering which is integrated with Palo Alto to provide advanced threat detection and prevention integrated into the cloud managed offerings. The video talks about the feature set and has a very clear demo done by a networking specialist as to how easy it is to configure and get running in the cloud environment.
+Google Cloud NCC VPC spoke capability is in GA and allows you to interconnect VPCs across various Google Cloud environments. This is managed in a centralized manner allowing the inter-VPC traffic to stay on Google Cloud network. This offers an alternative to VPC network peering and overcomes some of the limitations.The video covers a demo that connects various VPC and also demonstrates how the issues of overlapping IPs can be addressed.
+Network Function Optimizer is a network service available to GKE that provides multi-network support and a high-performance Kubernetes-native dataplane. Multi-network is one of the fundamental pillars of NFO.
+The video covers a very detailed setup demo that shows you how to deploy multi-network capabilities for pods in a Google Kubernetes Engine (GKE) cluster.
+Subscribe to the Google Cloud Tech YouTube channel to get updates on all our awesome content. Check out and bookmark the Advanced Networking demo series playlist as new videos will be uploaded in the future. To learn more check out the following:
+Want to ask a question, find out more or share a thought? Please connect with me on Linkedin.
+Two new additions to the Advanced Networking video series showcase Cross-Cloud Interconnect and how to configure connections to other cloud providers.
+By Ammett Williams • 2-minute read
+By Mahesh Narayanan • 5-minute read
+By Ammett Williams • 2-minute read
+By Sudhanshu Jain • 2-minute read
+By Amit Zavery • 2-minute read
