@@ -1,0 +1,37 @@
+Head of Engineering, Apollo 24|7
+AI Engineering Lead, Google Cloud
+Coming to Las Vegas, April 9–11.
+Apollo 24|7, the largest multi-channel digital healthcare platform in India is working towards building a Clinical Intelligence Engine (CIE) designed to support clinical decisions and assist clinicians with primary care, condition management, home care, and wellness. One of the main challenges they faced was designing an expert clinical assistant with a deep understanding of Apollo's clinical knowledge base.
+In order to build such a robust system, Apollo 24|7's team partnered with Google Cloud to build various systems such as a Clinical Knowledge Graph, a clinical entity extractor, and a timestamp relationship extractor.
+In this blog, we take a look at how the clinical assistance system came to existence. This system would be assistive and enhance the clinician's experience of the CIE platform that could eventually lead to improved clinical decision making.
+Let's take a deeper look to investigate the solution that Google Cloud and Apollo 24|7 built together.
+The first step to build such a solution was to identify the right model that could potentially help build this system. After carefully evaluating a host of models, including several open source models, the team decided to implement this solution using MedLM.
+MedLM is a family of medically-tuned foundation models designed to provide high quality answers to medical questions. MedLM was built on Med-PaLM 2 and is fine-tuned for healthcare, making it an excellent contender to build a clinical QA model around.
+The next step was to enhance the model architecture to make it align with Apollo's knowledge base.
+The initial approach that we experimented with involved forming a prompt consisting of a clinical "Report" and the user's "Question." This prompt would be directly sent to MedLM for clinical question answering. This approach yielded great results, however it did not utilize any of Apollo's vast clinical knowledge base. The knowledge base was in the form of de-identified clinical discharge notes that potentially had the capability of making the responses more direct and in-line with how certain patients had been treated in the past.
+In order to utilize this, we experimented with providing additional context to the prompt from Apollo's knowledge base. We quickly realized, however, that this option would run into issues owing to exceeding the input token limit of the model.
+The logical next step was to chunk the hospital's data into smaller shards, but this approach came with its own challenges. Directly chunking the data into smaller shards would cause it to lose the overall context of the patient. In other words, individual shards would only have certain siloed parts of the clinical note, while not preserving the overall patient journey, including their treatment, medications, family history, etc.
+In order to make the model more robust and inclined to Apollo's knowledge base, we proposed a novel approach to utilize Retrieval-Augmented Generation (RAG) on Apollo's de-identified clinical knowledge base.
+RAG is an AI framework that enhances LLMs by integrating external knowledge sources, in our case the knowledge base was the preprocessed and de-identified clinical discharge notes obtained from Apollo Hospitals.
+Architecture Diagram
+The notes seldom followed a particular pattern and were often free text. Hence, In order to build this solution we first classified the notes by sectional information present in them, followed by summarizing all the clinical concepts within that note.
+For summarization, we purpose-built a prompt and used it with the PaLM 2 models, such that the output is a distilled summary only containing the clinical concepts present in a discharge note.
+At this point, we passed the clinical summary as an input to the PaLM2 embedding model that returns a 768-dimensional vector, which is then stored in our vector database of choice. For this solution we went ahead with the Vertex AI Vector Search Database to create and store the vector indices.
+This process may be a one time batch process or an online process as and when additional clinical data is procured.
+At runtime, the solution parses the clinician's query; the query generally includes a clinical "Report" and a "Question" field, after which the parsed output is embedded using the same embedding model, i.e., the PaLM2 embedding model.
+The output vector of this model is then compared against the vectors stored in the aforementioned vector database using the approximate nearest neighbor algorithm, which is built-in in Vertex AI Vector Search.
+The closest neighbor vectors are then fetched and we perform a look-up to identify the clinical summaries pertaining to those closest neighbors.
+These summaries are then passed as an additional input to the MedLM model, along with the existing clinical "Report" and the user's "Question," thereby enriching the query with additional contextual data.
+After building the solution, the next logical step was to validate the clinical responses with real clinicians and doctors.
+However, before moving ahead, we built a small web UI that would enable the end-users to experiment with our solution and provide feedback.
+Apollo 24|7's team helped onboard doctors and clinicians that graciously accepted to test our solution in practice.
+Sample Result
+After weeks of iteration, and gradual improvement, we incorporated the feedback into the system to make it more robust and eventually added guardrails to prevent hallucination, by introducing methods such as prompt engineering as well as schema engineering.
+Eventually the clinicians validated our solution approach through the web UI and were confident in the responses, often citing that the tool could help a doctor drill deeper into understanding the patient and their condition better, similar to an assistant.
+"The addition of MedLM to our tech stack has greatly enhanced the efficiency and efficacy of the CIE models. Our doctors will now get a more robust, purpose built CIE tool as a doctor's assistant," commented Chaitanya Bharadwaj, Head of Clinical Al Products, Apollo 24|7.
+The partnership between Google Cloud and Apollo 24|7 is just one of the latest examples of how we’re providing AI-powered solutions to solve complex problems to help organizations drive desired outcomes. With Google Cloud Consulting (GCC), Apollo was able to perform repeated iterations, experiments to build the final solution, thereby empowering the business. Apollo entrusted GCC to collaborate with their teams to build state of the workflows for their business requirements. GCC portfolio provides a unified services capability, bringing together offerings, across multiple specializations, into a single place. This includes services from learning to technical account management to professional services and customer success. Click here to see Google Cloud Consulting’s full portfolio of offerings.
+Disclaimer: MedLM is still in the preview phase in India and it is not approved for production use.
+By Layolin Jesudhass • 5-minute read
+By Eugene Neale • 5-minute read
+By Burak Gokturk • 5-minute read
+By Omid Fatemieh • 5-minute read

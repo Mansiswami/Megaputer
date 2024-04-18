@@ -1,0 +1,24 @@
+Developer Relations Engineer
+Developer Relations Engineer
+Coming to Las Vegas, April 9–11.
+It seems like every day it's new technologies, new platforms, new schemas, and probably even a new paradigm. It can feel hard to keep up, and even tougher to know what’s next! So, when you're facing a new fork in your development road, let Duet AI help you by speeding up the process of developing and deploying sample apps.
+This AI collaborator built into Google Cloud can give you explanations, examples, links, and code, ready to help both novice and experienced developers get their work done faster. Read on, or try out this set of learning resources.
+The idea of learning a completely new platform or environment can conjure memories of using time to figure out the boilerplate, the templating, and the tons of other nonsense that gets in the way of you actually running your code. And since that’s not anyone’s favorite part of a new technology, let's avoid that!
+Instead, lean on your AI assistant, and you can get help from Duet AI, from simply typing:
+
+Now you can get details, caveats and samples for any of Google's cloud products and services, as well as helpful pointers to the right docs or repos to speed up your development.
+Even better, start breaking your problem up into chunks, so Duet AI can be more helpful in conversation:
+
+Followed by:
+
+And, just like a fully caffeinated, endlessly patient pair programmer, Duet AI can also continue a conversation, so you can ask follow up questions without needing to restate your context. And, as with other LLM-powered magic, the more explanation, detail and goal information you give it, the better your answers will be.
+With our step-by-step guidance, see how quickly you can make a Hello World app with a new language, new platform or new template. It's cool, I'll wait.
+(Just hold on, getting my coffee, be right back while you write some code with the AI)
+Images by Duet AI, text by Max & Tony
+Done? Great, we're just getting started.
+As you go through the tutorial and the guidance therein, remember you can always ask more clarifying questions, or have Duet AI help you compare options at any given step. For example, you can find out if Cloud Run or GKE is a better fit for your use case, or what sort of network architecture you need.
+See an overview of all the things you can do, try the new Node.js tutorial or the Python and Flask tutorial, and go make something awesome!
+By Layolin Jesudhass • 5-minute read
+By Eugene Neale • 5-minute read
+By Burak Gokturk • 5-minute read
+By Omid Fatemieh • 5-minute read

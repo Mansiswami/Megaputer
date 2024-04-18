@@ -1,0 +1,15 @@
+Developer Relations Engineer
+Developer Relations Engineer
+Coming to Las Vegas, April 9–11.
+Now I know this isn’t fun to imagine, but hear me out: when your services go down, whether on-premises or in the cloud, you need to be ready to respond quickly.
+This feels obvious.
+And with major traffic spikes during big holiday seasons, this support burden becomes huge on today's reliability teams, who could really use some extra support, themselves. Enter Duet AI!
+Site Reliability Engineers (SREs) need up-to-date, easy-to-digest insight into how the services and apps are performing, so they can (ideally) catch issues before they cause outages. When errors or alerts start popping up, Duet AI, an assistive AI tool,can help you make sense of the messages and also speed up your investigation. Let me show you how…
+When strange issues show up, often in emails, alerts, or paging systems, Duet AI is ready to help you interpret them. Incidents, errors, or just higher than normal failure rates all can be summarized by the AI assistant inside Google Cloud. And when you start digging into logs, Duet AI is ready to help you with queries, explanations and documentation guidance. Saving valuable time, and getting you to the fix faster.
+I don't know about you, but I find it challenging to keep all the Prometheus Query Language syntax in my head when I need it, so I'm SO grateful for the help from Duet AI. I can use natural language to talk through what I want and need, and it’s usually faster than having to consult the logs schema or error codes. Now you can do your rubber-ducking with a real duck or a virtual one! Duet never gets tired of listening to me, and helping me talk through (and solve) various technical problems.
+Once you do have the root cause identified, you can also use Duet AI to help you with fixes, through step-by-step instructions, pointers to relevant documentation, or advice. And while it can do a lot, it can't do the fun stuff, like help you play the clarinet. So I’ll just have to do that myself. Speaking of which, I should get to practicing.
+But enough about my hobbies; try out all the Duet AI goodness with this learning path on Duet AI for DevOps, so you can get started today.
+By Layolin Jesudhass • 5-minute read
+By Eugene Neale • 5-minute read
+By Burak Gokturk • 5-minute read
+By Omid Fatemieh • 5-minute read

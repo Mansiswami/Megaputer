@@ -1,0 +1,19 @@
+Information Manager for Checkout, Loyalty, and Retention for Intergamma
+Learn more about how Chrome Enterprise can help your organization.
+Editor’s note: Today’s post is by Gerrit Klaas van der Vaart, Information Manager for Checkout, Loyalty, and Retention for Intergamma, based in Leusden, Netherlands. Intergamma is the largest DIY franchisee organization in the Benelux region, with almost 400 stores in the Netherlands and Belgium. The company’s stores are using ChromeOS devices to power kiosks where shoppers can customize and order home-decor and DIY products.
+In our company-owned Gamma and Karwei hardware stores across the Netherlands and Belgium, our 1,500 ChromeOS powered kiosks combine the best of online and in-store shopping. For some products, like made-to-measure curtains, customers need more assistance after they have looked at in-store samples. With an employee at their side, customers get help with measuring, choosing product options, and checking out. Shopping is a breeze; customers can choose and buy products in just a few minutes.
+For our 10,000 employees, we get easy-to-use and trouble-free devices. And now that we have seen the value of ChromeOS powered kiosks in stores to both customers and employees, we plan to roll out fixed and mobile ChromeOS devices across all 400 stores.
+Gerrit Klaas van der Vaart, Information Manager for Checkout, Loyalty, and Retention for Intergamma
+Kiosks powering the in-store experience
+We’ve always had kiosks in our stores, but we previously ran into technical limitations with payments and printing. Employees were placing the old kiosks in storage since they didn’t want to frustrate customers with technology that didn’t work properly. We were heading toward an end-of-life deadline on the devices, which was a great time to make a change.
+We chose Acer Chromeboxes to power the large 26-inch screens in stores for customers to view and choose products. The ChromeOS powered kiosks give customers a visually engaging experience with the ability to choose products and see items in real-time, before making a purchase.
+Gerrit Klaas van der Vaart, Information Manager for Checkout, Loyalty, and Retention for Intergamma
+Managing our ChromeOS devices
+ChromeOS devices give us more options to keep our kiosks trouble-free for customers and employees. All of our stores have basically the same IT setup. Of course, the number of checkouts can differ and the number of kiosks can differ, but the underlying technical specifications are all the same.
+With the Google Admin console, we can set policies for each store which helps employees easily log on to only authorized applications.
+An easier and more engaging shopping experience
+The ChromeOS devices in our stores are faster and more stable than the HP Windows devices we used to have. We hardly ever have to troubleshoot issues. With more uptime and easier management, we’re confident that both employees and customers are having better experiences.
+By Naveen Viswanatha • 4-minute read
+By Thomas Riedl • 4-minute read
+By Mark Berschadski • 5-minute read
+By Bhuvnesh Singh • 3-minute read

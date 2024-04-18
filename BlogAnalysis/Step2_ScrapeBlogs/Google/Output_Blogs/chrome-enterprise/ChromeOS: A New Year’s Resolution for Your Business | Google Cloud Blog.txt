@@ -1,0 +1,26 @@
+Senior Director, Product Management
+ChromeOS enthusiasts strap in! As we head into 2024, it’s important to start the new year off right with a platform that can bring your business to new heights. ChromeOS is the simple-to-manage operating system that keeps your business data secure, employees productive, and all while reducing your total cost of ownership. Take a seat and see how we can help you get a head start to the year.
+Seriously secure
+Security continues to be a top priority for us. In fact, ChromeOS has never had a reported ransomware attack - ever. In fact, one customer even hired a consultant to attempt to hack a ChromeOS device, and even that effort was unsuccessful. With features like a read-only OS and verified boot, ChromeOS is secure out of the box. What’s more, we’ve made additional updates to give IT more control of what users can and cannot do with data.
+Simple device management
+ChromeOS is designed to simplify device management for IT. With features like zero-touch enrollment and Chrome Remote Desktop, activities like employee onboarding, and new device shipments, are easier to manage. Now, we have new setup guides to further free up IT to focus on other strategic imperatives.
+Save valuable IT admin time with Interactive Setup Guides in the Google Admin console
+Modern application experiences
+To help IT departments deliver any application over the web, we partnered with Cameyo to build virtual app delivery for ChromeOS. This solution ensures that legacy applications are made available to end users as progressive web applications (PWAs) over the web, without the need for on-premise hardware and IT overhead. Cameyo has integrated with ChromeOS to ensure virtual applications feel local - including integration with the local file system, copy and paste, login experience, and more.
+We’ve discovered that when a platform dramatically shrinks the workload for IT teams, big things start to happen. For example, Sanmina, a leading global supply chain manager and manufacturer, deployed 10,000 ChromeOS devices and reduced ticket support costs by 50%!
+Cut costs and protect the planet
+A fleet of devices can create many unexpected costs that add up over time, but ChromeOS offers a lower total cost of ownership. According to an IDC study conducted this year, customers who use ChromeOS can achieve $3,901 in cost savings per deployed device. With high reliability and security, and tools like ChromeOS Flex, we’re helping businesses avoid those unexpected costs and reduce contributions to e-waste at the same time.
+Partnering with Accenture, we released the ChromeOS Environmental Impact Report, which showed that ChromeOS Flex helps businesses reduce their overall CO2 emissions, lower energy consumption, and reduce device e-waste going to landfills. Last but not least, we’re thrilled to share that ChromeOS devices will now be supported with automatic updates for 10 years - more than any other operating system commits to today!
+Supporting your teams
+With these aforementioned enhancements, your teams have the critical tools they need to succeed. Whether it’s keeping your frontline workforce more productive and secure with ChromeOS Data Controls, helping your support teams to stay focused with the ChromeOS Desk Connector, or supporting clinicians that rely on shared workstations and cloud profiles for quick access to critical apps instantly with new Imprivata integrations.
+Not only should we think about the task, but we should also consider the individual and how they work best. When 1 in 6 people have some form of disability, it’s paramount that devices are inclusive for all users. With that in mind, we’ve highlighted key features that enable your workforce, such as magnifiers to support employees who are low vision or blind, empowering employees who are deaf or hard of hearing, or assisting users with mobility impairments. We’re continuing to make ChromeOS even more accessible, so your teams have no limit to what they can get done.
+Better devices for your business
+We work closely with our partners to deliver devices that support the way you work. You may have seen the new Lenovo Chromebox Micro, a pocket-sized media player that excels at powering kiosks and digital signage, but is also small and powerful enough to be perfect for shared workstations. The new Chromebook Plus line of devices are our shiny, new, AI-powered Chromebooks that are bringing new features to your teams in 2024, such as AI text recommendations with the click of a button, generating custom wallpapers, and AI backgrounds for your video calls.
+
+Achieve your business resolutions in 2024
+If your 2024 business resolutions are to simplify device management, improve your security, make your employees more productive, all while reducing your costs- then now is the time to try ChromeOS. In fact, in under 5 minutes, you can convert a PC or Mac with ChromeOS Flex, so why not see the benefits for yourself? And when you do, don’t forget to let us know!
+The future's bright with ChromeOS! We're continuing to innovate this year, so get ready for even more exciting news that’ll help you get ahead.
+By Naveen Viswanatha • 4-minute read
+By Gerrit Klaas van der Vaart • 2-minute read
+By Mark Berschadski • 5-minute read
+By Bhuvnesh Singh • 3-minute read

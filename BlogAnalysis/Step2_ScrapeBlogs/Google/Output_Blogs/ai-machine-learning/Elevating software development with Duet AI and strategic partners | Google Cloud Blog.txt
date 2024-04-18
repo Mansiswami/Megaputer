@@ -1,0 +1,17 @@
+VP, Product Management, Google Cloud App Ecosystem
+Coming to Las Vegas, April 9–11.
+Today, we’re announcing that Duet AI for Developers is now Generally Available (GA), along with new partner enhancements that will bring even greater capabilities to customers. All of our Duet AI services will incorporate Gemini, our newest and most capable model, over the next few weeks.
+Google Cloud’s strategy is to meet developers where they are by embracing third-party tools that help them build applications quickly, accelerate time to value, and remove friction throughout the software development and delivery process. We are committed to extending these capabilities through our partners, and thanks to Cloud Code, you can already use Duet AI with many popular IDEs such as VSCode, and JetBrains IDEs like IntelliJ, PyCharm, GoLand, and Webstorm.
+Let’s explore how Duet AI for Developers will empower organizations through our growing, open ecosystem.
+Duet AI for Developers is already trained on an extensive collection of publicly available information and code from open-source and third-party platforms. Today, we’re announcing our largest set of partner enhancements with Duet AI yet. More than 25 companies will add support for developers on Google Cloud, enabling us to train and optimize Duet AI for their platforms, so that developers can be more productive and agile. These new capabilities will begin launching in Q1 of 2024.
+Our partners will support developers leveraging Google Cloud in two ways:
+Read on to learn more about how our partners are supporting developers with Duet AI.
+Partners adding support for coding with Duet AI for Developers are:
+Partners adding new knowledge base information for Duet AI for Developers are:
+These enhancements will be available at no additional cost to Duet AI for Developers users as they launch throughout 2024. And, starting today through January 12, 2024, customers can use Duet AI for Developers at no cost. Simply go to the Duet AI for Developers web page and follow the instructions.
+Customers can also work with our ecosystem of professional services partners, who play a critical role in helping businesses implement gen AI, including Accenture, Capgemini, Cognizant, Deloitte, HCLTech, Infosys, Kyndryl, ManTech, PwC, Quantiphi, Slalom, TCS, and Wipro. Collectively, these partners have committed to train more than 150,000 experts to help bring Google Cloud gen AI, including Duet AI for Developers, to customers.
+To learn more about Duet AI, visit the product page at cloud.google.com/duet-ai.
+By Layolin Jesudhass • 5-minute read
+By Eugene Neale • 5-minute read
+By Burak Gokturk • 5-minute read
+By Omid Fatemieh • 5-minute read

@@ -1,0 +1,21 @@
+Developer Relations Engineer
+Developer Relations Engineer
+Coming to Las Vegas, April 9–11.
+If you've joined a new team recently like I have, you've probably had a lot of questions. And answers to those questions may or may not be things you can find easily, and might rely heavily on the generosity, and spare time of your teammates. Let's say you're a DevRel engineer, working with Google Kubernetes Engine (GKE) to build and run microservices. Despite how willing your teammates are to help you get started, wouldn't it be nice if there were a way to get questions about Google Cloud answered without bothering your coworkers?
+Well, fortunately for you, and those supportive hypothetical teammates, Duet AI is available to answer your questions as you start in a new job, and will still be there as you explore more advanced options. You can see all those details in this narrative tutorial, but let's walk through a quick example here.
+Suppose you have a service or app already running, and you'd like to get to know it a bit better. A bit more personal, if you will. Logging helps tremendously when you're exploring a new system. But finding the right options and flags to set can be a bit of a challenge. But you know what’s not a challenge? Asking Duet AI for the logs you need, with natural language.
+How can I write a Cloud Logging query to search for logs from Pods in a namespace called "default" in a GKE cluster named "test"?
+You should get a response something like the following, allowing for variation due to the built-in creativity of LLMs, of course.
+To write a Cloud Logging query to search for logs from Pods in a namespace called "default" in GKE cluster called "test", you can use the following query: [1] resource.type="k8s_container"resource.labels.namespace_name="default"resource.labels.cluster_name="test"Generated code may be subject to license restrictions not shown here. Use code with care. Learn more 
+This query will search for all logs from Pods in the "default" namespace in the "test" GKE cluster. You can also use the logName field to specify the type of logs you want to search for. For example, the following query will search for all stdout logs from Pods in the "default" namespace in the "test" GKE cluster:resource.type="k8s_container"resource.labels.namespace_name="default"resource.labels.cluster_name="test"logName="projects/PROJECT_ID/logs/stdout"Generated code may be subject to license restrictions not shown here. Use code with care. Learn more Where PROJECT_ID is the ID of your Google Cloud project.For more information on writing Cloud Logging queries, see the Cloud Logging documentation  .
+And once you've run the command, you can click on "Explain this query" in each of the logs to get help understanding each of the log entries. 
+If you're trying out the Vision Api, you might notice a log entry like the one below:
+There's a lot here, but what does it mean? The "Explain this log entry" button in the upper left hand corner will open discussion with Duet AI as shown below:
+You can then follow up from this request. Suppose you want to know more about how to adjust the batch size for Vision API. You could continue the discussion:
+You even have the ability to check the documentation if you want to know more by showing the related content:
+(This example comes from the Jump Start Solution Generative AI document summarization if you'd like to explore Gen AI more.)
+Once you understand the current situation, you may be in a more informed position to decide to make changes, like creating a private build environment. Duet AI is there to help throughout your entire process: from describing the right tools, to telling you how to use them effectively, answering questions as you go. For even more on how this all works, and how you can get started, check out the narrative tutorial. So take a look, and impress those hypothetical teammates with how quickly you’re able to contribute to your new team.
+By Layolin Jesudhass • 5-minute read
+By Eugene Neale • 5-minute read
+By Burak Gokturk • 5-minute read
+By Omid Fatemieh • 5-minute read

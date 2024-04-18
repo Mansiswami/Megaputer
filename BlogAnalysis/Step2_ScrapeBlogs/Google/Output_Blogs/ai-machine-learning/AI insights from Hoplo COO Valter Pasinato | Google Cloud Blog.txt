@@ -1,0 +1,40 @@
+
+Coming to Las Vegas, April 9–11.
+For more than 20 years, Hoplo has pioneered the Italian market with advanced AI-powered solutions that redefine the way companies work. Hoplo invests heavily in research and development to provide the latest technological breakthroughs, working closely with universities to develop the next generation of data scientists and engineers who will build the digital future. To discover more about Hoplo’s approach for adapting to and training for an AI-driven world, and to find out what leaders of other companies can learn from Hoplo’s experiences, we sat down with Hoplo’s founder Roberto Murgia and COO Valter Pasinato.
+Question:
+What does Hoplo do and how do you help clients leverage AI for their different needs?
+Valter Pasinato:
+Hoplo is a marketing platform recognized in Italy as an innovator of digital products. We serve both legacy corporate customers and digital natives, focusing on product development and working with system integrators to implement code. With the explosion of interest around generative AI in the past two years, we saw the value it can bring to the market, and in March 2023, we launched Teriyaki, a high-quality content editor based on generative AI.
+Question:
+With two decades of industry knowledge and with AI maturing rapidly in the last few years, how did you know it was time to invest more in this kind of innovation?
+Valter Pasinato:
+We always focus on enriching the product we already have with the latest innovations and we realized that AI can be a pillar to build out every other application. It was difficult to get the right resources at the beginning, but now we have a development team of 20 people based in Sardinia and a fully dedicated AI team.
+Question:
+Can you talk about how you make infrastructure and talent choices in a landscape that changes every day?
+Roberto Murgia:
+The most important thing for us is the training and tuning capabilities of the platform we use. That’s why we work with Google Cloud and leverage Vertex AI. With AI, things are always changing so our technologies need to be flexible, easy to manage, and easy to learn. Our developers and engineers need to continuously learn new skills to keep up with the technical side of what we do. For example, our focus is now on the development of a Retrieval-Augmented Generation (RAG) solution. RAG uniquely combines sophisticated search capabilities with the generation process. This focus inspired the creation of our tailored RAG solution within the "Teriyaki" platform. Indeed, we are convinced that the RAG approach will gain growing popularity as a method for tailoring Large Language Models (LLMs) to specific use-case scenarios.
+Question:
+You’ve mentioned that Google Cloud’s diverse model offerings and tuning capabilities were a main driver in choosing Vertex AI for Hoplo. Let’s dive into that a little more. What made Google Cloud more attractive than competitor solutions?
+Roberto Murgia:
+Model Garden played a big role. We can access open-source models and contribute our own. Now, we have a single place where we can connect our software to the model. We also use Vector Search as a crucial part of our software to create a strong, scalable data set. We use text-to-speech and speech-to-text to increase accessibility and the openness of the models that we can use.
+Question:
+What inspired you to share your models with other companies and let other people build on top of models you've created?
+Valter Pasinato:
+We always start with a use case to give us the flexibility to solve a problem from both a developer and a language modeling standpoint. We are in the early stages of AI and many customers are in the experimental phase, so we need to go deep to show its true value to the customer. Many customers still believe that AI is magic, so a big part of our job is providing education to help them understand what can be done now and what can be done in the future.
+Question:
+As leaders begin to adopt AI or lean into AI-driven innovation, many of them don’t know what they’re getting into. They see the value but they know they can’t do it all overnight, so how can they pivot in an efficient way?
+Valter Pasinato:
+It comes back to evaluating KPIs and providing a measurable benefit for the customer. Part of that is reducing costs, but it’s more about flexibility and scalability. As pioneers in AI, we need to lay the groundwork with our customers around KPIs. Otherwise we’re in muddy water and it’s difficult to find footing.
+Question:
+When it comes to KPIs, you can measure all kinds of things. The number of models that make it to deployment is a sort of proxy for success with AI, but it's not the main measure of success. How do you measure real value?
+Valter Pasinato:
+It’s about making users more productive with the technology. Imagine a legal department in a company that has to handle large volumes of information in a short time frame with compliance restraints. If we can help them save 50% of their time by providing them with the right tools, technology, and training, it puts the value into terms they can understand. 
+Question:
+We know that everything could change in six months, but the ideas about what AI will look like 10 years from now are all over the place. How can companies form a vision that's grounded and realistic, but also innovative?
+Valter Pasinato:
+We’re thinking a lot about the future. We believe the next powerful wave will be artificial capable intelligence, or ACI, which means that the system not only recognizes the language from the audio and so forth, but it’s able to understand context and can operate in real time with the user and the system. Today, we are basically building the first wave of ACI. In the next few years, we will have something that’s not just content-driven but actionable. The only thing that is predictable is the velocity at which AI will change.
+To learn more about Vertex AI, visit our product page, and to catch up with Google Cloud’s top AI thought leadership from 2023, check out this article.
+By Layolin Jesudhass • 5-minute read
+By Eugene Neale • 5-minute read
+By Burak Gokturk • 5-minute read
+By Omid Fatemieh • 5-minute read

@@ -1,0 +1,62 @@
+Head of Cloud Product DevRel
+Coming to Las Vegas, April 9–11.
+Data is the heart of any AI solution. You've got lots of valuable BigQuery data, but how can you integrate it into an LLM application? Large language models excel at using unstructured data. Including structured data can enrich and ground your model's responses, and capture new relationships in your data. Let's explore how to use the LangChain BigQuery Data Loader to do just that.
+LangChain is an open source framework that enables you to connect LLMs to data sources and control the flow of information between them. By using LangChain, you can simplify LLM development with a modular architecture and pre-built connectors. Some of the most popular use cases include chatbots and virtual assistants, code generation tools, and custom web applications that use large language models. When you see a LLM workflow consisting of multiple steps and integration points, you should consider LangChain for the task.
+Whether you're new to LangChain, or just haven't used a data loader, this post will walk through each step. In our example, our model will analyze multiple e-commerce tables to select the most appropriate customers for a marketing campaign. You'll learn how to use a data loader to support generative AI use cases from summarization to code generation.
+To find out more about BigQuery and LangChain at the same time, all we need to do is ask the Vertex AI text foundation model. Six lines of code from start-to-finish, not too bad!
+
+And what does it tell us?
+BigQuery is a fully managed, petabyte-scale analytics data warehouse that enables businesses to analyze all their data very quickly. It is a cloud-based service that offers fast performance, scalability, and flexibility. BigQuery is easy to use and can be integrated with other Google Cloud Platform services.
+Pro tip: now you can use BigQuery Studio to run notebooks and try out SQL in this blog post directly within BigQuery.
+Now that we've climbed the "Hello world!" mountain, let's learn how to use the document loader. We'll use data from a fictional eCommerce clothing site called TheLook, available as a BigQuery public dataset.
+Let's say we're starting from scratch with a bunch of tables we don't know well. And our marketing team is about to start a campaign in Japan, oh my! Can we ask the LLM to identify our target customers?
+The first step to understanding our data is loading it. Let's query the schema from this dataset to extract the data definition language (DDL). DDL is used to create and modify tables, and can tell us about each column and its type.
+As a prerequisite, let's make sure we have the BigQuery client library installed:
+
+Let's now define the query and load the data:
+
+Our query is extracting the table name and DDL for each of the tables. We then create a data loader, specifying that the table name is a metadata column and the DDL is the content.
+The result is an array of documents, that looks like this:
+
+Now that we've loaded the documents, let's put them to work! We need a query that gives us the answers we need - understanding for our marketing campaign. We'll use the code generation model for this task.
+We will create a basic chain that "stuffs" together all of the table metadata into one prompt. For larger datasets with many more tables, a more sophisticated chaining approach will be needed. That's because there's a limited length to each prompt, i.e. a context window.
+For example, you could compress highlights from each individual table's content into smaller documents, and then summarize those using a map-reduce method. Or, you could iterate over each table, refining your query as you go.
+Here's how to do it. We'll use the LangChain Expression Language (LCEL) to define the chain with 3 steps:
+
+Let's take a look at the query:
+
+Great, we've got the query! It's recommended to try it out first with a dry run. Now let's get the answer to our question of fetching the users from Japan:
+
+index
+user_id
+first_name
+last_name
+email
+total_spend
+country
+0
+86707
+Robin
+Oneill
+robinoneill@example.com
+1533.96
+Japan
+1
+68275
+Michael
+Fisher
+michaelfisher@example.org
+1422.46
+Japan
+2
+1988
+Alexander
+Gill
+alexandergill@example.com
+1061.95
+Japan
+You've now seen how to integrate your BigQuery data into LLM solutions. To try it out yourself, you can experiment with the notebook available in the Generative AI samples repository. 
+By Layolin Jesudhass • 5-minute read
+By Eugene Neale • 5-minute read
+By Burak Gokturk • 5-minute read
+By Omid Fatemieh • 5-minute read

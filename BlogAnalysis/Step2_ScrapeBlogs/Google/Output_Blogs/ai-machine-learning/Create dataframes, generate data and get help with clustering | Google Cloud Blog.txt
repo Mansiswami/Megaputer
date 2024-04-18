@@ -1,0 +1,31 @@
+Developer Relations Engineer
+Developer Relations Engineer
+Coming to Las Vegas, April 9–11.
+You can watch a detailed video of the process discussed in this blogpost here and get hands on in a learning path.
+We've all been there: drowning in a sea of data, struggling to navigate complex pipelines - feeling straight up data dizzy. The frustration of managing tons of tabs full of different tools and Google searches and hours spent sifting through data and code to create models for your needs, can really suck the fun out of data discovery.
+But, is there something that can refund some of that time - and maybe even a bit of fun? Duet AI. Think of it as your personal data science guide, leading you through any unfamiliar depths of Google Cloud.
+Duet AI understands your struggles. It wants you to spend your time extracting valuable knowledge from data, not battling technical gremlins. And, that’s exactly what it’s designed to do.
+Imagine this: you're presented with a new dataset, brimming with potential and are given a mission. Should you accept, you are to provide your marketing team with 5 groups of potential customers and descriptive statistics about them.
+Instead of spending hours wrangling with tools and doing research, you can call upon Duet AI to help you. Mission accepted!
+To begin, you open BigQuery Studio, create a new Python notebook (that’s right - inside of BigQuery Studio) and paste in code to define variables, connect to Vertex AI and create a base table.
+Next, you begin to use Duet AI to speed up your development cycle. You prompt Duet for help with converting your base table into a BigQuery Dataframe and then display the top 10 records.
+Duet also generates code for you. All you have to do is review the output and edit if necessary. Within minutes, you have a dataframe output displayed right in your notebook as a table.
+Duet AI's code generation capabilities become your invaluable asset as you delve deeper. It seamlessly creates a K-means clustering model to segment your customers into 5 distinct groups. Duet then writes code to graph these clusters visually in a scatterplot, further facilitating deeper insight into your data.
+You can add additional code to summarize the clusters for descriptive statistics. For example, you can summarize ecommerce data like the average purchase value and number of orders each cluster makes. These insights satisfy the original request from the marketing team.
+But you aren’t finished yet! You want to go above and beyond and provide suggestions on the next steps the marketing team can take for each customer segment.
+Luckily, you can easily reference Vertex AI large language models like text-bison directly from BigQuery Studio. You’ll use the LLM to generate next steps for the marketing team shortly.
+You convert the summary statistics to a string in preparation for your LLM call. You also define a prompt so the LLM has context to generate a tailor-made response.
+Define the prompt
+Define the prompt
+Finally, you prompt Duet AI in your BigQuery Studio Notebook to generate a marketing campaign using the prompt variable you defined.
+Use the Vertex AI language_models API to call the PaLM2 text-bison model and generate a marketing campaign using the variable prompt. Use the following model settings: max_output_tokens=1024, temperature=0.4
+It returns some code that looks good to you, so you run it.
+
+You’ve done it. The LLM returns the 5 clusters with a title, persona and a next marketing step in a format that is easily actioned on by the marketing team. Feel free to play around and edit the prompts to get creative! Maybe you add that the ecommerce site sells plants.
+Nicely done. You’ve reduced a day's work to minutes with the help of Duet AI.
+Ready to go beyond this blog and get hands on with Duet AI? Dive into this comprehensive learning path and experience Duet AI firsthand alongside this video! You'll find everything you need to know, all laid out in a clear, concise, and efficient manner.
+Leverage Duet AI as your data science partner and embark on a journey of discovery as you unlock the future of data exploration.
+By Layolin Jesudhass • 5-minute read
+By Eugene Neale • 5-minute read
+By Burak Gokturk • 5-minute read
+By Omid Fatemieh • 5-minute read

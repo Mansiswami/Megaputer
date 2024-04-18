@@ -1,0 +1,11 @@
+VP & GM, Cloud AI
+Coming to Las Vegas, April 9–11.
+A week ago, Google announced Gemini, our most capable and flexible AI model yet. It comes in three sizes: Ultra, Pro and Nano. Today, we are excited to announce that Gemini Pro is now publicly available on Vertex AI, Google Cloud’s end-to-end AI platform that includes intuitive tooling, fully-managed infrastructure, and built-in privacy and safety features. With Gemini Pro, now developers can build “agents” that can process and act on information.
+Vertex AI makes it possible to customize and deploy Gemini, empowering developers to build new and differentiated applications that can process information across text, code, images, and video at this time. With Vertex AI, developers can:
+Google’s comprehensive approach to AI is designed to help keep our customers safe and protected. We employ an industry-first, two-pronged copyright indemnity approach to help give Cloud customers peace of mind when using our generative AI products. Today we are extending our generated output indemnity to now also include model outputs from PaLM 2 and Vertex AI Imagen, in addition to an indemnity on claims related to our use of training data. Indemnification coverage is planned for the Gemini API when it becomes generally available.
+The Gemini API is now available. Gemini Pro is also available on Google AI Studio, a web-based tool that helps quickly develop prompts. We will be making Gemini Ultra available to select customers, developers, partners and safety and responsibility experts for early experimentation and feedback before rolling it out to developers and enterprise customers early next year.
+Join us today at our Applied AI Summit to learn more.
+By Layolin Jesudhass • 5-minute read
+By Eugene Neale • 5-minute read
+By Burak Gokturk • 5-minute read
+By Omid Fatemieh • 5-minute read
