@@ -1,0 +1,21 @@
+Software Engineer
+Coming to Las Vegas, April 9–11.
+As digital transformation accelerates, organizations are generating vast amounts of text and other document data, all of which holds immense potential for insights and powering novel generative AI use cases. To help harness this data, we’re excited to announce an integration between BigQuery and Document AI, letting you easily extract insights from document data and build new large language model (LLM) applications.
+BigQuery customers can now create Document AI Custom Extractors, powered by Google's cutting-edge foundation models, which they can customize based on their own documents and metadata. These customized models can then be invoked from BigQuery to extract structured data from documents in a secure, governed manner, using the simplicity and power of SQL.
+Prior to this integration, some customers tried to construct independent Document AI pipelines, which involved manually curating extraction logic and schema. The lack of native integration capabilities left them to develop bespoke infrastructure to synchronize and maintain data consistency. This turned each document analytics project into a substantial undertaking that required significant investment. Now, with this integration, customers can easily create remote models in BigQuery for their custom extractors in Document AI, and use them to perform document analytics and generative AI at scale, unlocking a new era of data-driven insights and innovation.
+You can build a custom extractor in the Document AI Workbench with three steps:
+In addition to custom extractors that require manual training, Document AI also provides ready-to-use extractors for expenses, receipts, invoices, tax forms, government ids, and a multitude of other scenarios, in the processor gallery. You may use them directly without performing the above steps.
+Then, once you have the custom extractor ready, you can move to BigQuery Studio to analyze the documents using SQL in the following four steps:
+The following example illustrates the user experience:
+
+
+Table of results
+Once you have extracted text from your documents, you can then perform document analytics in a few ways:
+
+Once you’ve extracted structured text from your documents, you can build indexes optimized for needle-in-the-haystack queries, made possible by BigQuery's search and indexing capabilities, unlocking powerful search functionality.
+This integration also helps unlock new generative LLM applications like executing text-file processing for privacy filtering, content safety checks, and token chunking using SQL and custom Document AI models. The extracted text, combined with other metadata, simplifies the curation of the training corpus required to fine-tune large language models. Moreover, you’re building LLM use cases on governed, enterprise data that’s been grounded through BigQuery's embedding generation and vector index management capabilities. By synchronizing this index with Vertex AI, you can implement retrieval-augmented generation use cases, for a more governed and streamlined AI experience.
+The above capabilities are now available in preview. To get started, reach out to your Google sales representative, or check out the following tutorials:
+By Vladimir Elvov • 6-minute read
+By Marcel Fohrmann • 4-minute read
+By Omid Fatemieh • 5-minute read
+By Jeremy Chang • 5-minute read

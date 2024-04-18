@@ -1,0 +1,18 @@
+Software Engineer
+Software Engineer
+Coming to Las Vegas, April 9–11.
+Cloud Deploy is Google Cloud’s managed continuous delivery service supporting delivery to container runtimes including Google Kubernetes Engine, Cloud Run, and Anthos. Today, we are pleased to announce support for custom target types in Preview, extending Cloud Deploy’s capabilities beyond container runtime environments. Through custom target types, you can now define deploy operations to any environment while still using all of Cloud Deploy’s features (including approvals, rollback, and canary deploy).
+With the addition of custom target types, you can now create, manage, and observe delivery pipelines for any purpose with Cloud Deploy — whether it be application, infrastructure, AI model deployment or more. We’re launching with a few samples to help you get started, including those for Terraform, Infrastructure Manager, GitOps, Vertex AI, and Helm.
+Cloud Deploy’s mission is to broadly support continuous delivery to Google Cloud. While the container runtimes (Google Kubernetes Engine, Cloud Run, and Anthos targets) were an early focus, custom target type support extends Cloud Deploy’s reach beyond these environments.
+To create and use a custom target type, you will need to create a container(s) performing release render and rollout deploy operations, respectively, then define and register a custom target type referencing these containers. Once the custom target type has been registered, it can be referenced as part of a target definition and used in a delivery pipeline progression sequence as with any other target type.
+Listing of registered custom target types
+Custom target types can be used with most Cloud Deploy’s continuous delivery features with no additional effort. Whether you need an approval or rollback, or you want to perform a parallel deploy, Cloud Deploy continues to orchestrate these activities for you. Because custom target types are integrated into the Cloud Deploy resource model, they are also fully compatible with existing Google Cloud console features, including release and rollout inspection.
+Deploying to a Vertex AI custom target type
+With the addition of custom target type support, you can now create and manage delivery pipelines for different purposes within Cloud Deploy. Infrastructure, application, AI model, and additional environment deliveries can be centrally managed and observed with consolidated permissions, auditing, and metrics.
+Deliver to a variety of targets using Cloud Deploy
+Comprehensive, easy-to-use, and cost-effective DevOps tools are key to building an efficient software delivery capability, and it’s our hope that Cloud Deploy will help you implement complete CI/CD pipelines. Stay tuned as we introduce exciting new capabilities and features to Cloud Deploy in the months to come.
+Update your current pipelines with these new features today. Check out the product page, documentation, quickstarts, and tutorials. Finally, If you have feedback on Cloud Deploy, you can join the conversation. We look forward to hearing from you!
+By Lee Yanco • 3-minute read
+By Tao He • 6-minute read
+By Usama Ijaz • 6-minute read
+By David Rush • 4-minute read

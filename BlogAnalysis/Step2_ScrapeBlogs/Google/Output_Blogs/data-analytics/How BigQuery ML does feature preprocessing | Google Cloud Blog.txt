@@ -1,0 +1,35 @@
+Customer Engineer
+Software Engineer
+Coming to Las Vegas, April 9–11.
+In machine learning, transforming raw data into meaningful features, a preprocessing step known as feature engineering, is a critical step. BigQuery ML has made significant strides in this area, empowering data scientists and ML engineers with a versatile set of preprocessing functions for feature engineering (see our previous blog). These transformations can even be seamlessly embedded within models, ensuring their portability beyond BigQuery to serving environments like Vertex AI. Now we are taking this a step further in BigQuery ML, introducing a unique approach to feature engineering: modularity. This allows for easy reuse of feature pipelines within BigQuery, while also enabling direct portability to Vertex AI.
+A companion tutorial is provided with this blog — try the new features out today!
+When creating a model in BigQuery ML, the CREATE MODEL statement has the option to include a TRANSFORM statement. This allows for custom specifications for converting columns from the SELECT statement into features of the model by using preprocessing functions. This is a great advantage because the statistics used for transformation are based on the data used at model creation. This provides consistency of preprocessing similar to other frameworks — like the Transform component of the TFX framework, which helps eliminate training/serving skew. Even without a TRANSFORM statement, automatic transformations are applied based on the model type and data type.
+In the following example, an excerpt from the accompanying tutorial, there are preprocessing steps applied prior to input for imputing missing values. There is also embedded preprocessing with the TRANSFORM statement for scaling the columns. This scaling gets embedded with the model and applies to the input data, which is already imputed prior to input here. The advantage of the embedded scaling functions is that the model remembers the calculated parameters used in scaling to apply later on when using the model for inference.
+
+With the new ML.TRANSFORM table function, the feature engineering part of the model can be called directly. This enables several helpful workflows, including:
+In the example below (from the tutorial), the ML.TRANSFORM function is applied directly to the input data without having to recalculate the scaling parameters using the original training data. This allows for efficient reuse of the transformations for future models, further data review, and for model monitoring calculations detecting skew and drift.
+
+Take reusability to a completely modular state by creating transformation only models. This works like other models by using CREATE MODEL with a TRANSFORM statement and using the value model_type = TRANSFORM_ONLY. In other words, it creates a model object of just the feature engineering part of the pipeline. That means the transform model can be reused to transform inputs of any CREATE MODEL statement as well, even registering the model to the Vertex AI Model Registry for use in ML pipelines outside of BigQuery. You can even EXPORT the model to GCS for complete portability.
+The following excerpt from the tutorial shows a regular CREATE MODEL statement being used to compile the TRANSFORM statement as a model. In this case, all the imputation steps are being stored together in a single model object that will remember the mean/median values from the training data and be able to apply them for imputation on future records — even at inference time.
+
+The TRANSFORM_ONLY model can be used like any other model with the same ML.TRANSFORM function we covered above.
+
+With the modularity of TRANSFORM_ONLY models it is possible to use more than one in a feature pipeline. The BigQuery SQL Query syntax WITH clause (CTEs) makes the feature pipeline highly readable. This idea makes feature level transformation models, like a feature store, easily usable with modularity.
+As an example of this idea first, create a TRANSFORM_ONLY model for each individual feature: body_mass_g, culmen_length_mm, culmen_depth_mm, flipper_length_mm. Here, these are used for scaling of columns into features - just like the full model we create at the beginning.
+For body_mass_g:
+
+For culmen_length_mm:
+
+For culmen_depth_mm:
+
+Now, with CTEs, a feature pipeline can be as easy as the following and even packaged as a view:
+
+And creating the original model from above using this modular feature pipeline will look like the following which selects directly from the feature preprocessing pipeline created as a view above:
+
+This level of modularity and reusability brings the activities of MLOps into the familiar syntax and flow of SQL.
+But there are times when models need to be used outside of the data warehouse, for example online predictions or edge applications. Notice how the models above were created with the parameter VERTEX_AI_MODEL_ID. This means they have automatically been registered in the Vertex AI Model Registry where they are just a step away from being deployed to a Vertex AI Prediction Endpoint. Also, like other BigQuery ML models, these models can be exported to Cloud Storage by using the EXPORT MODEL statement for complete portability.
+BigQuery ML's new reusable and modular feature engineering are powerful tools that can make it easier to build and maintain machine learning pipelines and power MLOps. With modular preprocessing, you can create transformation only models that can also be reused in other models or even exported to Vertex AI. This modularity even enables feature pipelines directly in SQL. This can save you time, improve accuracy, prevent training/seving skew, all while simplifying maintenance. To learn more about feature engineering with BigQuery, try out the tutorial and read more about feature engineering with BigQuery ML.
+By Vladimir Elvov • 6-minute read
+By Marcel Fohrmann • 4-minute read
+By Omid Fatemieh • 5-minute read
+By Jeremy Chang • 5-minute read

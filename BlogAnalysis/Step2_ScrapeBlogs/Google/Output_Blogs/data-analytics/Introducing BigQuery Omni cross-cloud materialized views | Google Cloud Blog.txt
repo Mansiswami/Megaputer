@@ -1,0 +1,16 @@
+Group Product Manager
+Director, Engineering
+Coming to Las Vegas, April 9–11.
+As more and more organizations embrace multi-cloud data architectures, a top request we constantly receive from customers is how to make cross-cloud analytics super simple and cost-effective in BigQuery. To help customers on their cross-cloud analytics journey, today we are thrilled to announce the public preview of BigQuery Omni cross-cloud materialized views (aka cross-cloud MVs). Cross-cloud MVs allow customers to very easily create a summary materialized view on GCP from base data assets available on another cloud. Cross-cloud MVs are automatically and incrementally maintained as base tables change, meaning only a minimal data transfer is necessary to keep the materialized view on GCP in sync. The result is an industry-first, cost-effective and scalable capability that empowers customers to perform frictionless, efficient, and economical cross-cloud analytics.
+The demand for cross-cloud MVs has been growing, driven by customers wanting to do more with their data across cloud platforms while leaving large data assets intact in separate clouds. Today, analytics on data assets across clouds is cumbersome, as it usually involves copying or replicating large datasets across cloud providers. This process is not only burdensome to manage, but also incur substantial data transfer costs. By integrating cross-cloud MVs, customers are looking to optimize these processes, seeking both efficiency and cost-effectiveness in their data operations.
+Some of the key customer use cases where cross-cloud MVs can greatly simplify workflows while reducing costs include:
+BigQuery Omni’s cross-Cloud MV solution has a unique set of features and benefits:
+Cross-cloud MVs offer significant benefits across a variety of industries and customer scenarios as illustrated below:
+With cross-cloud MVs, we are empowering organizations to break down cloud silos and harness the power of their rich, changing data, in near real-time in Google Cloud. This breakthrough capability is not only shaping the future of cross-cloud analytics, but also multi-cloud architectures, enabling customers to achieve new levels of flexibility, cost-effectiveness, and actionable insights. With a powerful combo of cross-cloud analytics with BigQuery Omni and agile semantics with Looker, we are able to bring rich and actionable insights faster and more easily to data consumers.
+Ability to create Cross-cloud MV in BQ using SQL:
+Ability to perform effective and cost efficient cross-cloud analytics with cross-cloud MVs
+To learn more about cross-cloud MVs and how they can transform your organization's cross-cloud analytics capabilities, watch the demo, explore the public documentation and try the product in action now.
+By Vladimir Elvov • 6-minute read
+By Marcel Fohrmann • 4-minute read
+By Omid Fatemieh • 5-minute read
+By Jeremy Chang • 5-minute read

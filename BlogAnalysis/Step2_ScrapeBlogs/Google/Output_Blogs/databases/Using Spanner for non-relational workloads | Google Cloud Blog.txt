@@ -1,0 +1,72 @@
+Senior Staff Software Engineer
+Senior Engineering Manager
+Coming to Las Vegas, April 9–11.
+Spanner is a fully managed database service for both relational and non-relational workloads that offers strong consistency at global scale, high performance at virtually unlimited scale, and high availability with an up to five 9s SLA.
+While Spanner is renowned for its relational capabilities, it is also a versatile key-value database that can be used to store and retrieve non-relational data via read and write APIs. In fact, a significant portion of internal Spanner usage at Google is non-relational.
+Spanner was developed by Google to address the challenge of achieving synchronous replication and consistency while enabling virtually unlimited scaling. While relational workloads benefit from strong reads that guarantee the latest version of the data, non-relational workloads often utilize stale reads that can be served by local read replicas.
+Recently, we announced announced a 50% increase in throughput and 2.5x more storage per node (up to 10TB) for Spanner, in addition to reduced latencies. These enhancements make Spanner an even more compelling option for NoSQL workloads.
+Spanner is used extensively at Google by numerous projects, such as Google Photos, Google Ads, and Gmail. In total, Spanner serves over 3 billion read/write requests per second at peak. While some projects employ complex SQL and transactions, the vast majority of workloads are primarily key lookups. For such workloads, Spanner is chosen due to its high performance, customizability, and scalability.
+Spanner can be used as a feature-rich RDBMS with relational semantics. However, these relational features are built on top of an equally powerful non-relational platform. For example, Spanner's splits architecture demonstrates how it can provide write-scaling. Furthermore, Spanner's support for JSON allows for more versatile use cases typically provided by document databases. 
+A question that frequently arises is why today’s data requires strong consistency. In reality, when workloads migrated from legacy databases to NoSQL databases, the requirement for consistency never went away. Instead, applications are now expected to handle inconsistencies in data, a task that was previously performed by databases. Customers had no choice but to accept an additional application complexity for the sake of the mandatory scalability requirement based on data size. With Spanner, customers no longer have to make a trade-off between scalability and consistency — they can have both.
+Cost is a primary concern for all customers. Spanner offers a cost-effective starting point of $65 per month (varying by region), which can be further reduced to $45 per month with Committed Use Discounts (CUDs). While this is higher than the free entry point offered by some non-relational databases, the reality is that most enterprise workloads demand significantly more resources. In such scenarios, the price-performance ratio of the database becomes more important than the minimum entry cost. Spanner also provides a free trial for those who simply want to try it out, along with a local emulator that allows customers to develop directly without incurring additional costs.
+Many Spanner customers are running non-relational workloads on Spanner today. Here’s a sampling:
+Uber
+Uber's previous infrastructure, based on Cassandra and Ringpop, presented various challenges, including low developer productivity and leaky abstractions between the database and application layers. Notably, Cassandra's lack of consistency forced developers to "think about compensating actions especially when the writes fail due to system failures. In some cases, the failure of [a system] might also result in an inconsistent state of entities that often required manual intervention," increasing costs and operational overhead. Read more about their engineering journey from their Uber Engineering blog. 
+Sharechat
+Sharechat, a leading social media platform in India, migrated their non-relational workload from a NoSQL database to Spanner. They were particularly impressed with the similarity between Spanner's schema system and their previous NoSQL database, which enabled them to perform a no-downtime migration. Additionally, they were able to achieve significant cost savings by moving to Spanner.
+“Unlike our legacy NoSQL database, we could scale without having to rethink existing tables or schema definitions and keep our data systems in sync across multiple locations. It’s also cost-effective for us — moving over 120 tables with 17 indexes into Cloud Spanner reduced our costs by 30%.” - Bhanu Singh, Co-founder and CTO at ShareChat.
+Read more about ShareChat’s migration story. 
+Niantic
+Niantic, the creators of the popular mobile game Pokémon GO, migrated their non-relational workload from Cloud Datastore (a non-relational datastore) to Cloud Spanner. “As the game matured, we decided we needed more control over the size and scale of the database," said James Prompanya, Senior Staff Software Engineer at Niantic. "We also like the consistent indexing that Cloud Spanner provides." Spanner's consistent secondary indexes provided Niantic with a significant performance boost. Secondary indexes are used to improve the performance of queries that involve filtering or sorting on data. In some non-relational databases, secondary indexes are eventually consistent, which means that they may not be immediately up-to-date. This can lead to latency issues for applications. 
+Read more about Niantic’s journey. 
+Let's take a closer look at how non-relational concepts translate to Spanner concepts:
+Non-relational
+Spanner
+Table
+Table
+Items
+Rows
+Attributes
+Can be modeled in a number of ways:
+Defining columns in schema is the most idiomatic approach in Spanner
+JSON column is the closest equivalent
+Interleaved table with key-value pairs
+Primary Key
+Primary Key: determines both both the partitioning of the data across nodes and sort order of the data within each node
+Secondary Indexes
+Usually non-relational systems provide two types of indexes:
+Local secondary indexes, which can be modeled as interleaved secondary indexes.
+Global secondary index is equivalent to  a secondary index in Spanner.
+Spanner lets users store non-key columns in the index, speeding up common read requests.
+It is important to note that all indices are always transactionally consistent in Spanner.
+Sparse Index
+NULL-Filtered Indices allow users to omit NULL rows from the index. When used in conjunction with generated columns, this offers a robust method for excluding a specific set of rows from the index.
+Streams
+Change Streams
+Non-relational
+Spanner
+Control plane APIs like CreateTable
+Schema Changes
+Custom Query Languages
+SQL (ANSI SQL or PG) with hints like FORCE_INDEX to specify a particular index usage
+PutItem, BatchWriteIem
+Transaction
+UpdateItem
+Read-write transaction. In Spanner all writes provide ACID guarantees. 
+GetItem, BatchGetItem, Query, Scan
+Read API. Stale reads can be used to improve performance where the most recent data is not required. Stale reads are still consistent as of some prior timestamp.
+Data types
+Spanner provides scalar types that are largely the same as other storage systems across the industry. In addition, Spanner natively supports dynamic arrays of any supported type. Document-like scenarios can use Spanner’s JSON type.
+Read more about Spanner data types.
+In addition, Spanner offers a number of advantages over typical non-relational databases:
+Stronger consistency guarantees: Spanner provides strong consistency for all reads and writes. Data consistency is maintained across all replicas. In the event of network latency, a replica may become stale. In this case, another replica can provide the most recent data. The stale replica still provides a consistent view of the data as of an earlier point in time. In contrast, most non-relational databases offer eventual consistency, which means that data may not be immediately consistent across all replicas. This can be a problem for applications that require strong consistency, such as those that involve financial transactions or real-time updates.
+Global secondary indexes: Spanner supports global secondary indexes. This means that secondary indexes can be used to query data across all replicas. This can significantly improve the performance of queries that involve filtering or sorting on indexed data.
+Support for transactions: Spanner supports ACID transactions. This means that multiple writes are either committed atomically or aborted. This can be essential for applications that require data integrity, such as those that involve multiple concurrent updates to the same data.
+SQL as a query language: In addition to a read / write API, Spanner also supports SQL, a well-known and widely used query language. This makes it easier for developers to learn and use Spanner. In addition, some queries are much more straightforward and efficient when expressed using SQL compared to complex proprietary APIs.
+Simplified application logic: Spanner's strong consistency guarantees and support for transactions can help to simplify application logic. For example, applications that use Spanner do not need to implement their own mechanisms for ensuring data consistency, such as reconciliation pipelines.
+Spanner is a versatile database that can be used for both relational and non-relational workloads. Spanner's core concepts are similar to those of non-relational databases, but Spanner offers a number of advantages, such as stronger consistency guarantees, global secondary indexes, support for transactions, and SQL as a query language. These advantages make Spanner a good choice for a wide range of applications.
+Interested in trying out Spanner for your non-relational workload? Get started for free!
+By James Groeneveld • 6-minute read
+By Subra Chandramouli • 2-minute read
+By Alberto Benroubi • 4-minute read
+By Sichen Liu • 3-minute read

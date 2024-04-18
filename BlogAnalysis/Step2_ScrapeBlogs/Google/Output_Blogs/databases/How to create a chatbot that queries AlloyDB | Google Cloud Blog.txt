@@ -1,0 +1,42 @@
+Solutions Lead, Databases
+Customer Engineer, Data Analytics
+Coming to Las Vegas, April 9–11.
+Generative AI is a cutting-edge technology that harnesses the power of AI to produce original and creative content. Since SQL queries are one of the content types it can generate, it has the potential to revolutionize the way we interact with databases. By generating SQL queries from natural language, gen AI can make it easier for users to access and analyze data without having to write complex queries themselves. This is a great blog written by Andi Gutmans, GM and VP, Databases, Google Cloud on how AI changes the developer role. Let’s have a look at how a multilingual chatbot can help with querying and analyzing data stored in a database. In this blog post, we will show you how to create a multilingual chatbot that stores sample customer shopping data. We’ll use popular open source and Google Cloud technologies including Langchain, AlloyDB, Streamlit, Vertex AI, and Google Translate.
+LangChain is a powerful and versatile open-source library that makes it easier for developers to build applications with Large Language Models (LLMs). It provides a comprehensive set of tools and resources for connecting LLMs to multiple data sources, such as databases or documents. This allows you to string together a sequence of commands to create sophisticated applications that can access and process a wider range of information.
+LangChain is a valuable tool for developers who want to build complex applications with LLMs. It offers a number of advantages, including:
+AlloyDB for PostgreSQL is a fully-managed, PostgreSQL-compatible database for demanding, enterprise-grade transactional and analytical workloads. Imagine PostgreSQL plus the best of the cloud: elastic storage and compute, intelligent caching, and AI/ML-powered management. Further, AlloyDB delivers unmatched performance: In our performance tests, it’s more than 4x faster on transactional workloads, and up to 100x faster analytical queries than standard PostgreSQL, all with simple, predictable pricing. Designed for mission-critical applications, AlloyDB offers extensive data protection and an industry leading 99.99% availability.
+Here we’ll use AlloyDB as a simple database to store chat history, but in future blog posts we’ll explain how to leverage its built-in vector database and AI capabilities to build more data-aware, AI-enabled applications.
+Streamlit is an open-source Python framework that makes it easy to create and share beautiful, custom web apps for machine learning and data science. With Streamlit, you can build and deploy powerful data apps in just a few minutes, without having to rely on a team of front-end developers or learn web design languages.
+Streamlit was founded in 2018 by ex-Google engineers who had first-hand experience of the challenges faced when developing and deploying machine learning models and dashboards. They wanted to create a framework that would make it easy for anyone to build and share data apps, regardless of their technical skills.
+Some of the benefits of using Streamlit:
+Generative AI on Vertex AI (also known as genai) gives you access to Google's large generative AI models so you can test, tune, and deploy them for use in your AI-powered applications. There are a number of different LLMs available, and you can choose the one that best suits your needs. In this example we use a PaLM 2 Model (https://ai.google/discover/palm2/)
+Google Translate is a free online translation service that can translate text, speech, and websites between over 100 languages. You may have heard of the google translate website but the model that powers the website is also available to developers via Cloud Translation API. What sets Google Translate apart is its commitment to privacy. The customer data and translations remain confidential and are not utilized to refine the model.
+Thus, Google Translate elevates team efficiency, eliminating the need for manual translations or external assistance. In this demo, we streamline the responses by seamlessly incorporating translated text and thus, enable the chatbot to support customer cases in diverse languages.
+A multilingual chatbot that queries a database can be used in a wide variety of industries. For example, a travel company could use it to offer flights, hotels, and rental cars booking, as well as help with other travel requirements such as visa arrangements. A financial company could use it to help customers check account balances, transfer money, and pay bills. Multilingual chatbots also offer other benefits, such as reaching a global audience, increasing efficiency, and allowing employees to query the data in their native language.
+In this example we will create a chatbot that allows you to query a database storing sample customer shopping data.
+Now that we have introduced the tools that we will be using, let's take a look at how to create a multilingual chatbot. In this example we are using Python, you can either just create a python script or if you want to step through the code you can use a tool such as Jupyter Notebooks, more information on this can be found here (https://cloud.google.com/vertex-ai/docs/workbench/notebooks)
+Begin by creating a user to query your AlloyDB database. To improve security, you should give the LLM read-only access to the database and limit it to only the tables that are necessary to meet the intended requirements.
+Here is an SQL example of how to create a chat read-only user with read-only access to the shopping schema, this user can be used in the python script below.
+
+3. Streamlit based python program to create a LLM call with langchain.
+4. Create a prompt template - Getting the most out of an LLM means understanding how to work with it to achieve your desired output. Similar to how a search query returns specific results from a search engine, generative AI prompts guide the response you get back from a model. The words and phrases you choose, the prompt’s structure, and the context you provide act as instructions and guidance that shape the output. If a prompt is inaccurate, poorly-designed, or vague, the output you generate will likely be, too.
+5. Interacting with the database using Langchain.
+6. Translate the response in the selected language leveraging Google Cloud Translation API.
+Creating a multilingual chatbot can be a great way to provide support to users in multiple languages. By using the tools that we have discussed in this blog post, you can start your journey in creating a multilingual chatbot.
+Next Steps
+GenAI
+https://cloud.google.com/ai/generative-ai?hl=en
+LLM
+https://ai.google/discover/foundation-models/
+AlloyDB
+https://cloud.google.com/alloydb
+Google Translate
+https://cloud.google.com/translate/docs/reference/rest
+Jupyter Notebooks
+https://cloud.google.com/vertex-ai/docs/workbench/introduction
+! NOTE:
+Since the Palm model used in our examples is part of the Generative AI Service, some of the Services used here may sometimes provide inaccurate or offensive content that doesn’t represent Google’s views. Further information on Google terms of service can be found here.
+By James Groeneveld • 6-minute read
+By Subra Chandramouli • 2-minute read
+By Alberto Benroubi • 4-minute read
+By Sichen Liu • 3-minute read

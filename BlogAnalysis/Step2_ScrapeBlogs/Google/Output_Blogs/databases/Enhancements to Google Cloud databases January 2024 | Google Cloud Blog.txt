@@ -1,0 +1,10 @@
+Senior Product Manager, Databases, Google Cloud
+Coming to Las Vegas, April 9–11.
+To consolidate and provide comprehensive information to you, we are launching a new periodic blog series dedicated to Google Cloud's database services. This series will keep you updated on the latest feature releases and innovations within our database offerings.
+In case you missed it, Gartner recognized Google as a Leader and Google Cloud was positioned furthest in vision among all vendors evaluated in the 2023 Gartner® Magic Quadrant™ for Cloud Database Management Systems. As a Leader in this report for four consecutive years, we believe Google’s position is a testament to delivering continuous customer innovation in areas such as built-in intelligence, open data ecosystems and unified data offerings. Download the complimentary report.
+Now here are some the recent product updates across our databases portfolio:
+Dive into our comprehensive blogs to stay updated on all the latest developments, and explore our detailed product documentation for an in-depth understanding of our managed database services.
+By James Groeneveld • 6-minute read
+By Subra Chandramouli • 2-minute read
+By Alberto Benroubi • 4-minute read
+By Sichen Liu • 3-minute read

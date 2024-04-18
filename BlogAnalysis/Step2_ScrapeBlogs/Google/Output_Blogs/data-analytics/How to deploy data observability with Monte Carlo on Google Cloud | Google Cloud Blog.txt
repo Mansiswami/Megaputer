@@ -1,0 +1,24 @@
+Staff Cloud Solutions Architect, Google Cloud
+Product Marketing, Monte Carlo
+Coming to Las Vegas, April 9–11.
+Data is increasingly valuable, powering critical dashboards, machine learning applications, and even large language models (LLMs). Conversely, that means every minute of data downtime — the period of time data is wrong, incomplete, or inaccessible — is more and more costly. For example, a data pipeline failure at a digital advertising platform company could result in hundreds of thousands in lost revenue .
+Unfortunately, it is impossible to anticipate all the ways data can break with testing, and attempting to maintain a view of inconsistencies across your entire environment would be incredibly time-consuming.
+Monte Carlo, a data observability software provider, together with Google Cloud can significantly minimize data downtime by utilizing cutting-edge Google Cloud services for ETL, data warehousing, and data analytics. Combined with the robust capabilities of Monte Carlo’s data observability, you can better detect, resolve, and prevent data incidents on a large scale.
+Monte Carlo’s data lineage shows the assets upstream with anomalies that may be related to the volume incident, while Impact Radius shows who will be affected to help inform smart triaging.
+This is all enabled by the metadata, access to query logs, and other BigQuery features that help structure your data, as well as the APIs provided by Looker.
+This reference architecture enables these key outcomes:
+1. Mitigate the risk and impact of bad data: Reducing the number of incidents and improving time-to-resolution lowers the likelihood that bad data will cause negative reputational, competitive, and financial outcomes.
+2. Increase data adoption, trust, and collaboration: Catching incidents first, and proactively communicating during the incident management process, helps build data trust and adoption. Data quality monitors and dashboards are the enforcement and visibility mechanisms required for creating effective, proactive data SLAs.
+3. Reduce the time and resources spent on data quality: Studies show data teams average 30% or more of their workweek on data quality and other maintenance related tasks rather than tasks to unlock additional value from data and data infrastructure investments. Data observability reduces the amount of time data teams need to scale their data quality monitoring as well as resolving incidents.
+4. Optimize the performance and cost of data products: When data teams move fast, they build “pipeline debt” over time. Slow-running data pipelines utilize excess compute, cause data quality issues, and create a poor user experience for data consumers, who must wait for data to return, dashboards to load, and AI models to update.
+Monte Carlo recently expanded to a hybrid-SaaS offering using native Google Cloud technologies. The following diagram shows a Google-Cloud-hosted agent and datastore architecture for connecting BigQuery, Looker, and other data pipeline solutions to your Monte Carlo platform.
+Additional architecture options include deployments where:
+These deployment options help you choose how much control you want over your connection to the MC service as well as how you want to manage the agent/collector infrastructure.
+The Google-Cloud-hosted agent and datastore option provides several capabilities, built on the following components:
+In conclusion, deploying data observability with Monte Carlo and Google Cloud offers an invaluable solution to the increasingly critical issue of data downtime. By leveraging advanced Google Cloud services and Monte Carlo's observability capabilities, organizations can not only mitigate risks associated with bad data but also enhance trust, collaboration, and efficiency across their data landscape. As we've explored, the integration of tools like BigQuery and Looker with Monte Carlo's architecture creates a powerful synergy, optimizing data quality and performance while reducing the time and resources spent on data maintenance.
+If you're looking to elevate your organization's data management strategies and minimize data downtime, consider exploring the integration of Monte Carlo with your Google Cloud environment. Start by evaluating your current data setup and identifying areas where Monte Carlo's observability can bring immediate improvements. Remember, in the world of data, proactive management is key to unlocking its full potential.
+Ready to take the next step? Reach out to the Monte Carlo or Google Cloud team today to begin your journey towards enhanced data observability and reliability. Let's transform the way your organization handles data!
+By Vladimir Elvov • 6-minute read
+By Marcel Fohrmann • 4-minute read
+By Omid Fatemieh • 5-minute read
+By Jeremy Chang • 5-minute read

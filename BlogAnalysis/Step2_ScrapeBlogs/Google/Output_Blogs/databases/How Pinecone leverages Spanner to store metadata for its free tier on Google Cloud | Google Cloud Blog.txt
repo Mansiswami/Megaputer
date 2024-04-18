@@ -1,0 +1,19 @@
+VP of Engineering, Pinecone
+Staff Engineer, Pinecone
+Coming to Las Vegas, April 9–11.
+Editor's note: The previous version of this blog stated that Google Cloud’s Spanner now powers Pinecone. Correction: Pinecone currently only leverages Spanner to store data plane metadata for its free tier on Google Cloud.
+At Pinecone, we offer one of the leading vector databases, providing a fully managed, scalable, and easy-to-use platform for vector search. Used by a wide range of customers, including Fortune 500 companies and startups, our vector database helps to power a variety of applications. Recently, we leveraged Spanner to store metadata for indexed segments in our free tier on Google Cloud.
+Why Spanner?
+Our free-tier offering has tens of thousands of active users at any given time, relying on a highly scalable, multitenant architecture that drives down the cost of storage — without sacrificing the user experience. The data plane metadata for each index consists of pointers and manifests that hold a consistent view of the index. Since the critical read path accesses metadata, we needed to store it in a highly available database that provided low-latency point reads.
+We were also looking for a SQL database with transactional semantics so our free tier on Google Cloud could scale to any dimension. We needed this to support not only our current multi-tenant workloads but also future offerings in the fast-moving AI space. It also needed to have extremely high durability and efficient read/write performance without the operational burden of managing sharding, scaling, and failover. We were anticipating the need to scale Pinecone’s free tier on Google Cloud by three orders of magnitude over the coming year, so any database we chose would need to handle that while at the same time being cost-effective.
+Spanner checks all of these boxes for us. It is both cost-efficient and massively scalable, while also providing high availability and durability. In addition, Spanner’s PostgreSQL interface offers familiarity and portability. Sweetening the deal for us, Spanner recently received significant price-performance improvements, providing up to 50% increase in throughput, 2.5 times the storage per node, and lower latency than before, with no change in price.
+Given that we already had a Google Cloud free tier offering before leveraging Spanner, we had to carefully perform the migration to ensure we provided the best possible user experience while getting comfortable with running Spanner at increasing scale in production.
+After developing, testing, and benchmarking the new free-tier architecture on Google Cloud with Spanner PostgreSQL, we implemented feature flagging to divert a small fraction of signups to the new tier. We then spent weeks examining key performance indicators (KPIs) to ensure a positive user experience and expected cost-of-goods sold (COGS).
+Over time, we ramped up traffic, and today, all new free-tier users on Google Cloud automatically leverage the new Spanner-based multitenant architecture. The overall user experience has been improving, while our costs to support the free tier have reduced by 10x.
+The Pinecone-Spanner use case is a great example of how Spanner can be used to build and run innovative and mission-critical workloads.
+Due to Spanner’s scalability, reliability, and performance, we can massively scale-free trials offered on Google Cloud to our customers. Spanner's ability to handle large volumes of data and transactions makes it a great platform to power our free tier and control plane on Google Cloud.
+Learn more:
+By James Groeneveld • 6-minute read
+By Subra Chandramouli • 2-minute read
+By Alberto Benroubi • 4-minute read
+By Sichen Liu • 3-minute read

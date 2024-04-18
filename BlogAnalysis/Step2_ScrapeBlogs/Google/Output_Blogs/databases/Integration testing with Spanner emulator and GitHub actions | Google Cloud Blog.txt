@@ -1,0 +1,62 @@
+Developer Relations Engineer
+Coming to Las Vegas, April 9–11.
+Spanner is a highly scalable, reliable, and globally distributed database from Google Cloud ideally suited for business-critical applications that demand high performance and continuous operation.
+As a developer, you need thorough testing to ensure the seamless integration of Spanner into your applications. Integration testing focuses on verifying that different components of a system work together after making changes to those components. For Spanner, integration testing ensures that your application's data operations such as transactions and error handling work correctly with the database.
+This post demonstrates how to set up integration testing for Spanner using GitHub Actions and the Spanner emulator. The emulator mimics the behavior of Spanner outside of Google Cloud, which is helpful for rapid development of applications backed by a Spanner database.
+The example application we’ll test is a Golang backend service that manages player profiles for a fictitious game. However, these principles can be used for other applications and services in other languages and industries.
+The “integration” we are testing here is between the profile service and Spanner for a fast feedback loop to ensure code changes to the service will work correctly. This is not full end-to-end testing between all services in our stack. Doing testing at that level should use an actual staging environment with Spanner prior to deploying to production.
+You can find out more in this post which has a good overview of the types of tests that should be performed to qualify a software release.
+We'll look at these components for our integration tests:
+More details on these components are provided below, but the architecture will look something like this:
+Integration testing profile-service using Spanner emulator
+Since our service code is stored in a GitHub repository, GitHub Actions are the perfect option for our automated integration tests.
+GitHub Actions is part of a continuous integration and continuous delivery (CI/CD) platform that automates your software development workflow. It integrates seamlessly with GitHub repositories, allowing you to define and execute automated tasks triggered by code changes or scheduled events.
+The Spanner emulator is a lightweight tool that can run completely offline. This enables developers to test their applications against Spanner without incurring any cloud costs or relying on an actual Spanner instance. This facilitates rapid development cycles and early detection of integration issues.
+There are some differences and limitations to the Spanner emulator compared to an actual Spanner database that you should be familiar with.
+The code for the sample gaming application can be found on Github. We will look first at the integration test for the profile service, and then the workflow that enables automated integration testing using Github Actions.
+The profile service integration test can be found in the profile-service's main_test.go file. This file contains the following sections:
+Because the Spanner emulator is deployed as a container, we use the testcontainers-go library. This makes it extremely easy to codify starting the emulator:
+
+This sets up the emulator container with a mapped port of 9010 that we can communicate with. The networking uses a Docker network, so that any container or process with access to that network can communicate with the 'emulator' container.
+The testcontainers-go library makes it easy to wait until the container is ready before proceeding to the next steps.
+When it is ready, we capture the host information and expose that as an operating system environment variable and define a golang struct. Both of these will be used later for setting up the instance and database.
+
+When all that is ready, we can create the Spanner instance and database:
+
+Setup the Spanner instance and database
+With the emulator running, we need to set up a test instance and database. First, let's set up the instance:
+
+This leverages the Spanner instance golang library to create the instance. This only works because we set the SPANNER_EMULATOR_HOST environment variable earlier. Otherwise, the Spanner library would be looking for an actual Spanner instance running on your Google Cloud project.
+Now, we wait until the instance is ready before proceeding in our test.
+
+For the database setup, we need a schema file. Where this schema file comes from is up to your processes. In this case, I make a copy of the master schema file during the 'make profile-integration' instructions in the Makefile. This allows me to get the most recent schema that is relevant to player profiles.
+To set up the database, we leverage Spanner's database golang library.
+
+In this function, we can handle modifications to the schema to be understood by the emulator. We have to convert the schema file into an array of statements without the trailing semicolons.
+After the database setup is complete we can start the profile service.
+Here, we are starting the profile service as another container (using testcontainers-go) that can communicate with the emulator.
+
+When the service is ready, we capture the endpoint information and expose that as a struct for use in our tests:
+
+With both the emulator and service running, we can run our tests.
+Our integration tests use the testify assert library and hit the endpoints for our profile service. Our service tests the following behavior:
+
+Once the tests are run, it's time to clean up the containers that we created. To do this, we run a teardown function:
+
+Once again, testcontainers-go makes it easy to clean up!
+The Github Action workflow
+Setting up Github Actions is as simple as adding workflow files in the .github/workflows directory of the repository.
+The behavior of the Action depends on the instructions of each file. Does the action trigger on push, or for a pull request? Do changes to all files trigger the action, or only a subset? What dependencies need to be in place to run the Action?
+Here is the YAML Action defined for the profile service:
+
+This simple yaml file defines the tasks to run only on a pull request that contains changes to the backend_services/profile directory. The action installs go dependencies and runs some lint checks before going on to the unit and integration tests.
+The make commands for unit tests and integration tests are defined in the repository's Makefile.
+
+Notice the integration test setting up the test_data/schema.sql file.
+With this in place, when a pull request is opened with changes to the profile service the integration test looks roughly like this:
+By leveraging the Spanner emulator and GitHub Actions, you can establish a robust integration testing environment for your Spanner applications. This approach enables you to detect and resolve integration issues early in the development process, ensuring the smooth integration of Spanner into your applications.
+To further explore the capabilities of Spanner, take advantage of a free trial instance. This will allow you to experiment with Spanner and gain hands-on experience with its features and functionality at no cost for 90 days.
+By James Groeneveld • 6-minute read
+By Subra Chandramouli • 2-minute read
+By Alberto Benroubi • 4-minute read
+By Sichen Liu • 3-minute read

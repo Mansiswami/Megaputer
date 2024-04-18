@@ -1,0 +1,11 @@
+Product Marketing, Google Cloud
+Coming to Las Vegas, April 9–11.
+Headline-grabbing security incidents in 2023 have shown that cybersecurity continues to be challenging for organizations around the world, even those with skilled practitioners and state-of-the-art tools. To help prepare you for 2024, we are offering the final installment of this year’s Google Cloud Security Talks on Dec. 19.
+Join us as our experts show you how you can meaningfully strengthen your security posture and increase your resilience against new and emerging threats with modern approaches, security best practices, generative AI and AI security frameworks, and actionable threat intelligence by your side.
+This series of digital sessions — created by security practitioners for security practitioners — will kick off with a deep dive by our Mandiant experts into the two main types of threats they saw emerge this year, how they impacted organizations, and why we think they will have lasting impact into 2024.
+Here’s a peek at other sessions where you’ll walk away with a better understanding of threat actors, potential attack vectors and get fresh ideas for detecting, investigating, and responding to threats:
+This year’s final Google Cloud Security Talks is designed to give you the assurance you need heading into 2024 that detecting, investigating, and responding to threats at scale is achievable with modern security operations approaches and actionable threat intelligence. Make sure you join us, live or on-demand.
+By Dr. Grazia Frontoso • 3-minute read
+By Phil Venables • 6-minute read
+By Gillian Hamilton • 3-minute read
+By Dr. Nicolai Baldin • 5-minute read

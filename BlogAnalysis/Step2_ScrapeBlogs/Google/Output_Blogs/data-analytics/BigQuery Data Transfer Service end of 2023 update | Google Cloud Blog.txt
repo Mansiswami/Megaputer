@@ -1,0 +1,14 @@
+Product Manager, Google Cloud
+Software Engineering Manager, Google Cloud
+Coming to Las Vegas, April 9–11.
+BigQuery makes it easy for you to gain insights from your data, regardless of its scale, size or location. BigQuery Data Transfer Service (DTS) is a fully managed service that automates the loading of data into BigQuery from a variety of sources. DTS supports a wide range of data sources, including first party data sources from the Google Marketing Platform (GMP) such as Google Ads, DV360 and SA360 etc. as well as cloud storage providers such as Google Cloud Storage, Amazon S3 and Microsoft Azure.
+BigQuery Data Transfer Service offers a number of benefits, including:
+Based on customer feedback, we launched a number of key feature updates in the second half of 2023. These updates include broadening our support for Google’s first party data sources, enhancing the current portfolio of connectors to incorporate customer feedback and improve user experience, platform updates to support regulated workloads, as well as other important security features.
+Let’s go over these updates in more detail.
+Your data is only useful if you can access it in a trusted and safe way. This is particularly important for customers running regulated workloads. To that end, we enabled:
+As we look to 2024, we are excited to continue this rapid innovation with new connectors for marketing analytics, operational databases and enterprise applications. At the same time, we look to evolve our portfolio of connectors with capabilities that improve the “freshness” of data, and help customers with AI-assisted transformations.
+Try BigQuery Data Transfer Service today and streamline loading your data into BigQuery!
+By Vladimir Elvov • 6-minute read
+By Marcel Fohrmann • 4-minute read
+By Omid Fatemieh • 5-minute read
+By Jeremy Chang • 5-minute read

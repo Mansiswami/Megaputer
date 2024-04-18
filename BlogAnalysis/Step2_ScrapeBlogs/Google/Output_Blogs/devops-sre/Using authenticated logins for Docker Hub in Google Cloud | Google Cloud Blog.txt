@@ -1,0 +1,15 @@
+Product Manager
+Coming to Las Vegas, April 9–11.
+With the proliferation of open source software in modern development environments, your environment may have dependencies on public container images stored in Docker Hub. Without proper configuration and controls, these dependencies can cause security and reliability risks within your CI/CD pipeline. In this blog, we outline some best practices that your teams can follow in order to reduce these risks.
+Storing local copies of public containers wherever possible provides the highest reliability and allows for stronger security controls. The Open Containers Initiative published guidelines around consuming public content that you can refer to for additional details.
+We recommend that any time you access Docker Hub, you do so in an authenticated manner instead of anonymously. In addition to security risks, making anonymous requests can also introduce risk of hitting rate limits, which may affect the reliability of your CI/CD pipelines. Depending on the architecture of your CI/CD infrastructure and the Google Cloud services that you use, there are a few options for authentication:
+The following Cloud build config file shows how to login to Docker using the Docker username and password stored in Secret Manager, and run a private image. For more information on using Cloud Build to interact with Docker Hub, see Interact with Docker Hub images.
+
+Following the best practices outlined above improves security posture and reduces reliability risk within your CI/CD pipelines. Additionally, implementing the right authentication controls for your environments removes blockers in development later in production, and ensures corporate security standards are met or exceeded in the process.
+In addition, the following related product pages and features may also be useful for you.
+Changes to Docker Hub rate limits on pull requests may impact container-based applications on Google Cloud, but there are mitigation strategies.
+By Michael Winser • 4-minute read
+By Lee Yanco • 3-minute read
+By Tao He • 6-minute read
+By Usama Ijaz • 6-minute read
+By David Rush • 4-minute read

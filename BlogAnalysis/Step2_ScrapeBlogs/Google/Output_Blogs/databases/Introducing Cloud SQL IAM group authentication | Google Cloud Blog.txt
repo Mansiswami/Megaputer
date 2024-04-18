@@ -1,0 +1,44 @@
+Customer Engineer, Database Specialist
+Coming to Las Vegas, April 9–11.
+Managing and auditing data access can be very complex at scale, in particular, for a fleet of databases with a myriad of users. Today, we are introducing IAM group authentication for Cloud SQL. With this launch, you can take advantage of better security, simplify user management and database authentication at scale, and empower database and security administrators to manage database access via familiar IAM-based authentication.
+Cloud SQL IAM group authentication is advanced group-based database authentication that allows users to leverage groups from Google Cloud’s identity service to manage and control connectivity and access, as well as permissions, to Cloud SQL instances. IAM group authentication extends existing IAM authentication functionality by allowing database access to be managed at the group level. Currently, IAM Group Auth is only available for MySQL 8.0+.
+Support for IAM group authentication builds on Cloud SQL’s existing IAM database authentication capabilities, as well as database authentication via username and password. Authentication via IAM offers a more comprehensive and robust solution compared with usernames and passwords, with enhanced security, granular controls, centralized management and much more. Transitioning from traditional username and password authentication to IAM will allow you to safeguard your data without significant disruption. And if you’re already using IAM database authentication, moving to IAM Group authentication offers a similar, familiar user experience.
+In this blog, we’ll offer some scenarios where IAM group authentication can help add value and show you how easy it is to set up and use.
+There are many advantages to this new and improved authentication method, which can help relieve DBAs and security admins from repetitive tasks when administering database access. To illustrate, imagine that you have several users who require access to run queries against a set of tables, storing returns data in a retail database, and storing the tables of catalog data in a products database. The objective is to grant and then revoke access for all these users at the end of the quarter in an efficient way. Let’s take a look at how to achieve this with Cloud SQL’s traditional IAM authentication and new IAM group flows:
+Security admin task: granting/revoking login privileges to an entire group of users
+Note: There are other solutions in the market where security admins can create a group and allow users to impersonate that group. This works, albeit compromises security, owing to account sharing and accountability gaps.
+As you can see, the ease of granting/revoking login privileges to the entire group of users at once by security admins is much greater with new IAM group authentication.
+DBA task: Granting/revoking access to database objects like tables to the group at once
+Compliance/audit task: Show fine-grained audit logs activity for individual users
+For example, users belonging to the retail IAM group will be logged in as their own account. If audit logging is enabled, IAM Group users and service accounts will generate audit logs whenever they access data within a database.
+In short, IAM group authorization provides a better user experience, as users can access tables or perform tasks that require different group privileges in a single session.
+Step 1: Add Cloud Identity groups in the project where you manage your Cloud SQL instances and add group members.
+Step 2: Add or remove users via the Cloud Identity service. Please refer to the link provided in Step 1.
+Step 3: Grant the groups the necessary IAM roles to log in to the Cloud SQL instance. The roles can be granted via the Google Cloud console on the project's IAM page or the script below.Please note: This is just needed for the group, as the members automatically inherit permissions. You can perform this operation via the console or via the gcloud command.
+Grant the role roles/cloudsql.instanceUser to the group.
+
+Step 4: For a new MySQL instance, create the MySQL instance and enable the IAM authentication database flag (cloudsql_iam_authentication). Otherwise, for an existing instance go to Step 5 directly. This can be accomplished via the console as well.
+
+Step 5: Add groups to your MySQL instance. Please note that if you want to switch your existing IAM user over to using IAM Group authentication, you will need to remove the existing IAM authentication user first. Please see the instructions here on how to delete IAM users.
+
+Step 6: Grant DB privileges to the new group
+As explained above, database grants and privileges are done on the group instead of individual users. Initially, groups are not granted privileges to any database, hence use the GRANT statement to give the user privileges.
+
+Step 7: IAM authentication is only available over SSL connections. Please see the instructions on connecting to your instance using SSL to generate the Certificate Authority (CA), client public key certificate, and client private key that is required to connect via SSL.
+Step 8: To log in via the MySQL client, users need to authenticate to IAM using gcloud auth login while service accounts authenticate to auth activate-service-account; for an IAM user account, this is the user's email address, without the @ or domain name. For example, for test-user@gmail.com, enter test-user. For a service account, this is the service account's email address without the @project-id.iam.gserviceaccount.com suffix.
+
+Upon successfully logging in for the first time, the user or service account is automatically created within the database. Users and service accounts inherit the database privileges granted to their groups.
+Users can also login using Cloud SQL Auth Proxy.
+If you would like to list all the IAM group users on your instance you can run the command:
+
+Users using IAM group authentication will be displayed with type CLOUD_IAM_GROUP_USER.
+Service accounts using IAM Group authentication will be displayed with type CLOUD_IAM_GROUP_SERVICE_ACCOUNT
+Groups that you have added to the instance will be displayed with type CLOUD_IAM_GROUP
+As needs of users change over time, you can use Cloud Identity to update privileges based on group memberships.
+So, why should you care about Cloud SQL IAM group authentication? The answer is simple:
+With the step-by-step instructions above, you have a runbook that can easily take you to Cloud SQL IAM group auth, to improve your access control experience and security, reduce your operational burden, and ensure that users have the right permissions that they need to perform their tasks.
+To learn more about Cloud SQL, click here. To learn more about IAM authentication, click here.
+By James Groeneveld • 6-minute read
+By Subra Chandramouli • 2-minute read
+By Alberto Benroubi • 4-minute read
+By Sichen Liu • 3-minute read

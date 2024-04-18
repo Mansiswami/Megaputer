@@ -1,0 +1,21 @@
+Group Product Manager
+Staff Software Engineer
+Coming to Las Vegas, April 9–11.
+Businesses generate massive amounts of speech data every day, from customer calls to product demos to sales pitches. This data can transform your business by improving customer satisfaction, helping you prioritize product improvements and streamline business processes. While AI models have improved in the past few months, connecting speech data to these models in a scalable and governed way can be a challenge, and can limit the ability of customers to gain insights at scale.
+Today, we are excited to announce the preview of Vertex AI transcription models in BigQuery. This new capability can make it easy to transcribe speech files and combine them with other structured data to build analytics and AI use cases — all through the simplicity and power of SQL, while providing built-in security and governance. Using Vertex AI capabilities, you can also tune transcription models to your data and use them from BigQuery.
+Previously, customers built separate AI pipelines for transcription of speech data for developing analytics. These pipelines were siloed from BigQuery, and customers wrote custom infrastructure to bring the transcribed data to BigQuery for analysis. This helped to increase time to value, made governance challenging, and required teams to manage multiple systems for a given use case.
+Google Cloud's Speech to Text V2 API offers customers a variety of features to make transcription easy and efficient. One of these features is the ability to choose a specific domain model for transcription. This means that you can choose a model that is optimized for the type of audio you are transcribing, such as customer service calls, medical recordings, or universal speech. In addition to choosing a specialized model, you also have the flexibility to tune the model for your own data using model adaptation. This can allow you to improve the accuracy of transcriptions for your specific use case.
+Once you’ve chosen a model, you can create object tables in BigQuery that map to the speech files stored in Cloud Storage. Object tables provide fine-grained access control, so users can only generate transcriptions for the speech files for which they are given access. Administrators can define row-level access policies on object tables and secure access to the underlying objects.
+To generate transcriptions, simply register your off-the-shelf or adapted transcription model in BigQuery and invoke it over the object table using SQL. The transcriptions are returned as a text column in the BigQuery table. This process makes it easy to transcribe large volumes of audio data without having to worry about the underlying infrastructure. Additionally, the fine-grained access control provided by object tables ensures that customer data is secure.
+Here is an example of how to use the Speech to Text V2 API with BigQuery:
+
+This query generates transcriptions for all of the speech files in the object table and returns the results as a new text column named transcription.
+Once you’ve transcribed the speech to text, there are three ways you can build analytics on the resulting text data:
+
+After transcription, you can unlock powerful search functionalities by building indexes optimized for needle-in-the-haystack queries, made possible by BigQuery's search and indexing capabilities.
+This integration also unlocks new generative LLM applications on audio files. You can use BigQuery’s powerful built-in ML functions to get further insights from the transcribed text, including ML.GENERATE_TEXT, ML.GENERATE_TEXT_EMBEDDING, ML.UNDERSTAND_TEXT, ML.TRANSLATE, etc., for various tasks like classification, sentiment analysis, entity extraction, extractive question answering, summarization, rewriting text in a different style, ad copy generation, concept ideation, embeddings and translation.
+The above capabilities are now available in preview. Get started by following the documentation, demo, or contact your Google sales representative.
+By Vladimir Elvov • 6-minute read
+By Marcel Fohrmann • 4-minute read
+By Omid Fatemieh • 5-minute read
+By Jeremy Chang • 5-minute read

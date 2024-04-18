@@ -1,0 +1,14 @@
+Chief Evangelist at Google Cloud
+Coming to Las Vegas, April 9–11.
+The content in this blog post was originally published last week as a members-only email to the Google Cloud Innovators community. To get this content directly in your inbox (not to mention lots of other benefits), sign up to be an Innovator today.
+
+Three new things to know this week
+An empty cloud project is a lonely cloud project. Jump Start Solutions offer an outstanding way to quickly deploy a reference app and explore how cloud services work together. This playlist points to a handful of walkthrough videos that explain some of the most popular ones.
+Every week I round up some of my favorite links from builders around the Google Cloud-iverse. Want to see your blog or video in the next issue? Drop me a line!
+Three ways to build your cloud muscles this week
+https://twitter.com/rseroter/status/1749987972412563865
+Become an Innovator to stay up-to-date on the latest news, product updates, events, and learning opportunities with Google Cloud.
+By Google Cloud Content & Editorial  • 1-minute read
+By Google Cloud Content & Editorial  • 29-minute read
+By Google Cloud Content & Editorial  • 6-minute read
+By Aqsa Fulara • 3-minute read

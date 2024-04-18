@@ -1,0 +1,60 @@
+VP, TI Security & CISO, Google Cloud
+Senior director, Office of the CISO, Google Cloud
+Get the latest on security from Cloud CISO Phil Venables.
+Welcome to the second Cloud CISO Perspectives for December 2023. To close out the year, I’m sharing what attracted the most interest from our security updates this year, and Nick Godfrey from our Office of the CISO presents a selection of forward-looking insights from the Office of the CISO and our new Cybersecurity Forecast report for 2024.
+2023 was one of the rare years when an IT shift forever alters the world. While we’ve been using machine learning and AI in Google security for nearly two decades, the rise of generative AI dominated headlines and in our security updates. Below is a list of the top 10 security updates we’ve shared this year that garnered the most interest from our readers and customers.
+Google Cloud mitigated largest DDoS attack, peaking above 398 million rpsHow Google Cloud plans to supercharge security with generative AIGoogle researchers discover 'Reptar,’ a new CPU vulnerabilityGoogle Cloud Assured Open Source Software service now GAExpanding our Security AI ecosystem at Security Summit 2023How Google and Intel make Confidential Computing more secureTrapped in a frame: Why leaders should avoid security framework trapsThe Prompt: What to think about when you’re thinking about securing AIHow leaders can reduce risk by shutting down security theaterDuet AI for Developers and in Security Operations now GA
+Google Cloud mitigated largest DDoS attack, peaking above 398 million rps
+How Google Cloud plans to supercharge security with generative AI
+Google researchers discover 'Reptar,’ a new CPU vulnerability
+Google Cloud Assured Open Source Software service now GA
+Expanding our Security AI ecosystem at Security Summit 2023
+How Google and Intel make Confidential Computing more secure
+Trapped in a frame: Why leaders should avoid security framework traps
+The Prompt: What to think about when you’re thinking about securing AI
+How leaders can reduce risk by shutting down security theater
+Duet AI for Developers and in Security Operations now GA
+As with all Cloud CISO Perspectives, the contents of this newsletter are posted to the Google Cloud blog. If you’re reading this on the website and you’d like to receive the email version, you can subscribe here.
+Introducing Google Cloud’s new curated board of directors hub, highlighting resources on cybersecurity, risk governance, and security transformation.
+Introducing Google Cloud’s new curated board of directors hub, highlighting resources on cybersecurity, risk governance, and security transformation.
+By Nick Godfrey, senior director, Office of the CISO
+Cybersecurity can often seem like a reactive defensive scramble, hustling to respond to the latest zero-day vulnerability, treading water to stay above a churning sea of alerts, diving fast and deep into research, or madly dashing to keep business leaders and boards of directors appraised of security needs. However, proactive readiness is a key part of cybersecurity for an organization’s leaders, and our new Cybersecurity Forecast report uses today’s trends to explore likely scenarios that we expect to arise in the coming year.
+The report was a collaborative effort across Google Cloud security teams, including Mandiant Intelligence, Mandiant Consulting, Chronicle Security Operations, Google Cloud’s Office of the CISO, and VirusTotal. Below we’ve highlighted a few key points from the report, bolstered with new insights from our Office of the CISO.
+
+
+Generative AI drives defender conversations
+We expect generative AI and foundation models to play a rapidly-growing role for threat actors and defenders alike. Threat actors will likely use AI to increase the scale of their information operations, and we expect to see “phishing, SMS, and other social engineering operations” that will appear more legitimate, we wrote in the report. AI will likely help them craft phishing attacks that contain fewer misspellings, grammar errors, and obviously- cultural context.
+Yet as attackers get more persistent and innovative, cyber defenders will be able to tap into improved tools to stop them. Defenders will use gen AI and related technologies to strengthen detection, response, and attribution of adversaries at scale, as well as speed up analysis and other time-consuming tasks such as reverse engineering. In the long-term, we expect organizations using AI to boost security will see outsized benefits to reduce toil, address threat overload, and close the widening talent gap.
+Marina Kaganovich, executive trust lead, Office of the CISOLook for increasing instances of shadow AI in the workplace, when well-meaning employees use consumer-grade AI tools instead of more secure enterprise-grade counterparts. Since generative AI tools and use-cases will only mature over time, organizations should get ahead of the trend. They should develop plans to implement generative AI safely and successfully, and start by choosing gen AI tools that fit their use-cases.
+Toby Scales, advisor, Office of the CISOCompanies involved in developing generative AI models will increasingly be held to account for errors or omissions in their models' outputs, and enterprises who choose to adopt them will need to be aware of both the limits of foundational models and the emerging and unique methods to secure them. (For example, using open-source software tools such as Langchain and Rebuff.) As the pace of innovation increases, public declarations of AI principles and government-led efforts to guide responsible AI will become even more important as technical innovation and moral philosophy collide.
+
+
+As CISOs become more accountable, so will the C-suite and boards
+Taylor Lehmann, director, Office of the CISOFollowing new SEC rules, we'll see fewer CISOs accepting jobs without necessary job protections, like insurance and legal support, and clearly articulated board and senior leadership accountabilities for cybersecurity and risk management. The beliefs that the CISO is individually accountable for cybersecurity outcomes and that cybersecurity is beyond the typical responsibilities of non-technical leadership will no longer be accepted.
+David Homovich, security consultant, Office of the CISOIn 2023, boards of directors across many industry verticals took a more active role in cybersecurity oversight, largely driven by the increased business risk associated with evolving threats and the potential impact of new regulations. This enhanced engagement reflects a growing recognition that cybersecurity is not just an IT issue, but a critical component of effective overall risk management practices. We’ll continue to encourage directors to get educated, be engaged, and stay informed to maintain effective oversight. Start planning now if you haven’t, particularly for budgeting and resourcing.
+
+
+Expect more consolidation around SecOps
+Anton Chuvakin, security advisor, Office of the CISOConsolidation in security operations is a double-edged sword. While it promises efficiency and integration, it also risks vendor lock-in and stifling innovation. To help organizations avoid rigid platforms and siloed data, we want simpler tooling that works well and works with other tools. Preconfigured, opinionated workflows and detection content can jumpstart security programs and provide huge value to customers. However, to get the most of their detection and response tools, they need to go further.
+This means treating content as a starting point, not a silver bullet:
+
+
+Attacks targeting hybrid and multicloud environments will have increasing impact
+Jorge Blanco, director, Office of the CISODuring 2023, we saw elaborate attacks where attackers tried to overcome the boundaries between their target’s environments. The different technological strategies organizations use, including hybrid clouds, public-private clouds, and multicloud, are likely to complicate defending these environments.
+We expect that identity-management problems and configuration errors, which currently account for the origin of more than half of today’s compromises, will continue to be the main entry vectors. Savvy organizations can reduce their risk with correct credential management, enforcing policies, and significant training dedicated to cloud environments and architectures specifically to avoid configuration errors.
+Erin Joe, senior executive, cybersecurity, Office of the CISONation-state and cyber-criminal threat actors are developing and using zero-day and publicly-known but unpatched vulnerabilities in record numbers to exploit edge devices and security appliances. These attack types are often not detected or detectable by traditional security approaches, such as firewalls or endpoint security appliances.
+To combat these threats, security leaders should spend time in the coming year making sure their defense-in-depth strategies are broad and deep enough. They should work with business leaders to use automation and AI-boosted technologies to help modernize their security approach.
+
+
+Collaboration and cybersecurity across the workplace
+Odun Fadahunsi, Financial Services executive trust lead, Office of the CISOIn 2023, we brought together risk-management leaders responsible for overseeing cloud adoption, and hosted roundtable sessions for cloud adoption risk-management leaders. Cloud adoption risk, compliance, and control leaders can play a valuable role in 2024 by helping their organizations turn risk management results into a stronger driver of digital transformation goals.
+Bill Reid, security consultant, Office of the CISOThis past year was a watershed moment for patient safety in medical devices. The FDA noted that without good cybersecurity, you cannot have a safe and effective medical device. A new law requires all new medical devices to incorporate secure-by-design practices, have strong ongoing vulnerability and patch management support, and provide a software bill of materials. This security work should align with the manufacturers’ quality management systems, which is important because we expect to see strong enforcement of the new rules.
+Vinod D’Souza, head of manufacturing and industry, Office of the CISOWe’ll see supply chain vulnerabilities drive the conversation. Reliance on global suppliers and the continued convergence of interconnected systems are creating new attack surfaces that bad actors are using to compromise critical infrastructure and disrupt production. We are seeing this play out in multiple areas including in-vehicle hacking, smart energy grid vulnerabilities, operational technology exploitation, and industrial espionage that includes both intellectual property theft and competitor degradation. Customers should start developing plans to transform their security posture by leveraging cloud technologies and augmenting their capabilities with AI where it makes sense.
+The Google Cloud Cybersecurity Forecast report can help prepare security professionals and business leaders now for 2024.
+The Google Cloud Cybersecurity Forecast report can help prepare security professionals and business leaders now for 2024.
+Here are the latest updates, products, services, and resources from our security teams so far this month:
+To have our Cloud CISO Perspectives post delivered twice a month to your inbox, sign up for our newsletter. We’ll be back in January with more security-related updates from Google Cloud.
+By Dr. Grazia Frontoso • 3-minute read
+By Phil Venables • 6-minute read
+By Gillian Hamilton • 3-minute read
+By Dr. Nicolai Baldin • 5-minute read
