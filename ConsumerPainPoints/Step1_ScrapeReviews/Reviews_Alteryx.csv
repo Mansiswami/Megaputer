@@ -1,0 +1,271 @@
+Dislikes
+"The help isn't context based. If I want to work on a challenge, I need to know more about the tools to choose from rather than searching on a topic or concern. This is most applicable when multiple tools are required to solve a challenge."
+The learning curve is steeper than I would have thought. I know 3-4 programming languages and certain concepts in Alteryx are quite difficult to grasp (like macros)
+"It can feel a bit daunting at first, but I have no negative specific feedback. It has been an absolute game changer"
+I like everything so i can not complain about the tool
+Soke functionalities are tough to get in our head. it is a code base application so it gets difficult for us. It will not run in other devices except Desktops and laptops.
+A lot of the gripes and issues that I have experienced are currently being addressed by alteryx and are part of the roadmap.
+"Some features, like predictive tools, are not easy or impossible to configure. Its integration with Splunk is complicated and requires a deep understanding of both platforms. This complexity may be a significant barrier for users."
+"Alteryx is already an amazing tool but if I were to suggest something, I wish this tool had the ability to be available on the Macbook"
+"With large datasets, it can be challenging to work with long execution times. Not every tool can be cached. I wish you could save a workflow with the stored cache to help mitigate this issue. I also find Alteryx challenging to work on a single laptop screen; its interface is best used on a wider screen."
+"Nothing at the moment. Some things could be a little simpler, like creating PDF reports or using machine learning tools."
+Developer pricing is a little tough when you are first getting started. Server analysis would also be a great place to improve upon.
+"Considering the work and type of operations I had to perform for my dataset, I haven't found many backlogs for the tool."
+"The AMP engine doesn't live up to expectations. While it runs your workflow fast, it generates incorrect answers, defeating the purpose."
+"There is currently a limited number of individuals utilizing Alteryx within our organization. As a result, sharing of best practices, tips &amp; tricks, etc. is currently more limited - I anticipate this to change in the near future however as word continues to get out about Alteryx"
+"I think it is a bit overpriced, if I'm being transparent. I'd love to see the tool be more accessible to your every-day user and not just corporations who can super-afford it."
+I would like warnings would be more clear.
+Sometimes it can be hard to picture what the work flow needs to look like when you want to solve a business problem.
+Would be good to have capability like SFTP built in.
+Would love some more hands on help for overcoming corporate bottlenecks to compliance issues.
+The most difficult thing currently is that there are often times where as consultants we encounter clients who are not currently licensed users
+Alteryx can give the outputs of Tableau data extract but it is not capable of reading a similar extract. Not favourable to use when multiple users try to access the same workflow on a server as it becomes unstable and frequently crashes. It does not support special characters.
+"Honestly, the biggest downside is convincing people the benefits outway the cost."
+Could be a bit confusing at times with so many tools
+Alteryx is low-code/no-code tool so (even we have possibility to use Python or R languages) we have limited options against strictly coding environment.
+Sometimes the excel output functionality causes issue when writing to network drives
+Need spacious to see visual features clearly.
+There is not a much to dislike about Alteryx. Perhaps those individuals with very basic and beginner levels of data analysis and data literacy make require more training to use it effectively. Some of the syntax in formulas are different from other coding languages and require some troubleshooting.
+"It is a heavy application, Dashboard and UI are not on par with the industry. the clould only implementation is not yet released and the storage policy isnt very clear. The machine learning woul dbe better with updated modules"
+There are two plan options one of which is cloud based and the other for desktop usage and the prices are a little bit high for both plans. The cost per seat is a little bit off putting to be honest.
+"Some screens seem a little old in UI terms, but a minor gripe"
+Filter and sort options are a little annoying. The SQL writing environment can use a little bit of improvement and you might face latency issues from time to time.
+"Alteryx is great at data manipulation however when it comes to formatting it makes things much more difficult. There aren't built in functions that handle formatting well, whether it is changing font, highlighting, shading, font size, etc. I have learned in my career that presentation is extremely important. Being able to auto format data easier would make this tool extremely useful for me. It is the one thing that is making me think of sticking with writing VBA Macros and not using Alteryx as it is more versatile for me."
+Impossible to list anything that i dislike. alteryx is a powerhouse.
+"A bit of a learning curve is the only downside. The excellent point is once you understand how it works, the possibilities are endless. I'd like to see improvements in the hands-on training provided by Alteryx and not consulting companies."
+"Alteryx Server could use a little bit of a facelift. While most of my day-to-day involves Alteryx Desktop, sometimes the errors thrown when a workflow fails on Server can be incredibly vague and result in significant time troubleshooting to find out what it actually meant. I have heard though that this is on the books to be resolved in the near future, fingers crossed!"
+"At my company, we are not allowed direct database access with Alteryx. I would love it if Alteryx allowed a feature to connect to Tableau Server, so I could pull data directly through the connection instead of pulling down data from Tableau Server and then uploading the csv to Alteryx."
+"When I first started using Alteryx, one of my main complaints was that I couldn't open XLS and XLSB files, it would be good if any files could be used easily. Also, the idea that I can't run the workflow with the input file open is not the best, because sometimes is good to run the workflow with the archive open to compare."
+"While I had a positive experience using Alteryx, there are 2 things I thing could be improved. One: the learning curve can be steep, especially for someone that is not familiar with data analytics or programming. Two: I experienced some performance issues when working with large datasets (latency or lagging issue). It was a mld issue, but if it could be fixed that would make the user experience even better."
+"One of the downsides to Alteryx is that its SQL writing environment could use improvements. While the program is a low-code/no-code platform, there are still many situations where SQL is incredibly helpful. It can sometimes be cumbersome to write the code directly in Alteryx, so an additional application specific to coding can be helpful."
+One of the toughest changes that I've come across using Alteryx is the minute differences in the formula language against standard SQL. Some of the inputs are just barely different and it throws me off for a second.
+"Sometimes it can be a memory hog. Not sure how to fix that, maybe some sort of optimization under the hood. It also needs to ship with the correct Access database Distribution Engine and Oracle InstantClient."
+The UI requires heavy guidance and/or training. The inuitive use is very limited. Gladly the community and support helps out.
+"I dislike how some of the tools are more challenging to understand and therefore implement in a workflow. Additionally, some of the logic within the calculator tool is difficult to comprehend."
+"I am currently using Alteryx version 2021.4. In my opinion, the ""filter"" and ""sort"" options on the Results pane have been added unnecessary clicks and have become finicky to use"
+"Because Alteryx is not as well known as free or cheaper products such as PowerQuery or PowerBI, I've faced an unwillingness to expand within our company. Hopefully it's something that improves the longer Alteryx is around, but for now it does pose some frustrations."
+"I think there is a little bit of a paywall when it comes to the server and some sections of tools; however, this does keep the initial designer costs down by splitting the product up."
+"Need visualisation function as well, add more tool to enhance look of the output. Also workflow processing on tool can be enhanced. Recently Alteryx increased the cost as well."
+"I wish it was quicker to set up input tools, like if I need to connect to a flat file or database. The text input tool is not as easy to edit or set-up like the ease of creating a table in excel. The learning curve can become wider when trying to learn advanced capabilities in the developer tab, and there doesn't seem to be as much content for these tool like the copious amount of resources for core designing."
+There is not much to criticize about Alteryx however individuals at a basic level of software knowledge can find it difficult to utilize it effectively due to complications in syntax.
+The only downside is that some of the new machine learning features are going to cloud. I would like to see those who are using the AIS to get those features on desktop too!
+Building things out in the python tool takes some getting used to.
+Pricing is too high they have to work on the pricing model and also for getting support also it is difficult if they work these improvements it is the best tool.
+"I honestly cant think of a negative issue with the tool itself. Any time i have had an issue that i have struggled o resolve, i head to the Alteryx Community and have had the majority of my queries answered fixed with an example workflow same day."
+Alteryx does not offer me a comprehensive graphical interface for visualizing data that many other ETL platforms do.
+The application cannot allow you to run any any other task with the input file open. They can allow this aspect so that at least we can be able to compare.
+"The toughest thing about Alteryx is probably it's best feature. Because it is so expansive, there is a lot to learn. However, the academy and user discussion portal are best-in-class. Even in designer you can type a question that links to the user discussion portal."
+"Some of the more advanced features, macros, apps, run command tool, etc. take a long time to understand. These aren't required to utilize many of the features that Alteryx has to offer but it does limit some people's ability to truly utilize the tool to its full potential."
+"The search functionality in Alteryx community isn't particularly great. I know the information is on the community that I want to find, but often it's buried somewhere. If I go onto Google, and search: Alteryx community ________ ; my problem comes up as the top search! I wish the community search engine behaved more like Google's!"
+The PCXML is confusing. You cant write regular HTML and it will convert it to a weird format so it doesnt display properly. I wish you could also connect to SharePoint Libraries
+"The server functionality was initially unreliable, and outages were frequent. Updates over the years have improved performance and reliability substantially."
+Alteryx Designer does not have a built-in scheduler which would be very helpful for workflow orchestration and automation without having to invest into Alteryx Server.
+It is license required tool. Not all my peer has license to view the contents.
+There's not much I dislike about Alteryx other than more connectors for share point / SAP. Outside of that there is a slight learning curve but once you get over that it's amazing!
+"I honestly believe there are no downsides, Alteryx makes sure that they stay up to date."
+"Because it is a strong and powerful tool, it is not a tool for one day job so it can be pricey."
+"Too much price for the server edition. If we have a firewalled DB and needs an Alteryx designer in the cloud machine, Alteryx charges twice for the server edition"
+"So far, the only thing I dislike about Alteryx is that if formatting is preserved, the entire range is not replaced and previous values will remain. It is unclear if the entire range has been overwritten, so ""templates"" need to be created or ranges need to be manually deleted."
+"Sometimes there is a learning curve but being able to take the core certification will help someone understand alteryx a lot more than the average person. This would probably be the only issue, is the learning curve."
+I need to learn more to make my workflows more robust and implement better practices to keep things from breaking when I hand my flows over to others. I know Alteryx is already making huge strides to make that easier!
+The most challenging part of using Alteryx is setting up connections to your data.
+it could potentially discourage people from exploring other tools because it has such a wide variety of its ability to be able to solve many complex business problems.
+It takes time to learn and since they have many function it can be confused and discourage to start. And it may not be super easy to pick up the harder or advance skill
+"Occasionally some bugs need working out. But the release notes keep you updated on what is what, and they are receptive to reports."
+"From an audit perspective, it is lacking in Audit Logs of what the workflow has done. IE yes, we can look at the workflow, but if it has changed since the last run, there is no way to show what the run was like for a particular data output."
+"Alteryx has a very high skill ceiling for everyday analytics tools like Designer are perfect, but the huge amount of information available from the get-go can be daunting for some"
+"There are really no downside to using the platform. If I had to mention one, it would be that the Alteryx Gallery isnt all that intuitive and bugs out a lot."
+Alteryx sometimes slow when dealing with big data. This is something that can be worked on and get solved.
+"The saving feature could be improved as both myself and coworkers have had issues where we thought we saved a workflow before closing out of Alteryx but cannot find the document when we go back to Alteryx. Additionally, we were not able to recover an unsaved version so we ended up having to redo the entire workflow."
+The only downside to Alteryx for our team is that we didn't know about it sooner. I spent years trying to accomplish the same things that I can now do with alteryx in minutes.
+"I think that overall the automation aspect can be improved, along with more options for some tools (such as email, simple ordering of when to run containers, etc)."
+Alteryx has very few downsides. Licenses might be expensive for smaller companies. There is a bit of a learning curve for more complex operations that will take time to learn.
+Not able to connect with other applications.
+"I honestly don't know, since I'm very new to the tool. But I have heard from other users with limited experience in data/analytics that it's a hard one to learn. I don't have my own experience in this area to support this though."
+everything has its own downsides but i haven't seen any so far in alteryx except its not available for MAC OS users but this is going to be covered once the platform goes on cloud.
+"The learning curve alteryx is quite High and having open tools to learn it with detailed videos would really help. Also when using complex workflows it tends to be slow . But all in all it, in the recent times , the issues are being resolved, so it's all good"
+It does require some learning but not much. The platform is also not cheap unlike excel but it's a worth it investment since it saves so much time for a company
+Nothing! Alteryx is a great data manipulation tool!
+The downside to Alteryx is that many people see it as a black box and initial buy-in from coworkers or others could be difficult. Some people are so set in their ways and comfortable with how they do something that they refuse to adopt something new.
+"Macros (functions and loops in other tools/languages) can be difficult to master, with limited help options."
+Sometimes finding the icons and having to configure its properties on how to transform data takes longer than it may be when coding but that may be due to me having more familiarity with coding vs Alteryx
+Identifying and using nodes in alteryx is ease to use but sometimes memory errors occurs when running some huge raw data in alteryx workflows. These sometimes is problematic as it takes a he'll lot of time.
+The low code no code alteryx environment does mean there are limits to what it can achieve and it can be slow to process more complex problems unless you have the right hardware set up
+It does not have much to dislike. It's a growing product but is expanding at massive scale
+"The help isn't context based. If I want to work on a challenge, I need to know more about the tools to choose from rather than searching on a topic or concern. This is most applicable when multiple tools are required to solve a challenge."
+The learning curve is steeper than I would have thought. I know 3-4 programming languages and certain concepts in Alteryx are quite difficult to grasp (like macros)
+"It can feel a bit daunting at first, but I have no negative specific feedback. It has been an absolute game changer"
+I like everything so i can not complain about the tool
+Soke functionalities are tough to get in our head. it is a code base application so it gets difficult for us. It will not run in other devices except Desktops and laptops.
+A lot of the gripes and issues that I have experienced are currently being addressed by alteryx and are part of the roadmap.
+"Some features, like predictive tools, are not easy or impossible to configure. Its integration with Splunk is complicated and requires a deep understanding of both platforms. This complexity may be a significant barrier for users."
+"Alteryx is already an amazing tool but if I were to suggest something, I wish this tool had the ability to be available on the Macbook"
+"With large datasets, it can be challenging to work with long execution times. Not every tool can be cached. I wish you could save a workflow with the stored cache to help mitigate this issue. I also find Alteryx challenging to work on a single laptop screen; its interface is best used on a wider screen."
+"Nothing at the moment. Some things could be a little simpler, like creating PDF reports or using machine learning tools."
+Developer pricing is a little tough when you are first getting started. Server analysis would also be a great place to improve upon.
+"Considering the work and type of operations I had to perform for my dataset, I haven't found many backlogs for the tool."
+"The AMP engine doesn't live up to expectations. While it runs your workflow fast, it generates incorrect answers, defeating the purpose."
+"There is currently a limited number of individuals utilizing Alteryx within our organization. As a result, sharing of best practices, tips &amp; tricks, etc. is currently more limited - I anticipate this to change in the near future however as word continues to get out about Alteryx"
+"I think it is a bit overpriced, if I'm being transparent. I'd love to see the tool be more accessible to your every-day user and not just corporations who can super-afford it."
+I would like warnings would be more clear.
+Sometimes it can be hard to picture what the work flow needs to look like when you want to solve a business problem.
+Would be good to have capability like SFTP built in.
+Would love some more hands on help for overcoming corporate bottlenecks to compliance issues.
+The most difficult thing currently is that there are often times where as consultants we encounter clients who are not currently licensed users
+Alteryx can give the outputs of Tableau data extract but it is not capable of reading a similar extract. Not favourable to use when multiple users try to access the same workflow on a server as it becomes unstable and frequently crashes. It does not support special characters.
+"Honestly, the biggest downside is convincing people the benefits outway the cost."
+Could be a bit confusing at times with so many tools
+Alteryx is low-code/no-code tool so (even we have possibility to use Python or R languages) we have limited options against strictly coding environment.
+I cannot fault the honest and transparent approach that Alteryx takes towards its development
+Alteryx is an expensive tool to purchase and use.
+The loading and processing time is slow and long.
+Alteryx has a learning curve but it's learning center and community help a lot.
+"It is intimidating at first, but the Alteryx team does a good job with providing training and resources."
+It is difficult to connect to a data server
+"Some of the newer features get released slowly and the cloud products need a bit more flushing out, but it will come!"
+Can't use all the features with standard package. Need to buy additional packages which is a lot of $$$'s for an already expensive tools.
+The cost. A license can be very expensive.
+"Ambiguous error messages sometimes, finicky macros sometimes, hard to pin-point tool connection strings sometimes."
+"It is growing and developing so not much but if we could have better modes to display Key Info like we do have on other tools like SAS, QlikSense, etc. However, other functions are just perfect."
+Maybe the part where it does not show the result of your work automatically. You will have to run the work yourself to see the output.
+"Bugs and glitches here and there with publishing widget, input widgets, etc"
+The error messages provided with the formula tools are not always the most helpful in understanding what needs to be corrected to ensure the formula works. This causes the workflow to fail.
+licenses are very expensive and separated for different products.
+"The previous version slows down with large datasets of over 10 million rows, am still testing the AMP version."
+The cost for a license is high. You have to convince leadership of the tools value.
+The only complaint is the cost of using the upgradable tool pallets - would love to get it all at one price.
+Alteryx's only shortcoming is its delay when loading data. Loading the data may take longer than the standard based on where the document is placed and how to you want to load the data.
+The only negative I have about Alteryx is that I wish it had more formulas.
+There is some funcitonality that could be automated that would help new users out with. I also dislike that alteryx is so desktop heavy and should accelerate their cloud rollout.
+We've had to do a bit of Googling to sort out the best tool for some needs.
+Cost prohibitive for users that are unlikely to become super users.
+I think that the visualization components could be enhanced in alteryx
+Do not have any comments coz the experience is not huge using this tool.
+"Integrations done with third parties such as Google Input, Publish to Tableau are either slow or breaks very often"
+A couple of things that annoy me like having to jump through hoops to stop the workflow
+The UI can be improved abit and that there is still no version for MacOS
+It takes some time to learn. Professional help is very good but costly.
+Only thing I would dislike is if I couldn't use it anymore.
+Using Alteryx has been a great experience. I have not seen a downside so far.
+time it takes while working with large data sets and errors while publishing on to server
+The cost. A big part of what I use is the Intelligence Suite. I dont really like the fact that you have to pay separately for the Intelligence Suite.
+There are some tools that never been introduced before and they need might need to refresh so users can know about them.
+"One feature that is really missing in alteryx is to extract the data in percentage format. Since, it is not available whenever you extract data the number turns to point."
+"Dragging specific tools on the canvas can cause lag. Regarding the spatial tools, the reprojection of the spatial objects doesn't work which should be built in."
+Nothing! It's such a great tool that can take your business to the next level
+It does requiere time! And as a person with little time due to deadlines it makes it add to do all the trainings.
+"love it, not much to dislike; if I have to pick something to dislike, then is that you have to pay for it."
+There is no commit and locking mechanism when multiple users try to access the same flow on a server. User management needs improvement
+"it is very different from all other platforms, but once you understand and know how Alteryx operates, it is very intuitive."
+"The tool is too costly for any individual, while many tools in the market can be used as an alternative to the device and are very cheap. This is the reason people do not use Alteryx as much"
+Hardcore sql users might find it to be more time consuming
+Sometimes it is hard to know what exactly caused an error.
+You have to pay for the additional toolkits.
+"takes away traditional code, python code"
+not knowning everything that it has to offer
+Set up can be hard for a large organization.
+I wish there was a way to pause and resume an iterative macro.
+Cost can be a discouraging factor in getting started.
+I do not like how some widgets dont work when I upgrade alteryx
+Our group has had challenges with using the SharePoint tool for SharePoint Online lists.
+From what I have witnessed so far the instability and unscalability of Alteryx Cloud
+The amp engine is unpredictable resulting in different results when using it ot not using it for the same workflow
+Some pof the pricing has been a bit high.
+"The server and the license pricing are a little on the steeper side but Alteryx adds so much value that once you start using the tool, you hardly think about the pricing."
+Learning path doesn't have a structure for ML engineers
+"the upsell of the additional tools, I wish they were included in the regular license"
+There is some limitation. Sometimes you have to be creative to make things work
+The cloud is a little bit slow and need some improvement
+"Despite the amazing features that it holds and intuitive solutions that it enables, it can include an intuitive augmented analytics section which can allow and provide feedback to customise and optimize some existing solutions."
+There isn't anything that I dislike. I've always been able to find a solution for any problem that I found.
+Not having a version that would work on Mac.
+"There isn't much to dislike about Alteryx, there is always room for new features but overall the tool is great."
+Installation on your machine. Better to use cloud more
+Some what Alteryx should work on there UI part as well connectivity with other ETL tools .
+No ability to run a workflow from a certain poiny.
+I wish you did more reading PDFs and pulling data from PDFs.
+Pricing may be steep for some organizations and there have been issues with licensing of upsold products or add-ons
+The only downside is potentially the barriers to entry. It is hard for people to understand the amazing capabilities of the platform unless they experience what it can do.
+There is nothing I dislike about Alteryx! It's a great product!
+"Data classification is not that up to the mark , though it also has the ability to predict and classify data."
+Dragging and dropping is a hassle . Need more tools to better organize data
+"There's a bit of a learning curve, but it's well worth the time to learn."
+Server is expensive! Avery from that everything is great!
+It's a little bit expensive and some tools that I used was for additional cost
+Cost is high. Hrs the biggest drawback. So it could be lowered
+It is a bit tough to understand some tools initially as it has a huge varity of tools.
+It could use some upgrades in terms of cost for AI and text mining
+"Nothing, it is absolutely amazing. Our organization is starting to adopt it more and more."
+"We wish there was a way to have to have the output not be hardcoded, have a way to drill through the data so someone who doesn't know alteryx can review the output."
+"Printing large workflows to PDF can be challenging, and version control generally is difficult, especially when dealing with workflows that run from Gallery with multiple output files."
+The free version is only valid for 7 days and have to go premium
+"Lots of great baseline tools, but also need to upgrade to get access to more tools."
+Not support special charaters and go down while data wrangling.
+Designers are Not a Mac compatibility...
+Pricing tier is not clear in their website
+Certain products are limited to different platforms (i.e. Auto ML only available on cloud)
+Embedded credentials can be challenging to deal with from a security perspective
+Sometimes requires multiple steps : widgets to perform actions that would be easier to program / maintain with additional orchestration.
+Takes investment to get out time savings and sometimes time savings are just time reinvestment into a process
+"Sometimes if the workflow is too complicated, the design space does look clumsy, but that's the way it is."
+I wish there was more ways to zoom in to the configuration pane.
+The price for a designer license and server
+"It's pricing, which highlyequal to the top notch data platforms"
+While doing data cleaning and data pre-processing it takes a lot of time. Alteryx should work on its scalability feature.
+One big issue is not working on MacBooks.
+It's expensive and different segments of the applications have higher barriers to entry
+Sometime it take lot of time to load and transform thr data .
+Nothing it's really good product but some of the server level reports required
+The SQL interface for input data sources is clunky.
+Getting into world of alteryx is quite challenging for the begginer.
+There are some limitations with Alteryx Gallery.
+Can't think of anything other than the price. but you get what you pay for.
+Very expensive and bit heavy in processing batches
+How difficult gallery setup is to use and schedule workflows.
+Training about some of the advanced concepts is not available
+"It is difficult to learn, especially coming from Excel"
+Suppose if more than one person is using the same workflow with in a server. The workflow became inconsistent and crashes the designer
+License is Expensive so entire team does not have a license
+Cost of licensing could be lower for more adoption
+Wish the learning curve was not as steep
+"The occasional glitch in technology where the user creates an invalid input, and there are no tips &amp; tricks to suggest how to correct the issue."
+It can be expensive for some smaller companies
+Different licensing for different suites
+The challenge and fear of students. So bad.
+"easy to use when you work in a collaborative folder with the files and several users utilize the same flow. Not very easy to resolve. Some complex tools may require more explanation from the company, like the Regex tool, but the community tries to compensate for it. Reports and graphs need to be improved also."
+Performance can be a lowdown for large worklow
+"Good things do not come cheap! You may see some benefit with a few licenses but the actual return is when you fully commit. This is an excellent problem for Alteryx, but certainly, something to keep in mind."
+"Not very useful in case of more minor data manipulations - excel is better suited for such cases. Given most users are more used to data manipulations in excel, it takes some time to get accustomed to tools available in Alteryx - but I guess that is an initial one-time investment"
+Sometimes it takes alot of time to run..
+Tools like intelligent suite are part of additional suite which involves additional cost
+There is nothing about alteryx that I dislike. It truly provides me with all the features I need and I am still growing and learning what the tool has to offer for my everyday tasks
+Reporting capabilities can definitely be improved. I would also like to see more robust security controls and measures.
+"Nothing. I am surprised when they create knew functionality and use cases, but I am quite pleased with it currently."
+The downside of the Alteryx is their visualization. that is not much great
+Not much but may a bit of comparison of files during version control
+Price--licenses are expensive compared to free coding languages &amp; IDEs like R/RStudio.
+At times it's not very intuitive. Only available on Windows.
+It is not an open source software so with the free version we can only get a few features so we need to buy this software to use all the features and it is quite expensive.
+"Could have add more visualization features, data accessibility from different types of files and merge or collobarate the workflow from varies data resources. Add more tools."
+"Sometimes, it can be slow to open. Also, scrolling on the workflow usually goes too fast, and you go past what you are looking for. I wish there was a way to ""pop out"" the workflow so you can view it full screen--this would be helpful for large, complicated workflows."
+Sometimes it is hard to debug where the workflow is failing
+The least helpful from my perspective is learning advanced solutions/tools. Basic and intermaediate level is covered widely by Alteryx University but more sophisticated problems usually require help of Alteryx community users.
+"Even though it is open source, to run pipelines, we need a paid license and Cost of license is high compared to other tools. it is compactable more on windows than other OS.it stores temporary data on disk it does not support any storage like S3, ADLS or Blob storage."
+its price :( its expensive on the other hand you know good ones are not cheap. There is no so much things about disadvantages.
+Some suggestions regarding the optimized workflow can be given.
+Licensing Cost of baseline product + add-ons
+Sometime flow are complicated and overlapping sometime creates the confusion
+Nothing have I found to dislike in it. But it is worth focusing on the point that tool has potential development and analytics capabilities as well but with little to no exposure so far hence it can potentially serve more than just an ETL tool.
+This Alteryx requires additional external API integrations. Mapping output is visually inadequate like mapping graphs and charts is a drawback for it which doesnot include many visual output options also.
+Alteryx is complex and has a learning curve; you have to be comfortable with data analytics
+"There are some limitations regarding uploading .xlxb files on Alteryx, which leads to converting binary excel files to regular excel files. This activity is time-consuming and cumbersome in some cases."
+Nothing much about this tool disappoints me. Everything works great. I think alteryx has a lot to give to its users. I feel the updates coming on alteryx making this product even better.
+It still is slightly lacking in shareable visualitics.
+I would love to see more graphic visual tools within Alteryx such as those features in tableu
+"The scheduler is a waste of money. It does not run on events, just on time. Alteryx kept our six grand when it didn't fit our needs. We want our money back for this useless upsell as a customer of 8+ years."
+"Sometimes while connecting multiple tools in the workflow, the connection becomes very clumsy; it just looks odd on the canvas, other than this, nothing specific. I wish Alteryx adds the capability to identify Excel - Formulas and formatting in the input files"
+"There's not much to dislike considering its ability to integrate with various applications. However, it could use better visualization features like tableau."
+Sometimes the application hangs and stops working with heavy files
+The platform is difficult to setup and may cause compliance issue
+It's sometimes hard to make sure that it's doing everything correctly. I often manually do some of the computations I'm performing in Alteryx (just for a couple of data points) to make sure that the way I set up the workflow worked as intended.
+Software cannot handle large chunk of data at one time. We have to summarise the data for this issue.
