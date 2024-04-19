@@ -10,17 +10,11 @@ import pandas as pd
 from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor
 
-# Set nltk data directory explicitly
-nltk_data_dir = os.path.join(os.getcwd(), "nltk_data")
-nltk.data.path.append(nltk_data_dir)
-
 # Check if the stopwords corpus is available, if not, download it
-if not os.path.exists(os.path.join(nltk_data_dir, "corpora/stopwords")):
-    nltk.download('stopwords', download_dir=nltk_data_dir)
+nltk.download('stopwords')
 
 # Check if the punkt tokenizer is available, if not, download it
-if not os.path.exists(os.path.join(nltk_data_dir, "tokenizers/punkt")):
-    nltk.download('punkt', download_dir=nltk_data_dir)
+nltk.download('punkt')
 
 def get_top_keywords(text, top_n=100):
     words = word_tokenize(text.lower())
@@ -46,7 +40,10 @@ def process_link(link):
 def save_to_excel(link, title, top_keywords):
     df = pd.DataFrame(list(top_keywords.items()), columns=['Keyword', 'Frequency'])
     category = link.split("/")[5]
-    excel_file_path = f"google/{category}/{title}_keywords.xlsx"
+    directory = f"Output_Blogs_Google/{category}"
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    excel_file_path = f"{directory}/{title}_keywords.xlsx"
     df.to_excel(excel_file_path, index=False)
     print(f"Top keywords for {title} saved to {excel_file_path}")
 
@@ -58,25 +55,19 @@ def consolidated_process_link(link):
     return body
 
 # Load and process the data
-with open("filtered_links_google.json", "r") as file:
+with open("Output_URL_Google.json", "r") as file:
     data = json.load(file)
 
 data = list(set(data))
 
-if not os.path.exists("google/"):
-    os.makedirs("google/")
+output_folder_name = "Output_Blogs_Google"
+
+if not os.path.exists(output_folder_name):
+    os.makedirs(output_folder_name)
 
 # You can adjust the max_workers parameter based on your machine's capabilities
 with ThreadPoolExecutor(max_workers=5) as executor:
     list(tqdm(executor.map(process_link, data), total=len(data)))
-
-# Debug NLTK stopwords data loading
-from nltk.corpus import stopwords
-print(stopwords.fileids())  # Print out stopwords file IDs
-try:
-    stop_words = set(stopwords.words('english'))  # Attempt to load stopwords
-except Exception as e:
-    print("Error loading NLTK stopwords:", e)
 
 # Accumulate text from all blogs
 consolidated_text = ""
@@ -89,6 +80,6 @@ top_keywords = get_top_keywords(consolidated_text, top_n=100)
 
 # Save top keywords to Excel file
 df = pd.DataFrame(list(top_keywords.items()), columns=['Keyword', 'Frequency'])
-excel_file_path = "google/consolidated_keywords_top100.xlsx"
+excel_file_path = f"{output_folder_name}/Output_Words_Google.xlsx"
 df.to_excel(excel_file_path, index=False)
 print(f"Top 100 keywords for all blogs consolidated together saved to {excel_file_path}")
