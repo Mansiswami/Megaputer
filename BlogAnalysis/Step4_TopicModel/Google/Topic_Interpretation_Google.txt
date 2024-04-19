@@ -77,129 +77,69 @@ Results
 
 
 Topics found via LDA:
-Topic 0:
-spanner read service google using cloud data ai
 
+Topic 0:
+nh en simpler stopping vine unstructured transform took hq hy
 
 Topic 1:
-read service spanner ai google using cloud data
-
+icrs huang seasons difference program logging directions view flows twc
 
 Topic 2:
-spanner service read data using google cloud ai
-
+huang delivering ago devices negatively conference care demands mesenburg proceeding
 
 Topic 3:
-spanner ai data read cloud google service using
-
+building speeding continued lost changes spot multitenant decrease ztu worksheets
 
 Topic 4:
-read spanner ai data using google cloud service
-
+using read minute pk xl te data google ai cloud
 
 Topic 5:
-spanner ai read data using google cloud service
-
+contribution artifact hadoop title gradually zooms checks source ultimately spending
 
 Topic 6:
-spanner read service data cloud using google ai
-
+establish lower techniques gcs considerations semaphore showtabview impossible jm step
 
 Topic 7:
-service ai spanner using data google cloud read
-
+ztu trust involve hcy hk unavailability players shut cold oao
 
 Topic 8:
-read spanner service google cloud data ai using
-
+trn larger restore duet dy develops repositories report define proceeded
 
 Topic 9:
-read spanner service data using ai cloud google
-
+baseline receiving xmlm supported uploaded cut divide contain remove restarted
 
 Topic 10:
-read spanner using data ai service google cloud
-
+avm troubleshoot powered yt bu domino wv builder ux duet
 
 Topic 11:
-spanner read service using ai data cloud google
-
+tooling uwz hut commitments administrative postgresql failovers uaeob txf making
 
 Topic 12:
-read spanner ai service using data google cloud
-
+accurately vdn monthly bc revolutionize deal quantity window formula remember
 
 Topic 13:
-ai service read using cloud google data spanner
-
+zooming preview configuration cpu ivfflat provisioned establish overly conversation groups
 
 Topic 14:
-spanner read service ai using cloud google data
-
-
+unchanged uldh explore smaller ns gm pod creators extractors slots
 
 
 * Interpretation: 
 
-
 Here's an interpretation of the topics:
 
-
-Topic 0: Spanner Read Service Google Using Cloud Data AI
-Interpretation: Utilizing Google Cloud Spanner service for reading and analyzing data, integrating AI capabilities within the cloud environment.
-
-
-Topic 1: Read Service Spanner AI Google Using Cloud Data
-Interpretation: Emphasizing the usage of Google Cloud Spanner service and AI for reading and processing data stored in the cloud.
-
-
-Topic 2: Spanner Service Read Data Using Google Cloud AI
-Interpretation: Focusing on using Google Cloud Spanner service for reading and processing data, leveraging AI capabilities within the cloud environment.
-
-
-Topic 3: Spanner AI Data Read Cloud Google Service Using
-Interpretation: Highlighting the use of Google Cloud Spanner service and AI for reading and managing data stored in the cloud.
-
-
-Topic 4: Read Spanner AI Data Using Google Cloud Service
-Interpretation: Emphasizing reading and processing data from Google Cloud Spanner service, potentially involving AI-driven analysis.
-
-
-Topic 5: Spanner AI Read Data Using Google Cloud Service
-Interpretation: Utilizing Google Cloud Spanner service and AI for reading and processing data within the cloud environment.
-
-
-Topic 6: Spanner Read Service Data Cloud Using Google AI
-Interpretation: Using Google Cloud Spanner service for reading and managing data in the cloud, integrating AI functionalities provided by Google.
-
-
-Topic 7: Service AI Spanner Using Data Google Cloud Read
-Interpretation: Leveraging AI and Google Cloud Spanner service for reading and processing data stored in the Google Cloud platform.
-
-
-Topic 8: Read Spanner Service Google Cloud Data AI Using
-Interpretation: Emphasizing reading and processing data from Google Cloud Spanner service, potentially involving AI-driven analysis within the Google Cloud ecosystem.
-
-
-Topic 9: Read Spanner Service Data Using AI Cloud Google
-Interpretation: Highlighting the usage of Google Cloud Spanner service for reading and managing data, potentially integrating AI functionalities within the cloud environment.
-
-
-Topic 10: Spanner Read Service Using AI Data Cloud Google
-Interpretation: Utilizing AI and Google Cloud Spanner service for reading and managing data within the cloud environment.
-
-
-Topic 11: Read Spanner AI Service Using Data Google Cloud
-Interpretation: Emphasizing reading and processing data from Google Cloud Spanner service, potentially involving AI-driven functionalities within the Google Cloud platform.
-
-
-Topic 12: AI Service Read Using Cloud Google Data Spanner
-Interpretation: Using AI services within the Google Cloud environment for reading and processing data, particularly mentioning Google Cloud Spanner.
-
-
-Topic 13: Spanner Read Service AI Using Cloud Google Data
-Interpretation: Highlighting the usage of Google Cloud Spanner service and AI within the cloud environment for reading and managing data.
-
-
-Topic 14: Spanner Read Service AI Using Cloud Google Data
-Interpretation: Utilizing Google Cloud Spanner service and AI functionalities within the cloud environment for reading and processing data.
+1. Topic 0: This topic seems to revolve around terms related to data analysis or transformation, such as "unstructured," "transform," and "simpler."
+2. Topic 1: This topic appears to discuss programming concepts or processes, including "program," "logging," and "flows."
+3. Topic 2: Terms like "delivering," "conference," and "care" suggest a discussion related to delivering services or products, possibly in a conference setting.
+4. Topic 3: This topic could be related to building or development processes, with terms like "building," "changes," and "multitenant."
+5. Topic 4: This topic seems to be about using data and technology, with terms like "data," "google," "ai," and "cloud."
+6. Topic 5: Terms like "contribution," "artifact," and "source" may indicate a discussion about contributions or developments in a project.
+7. Topic 6: This topic may involve establishing something, possibly related to technical considerations or techniques.
+8. Topic 7: Terms like "trust," "players," and "unavailability" could be related to trust issues or concerns in a project or organization.
+9. Topic 8: Terms like "larger," "restore," and "repositories" suggest discussions related to managing or working with larger datasets or repositories.
+10. Topic 9: This topic may discuss baseline measures or actions, with terms like "baseline," "supported," and "uploaded."
+11. Topic 10: Terms like "troubleshoot," "domino," and "builder" suggest discussions related to troubleshooting or building something.
+12. Topic 11: This topic seems to involve tooling or administrative tasks, with terms like "tooling," "administrative," and "commitments."
+13. Topic 12: Terms like "accurately," "revolutionize," and "quantity" could indicate a discussion about improving accuracy or efficiency.
+14. Topic 13: This topic may discuss configurations or settings, possibly related to CPU usage or resource provisioning.
+15. Topic 14: Terms like "explore," "creators," and "extractors" suggest discussions about exploring or extracting data or insights.
