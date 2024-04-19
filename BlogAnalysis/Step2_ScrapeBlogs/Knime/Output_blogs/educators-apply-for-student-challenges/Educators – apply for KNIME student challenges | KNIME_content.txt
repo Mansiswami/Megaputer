@@ -1,0 +1,6 @@
+Gamification of learning has proved to boost learner engagement, drive learning-by-doing setups, stimulate creative problem-solving, and increase long-term information retention (Kapp, 2012). The Gamification Kit, established by the KNIME Educators Alliance, introduces gamification elements from challenges, to learnathons, to hackathons, to data literacy curricula. 
+Learn more about KNIME student challenges, in KNIME student challenges make learning fun.
+If you are an educator at an institution of secondary, higher, or continuing education who wishes to introduce gamification elements, our program is an opportunity to leverage KNIME for engaging data science education.
+We understand our collaboration as a synergy of well-defined responsibilities and tasks, which we've outlined below.
+We have created a short application form to gather preliminary information, such as the topic of the challenge, the time period, the number of participants, and their analytical skills. Completing the form takes approximately 10 minutes and will help us provide a fair judgment of the submissions.
+After the application deadline, we'll evaluate submissions and contact you with our collaboration proposals. Please note that complete and granular submissions help us gain a clearer understanding of what student challenge you envision and how we can best support you.

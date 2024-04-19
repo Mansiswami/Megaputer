@@ -1,0 +1,22 @@
+Customer churn is one of the most important KPIs because it monitors the health of the relationship between the company and its customers. 
+When a customer cancels, or does not renew, the contract is said to churn. Customer churn measures the percentage of cancelled or not renewed contracts on a given period.
+In this article and video we show how you can calculate the customer churn KPI with KNIME Analytics Platform, an open source, low code data science tool.
+With the KNIME solution you'll have a shareable solution that calculates the KPI automatically. If the input data for your calculation changes, the KNIME solution automatically recalculates the KPI values without any manual editing. And you can share the solution with colleagues on your finance team via a link to a browser-based data app.
+The video below gives you an overview of what customer churn is and to build an automated solution with KNIME. The write-up below dives into the details.
+Let's get started!
+The customer churn KPI is defined as:
+Since a common timeframe is “month”, we'll concentrate on the monthly Customer Churn KPI for the rest of this post. 
+The data to calculate the churn on is a long list of contracts (Fig. 1), with a start date and an end date and some additional information about the bought products and the amounts paid. When the contract from customer X ends and is not renewed, this counts as a churn. This data usually comes from a CRM system, like for example Salesforce.
+Let's look at the steps to calculate customer churn KPI:
+The Customer Churn KPI Monthly workflow calculates the Customer Churn KPI for a company. It's available for free download from the KNIME Community Hub. The workflow follows these steps:
+The data app component (on the right):
+If you've seen more of our “KNIME for Finance” articles, the formula displayed above for Customer Churn KPI will remind you of the formula for the Employee Turnover KPI. They are very similar, though not identical. The visualization however could be exactly the same. To avoid reinventing the wheel, we decided to adopt the “Data App” component from the previous employee turnover KPI workflow.
+In KNIME Analytics Platform, it is possible to share functionality with other workflows / users by creating a component. This is how you do it:
+ To use a linked version of the component template:
+Following this procedure, we created the component template “Data App” in Employee Turnover KPI Monthly, which is a public space on the KNIME Community Hub, and then we have created the linked component in our workflow. You can recognize that the “Data App” component in Fig. 3 is a linked component from the arrow in the right lower corner.
+We've shown how you can calculate the Customer Churn KPI and how to reuse a shared component from an existing workflow. 
+The visualization is indeed the same as for our KNIME solution for Employee Turnover KPI: because we reused the visualization component as a linked component. The shared component view includes a line plot to monitor the customer churn KPI trend and a pie chart to describe the customer churn for different office locations, exactly as it showed the trend and the pie chart for employee turnover KPI.
+Looking at the view from the data app, you will notice that the Customer Churn KPI at the end of the year 2023 does not stay within the boundaries of acceptable values. This trend must be investigated and actions must be taken.
+KNIME Analytics Platform gives you an intuitive user interface to access advanced data science techniques. Here we showed you a simple example of calculating and visualizing customer churn with this KNIME workflow.
+The KNIME solution has three key benefits:
+Try out the workflow yourself. If you're new to KNIME, here's the link to download KNIME. (It's open source and free to use.)

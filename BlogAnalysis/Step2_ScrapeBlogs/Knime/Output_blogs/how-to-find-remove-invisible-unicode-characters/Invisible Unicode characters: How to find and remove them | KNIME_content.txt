@@ -1,0 +1,41 @@
+Data cleaning is one of the first and most important steps in any data analysis journey. Data, especially text data, can contain all forms of characters and things you don't expect such as emojis, spelling errors, whitespaces, inconsistent formats, and so on. 
+These random characters can sneak into your data when we copy and paste from other applications like email, websites, spreadsheets, etc. This is because the source can contain invisible characters representing different formatting instructions. These get copied into your data and mess everything up (e.g. data import fails, you can't search, sort, or filter.)
+This can lead to issues that manifest and corrupt your data and completely halt your data analysis process. Searching for these “special” or invisible characters can take hours and ultimately leave you frustrated. It's important to know and effectively handle these invisible characters and it's worth investing some time beforehand to deal with unexpected special characters in your text data.
+In this blog post, we will focus specifically on the special invisible Unicode characters, and show how you can remove them from your data using the low-code KNIME Analytics Platform.
+KNIME Analytics Platform is free and open-source software that allows users to access, blend, analyze, and visualize their data, without any coding. Its low-code, no-code interface makes analytics accessible to anyone, offering an easy introduction for beginners, and an advanced data science set of tools for experienced users.
+Unicode characters belong to the Unicode Standard, a text encoding standard where a unique number (code point) is provided for every character. This is regardless of platform, program, or language. The standard enables consistent representation and handling of text in different languages and scripts on computers and other devices. This means that any text can be encoded and processed in Unicode. 
+For example, in the Tamil script, the letter “a” is denoted by அ. The Unicode code point for this Tamil character is U+0B85. 
+The "U+" followed by numbers in Unicode represents a Unicode code point. The "U+" is a notation to indicate that the following numbers are in hexadecimal (base-16) format. A Unicode code point is a unique numerical identifier assigned to each character. In other words, Unicode code points are used to uniquely identify and represent each character, symbol, and emoji.
+These codes ensure that characters can be understood and used similarly on different computers, programs, and coding languages. Hexadecimal representation is commonly used because it allows for concise and human-readable representation of large numbers. 
+There are various categories or classes in Unicode for characters based on their general properties. These categories help provide a standardized way to work with a vast array of characters from various languages and writing systems. Some common categories are 
+These categories help for several reasons, for example in text processing- to count letters, and identify punctuations, or in pattern matching or searching- to search for specific types of characters, such as numbers, symbols, or whitespace.
+Exactly as the name suggests, invisible Unicode characters are a set of devious characters that do not have a visual representation. They're there, but you can't see them, and they affect your data. Like Harry Potter in an invisibility cloak – not visible, but still causing a ruckus. 
+These characters include whitespace characters such as space, tabs, line breaks, zero-width characters, and other control characters not typically rendered on the screen.
+Invisible Unicode characters come in various types, each having a different purpose. Some of the common types are:
+Oftentimes, they will make data import fail with error messages that don't necessarily specify what exactly went wrong.
+This results in spending a lot of your time trying to figure out how to fix it and having only an obscure error message which is not helpful. 
+You can remove invisible Unicode characters in KNIME with a simple String Replacer node.
+Let’s see how.
+Let’s say you are a data scientist and you are working with a dataset that is copied from an Excel sheet into a web editor. Since Excel uses an iso-1252 encoding and a web editor uses a UTF-8 encoding, they don’t seamlessly align and you encounter some problems.
+You discover that the sneaky culprit is an invisible Unicode character. 
+For example, let’s say that the dataset in Excel will look like this
+Here, an invisible character (Zero-Width Space) is intentionally inserted in the first row's description.
+When this is copied into a text editor, the invisible characters are not correctly represented due to encoding mismatch. It will look like this 
+It will look like this. 
+This is where we tell the node where to look for the invisible Unicode characters. You must select the particular column from your data containing the invisible Unicode characters. In this case, the target column is named “Description”. 
+Now you have to choose different pattern types for your search:
+Now we have to enter the pattern that the String Replacer will look for. Here are some regular expression patterns for different Unicode categories. We’re going to use the “Format” pattern:
+Invisible Unicode characters are grouped under the "Format" class and it is denoted by the pattern “\p{Cf}”. The String Replacer will look for this pattern in our column of data and replace it with our text “SUCCESS”
+Checking the “Append new column” box creates a new column in your dataset. The new column contains the “cleaned” text where the invisible characters are removed and replaced. The new column is named “Replacement”. 
+That’s it!
+Now let’s have a quick look at how you can find and replace a couple of other special characters
+KNIME Community Hub consists of data science solutions made by the community. It is the place where you can search for nodes, extensions, components, and workflows.
+The String Emoji and Character Class Filter component is created by a community member “@takbb”- Brian Bates.
+It will look like this. 
+This means that you need to select the particular column from your data that contains the emoji characters. In this case, the target column is named “SampleText”. 
+To remove emojis, from the list of available options, we choose “Symbols”, “Symbols- Emoji and Other” and “Symbols- modifiers”.
+We input the new column name as “regex-strip”. Emojis are removed from the data and look like the following
+Using this component, you can filter out emojis and other classes of characters from a string using a built-in Regular Expression from your data. This component uses a Java snippet and several regex “categories” to allow you to select the classes of characters to be filtered. Read this community thread: String Emoji and Character Class Filter, to find out more about this component.
+Alternatively, the KNIME Analytics Platform has an AI assistant, K-AI, that builds visual workflows for you based on your directions. Using the prompt - “How can I remove invisible Unicode characters from my text data?” and following the output of K-AI to configure the String Manipulation node, we get the desired result.
+To maintain data integrity and ensure a smooth-flowing workflow, it is important to recognize the impact of these invisible characters. Using KNIME to proactively handle these challenges can help guide you through a seamless data-cleaning process. 
+Try it out yourself. Download KNIME—it’s open source and free to use.

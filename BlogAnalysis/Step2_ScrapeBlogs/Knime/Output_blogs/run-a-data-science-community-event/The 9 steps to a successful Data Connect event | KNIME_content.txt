@@ -1,0 +1,23 @@
+Bring together your local data science community with help from KNIME
+KNIME Data Connect events are a great way to meet up with local data science communities to network, learn about new trends in the data science field, or upskill to expand expertise. 
+Data Connects bring together local data science communities across five continents, in 26 cities. They’re run in different formats, as success stories, learnathons, hackathons, workshops, and more. Speakers are invited to share use cases, best practices, or tips & tricks. Each one is different. Each organizer adds their own creative spark.
+If there’s no Data Connect in your area, we can help you get one started.
+Here we summarize how to make a Data Connect happen, what kind of support you can expect from us, here at KNIME, plus some notes on the application form to host the event.
+Identifying the speakers and their topics is the key point of every Data Connect event. Typically, a Data Connect will invite two speakers to talk on a related theme.
+You can get inspiration for topics from previous events. Maybe you want to speak, yourself, or you have friends or colleagues with a data science project to share.
+If you can’t find a second speaker, we can help you: just let us know in the comments section of the application form. 
+The title is what draws people to the event. Spend a bit of time to find the appropriate title that describes the theme of the event. Try to keep it short, relevant to the topic, and catchy.
+We recommend finding a venue that can host 30-40 people. A university room, co-working space, or an external hired venue that’s easily accessible are the most common options. Other options are also welcome, of course.
+KNIME will help you to promote the event. We announce it on Meetup.com and on the KNIME Events page.
+To do that, we need you to give us:
+An image is worth more than 1000 words. An explanatory image can help to attract more people to your event.
+If you have an idea for a graphic, but not the means to create it, we can help you. Describe your idea for the themed graphic in the comments section of the application form.
+We can also give you a standard graphic that features headshots of your speakers.
+This is on us.
+When everything is ready we will publish your event on the relevant KNIME group on Meetup.com  and on the Events page of the KNIME website.
+People need to know about your event. Advertisement is a joint effort between KNIME, you, the organizer, and the speakers of the event.
+If the venue allows for food and drinks, order some light refreshments for the networking part (last hour) of the event. This is not mandatory, but networking on some finger food makes for a better experience!
+Now that all items on the checklist are done, you’re ready to run your Data Connect. Good luck!
+If you are interested in hosting (or just giving a talk) at a Data Connect, we’d love to know.
+Fill out the application form to give us an outline of what you’d like to plan. If you need further information just send us an email at: dc-organizers@knime.com
+We’re happy to assist and support you in hosting the next KNIME event in your city and bring together your local data science community.

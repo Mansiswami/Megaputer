@@ -1,0 +1,16 @@
+Learn more about the data science tournament and how to take part
+Hark! I summon thee to a contest of nodes. Art thou endowed with the courage for the encounter?
+Registration  to compete in the new KNIME workflow tournament, where the winning team will win the Golden Node, has closed. But look out for announcements about the competition, coming soon.
+Game of Nodes is KNIME's first data science world tournament where teams in the KNIME community compete against each other to solve data analytics challenges. Think of it as a soccer world cup but with data and no-code/low-code solutions.
+You'll compete by solving data analytics challenges with KNIME Analytics Platform version 5.2 in teams of 2-3 people. There will be challenges for everyone, from training predictive models to web scraping, from engineering AI-driven solutions, to plotting geospatial maps and creating compelling reports.
+All members of the KNIME community are welcome to participate – from newbies to expert users, data analysts, machine learning engineers, and more! 
+You compete in teams of 2-3 KNIME users and you'll have to register your team on the Game of Nodes registration page.
+During the qualification round, all teams are assigned the same task. In subsequent phases, teams will compete in knockout rounds where they will be allocated specific tasks. At each knockout, the winning team qualifies for the next round.
+A committee of expert data scientists, engineers and analysts from the KNIME Team will inspect the submitted solutions and determine the winning team that advances to the next round. To give you a taste of the assessment criteria, these will include, among other things: Adherence to the task and correctness of the solution, degree of automation, customization and documentation.   
+The tournament will be run fully remotely, allowing every team to join and engage from the comfort of their home.
+The only exception is the finale, which will be hosted as a hybrid event both on-site at the KNIME Spring Summit 2024 in Austin, TX (US) and online. The competing teams in the finale will have the chance to participate in their preferred modality (don’t underestimate the boosting power of a cheering crowd in the room!).
+It’s a great chance to challenge your current data science knowledge, acquire new skills, learn new capabilities in KNIME software, share your solutions, and connect with other members of the KNIME community.
+But most importantly, because we think it could be fun.
+Yes, KNIME prizes await all participating teams. Teams that successfully submit their solutions will receive a celebratory digital badge. The finalist and winner teams will receive KNIME goodie bags, a custom t-shirt of the tournament, and will be invited as guests on the KNIME webcast, My Data Guest. 
+The KNIME Golden Node, the official trophy of the tournament, will be given in recognition of the outstanding performance of the first-ranked team.
+Good luck! May the best team win!

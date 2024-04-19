@@ -1,0 +1,18 @@
+Announcing the winners of the “Predicting and Explaining Injury Severity in Automobile Accidents” student challenge at Oklahoma State University
+Are car accidents more deadly in urban or rural areas, or are the conditions of the street a better predictor of how bad an accident is?
+These and other questions guided participants in the Predicting and Explaining Injury Severity in Automobile Accidents challenge in the MSIS 5633 – Predictive Analytics Technologies class taught by Prof. Dursun Delen at Oklahoma State University.
+Students were given a dataset collected by the National Highway Traffic Safety Administration (NHTSA) to build a predictive model, identify key determinants, patterns, and risk factors associated with high injury severity in car accidents.
+The Crash Report Sampling System (CRSS) is a sample of police-reported crashes involving all types of motor vehicles, pedestrians, and cyclists, ranging from property-damage-only crashes to those that result in fatalities.
+The participating teams were not only tasked to determine influential factors from the CRSS data but also suggest mitigation and preventive measures.
+Ten teams of two students each of various technical backgrounds participated in the challenge over eight weeks. By the eighth week, the teams had submitted not only a written project report but also a recorded presentation of roughly 20 minutes highlighting their findings as well as their KNIME workflows.
+The CRSS data had to be joined from multiple sources and filtered for relevant information, e.g. automobile crashes before the students could train any classification model. 
+All of the predictive models built by the teams achieved an accuracy rate of at least 75% in determining the injury severity (encoded as 8 categories) for automobile crashes from the provided data.
+The jury was pleased with the overall quality of submitted solutions. Since all participating teams had access to the same unprocessed data, the recipe for success of the winning teams was the right combination of sensible feature selection and  model selection.
+Additional evaluation criteria included the comprehensiveness of the solution as well as the written report, the model interpretability, and the final presentation.
+Here are the three most balanced solutions.
+This team not only submitted an excellent report with great substantial insights from data exploration of underlying patterns like the seasonality of various accident types, but also built a robust predictive model for the injury severity. Furthermore, their deep understanding of the underlying data positively influenced their presentation of the final results.
+These two students impressed the jury with a concise report and their in-depth evaluation of multiple (advanced) classification models, all while documenting the entire evaluation process with a clear workflow.
+The team surprised the jury with an elaborate feature selection section which allowed them to minimize the model features making for speedy predictions.
+As announced in Students at Oklahoma State University competing for internships at Siemens Healthineers, the winning teams have been offered the chance for an internship at Siemens Healthineers in 2024. The final interviews haven’t been conducted yet, but we are likely to hear about the students’ experience here on the KNIME blog in the future!
+For now, we’d like to thank the participants for their curiosity and motivation to work on the challenge, Prof. Delen for organizing the challenge and supervising the students throughout it, and Siemens Healthineers for their internship offers. 
+If the above sparked your interest in hosting a student challenge with KNIME in 2024, please fill out the Student Challenge Application Form.

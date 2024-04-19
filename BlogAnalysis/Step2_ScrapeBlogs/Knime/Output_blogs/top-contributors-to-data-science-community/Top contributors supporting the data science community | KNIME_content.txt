@@ -1,0 +1,23 @@
+Celebrating KNIME Community Forum 2023 highlights
+Users from all over the world come together on the KNIME Community Forum to share their insights and experience working with data using KNIME software. The forum is a data science knowledge exchange where users with a wide range of experience and expertise enhance their own understanding while also helping others. 
+Here, we share some 2023 stats that show how some of the top community members helped make the KNIME Community Forum shine as a go-to resource for answers to data science questions.
+There’s a lot of dedicated data scientists out there, who consistently provide well-explained and thoughtful solutions to help out fellow community members.
+We’d particularly like to highlight @takbb, @ArjenEX, and @HansS.
+@takbb shares ready-to-use, customizable solutions with the community: He stood out remarkably in 2023, providing 153 solutions in 2023 alone, with a total of 331 solutions to his name. He goes beyond just answering questions, and also  builds and shares solutions with the community as reusable components. KNIME users can download these components and plug them into their workflows. This generosity empowers others with ready-to-use, customizable solutions for a variety of complex problems.
+Thank you, @takbb, @ArjenEX and @HansS for your help on the Forum.
+No matter how niche you think your topic might be, you’re likely to always find answers to your questions on the Forum. A diverse range of topics is discussed here, from asking whether data science is dead, to getting advice on normalizing data for a neural network, to exploring job postings found on social media, and a lot more.
+We'd like to highlight three community members, @mwiegand, @Gabriel2020 and @JaeHwanChoi who launched multiple topics that initiated discussion.
+@mwiegand, led the pack by creating 127 new topics. A lot of them are in the 'Feedback & Ideas' category. These suggestions or bug reports offer valuable insights into what users need, what challenges they face, and how we can develop KNIME software to meet these demands more effectively.
+Thank you to @mwiegand, @Gabriel2020, and @JaeHwanChoi  for your feedback, ideas, and discussions.
+The KNIME community gives kudos for shared knowledge, best practices, and solutions ❤️. Numbers of likes signify that a post not only resonated with other members, but also provided value and sparked engagement.
+One thread that got a lot of love on the Forum was a discussion that compared the KNIME Forum with other data science forums, particularly when @takbb said, “To me the KNIME community feels more like a family. I hope you’re already getting that vibe!”
+Thanks go especially to these three community members with the most kudos received in 2023: @takbb with 1388 likes, @mlauber71 with 1049, and @ArjenEX with 948 likes.
+Engagement is what keeps the community alive, and in 2023, several users took the lead in sparking discussions around combining KNIME with R and Python, automating spreadsheet work, comparing other data science tools, and more.
+The most prolific contributors were @takbb replying 833 times in 2023, and an overall response count of 2.2K; @mlauber71 with 831 replies in 2023 and 4.3K overall, and @iCFO with 651 in 2023, and 1.1K overall.
+Explore this post,  triggered by @mlauber71, where he discusses the citizen data scientist approach and the benefits of empowering users with reusable workflows and components, citing examples from KNIME meetups at Siemens.
+Engagement on the forum isn't just measured by the volume of questions asked or answers provided, but also by the reach and impact of the shared content. Among the avid readers of the forum, three community members stood out who are definitely keeping their finger on the pulse of the community, having read literally thousands of posts!
+Did you take part in the “Helpful Hand on the Forum” poll? At the end of 2023 we asked the community to cast votes for up to three forum users for their most positive contributions to the forum. 
+The community voted for those users who consistently dedicate their time and efforts to helping others. One member shone brightest and emerged as the “Pole Star” to our community.
+Congratulations go to @mlauber71,  chosen as the “KNIMErs’ Pole Star” in 2023 by the KNIME community here!
+P.S. We also asked the community to suggest a name for this award, which is how the Pole Star came about
+The strength and success of our forum are a testament to the value of an active data science community. We are deeply grateful to each member for their contributions, support, and engagement. Let's celebrate the ongoing collaboration and look ahead to another year of shared success and discovery in the ever-evolving field of data science.

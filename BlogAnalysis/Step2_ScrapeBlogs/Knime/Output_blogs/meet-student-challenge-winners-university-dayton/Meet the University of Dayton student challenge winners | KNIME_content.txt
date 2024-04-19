@@ -1,0 +1,21 @@
+Investigating baby-name trends, shipping order management, and 2,373 squirrels
+During the fall 2023 semester, Professor Hamed Zolbanin from the University of Dayton partnered with KNIME to host a student challenge on data engineering and database management.
+Professor Zolbanin oriented the students to use datasets available on the NYC Open Data website, formulate questions that could be answered with data, and build workflows to answer those questions.
+The students' solutions contained MySQL database management, data wrangling, preprocessing, and visualizations to convey findings and results. After evaluating the workflows and their corresponding reports and presentations, KNIME and Professor Zolbanin ranked the students’ projects.
+Here, we shout out the top three winning solutions.
+By Bazil Furry, Blaise Knoll, and Samba Sy
+A large number of NYC Open Data datasets focus on urban issues such as crime rates, weather information, or traffic data. These students went off the beaten path and came up with a creative story on baby name trends in New York City.
+They investigated what names were the most popular in each year, from 2013 to 2023, how naming trends differed across genders, and whether there were clear cultural influences on naming choices. 
+A notable trend the students observed was that “Ethan” was the most popular name from 2013 to 2023. They also noticed that the rise of celebrities had an impact on baby naming, and that more gender-neutral names such as “Avery” were relatively common in New York City.
+The students explored a large dataset on baby names using a variety of SQL queries. They also came up with clear visualizations to communicate their findings. Their work was well-documented and easy to follow.
+By Emily Holthaus, John Bentley, and John Mack
+The second place winner focused more on database management and SQL practice than on a specific story. The goal of this project was to showcase how many SQL queries can be performed within KNIME. 
+The students opted to use the Northwind database, which is a  sample database created by Microsoft that has been used in many database tutorials for decades. This database contains sales data for a fictitious company called “Northwind Traders,” which imports and exports specialty foods from around the world. 
+By using a combination of database and ETL nodes in KNIME, the students retrieved the number of orders per customer and how many orders were sent out by each shipper, in addition to other relevant aggregations. They implemented the largest variety of SQL queries across project submissions and concluded with visualizations that summarized queries’ results.
+By Cannon Spelman, Jack Drago, and Patrick Burns
+These students also opted for an unusual dataset from the NYC Open Data repository: the 2018 Central Park Squirrel Census. The data contains information on squirrels’ age, color, typical actions when observed, location, and other behavioral traits. 
+The team used linear regression based statistical analysis and found out that squirrels who moan are often seen climbing, squirrels who chase are often seen running, and cinnamon-colored squirrels are often seen foraging.
+The students used KNIME’s ETL and data visualization capabilities to reach further aggregated conclusions on the data – for example, what activities were most common in each squirrel group. Their work was well-defined, motivated, and documented.
+Bazil, Blaise, and Samba were offered a summer 2024 internship at KNIME. While Blaise and Samba had already committed to other opportunities, Bazil will be joining the KNIME team in Austin for six weeks this summer. We are happy to have him as an intern and will likely have a write-up on his work and experience later this year!
+We’d like to thank all students for working on this challenge, and to Professor Zolbanin for co-organizing it with us and supervising the whole process.
+If you are an educator and interested in our student challenges, read about the support KNIME provides and how to apply for a 2024 KNIME Student Challenge.

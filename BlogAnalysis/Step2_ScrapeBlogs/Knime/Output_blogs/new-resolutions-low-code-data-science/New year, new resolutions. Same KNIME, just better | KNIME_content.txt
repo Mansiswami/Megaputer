@@ -1,0 +1,32 @@
+It is the new year, time for new resolutions, new ideas, new projects, new use cases. Only KNIME hasn't changed. It is just better.
+During the whole 2023, I adopted this mantra to describe KNIME Analytics Platform:
+Data Science – Low Code – Free – Open Source
+It worked as a charm. Four powerful words to describe the tool in less than a minute.
+Now that 2023 has passed and we have entered the new year, is this mantra still valid?
+Let’s start with the first word: Data Science.
+The term “Data Science” has been around for a few years now and it indicates a multidisciplinary approach, including statistics, mathematics, machine learning algorithms, and data engineering, used to extract information from data. Data is stored, organized, and machine learning models are trained to discover what has happened in the past, as well as what will happen in the future.
+In 2023, Artificial Intelligence (AI) made quite an entrance in the data science world. With AI, large – really large – models are trained on large – really large – amounts of data, and reach exceptional performances, especially for language and image analysis and generation.
+Now that these models are available to any data person (and not just data scientists), do we still need to store, organize, and use the data to train machine learning models for our predictions? Has the term “data science” become obsolete?
+Well, the answer is yes and no.
+You still need to groom your data, and, in some cases, you still need to create and train your own models, to get answers to your specific questions. On the other hand, for generic problems, based on generic publicly available data, you can probably ask any AI model to get a faster and more reliable answer than what you could produce on your own.
+It has also become possible, in recent times, to customize an AI generic model using your own data, which would exempt you from training a new machine learning model from scratch, but not from the fine-tuning work of customization and surely not from the data engineering work of data collection, cleaning, storage and organization.
+AI has been made available within KNIME Analytics Platform in 2023, with two features. 
+The KNIME AI Assistant, informally known as K-AI, is part of the KNIME Analytics Platform UI. K-AI is a chatbot, whose only job is to answer your KNIME related questions either with words or by improving/extending the currently opened workflow. Note that K-AI requires you to be signed in into the KNIME Community Hub.
+The KNIME AI Extension is a classic extension, with the nodes and connections that give you the functionality you need to: 
+Note that you will find more AI integrated in the Python editor of the nodes that belong to the KNIME Python Integration. You can now ask the KNIME AI Assistant (K-AI) to write or complete writing code within these Python nodes.
+Now that KNIME Analytics Platform also offers AI capability, we should change the mantra from “Data Science” into “Data Science & AI”. Unless we include AI under the data science umbrella, in which case the mantra remains unchanged for 2024.
+The second word is "Low Code". With the last two releases, the UI of KNIME Analytics Platform changed drastically. Does the tool still qualify as low code? I would say yes, even more so now that the UI has been heavily simplified. 
+In the new interface you can find the description of the currently open workflow, the Node Repository, the workspace folder list, and your personal assistant K-AI (see above) all on the left bar. When you open KNIME Analytics Platform for the first time, the Node Repository only shows the basic nodes; you need to click on “More Advanced Nodes” to see all other nodes as well. This is done not to overwhelm the new user with the myriad of possibilities. 
+Each node carries its own buttons for “Configure”, Execute”, “Stop”, and “Reset”. You can see them on top of the node when you hover on it. Easy, uh? 
+The Node Monitor in the lower panel shows the content of the output port of the selected executed node. No need to click and check anymore.
+All in all, the look & feel is sleeker and cleaner than in the old versions. However, the basic concepts of low code remain the same: drag & drop (or double-click), configure, assemble more nodes, execute.
+On this note, I would like to add one more comment.
+Remember the old reporting extension? It was the closest thing to coding that KNIME Analytics Platform had. Well, with 5.1 and 5.2 it has disappeared. KNIME Reporting lets you generate reports faster. These new reporting nodes can transform any component interactive view into a static PDF report when they are added before and after the component. 
+So, yes. It is still “low code”, even more “low code” than what it used to be.
+And yes, KNIME Analytics Platform is still free and still open source. That has not changed a bit in 2023 and it will not change in 2024.
+KNIME Analytics Platform is still free.
+You can download it free of charge from the KNIME Download page, install it, and start creating data science applications to collect, transform, and store your data; to create reports and interactive dashboards; to train your own machine learning algorithms or to prompt an AI model.
+KNIME Analytics Platform is still open source.
+The big strength of KNIME Analytics Platform still lies in its community. Many of the nodes are provided by extensions developed by members of the KNIME community and available on the KNIME Community Hub. You too can develop your own nodes and your own extension, either in Java or in Python.
+It is the new year, and it is time for new resolutions! Only KNIME has not changed. Or better, it has. It is just better. 
+Download KNIME: It's open source and free to use.

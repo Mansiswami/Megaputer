@@ -1,0 +1,23 @@
+The first step into learning new data science skills is an exciting step to take. It promises the ability to contribute meaningfully to cutting-edge projects in data science and AI and opens up your ability to advance your career.
+You can get skills in data science and machine learning certified through the KNIME Certification Program. The program has four levels of certification, which validate beginner to advanced and specialized levels of proficiency.
+In this article we want to share some tips and tricks to help you pass the certification exam,  L1: Basic Proficiency in KNIME Analytics Platform, which you can take free of charge.
+KNIME Analytics Platform is a free and open source low-code/no-code software that enables anyone, irrespective of experience levels, to make sense of data. With KNIME you can build analyses of any complexity level, from automating spreadsheets, to ETL, to machine learning.
+If you’re a beginner to data science, you’ll find KNIME’s intuitive, visual interface makes it much easier to start learning data science in comparison to a code-based tool. You can focus on learning the new techniques straight away, rather than having to first spend a lot of time learning to code. 
+The L1 certification exam covers using KNIME Analytics Platform for these basic data science techniques:
+L1 certification exam does not include questions on flow variables, loops, switches, and similar structures used to control the workflow. Such questions belong to the L2 certification exam.
+All L1 courses prepare you for the L1 certification exam.
+In KNIME Courses, you’ll find L1 courses for data scientists and data wranglers. They both cover the skills you need to take the exam, using different stories and data to address the different professional profiles.
+Courses are offered as self-paced courses, which are free, or as instructor-led courses (online).
+If you’re interested in instructor-led courses, check KNIME Events page for more information and pricing, as well as the schedule to see which instructor-led courses are coming up next.
+Explore KNIME cheat sheets to get overviews of using KNIME for different data science techniques.
+Head over to the KNIME Forum to get peer-to-peer support from the KNIME community.
+Explore the KNIME Community Hub to find solution starters to download and adjust to your specific project.
+Yes. After the L1 certification, you can take the exams to become certified in the L2, L3, and L4 levels. L stands for Level of knowledge and 1, 2, 3 denote the progression in expertise.
+It's free to take the KNIME L1 certification exam. Here are the steps to enroll:
+2. To log in, click “Sign in” at the top of the page.
+3. Enter your credentials in the Login window or create a new account if you don't have KNIME credentials yet. Those are the same credentials you use for the KNIME Hub and the KNIME Forum.
+4. After logging in and clicking “Login and Enroll”, you can access the list of certification exams available for your KNIME account.
+If you have never taken a KNIME certification exam before, you’ll be presented with the L1 certification exam. Just click the button “Add” to start it.
+5. Now you can start answering the questions. You have to answer 15 multiple-answer questions in 30 minutes about basic features of KNIME Analytics Platform.
+6. In the end, if the result of the exam is successful, you will be awarded an L1-certification badge to show off to colleagues, family, friends, and social media followers. Congratulations! You have been KNIME L1-certified!
+Good luck!

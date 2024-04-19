@@ -1,0 +1,24 @@
+This is part of a series of articles to show you solutions to common finance tasks related to financial planning, accounting, tax calculations, and auditing, all implemented with the low-code KNIME Analytics Platform.
+Regular monthly and year-to-date (YTD) aggregations provide essential information to monitor a company’s financial performance across time periods, evaluate the impact of specific events, and communicate the financial status.
+In fast-paced business environments quick monthly or YTD aggregations provide up-to-date information and enable informed decisions in a timely manner.  But it involves pulling together the data from multiple sources, which is complex and time-consuming. Delayed calculations can result in outdated or inaccurate information.
+Easy integration of multi-source data is pivotal to quick data aggregation.
+In this post, with accompanying video, we show how you can quickly calculate monthly and year-to-date aggregations in KNIME.
+The open source and free KNIME Analytics Platform lets you build visual workflows to automate and augment spreadsheet work. That means you can more efficiently combine and process data from numerous sources in a way that’s repeatable. You spend less time on data aggregation.
+Before we start, let's recap on what monthly revenue and year-to-date aggregation mean.
+Monthly revenue aggregation is the sum of all revenues for each month. It will show total sales revenue for each month and enable analysts to identify sales patterns, peak periods, and trends.
+Year-to-date (YTD) revenue aggregation is the sum of the monthly revenues from the beginning of the year till the current month.  For example, if it is April, the YTD revenue is given by the sum of the monthly revenues of January, February, March, and April.
+Today’s task is to display monthly and YTD revenue aggregations over months for two different years.
+Let’s imagine we’re dealing with a restaurant business. Each evening, all dinners served and paid for are recorded. Up to 2022, these transactions were recorded in an Excel file. Starting from 2023, the recording system moved to a Google spreadsheet, so we’ll need to access our data from both sources.
+Let’s break down the calculation into the processes we have to go through:
+The workflow “Monthly and YTD Revenues” is available and free to download from the KNIME Community Hub.
+Let’s see how our above processes translate into our workflow, below. You can see that we have three main steps:
+Note that when you read in data from a Google spreadsheet you’ll need a few additional steps, mainly for authentication. KNIME Analytics Platform offers a large number of nodes to integrate with Google resources. It all starts with the Google Authenticator node. This node gets you authenticated on Google and then allows you to access the Google services you have signed up for.
+After authentication, KNIME Analytics Platform offers several connector nodes: to Google Analytics, to Google Sheets, to Google Big Query, to Google Drive, and to Google Cloud Storage. After connection, other nodes allow you to implement specific operations compatible with the selected service (see below).
+Let's aggregate the monthly revenues first:
+And now we'll aggregate the year-to-end revenues for each month:
+Here's the bar chart showing the monthly revenues for the year 2022 and the year 2023 side by side.
+You can see that the pattern is similar for both years, February being a lower revenue month, and that 2023 has produced a bit more revenues than 2022.
+This last observation is confirmed in the view of the YTD revenues in the line plot. In the YTD plot (below) the line for 2023 is clearly above the line for 2022. 
+Data experts spend 70-80% of their time wrangling and preparing data before they can start performing aggregations and analyzing it. This becomes even more complex when the data is unstructured, large in size, and has to be pulled from various sources and types.
+KNIME, as a low-code data analytics platform, offers a solution. With versatile functionality offered by its nodes like the Joiner, Concatenate, Groupby, VLOOKUP, and more, finance departments can merge diverse datasets with precision and quickly perform complex data aggregation and joining tasks.
+You can download KNIME and try it out for yourself. It’s open source and free to use.

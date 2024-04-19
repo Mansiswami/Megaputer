@@ -1,0 +1,13 @@
+Get your data science expertise certified for free
+It's time to cram for exams. We're making KNIME certifications free for 90 days, starting February 1.
+Whether you’re taking your first steps into data science, already have a grasp of some techniques, or you’re building predictive models, take the 90-day KNIME Certification Challenge to complete as many certifications as you can and get your data science skills certified free of charge.
+Upskilling, reskilling, and changing career trajectories are all part of the reality of today’s fast changing and data driven workplace environment. You can level up new data science skills with KNIME Analytics Platform – an intuitive, low-code tool for end-to-end data science. It enables you to perform analysis at any level of sophistication – from data prep to leveraging AI/ML. It’s also open source and free to download.
+When you take the 90-day KNIME Certification Challenge, folks with the highest number of KNIME certifications will be announced on social media at the end of the challenge (and receive a prize, to be announced soon).
+It’s simple!
+Note: Certification exams have to be completed in order, i.e. you need to complete L1 to enroll for L2.
+Register here and you will receive an email with the code, which is valid from February 1, 2024 to April 30, 2024.
+The KNIME Certification Program has four levels of certification for different levels of competency, from beginners to specialists. 
+You can watch more about it in the video, Data Professionals Get Certified.
+Answer the question and then match your answer to see where to start the 90-day certification challenge.
+Q: How well do you know data science or analytics using KNIME software?
+Good luck, may the certification begin!

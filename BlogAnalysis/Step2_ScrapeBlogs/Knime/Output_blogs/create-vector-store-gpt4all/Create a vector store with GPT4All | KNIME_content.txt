@@ -1,0 +1,33 @@
+Easy access to AI with local, codeless execution of AI models
+GPT4All is an open-source ecosystem for training and deploying custom large language models (LLMs) that run locally, without the need for an internet connection. With the ability to run LLMs on your own machine you’ll improve performance, ensure data privacy, gain greater flexibility with more control to configure the models to your specific needs, and you’ll likely have no utilization costs. 
+In a world increasingly driven by technology and artificial intelligence, easily accessible tools like KNIME Analytics Platform and the revolutionary GPT4All initiative are playing a crucial role in lowering barriers to enable more enabling people and businesses to take full advantage of powerful next-generation language models.
+In this article, we want to show you how you can connect to GPT4All with KNIME and generate texts based on prompts. For more advanced users, we’ll show how you can customize LLMs with vector stores. 
+To start working locally with models like ChatGPT in KNIME:
+You can see how these nodes work in a workflow I created for Just KNIME It, Season 2, Challenge 20. In the workflow, we asked the model to generate a representative word from a list of words describing a topic for a corpus of hotel reviews.Access the GPT4All Hotel Review workflow from KNIME Community Hub. You can learn more about it in the article,  The Power of Artificial Intelligence to Analyze Opinions in Hotel Reviews.
+To date, GPT4All offers a number of valuable models that can be used locally, including:
+You can customize LLMs to tailor their language processing capabilities to your specific use cases and domain knowledge. Vector stores can be used here as a type of knowledge base to provide more context, for instance, to generate a more meaningful response to a prompt. What’s special about them is that they make it easy to perform semantic searches.
+In the field of artificial intelligence, vectors serve as dense numeric representation of single words to entire documents. They are like “secret” numerical encodings that reflect the essence of what they are representing. For example, related words would have close numbers in this representation.
+Vector stores are a sort of library of numeric vectors that describe different objects. This is very useful to search for information and perform similarity search: if the numerical encodings look alike, it means that the objects they represent also look alike. 
+Imagine searching for a song similar to the one you like. Vector stores do the same thing but, instead of songs, they search data.
+When you look up or compare data, you are actually comparing stored numeric representations. If the numbers are similar, it implies that the data is also similar in some respect. It’s like saying “Find things similar to this”, and the vector store uses those numeric representations to find matches.
+The use of vector stores in combination with artificial intelligence models offers significant benefits. For example, it allows organizations to adapt models to solve organization-specific problems.
+Creating vectors that represent business concepts allows you to feed the model with specific knowledge and query them to generate relevant content in a business context.
+Working with vector stores in combination with local LLMs means using your own data and having full control over how models handle information, which is useful for keeping sensitive data private.
+Efficiency and improved results are other positive aspects. By adjusting the vectors as needed, you get more accurate and relevant results, and working locally reduces latency and improves efficiency by not relying on external connections.
+The workflow below shows how to create a vector store from a KNIME table using the OpenAI Embeddings Connector and FAISS Vector Store Creator nodes. 
+To run the workflow, you need an OpenAI API key.
+Download the workflow Create a Vector Store from KNIME Community Hub.
+The workflow below shows how to read an existing vector store with the FAISS Vector Store Reader node in KNIME.
+To run the workflow, you need an OpenAI API key.
+ Download the workflow Load an Existing Vector Store from KNIME Community Hub. 
+To harness a local vector with GPT4All, the initial step involves creating a local vector store using KNIME and the GPT4All language model.
+With GPT4All, the embeddings vectors are calculated locally and no data is shared with anyone outside of your machine.
+This vector store functions as a local knowledge base, populated with information extracted from proprietary documents.
+Once established, the vector store can be employed in conjunction with the GPT4All model to perform completion tasks and address specific queries.
+The incorporation of a local vector with GPT4All offers numerous advantages.
+Primarily, it enables batch-mode queries, allowing multiple questions to be sent to the model in a single command. This streamlines interaction with the model, facilitating the retrieval of coherent and contextualized responses.
+Additionally, the creation of a local vector store provides the capability for "live chats" with the model, allowing interactive questions based on the information stored in the vector store.
+This approach not only enhances query efficiency but also ensures privacy, as all interaction and data processing occur locally, eliminating the need to transmit sensitive information over the Internet.
+The combination of the KNIME Analytics Platform and GPT4All opens new doors for collaboration between advanced data analytics and powerful and open source LLMs.
+The ability to work with these models on your own computer, without the need to connect to the internet, gives you cost, performance, privacy, and flexibility advantages.
+The range of applications is endless thanks to the variety of models available: from generating text to automating complex tasks. Experiment and discover how this combination can elevate your projects and analyses to a new level.
