@@ -1,9 +1,10 @@
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
-from bs4 import BeautifulSoup
 import os
 import pandas as pd
 import nltk
+from bs4 import BeautifulSoup
+import re
 
 # Download NLTK data including the stopwords corpus
 nltk.download('punkt')
@@ -19,34 +20,40 @@ def read_files(directory):
                 combined_text += f.read()
     return combined_text
 
-# Read all the files in the 'google' directory
-combined_text = read_files("google")
+# Preprocessing function to clean text
+def preprocess_text(text):
+    # Remove HTML tags
+    text = BeautifulSoup(text, "html.parser").get_text()
+    # Remove non-alphabetic characters
+    text = re.sub(r'[^a-zA-Z]', ' ', text)
+    # Convert to lowercase and tokenize
+    words = nltk.word_tokenize(text.lower())
+    # Remove stopwords
+    stop_words = set(stopwords.words('english'))
+    words = [word for word in words if word not in stop_words]
+    return ' '.join(words)
 
-# Tokenize the text and remove stopwords
-stop_words = set(stopwords.words('english'))
-texts = [" ".join([word for word in document.lower().split() if word not in stop_words]) for document in combined_text.split('\n')]
+# Read all the files in the 'Output_Blogs_Google' directory
+combined_text = read_files("Output_Blogs_Google")
 
-# Define a predefined vocabulary
-vocabulary = set(["service", "using", "spanner", "read", "google", "ai", "data", "cloud"])  # Add more words as needed
+# Preprocess the text
+processed_text = preprocess_text(combined_text)
 
-# Filter out words not present in the vocabulary
-filtered_texts = []
-for text in texts:
-    filtered_text = " ".join(word for word in text.split() if word in vocabulary)
-    filtered_texts.append(filtered_text)
+# Tokenize the text into documents
+documents = nltk.sent_tokenize(processed_text)
 
-# Create a CountVectorizer for parsing/counting words
-count_vectorizer = CountVectorizer(stop_words='english')
-count_data = count_vectorizer.fit_transform(filtered_texts)
+# Create a TF-IDF vectorizer
+tfidf_vectorizer = TfidfVectorizer(stop_words='english', max_features=1000)
+tfidf_data = tfidf_vectorizer.fit_transform(documents)
 
 # Train the LDA model
-lda = LatentDirichletAllocation(n_components=15, random_state=0)
-lda.fit(count_data)
+lda = LatentDirichletAllocation(n_components=10, random_state=0)
+lda.fit(tfidf_data)
 
 # Print the topics found by the LDA model
 print("Topics found via LDA:")
-words = count_vectorizer.get_feature_names_out()
+words = tfidf_vectorizer.get_feature_names_out()
 for i, topic in enumerate(lda.components_):
     print(f"Topic {i}:")
-    print(" ".join([words[j] for j in topic.argsort()[-15:]]))
+    print(" ".join([words[j] for j in topic.argsort()[-10:]]))
     print()
