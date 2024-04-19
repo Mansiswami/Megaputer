@@ -1,0 +1,87 @@
+Scrapped Reviews (75)
+
+Topics
+
+runfile('/Users/gautham/Desktop/untitled2.py', wdir='/Users/gautham/Desktop')
+
+
+Topics found via LDA with 15 topics:
+Topic #0: word end slow worth trial little free hope lot right
+Topic #1: provide integration service sentiment support use far work google seamless
+Topic #2: google api train need cloud model potential make costly price
+Topic #3: service know far dislike miss documentation support like cloud problem
+Topic #4: time available base result application manage input model require benefit
+Topic #5: like api tool little use complete able cost thing feature
+Topic #6: input need overall documentation dislike maybe great think use processing
+Topic #7: difficult pricing student usage know help complex pretty good think
+Topic #8: nice people unit problem function sentiment able limitation character little
+Topic #9: model english support language integrate drawback personal hard tool use
+Topic #10: integrate service information lack parameter hard tool solution add expensive
+Topic #11: language natural cloud google pricing good api user wrong particularly
+Topic #12: text improve make api integration dislike work like ease limitation
+Topic #13: expensive example able student free api user like use problem
+Topic #14: perfectly work dislike product world fine service feel cost api
+
+
+
+
+Interpretation
+
+Topic #0: Performance and Evaluation
+This topic seems to discuss various aspects related to performance evaluation, mentioning words such as "slow", "worth", "trial", and "little". Users might be discussing their experiences with trial versions, slow performance issues, or evaluating the worth of certain features.
+
+
+Topic #1: Service Integration and Support
+Users discuss the seamless integration of services, sentiment analysis, and support provided by Google. They mention aspects such as integration, service usage, and support experiences with Google services.
+
+
+Topic #2: Google Cloud API and Training
+This topic revolves around discussions related to Google Cloud API, training needs, and potential drawbacks. Users might be discussing the necessity of training, the potential of Google Cloud models, and the cost associated with utilizing these services.
+
+
+Topic #3: Service Documentation and Support
+Here, users express their opinions about service documentation, support quality, and areas where they feel unsupported or dissatisfied with the support provided by Google Cloud.
+
+
+Topic #4: Time Management and Application Management
+Discussions on this topic seem to revolve around time management, application requirements, and the benefits of using Google Cloud services for managing applications and related tasks.
+
+
+Topic #5: Tool Usage and Features
+Users discuss the usage of various tools provided by Google Cloud, mentioning their features, usability, and associated costs. They might be discussing tools' abilities to complete tasks, their costs, and their features.
+
+
+Topic #6: Input Processing and Documentation
+This topic discusses input processing, overall documentation quality, and potential drawbacks in usability. Users might be expressing their opinions about input processing capabilities, documentation clarity, and usability concerns.
+
+
+Topic #7: Pricing Complexity and Usage
+Users here discuss pricing complexities, usage patterns, and challenges faced in understanding pricing models. They might be discussing their experiences with pricing structures, usage limitations, and complexities associated with Google Cloud services.
+
+
+Topic #8: Functionality and Limitations
+Discussions on this topic seem to revolve around functionality, limitations, and user sentiments. Users might be discussing functionalities, limitations, and their experiences with using certain features.
+
+
+Topic #9: Model Integration and Language Support
+Users discuss model integration, language support, and potential drawbacks in personalizing models. They might be discussing language support, integration challenges, and personalization options available with Google Cloud services.
+
+
+Topic #10: Service Integration and Information Availability
+This topic discusses service integration challenges, information availability, and potential solutions. Users might be discussing integration difficulties, lack of information, and solutions to overcome these challenges.
+
+
+Topic #11: Natural Language Processing and Pricing
+Discussions here seem to revolve around natural language processing capabilities, pricing structures, and user sentiments. Users might be discussing the quality of natural language processing, pricing concerns, and user experiences with Google Cloud services.
+
+
+Topic #12: Text Processing and Integration
+Users discuss text processing capabilities, integration challenges, and potential improvements needed. They might be discussing ways to improve text processing, integration issues, and usability concerns.
+
+
+Topic #13: Cost Considerations and User Experiences
+Users here discuss cost considerations, user experiences, and challenges faced with costly services. They might be discussing cost-related issues, user experiences with free and paid services, and challenges faced by students.
+
+
+Topic #14: Service Satisfaction and Cost Analysis
+Discussions on this topic seem to revolve around service satisfaction, product usability, and cost analysis. Users might be discussing their satisfaction levels, product usability, and cost-effectiveness of using Google Cloud services.
