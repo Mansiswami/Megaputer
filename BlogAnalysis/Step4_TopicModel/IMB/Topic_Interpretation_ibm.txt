@@ -1,6 +1,6 @@
 IBM Watsonx:
 
-Using NLTK
+Using NLTK+Scikit
 Topic 0: performance, provides, services, become, network, businesses, one, systems, 2023, company
 Topic 1: resources, new, providing, cloud, year, different, organizations, organization, years, service
 Topic 2: learn, dns, insights, ibm, security, traffic, today, change, supply, organization
