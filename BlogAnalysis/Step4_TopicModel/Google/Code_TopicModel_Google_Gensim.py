@@ -20,8 +20,8 @@ def read_files(directory):
                 combined_text += f.read()
     return combined_text
 
-# Read all the files in the 'google' directory
-combined_text = read_files("google")
+# Read all the files in the 'Output_Blogs_Google' directory
+combined_text = read_files("Output_Blogs_Google")
 
 # Preprocess the text: remove non-alphanumeric characters and convert to lowercase
 cleaned_text = re.sub(r'[^a-zA-Z\s]', '', combined_text)
@@ -41,7 +41,7 @@ dictionary = corpora.Dictionary(bow_corpus)
 # Convert the dictionary into a bag-of-words corpus
 corpus = [dictionary.doc2bow(text) for text in bow_corpus]
 
-# Train the LDA model with 10 topics
+# Train the LDA model with 15 topics
 num_topics = 15
 lda_model = models.LdaModel(corpus, num_topics=num_topics, id2word=dictionary)
 
