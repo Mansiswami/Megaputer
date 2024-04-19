@@ -29,13 +29,26 @@ def process_link(link):
     soup = BeautifulSoup(response.text, "html.parser")
     title = soup.title.string
     body = soup.find_all("p")
-    body = "\n".join([str(p.text) for p in body])
+    body_text = "\n".join([str(p.text) for p in body])
+
+    # Save content to text file
+    save_to_text(link, title, body_text)
 
     # Extract top keywords
-    top_keywords = get_top_keywords(body)
+    top_keywords = get_top_keywords(body_text)
 
     # Save top keywords to Excel file
     save_to_excel(link, title, top_keywords)
+
+def save_to_text(link, title, body_text):
+    category = link.split("/")[5]
+    directory = f"Output_Blogs_Google/{category}"
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    text_file_path = f"{directory}/{title}.txt"
+    with open(text_file_path, "w") as text_file:
+        text_file.write(body_text)
+    print(f"Content for {title} saved to {text_file_path}")
 
 def save_to_excel(link, title, top_keywords):
     df = pd.DataFrame(list(top_keywords.items()), columns=['Keyword', 'Frequency'])
