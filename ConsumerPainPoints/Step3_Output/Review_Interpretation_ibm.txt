@@ -1,0 +1,12 @@
+Result for IBM review:
+Topics found via LDA:
+Topic #0: training user easy lot issue tool require dislike datum watson
+Topic #1: available multiple improve work free feature helpful look node skill
+Topic #2: assistant watson problem lack like platform little entity improve need
+Topic #3: improvement difficult apis necessary smooth build affordable mode mention update
+Topic #4: like dislike product documentation time example thing ibm integration confusa
+Topic #5: use point negative nada area feature não watson api like
+Topic #6: project code voice friendly user human knowledge interface list intent
+Topic #7: ibm need language work el support change help information thing
+Topic #8: update datum solve work language expensive time notice chat dialogue
+Topic #9: think understand time offer watson ai moment improve concept probably
