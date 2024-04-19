@@ -1,0 +1,126 @@
+﻿SAS VIYA
+
+- Used NLTK + SCIKIT libraries
+
+Results: 
+
+Topics found via LDA:
+
+
+Topic 0:
+average visual table software figure scoring example decision regression following action create users analytics score
+
+
+Topic 1:
+visual action software scoring regression following figure example decision average available table science help node
+
+
+Topic 2:
+decision software scoring example figure regression following table action customer data based post time flow
+
+
+Topic 3:
+processing number based available visual average decision software scoring example figure regression following table action
+
+
+Topic 4:
+machine visual available regression following example table software figure scoring decision average action approach using
+
+
+Topic 5:
+following visual regression example available average action decision scoring figure table software important models different
+
+
+Topic 6:
+average visual table action following software figure scoring decision example regression studio performance image project
+
+
+Topic 7:
+software scoring regression following figure example decision average available table output user customers analysis work
+
+
+Topic 8:
+decision software scoring example figure regression following table action text shows like images need methods
+
+
+Topic 9:
+decision software scoring example figure regression following table action business used research values processing model
+
+
+Topic 10:
+decision action software scoring example figure regression following table python input pipeline
+number variables machine
+
+
+Topic 11:
+machine available average visual regression action example table software figure scoring decision following case team
+
+
+Topic 12:
+visual decision table software scoring figure example regression following action multiple results code series value
+
+
+Topic 13:
+average visual example table following software scoring figure decision regression action network set learning training
+
+Topic 14:
+decision software scoring example figure regression following table action sas process viya variable information level
+
+
+
+
+
+
+Interpretation: 
+
+
+1. Cloud Services and Security: This topic seems to focus on the interplay between cloud services and security measures, as indicated by terms like "software scoring," "regression," and "action." It suggests a discussion around ensuring the security of cloud-based solutions.
+2. Cloud Services and Customer Satisfaction: This topic relates to the usage of cloud services and their impact on customer satisfaction. Terms like "decision," "customer," and "data" suggest a focus on how decisions made in the context of cloud services influence customer satisfaction.
+3. Cloud Computing and Data Infrastructure: This topic seems to discuss the infrastructure aspects of cloud computing, with terms like "processing," "number," and "based." It may delve into the underlying infrastructure required for handling data in cloud environments.
+4. Cloud and AI Integration: This topic suggests a discussion around the integration of cloud and AI technologies. Terms like "machine," "software," and "action" hint at the integration of AI capabilities into cloud services.
+5. Data Management and Customer Service: This topic appears to discuss the management of data in the context of customer service. Terms like "decision," "software," and "customer" imply a focus on how data management practices impact customer service.
+6. Cloud Services and Innovation: This topic relates to innovation in cloud services, as suggested by terms like "average," "visual," and "software." It may explore innovative approaches and solutions within cloud computing environments.
+7. Data Analysis and Modeling: This topic focuses on data analysis and modeling techniques. Terms like "example," "figure," and "regression" indicate a discussion around data analysis methods and modeling approaches.
+8. AI Models and Security: This topic discusses AI models and their implications for security. Terms like "decision," "software," and "security" suggest a focus on how AI models impact security measures.
+9. Cloud Adoption and Usage: This topic relates to the adoption and usage of cloud services. Terms like "decision," "software," and "usage" imply a discussion around the decision-making process involved in adopting cloud solutions and their subsequent usage.
+10. Cloud Computing and Big Data: This topic discusses the intersection of cloud computing and big data. Terms like "decision," "action," and "software" hint at the role of cloud computing in handling large volumes of data.
+11. Machine Learning and Data Processing: This topic focuses on machine learning techniques and data processing methods. Terms like "machine," "software," and "processing" suggest a discussion around the application of machine learning algorithms for data processing tasks.
+12. AI and Decision-Making Analytics: This topic relates to the use of AI for decision-making analytics. Terms like "decision," "software," and "analytics" imply a discussion around how AI technologies can be used to improve decision-making processes.
+13. Cloud Services and Performance Optimization: This topic discusses optimization strategies for cloud services. Terms like "average," "visual," and "software" suggest a focus on improving the performance of cloud-based solutions.
+14. SAS Viya Process and Information Management: This topic specifically relates to the processes and information management aspects of SAS Viya. Terms like "decision," "software," and "process" indicate a focus on how SAS Viya handles information management tasks.
+15. Software Performance & Services: This topic focuses on software performance and related services. Terms like "visual," "decision," and "software" suggest a discussion around the performance aspects of software services.
+
+- Used NLTK + GENSIM libraries
+Topics found via LDA:
+Topic 0: 0.012*"sas" + 0.011*"data" + 0.007*"model" + 0.005*"models" + 0.005*"using" + 0.004*"analytics" + 0.004*"use" + 0.004*"learning" + 0.004*"python" + 0.003*"example"
+Topic 1: 0.016*"sas" + 0.014*"data" + 0.007*"model" + 0.004*"using" + 0.004*"models" + 0.004*"learning" + 0.004*"time" + 0.004*"science" + 0.004*"code" + 0.004*"also"
+Topic 2: 0.014*"data" + 0.011*"sas" + 0.008*"model" + 0.004*"example" + 0.004*"n" + 0.004*"using" + 0.003*"science" + 0.003*"use" + 0.003*"also" + 0.003*"action"
+Topic 3: 0.015*"data" + 0.013*"sas" + 0.007*"model" + 0.005*"models" + 0.004*"set" + 0.004*"science" + 0.004*"analytics" + 0.004*"learning" + 0.004*"time" + 0.004*"also"
+Topic 4: 0.016*"data" + 0.010*"sas" + 0.008*"model" + 0.004*"time" + 0.004*"science" + 0.004*"code" + 0.004*"learning" + 0.004*"using" + 0.003*"example" + 0.003*"python"
+Topic 5: 0.018*"sas" + 0.014*"data" + 0.006*"model" + 0.005*"models" + 0.004*"using" + 0.004*"code" + 0.004*"also" + 0.004*"use" + 0.003*"python" + 0.003*"n"
+Topic 6: 0.016*"data" + 0.011*"sas" + 0.008*"model" + 0.005*"using" + 0.004*"models" + 0.004*"science" + 0.003*"used" + 0.003*"learning" + 0.003*"n" + 0.003*"analytics"
+Topic 7: 0.016*"data" + 0.014*"sas" + 0.007*"model" + 0.004*"models" + 0.004*"use" + 0.004*"example" + 0.004*"science" + 0.004*"code" + 0.003*"also" + 0.003*"time"
+Topic 8: 0.016*"data" + 0.011*"sas" + 0.007*"model" + 0.004*"models" + 0.003*"learning" + 0.003*"also" + 0.003*"using" + 0.003*"action" + 0.003*"image" + 0.003*"used"
+Topic 9: 0.016*"data" + 0.013*"sas" + 0.009*"model" + 0.005*"models" + 0.004*"using" + 0.004*"action" + 0.004*"time" + 0.004*"science" + 0.003*"learning" + 0.003*"also"
+Topic 10: 0.013*"data" + 0.012*"sas" + 0.008*"model" + 0.005*"analytics" + 0.005*"models" + 0.004*"using" + 0.004*"n" + 0.003*"learning" + 0.003*"use" + 0.003*"code"
+Topic 11: 0.017*"data" + 0.014*"sas" + 0.006*"model" + 0.005*"using" + 0.005*"models" + 0.005*"analytics" + 0.004*"python" + 0.004*"science" + 0.004*"use" + 0.003*"learning"
+Topic 12: 0.014*"sas" + 0.011*"data" + 0.007*"model" + 0.004*"models" + 0.004*"use" + 0.004*"code" + 0.004*"n" + 0.004*"learning" + 0.004*"time" + 0.004*"analytics"
+Topic 13: 0.013*"sas" + 0.013*"data" + 0.009*"model" + 0.005*"using" + 0.004*"use" + 0.004*"analytics" + 0.004*"models" + 0.004*"science" + 0.003*"action" + 0.003*"time"
+Topic 14: 0.018*"sas" + 0.013*"data" + 0.008*"model" + 0.005*"n" + 0.004*"learning" + 0.004*"models" + 0.004*"using" + 0.004*"code" + 0.003*"example" + 0.003*"also"
+
+Interpretation: 
+   1. General SAS Usage: This topic revolves around general usage of SAS, including handling data, models, and analytics. It also mentions the use of Python, indicating a broader ecosystem.
+   2. Time-related Analytics: This topic focuses on time-related aspects, possibly indicating analysis or modeling over time periods. The inclusion of "science" and "code" suggests a technical approach to time-related analytics.
+   3. Data Modeling and Examples: This topic emphasizes data modeling, possibly with practical examples or case studies. The mention of "action" could indicate practical applications or implementations.
+   4. Data Modeling and Analytics: This topic highlights data modeling, analytics, and learning, suggesting a focus on developing and refining models for analytical purposes. Mentions of "time" and "set" might refer to time-series data or data sets.
+   5. Data, Time, and Code: This topic focuses on data, time-related aspects, and code, possibly indicating a discussion of programming techniques or data manipulation methods in SAS.
+   6. Data Modeling with SAS: This topic emphasizes data modeling with SAS, possibly discussing various techniques or approaches within the SAS environment.
+   7. Data Handling and Analytics: This topic discusses data handling, analytics, and practical examples. Mentions of "use" and "example" suggest a focus on practical applications.
+   8. Data Modeling and Learning: This topic highlights data modeling, possibly with a focus on machine learning or statistical modeling techniques. The mention of "action" could indicate practical applications or implementations.
+   9. Data Modeling and Action: This topic emphasizes data modeling, analytics, and practical actions or implementations. Mentions of "time" and "science" suggest a time-sensitive analytical approach.
+   10. Data Analytics with SAS: This topic discusses data analytics with SAS, possibly covering various analytical techniques or methodologies available in SAS.
+   11. Data Analytics and Python Integration: This topic highlights data analytics and analytics using Python, suggesting a discussion on integrating Python with SAS for analytical tasks.
+   12. SAS Usage and Code: This topic focuses on general SAS usage, possibly discussing code snippets or programming techniques in SAS.
+   13. SAS and Analytics: This topic discusses SAS and analytics, with mentions of data modeling, analytics, and practical applications.
+   14. SAS and Learning: This topic emphasizes SAS usage and learning, possibly covering tutorials, educational content, or learning resources related to SAS.
+   15. Data Modeling and Examples with SAS: This topic discusses data modeling with SAS, possibly with practical examples or case studies specific to SAS.
