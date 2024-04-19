@@ -24,7 +24,7 @@ def read_files(directory):
 def preprocess_text(text):
     # Remove HTML tags
     text = BeautifulSoup(text, "html.parser").get_text()
-    # Remove non-alphabetic characters
+    # Remove non-alphabetic characters and numbers
     text = re.sub(r'[^a-zA-Z]', ' ', text)
     # Convert to lowercase and tokenize
     words = nltk.word_tokenize(text.lower())
@@ -42,12 +42,12 @@ processed_text = preprocess_text(combined_text)
 # Tokenize the text into documents
 documents = nltk.sent_tokenize(processed_text)
 
-# Create a TF-IDF vectorizer
-tfidf_vectorizer = TfidfVectorizer(stop_words='english', max_features=1000)
+# Create a TF-IDF vectorizer with adjusted parameters
+tfidf_vectorizer = TfidfVectorizer(stop_words='english', max_features=5000)
 tfidf_data = tfidf_vectorizer.fit_transform(documents)
 
-# Train the LDA model
-lda = LatentDirichletAllocation(n_components=10, random_state=0)
+# Train the LDA model with adjusted parameters
+lda = LatentDirichletAllocation(n_components=15, random_state=0, learning_method='online', max_iter=10, n_jobs=-1)
 lda.fit(tfidf_data)
 
 # Print the topics found by the LDA model
