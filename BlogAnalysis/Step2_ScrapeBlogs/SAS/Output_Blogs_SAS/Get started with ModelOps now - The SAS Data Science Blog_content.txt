@@ -1,0 +1,31 @@
+Since IDC placed SAS as a top leader in their Machine Learning Operations Platforms MarketScape, SAS Model Manager has been getting a lot of buzz. This really shouldn’t be a surprise since SAS saw a need for proper governance, management, care, and maintenance of models years ago. The first iteration of SAS Model Manager came out over 15 years ago, with our latest version updated monthly to keep up with the rapid pace of analytics. But you don’t need 15 years to become an expert in ModelOps and SAS Model Manager. In fact, you can start learning about ModelOps and SAS Model Manager now. This article breaks up the variety of educational resources provided by SAS based on your learning preference.
+
+If you just have an hour to learn the basics of SAS Model Manager, then I would recommend the recent webinar: How Do I Use SAS® Model Manager? This free webinar walks through how to register, score, deploy, and monitor models. Key ModelOps steps are detailed and demoed with tips and best practices.
+
+For folks who prefer learning by doing, then I would recommend walking through our Quick Start Tutorial. This tutorial features models and instructions for comparing, testing, publishing, and monitoring models in your own SAS Viya environment.
+You’re still in luck if you don’t have a SAS Viya environment readily available! Our expert SAS Education team have put together a guide to test drive ModelOps on the SAS Viya free trial environment. Our SAS Viya trial provides teams two weeks of access to SAS Viya for free! This guide walks through the pre-loaded assets to provide a structured exploration of ModelOps, but I encourage teams to check all the capabilities SAS Viya has to offer during their free trial period!
+
+SAS has a wonderful education team that creates both self-paced and instructor-led courses. I personally prefer instructor-led courses because you can ask questions and have discussions with the course instructors! For folks interested in hands-on instruction on SAS Model Manager, then I recommend the Managing Models in SAS Viya course. This course is about seven hours long but includes hands-on exercises and covers much more than the webinar. For teams who want to implement a ModelOps process at their organization, then the course on ModelOps is a must! This course focuses a lot more on processes rather than technology. While knowledge of SAS Model Manager is not required for the ModelOps course, I personally find it helps!
+For those who are already experts in ModelOps, then why not test your skills with the ModelOps Specialist certification? This certification is an excellent next step for folks who completed the earlier courses. I’ve already created an exam guide here to help prepare for the exam!
+SAS Model Manager is updated monthly, so our experts stay up to date on the newest features by subscribing to our SAS Model Manager tag on SAS Communities. Yours truly will post about new resources and features, but we also have our top experts writing about the cool problems they’re working on within ModelOps. The best way to stay up to date is to subscribe!
+Whether you prefer courses or hands-on practice, SAS has the materials to help you learn more about ModelOps and SAS Model Manager. I’ve cataloged a lot of content within this article, but what other resources have you found helpful? Please let me know in the comments below!
+Sophia Rowland is a Senior Product Manager focusing on ModelOps and MLOps at SAS. Previously, Sophia was a Systems Engineer on a team that focuses on Data Science and ModelOps applications for the Financial Services industry. Sophia is an active speaker and author in the field of ModelOps. She has spoken at All Things Open and SAS Explore and has written dozens of blogs and articles for Open Data Science, SAS Communities, and the SAS Data Science Blog. Sophia is an alumnus of both UNC-Chapel Hill and Duke. At UNC-Chapel Hill, Sophia double majored in Computer Science and Psychology. At Duke, Sophia attended the Fuqua School of Business and completed a Master of Science in Quantitative Management: Business Analytics. After work, Sophia can be found reading, hiking, and baking.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+Δ
+
+Back to Top

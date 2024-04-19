@@ -1,0 +1,59 @@
+Building a large high-quality corpus for Natural Language Processing (NLP) is not for the faint of heart. Text data can be large, cumbersome, and unwieldy and unlike clean numbers or categorical data in rows and columns, discerning differences between documents can be challenging. In organizations where documents are shared, modified, and shared again before being saved in an archive, the problem of duplication can become overwhelming.
+To find exact duplicates, matching all string pairs is the simplest approach, but it is not a very efficient or sufficient technique. Using the MD5 or SHA-1 hash algorithms can get us a correct outcome with a faster speed, yet near-duplicates would still not be on the radar. Text similarity is useful for finding files that look alike. There are various approaches to this and each of them has its own way to define documents that are considered duplicates. Furthermore, the definition of duplicate documents has implications for the type of processing and the results produced. Below are some of the options.
+Using SAS Visual Text Analytics, you can customize and accomplish this task during your corpus analysis journey either with Python SWAT package or with PROC SQL in SAS.
+The Python SWAT package provides us with a Python interface to SAS Cloud Analytic Services (CAS). In this article, we’ll call the profileText action, pull down output tables, and perform duplicate identification in Python.
+The corpus we’re going to explore is Second Release of the American National Corpus (ANC2). It’s also one of the reference corpora for the profileText action. The corpus contains over 22,000,000 words of written and spoken texts and comes with both annotated data and their plain texts.
+We put all 13295 plain text files under /home/anc2. After connecting to the CAS server, we create the table TESTDATA with ANC2 data.
+Out:
+
+We can check on the table easily, such as by using columnInfo() or head().
+Out:
+
+Out:
+
+We load the Text Management action set and call the profileText action to profile the ANC2 data. The casOut parameter is required to run the action. This output table contains information complexity, information density, and vocabulary diversity statistics. For duplicate identification we need the results from two output tables, documentOut and intermediateOut. A CASTable can be converted to a SASDataFrame by using the CASTable.to_frame() method. This method helps us pull all of the data down for further exploration.
+The documentOut contains document-level information complexity statistics. For each file, we know their total number of sentences and maximum number of tokens in these sentences.
+Out:
+
+The other output, intermediateOut, contains the token count of each sentence in each document.
+Out:
+
+Our goal is to locate both identical documents and documents that are not identical but substantially similar. To narrow our search results for good candidates, we introduce an assumption that if two files have the same number of sentences and the maximum number of tokens for a sentence, they have a higher possibility to be duplicates or near-duplicates.
+Having this assumption, we keep the documents with their value pair of _NUM_SENTENCES_ and _MAX_TOKENS_SENTENCES_ occurring more than once, leaving us 8972 out of 13295 files.
+Out:
+
+You can further reduce results if there’s a focus in your search by providing conditions like, only selecting documents with a total number of sentences of more than 200, or selecting those with a maximum number of tokens in a sentence of more than 80.
+Next, we prepare pair combinations of files that share the values for _NUM_SENTENCES_ and _MAX_TOKENS_SENTENCES_. Notice that sometimes more than 2 files share the same values. The total number of unique pairs is 14617.
+Out:
+
+Finding textual near duplicates is more complicated than duplicates. There is no gold standard on the similarity threshold of two considered near-duplicates. Based on the _NUM_TOKENS_ by _SENTENCE_ID_ from the table interOut earlier, we add the assumption that two documents have a very high possibility to be near-duplicates if they share the same number of tokens for the sentences ordered in a list with their indices randomly picked by a defined ratio to total sentence number.
+For example, fileA and fileB have 20 sentences each and the defined ratio is 0.5. We use pandas.Series.sample to randomly select 10 sentences from two files each. The random_state value is required to make sure that sentences from two files are picked up in parallel. If the two sentences have the same number of tokens for every pair we sampled, fileA and fileB are considered near-duplicates.
+Now we are ready for comparison.
+The possibleDuplicate list contains 188 pairs of file names.
+Out:
+
+Now it’s time to see how far we went for our duplicate search. By checking the content of each pair, it’s not hard to find 133 being duplicates and 55 being near duplicates. Let’s take a look at two near-duplicate pairs we find. These documents have around 50 sentences and the differences occur just between 2 sentences.
+
+
+SQL is one of the many languages built into the SAS system. Using PROC SQL, you have access to a robust data manipulation and query tool.
+We load the folder /home/anc2 with all plain text files to the table TESTDATA.
+You can load it directly if you have already saved them to a .sashdata file.
+We call the profileText action in the textManagement action set to profile the data.
+
+
+We keep the documents given that their value pair occurs more than once.
+We prepare all pair combinations of files that share the same values.
+
+With a glimpse of table search2, we notice that it would be better to get just unique pairs to avoid repeating comparing those with the same file names.
+
+Given the assumption that two documents have a very high possibility to be near-duplicates if they share the same number of tokens for the sentences ordered in a list with their indices randomly picked by a defined ratio to total sentence number. Here we use the rand(‘uniform’) function to generate an observation from the continuous uniform distribution in the interval (0,1) as default. Setting it with ‘between .2 and .7’ helps us randomly get 50% of sentences. The similarity threshold can be customized by changing the range, say “where rand(‘uniform’) between .2 and .9” which means 70% of sentences in the documents would be examined.
+
+We use the table testdata to verify the results. There are 133 duplicates and 39 near duplicates out of 172 pairs.
+Exploring derived statistics from the profileText action provides a practical perspective to gain insights not only by comparing to a reference corpus, but at token, sentence, and document levels within a corpus itself. With the randomness in selecting which sentences to compare, we might observe different results after performing this duplication identification method. The smaller ratio we define, the more near-duplicate pairs we get. And you would probably be surprised by the fact that if we set the ratio to 0.1, the result would still be around 207 pairs, just a little bit more than 172 pairs when the ratio is set to 0.5. The method doesn’t seem to overfire because two files are required to have the same number of sentences and the same maximum number of tokens in a sentence before we pair them up. This requirement gives us a safer place to start our search.
+Textual near duplicate identification is simple to understand but not easy to develop standards to include every type of near duplicates. In this article, we provide one way to describe near duplicates in which distance is between several sentences or words in order, yet not including cases like sentences of two documents are not arranged in the same order or some chunks are glued together so that the results are affected by different sentence indexing. These are fun to think about and they might be turned into the next level detection.
+How would you define the similarity for near duplicates?
+Estelle Wang is a Senior Associate Linguistic Specialist within SAS R&D's Advanced Analytics division. She has an MA in Translation with Business Interpreting from the University of Bath. She likes to explore modern approaches to natural language processing and apply these methods to provide valuable insights, and she enjoys painting and balcony gardening when out of the office. She also holds two patents on handling natural language data.
+Estelle, why do you use PROC SQL rather than FEDSQL?
+Hi Warren, I developed this idea in Python first and got interested in how it could work in SAS. I picked PROC SQL quite intuitively as I dabbled a bit in SQL before but not very familiar with others. I see more benefits of PROC FEDSQL in documentation materials. Thanks for your interest!
+
+Back to Top
