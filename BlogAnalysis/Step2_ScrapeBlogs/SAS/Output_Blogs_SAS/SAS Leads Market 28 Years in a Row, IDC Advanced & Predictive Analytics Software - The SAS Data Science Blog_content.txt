@@ -1,0 +1,20 @@
+28 years ago, Seinfeld was a staple on our televisions and Doc Martens were as popular as the Nirvana CDs flying off shelves. While the 90s may be back again, some good things never left – like SAS fueling advanced & predictive analytics innovation for 28 years running.
+Advanced and predictive analytics software includes data mining and statistical software and uses techniques including machine learning, regression, neural networks, rule induction, and clustering to create, test, and execute statistical models.
+IDC measures advanced & predictive analytics in its annual Worldwide Business Intelligence and Analytics Software Market Shares* report – and has consistently ranked SAS as the #1 market leader for over two decades!
+Advanced and predictive analytics can be used to discover relationships in data and dig into that data to make predictions. SAS helps customers gain these insights through our analytics technology.
+
+“In the advanced and predictive analytics market, SAS represents over a quarter of the market share, with continued focus on statisticians and data scientists and the broader need for advanced analytics.”
+—Dan Vesset, IDC Group Vice President, Analytics and Information Management
+
+Let's take a look at how advanced and predictive analytics from SAS helped a customer achieve their business goals:
+OTP Bank Romania is part of OTP Bank Group, one of the largest financial institutions in Central and Eastern Europe. They relied on a combination of data mining and predictive analytics to gain insights from an increasing amount of data – and make sure they’re not missing out on ways to increase customer retention. They were able to quickly develop descriptive and predictive models through a streamlined data mining process.
+SAS gave OTP Bank Romania the ability to harness algorithms and techniques including decision trees, time series analysis, neural networks, linear and logistic regression, sequence and web path analysis, market basket analysis and link analysis. The bank relied on SAS as a workbench and a set of tools for statisticians or data scientists, which increased collaboration with analysts to improve their business.
+They began using predictive analytics to meet the needs of their modeling team. This allowed the bank to ensure control over the quality of loan originations, achieve more accurate prediction of business and risk outcomes, and meet profitability targets required for the bank’s loan portfolios.
+OTP Bank Romania gained the ability to:
+SAS brought valuable insights to OTP Bank Romania in addition to 91 of the top 100 companies on the 2020 Fortune Global 500®. A growing part of the business intelligence market, advanced & predictive analytics from SAS can help organizations everywhere achieve their business goals.
+Learn more about how SAS helps customers uncover insights using analytics – and try SAS for yourself.
+*IDC Business Intelligence and Analytics Software Market Share Reports, 1993-2021
+Briana Ullman is a Sr Associate Product Marketing Specialist at SAS with a focus on visualization and chatbots. Having spent time in Product Management and Go-To-Market previously as a SAS Marketing Associate, her experience helps to bridge the divide between audiences of any background, whether they’re analytics pros or newcomers. Briana is an alum of North Carolina State University. Outside of work, you can find Briana listening to an almost-alarming number of podcasts and daydreaming about her next hike.
+Comments are closed.
+
+Back to Top

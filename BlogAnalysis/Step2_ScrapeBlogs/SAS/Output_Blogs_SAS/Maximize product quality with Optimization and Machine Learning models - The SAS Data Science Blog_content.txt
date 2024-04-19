@@ -1,0 +1,42 @@
+Machine Learning models are becoming widely used to formulate and describe processes’ key metrics across different industry fields.  There is also an increasing need for the integration of these Machine Learning (ML) models with other Advanced Analytics methodologies, such as Optimization. Specifically, in the manufacturing industry, SAS explored state-of-the-art science boundaries by introducing ML models (which explain quality as well as yielding metrics using manufacturing settings as regressors) within an Optimization model. The model then attempted to choose the optimum set points to maximize the yield while satisfying the quality requirements.
+To illustrate with a simplified example, I will describe a couple relevant metrics and settings in an automotive airbag production. The process owners need to decide the amount of sodium azide and oxidizer to use as propellant (among many other manufacturing settings) in order to satisfy the required ability to produce an amount of gas at a given rate, ensuring proper airbag inflation. Quality metrics (such as airbag inflation) will typically have an associated tolerance, allowing for a generation of an upper and lower bound. The goal is to find the right combination of manufacturing settings (sodium azide and oxidizer) to minimize costs (or maximize yield), while keeping the key quality metric (gas production rate) within required bounds.
+To address this problem, we need to understand how the settings affect the key metric, which traditionally has been explained with linear regression models, partially due to their natural fit within linear optimization formulations. Now the industry is exploring to explain these relationships with more sophisticated models (attempting to increase model accuracy) such as Neural Nets, or Grad Boost models, which in turn require pushing some boundaries in optimization formulations and solution methodologies.
+Incorporating non-closed-form and nonlinear models (such as Neural Nets or Grad Boost) in optimization does not allow for traditional sound-and-proof algorithms to work (such as branch-and-bound or simplex). Fortunately, SAS offers the capability to solve this nonlinear optimization model with cutting-edge solvers such as black-box, while still using the OR practitioner-beloved modeling language OPTMODEL.
+In this post, I will walk you through the right coding syntax to formulate and solve a nonlinear optimization problem, where constraint and objective function equations are non-closed-form Machine Learning models. The following SAS functionalities will be used:
+Please note I will not be discussing optimization convergence or ML model accuracy in this blog. Instead, I will keep it focused on the code syntax to help SAS users explore the incorporation of ML models as constraints or objectives in an optimization formulation.
+To illustrate the syntax, I have set up an oversimplified example with two products, four manufacturing settings (one of those being a binary setting, making this a Mixed Integer Nonlinear Optimization problem), one quality metric (kpi) that has a lower bound and an overall yield that needs to be maximized. Both the kpi and the yield are explained with the manufacturing settings as regressors through Gradboost models.
+Decision Variables:
+\(\textrm{Setting}_j\): Value of the manufacturing setting \(\mathit{j}\), where \(j\in\{1,\dots,4\}\)
+Constraints:
+\(f_i(\textrm{Setting}_1, ... ,\textrm{Setting}_4)\geq 100\) for \(i \in \{1,2\}\)
+Constraint for each product \(i\) that sets a lower bound of \(100\) for \(f()\), where \(f()\) is the non-closed-form ML model depending on the value of \(\textrm{Setting}_1,\dots,\textrm{Setting}_4\)
+Objective Function:
+maximize \(g(\textrm{Setting}_1,\dots,\textrm{Setting}_4)\)
+Maximizes the non-closed-form ML model \(g()\) that depends on the value of \(\textrm{Setting}_1,\dots,\textrm{Setting}_4\)
+Set up a CAS session:
+Generate mock data for demonstration purposes:
+Generate two Gradboosting models to predict yield and KPI based on four settings. Please notice setting 1 is a nominal variable.
+Save the astores (analytical stores for yield) locally:
+Create user-defined functions, calling the analytical store defined above:
+Point to the previously stored compiled functions:
+Define the decision variables and the implicit variables in OPTMODEL. The implicit variables Kpi and Yield, which typically are defined with closed-form equations, will now call the user-defined functions that include the analytical stores for the gradboost models.
+Define the constraints:
+Define the objective:
+Call the black-box solver:
+Create output data:
+Using this syntax, we are able to obtain optimum values for our four settings maximizing yield:
+ 
+while satisfying the requirement to keep the quality kpi above 100 for each product:
+There is an increasing need to incorporate non-closed form models within optimization formulations. SAS provides an easy and intuitive way to incorporate state-of-the-art technology such as Machine Learning models and black-box optimization solvers with the syntax described above. Enjoy!
+ LEARN MORE |  SAS Visual Data Mining and Machine Learning
+ LEARN MORE |  SAS/OR
+For additional information regarding Operations Research, be sure to visit our SAS Community and other Operations Research blog posts.
+Natalia Summerville holds a PhD in Operations Research from North Carolina State University and a PhD in Industrial Engineering from Tecnologico de Monterrey (Mexico). Natalia Summerville leads the Operations Research Practice at SAS Institute and has 10+ years of experience leading design, development and implementation of Operations Research and Machine Learning Applications for a variety of industries including Retail, Health Care, Transportation, Manufacturing and Media Advertising, among others. Natalia has been also teaching undergrad and masters-level classes in Industrial Engineering, Operations Research and Data Analytics since 2005 and currently is Adjunct Professor and North Carolina State University and Lecturer at Massachusetts Institute of Technology. Natalia is deeply passionate about Data4Good movement and has been collaborating with many non-profit and mission-driven organizations to implement data analytics for social good and is an active volunteer with Data4Good.
+Wow Natalia,
+Pretty smart nesting of advanced analytics technologies. I must confess, I did not even know that we have a blackbox solver in Optmodel. The combination with astore models is genious.
+Thanks a lot for this tip and the insights.
+Ulrich
+Thanks Ulrich! Our blackbox solver is awesome, and they keep working on making it easier to use ML models within optimization!
+Hi Natalia, I totally agree with Ulrich! Well done and thanks for this tip! Tamara
+
+Back to Top

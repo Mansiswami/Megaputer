@@ -1,0 +1,16 @@
+Decision trees are one of the top machine learning algorithms used by data scientists. Decision trees use supervised learning to classify problems. Even if you are not a data scientist, chances are you can interpret the visual output from a decision tree.   
+While working on my degree in analytics, I had to apply decision trees to the ever-popular Titanic data set on Kaggle to predict who survived the shipwreck. The question is this: Did the passenger survive or not? 
+In a decision tree, we are trying to identify the most important features. In this case, we are looking at the most important features for survival. For the passengers on the Titanic, we can look at gender, age, passenger class, cabin location and other variables.  
+However, I was at the mercy of the algorithm and could not easily change where the tree was first split, which was gender. Nor could I easily prune the tree. Imagine my delight when I learned that SAS Visual Data Mining and Machine Learning now has interactive decision trees.   
+An interactive decision tree provides the capability for the user to apply business knowledge to identify where to split, prune, and train a decision tree.  In the Titanic example above, I may have wanted to split first on passenger class rather than what the algorithm said to split (gender).  
+In the video below, we see an example of an interactive decision tree based on customer spending and buying history. I want to know who my potential influencers are. I let the decision tree algorithm loose and the first split is on the variable “time since last purchase”.  But for what I am trying to do, I want to split on “average order value” because I am more interested in how much customers are spending rather than when they last ordered.  With this interactive decision tree, in a few clicks, I can easily specify which variable I want to split on.   
+If I have a dataset with variables that I think are of minor importance to helping me identify the potential influencers, then I can specify where to prune the tree so that those lesser variables are not included.  Furthermore, I can specify where to train the data.  All of which put me in control of the decision tree model and allow me to provide my input. This can lead to quicker and better results by having the human in the loop.  
+
+
+
+Having an interactive decision tree combines the best of both worlds by allowing the algorithm to perform the computations and the user to guide the building of the decision tree based on experience.  To me, that type of interactivity allows me to easily model the data while incorporating what I know based on my previous experience in a domain.  
+Learn more: SAS Visual Data Mining and Machine Learning
+Susan is a Global Product Marketing Manager for AI at SAS. She has her Ph.D. in Human Factors and Ergonomics, having used analytics to quantify and compare mental models of how humans learn complex operations. Throughout her well-rounded career, she has held roles in user centered design, product management, customer insights, consulting and operational risk. Susan recently completed her Master of Science in Analytics, focusing on healthcare analytics. She also holds a patent for a software navigation system to guide users through dynamically changing systems.
+Comments are closed.
+
+Back to Top

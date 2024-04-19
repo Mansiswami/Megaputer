@@ -1,0 +1,16 @@
+Generative adversarial networks (GANs) are one of the newer machine learning algorithms that data scientists are tapping into. When I first heard it, I wondered how can networks be adversarial? I envisioned networks with swords drawn going at it. Close… but I can assure you that no networks were harmed in the making of this article.
+Let’s break GAN down further to understand how this algorithm works and dispel the mystery behind it.
+Now that you know what a GAN is, what do you do with it? You may have heard of deepfakes and enjoyed seeing videos of political leaders uttering some unbelievable statements. (Somedays, I wonder how we would know the difference!) Other than playing tricks on the world, GANs do have a valuable purpose.
+Deep learning models are data-hungry. What if you could just snap your fingers and grow your training data set? Well, GANs can help you create synthetic data for those deep learning models. Synthetic data, or artificial data, serves as proxy data because it maintains the statistical characteristics of the real-world data that it is based off. Synthetic data should generate observations based on existing variable distributions and preserve correlations amongst the variables in the data set.
+Deepfakes typically use image data and the type of GAN to create synthetic image data is called a styleGAN. However, other types of data such as tabular data (think rows and columns of integers, text, etc.) can also be created. This is a tabular GAN.
+Watch SAS Data Scientist, Brett Wujek, talk about StyleGANs in the SAS Viya Release Highlights (2021.1.2).
+
+
+
+I see lots of potential with GANs and synthetic data. Synthetic data allows you to create deep learning models when you may not have previously been able to do so. There simply may not be the volume of data available that is required, especially when you are working with new products or processes. Data may also be expensive and time-consuming to acquire from third-party resources or through data collection methods such as surveys and studies. Synthetic data may also help fulfill the gaps in underrepresented groups such as customer segments, regions, or even the different driving conditions required by computer vision models for self-driving cars. Lastly, because this data is generated, it does not impact human privacy (think GDPR and personal data sharing regulations) and is less risky should the data be breached.
+To remind us, that while synthetic data has the potential to help us progress with deep learning, the patterns in the synthetic data must be representative of the real data and should be verified as an initial step in the modeling process. 
+GANs are available in the SAS Data Science Offerings.
+Susan is a Global Product Marketing Manager for AI at SAS. She has her Ph.D. in Human Factors and Ergonomics, having used analytics to quantify and compare mental models of how humans learn complex operations. Throughout her well-rounded career, she has held roles in user centered design, product management, customer insights, consulting and operational risk. Susan recently completed her Master of Science in Analytics, focusing on healthcare analytics. She also holds a patent for a software navigation system to guide users through dynamically changing systems.
+Comments are closed.
+
+Back to Top

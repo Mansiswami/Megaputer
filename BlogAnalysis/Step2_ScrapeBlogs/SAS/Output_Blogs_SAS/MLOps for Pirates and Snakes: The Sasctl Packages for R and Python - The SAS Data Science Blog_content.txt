@@ -1,0 +1,34 @@
+In December of 2022, IDC released the results of their MLOps Platform assessment. This was IDC’s first time evaluating the MLOps space and they are one of the first analysts to do so. To the surprise of few, SAS was placed as a leader in this evaluation, beating out DataRobot, Microsoft, Databricks, Google, AWS, Dataiku, and many more. Few find the results surprising because SAS saw the need for proper governance, management, maintenance, and utilization of models over 15 years ago when the first iteration of SAS Model Manager was launched. What did come as a surprise to many was that one of the two strengths called out for SAS Model Manager was its flexible language and model support.
+
+SAS Model Manager supports the registration, comparison, scoring, publishing, and monitoring of SAS, Python, and R models. SAS Model Manager does not translate these models into another language, but rather utilizes Python and R environments to run these models. Python and R models can also be published into their own containers that can be leveraged in Docker, Azure, AWS, and GCP. To bridge the handoff between data scientists developing their models in Python or R and the MLOps engineers deploying models, SAS has released the sasctl open-source packages.
+The first public release of python-sasctl was on July 15th, 2019. Python-sasctl is now fully supported by the SAS Model Manager team with dedicated developers continuing to add new features and working with customers to address new use cases. You can stay up to date on Python-sasctl releases through our GitHub page or the SAS Model Manager community.
+
+Python-sasctl can be installed and leveraged just like any other open source package. Through Python-sasctl, data scientists can take their models developed using Python packages, such as sklearn or xgboost, and automatically generate the scoring code, model pickle file, input variables metadata, output variables metadata, package and version requirements, training performance metadata, and model properties in just a few lines of code. Next, these files are directly pushed into SAS Model Manager. With the model and metadata in hand, MLOps engineers have what they need to manage, monitor, and deploy Python models. The handoff between Data Scientist and MLOps engineer has gotten far easier!
+To get started using python-sasctl, first import the package and start a session:
+Next, generate your modeling metadata. The following example is for a binary classification model, but you can find additional examples here.
+Finally, pickle your model and then send it off to SAS Model Manager:
+Additionally, users with publishing privileges, can publish and score models without needing to leave their Python environment. Examples for the most common use cases are currently available to help organizations get started now.
+R-sasctl was released in January of this year and announced in our SAS Model Manager community. R-sasctl supports the registration of PMML models, in addition to R models, to SAS Model Manager. Like Python-sasctl, R-sasctl will automatically generate the input variables metadata, output variables metadata, training performance metadata, and model properties in just a few lines of code. R-sasctl recently released an experiment code generation function that will create the R scoring code for a few common R models. Models can also be published from R-sasctl to supported destinations. Moreover, R-sasctl has several neat additional functions, including one to format input data in the correct format for various publishing destinations. To learn more about using R-sasctl and view an end-to-end example, see Eduardo Hellas’s article as well as the R-sasctl GitHub page.
+SAS Model Manager and the sasctl packages aim to create a seamless ModelOps and MLOps process for Python and R models. Python and R models are not second-class citizens within SAS Model Manager. SAS, Python, and R models can be easily managed using our no-code/low-code interface. This is an interface that can be extended to support a variety of use cases.
+Ready to see sasctl in action? We walk through the MLOps lifecycle for Python models using Python-sasctl and SAS Model Manager in just 20 minutes during the MLOps Uncoiled: Python’s Path on SAS® Viya® With SAS Model Manager session during SAS Explore. We also have two additional super-demos highlighting SAS’s MLOps capabilities for Python and R models. SAS Explore will be live in Las Vegas September 11th – 14th. The ModelOps team will be showing off their groundbreaking work for open source models, so you don’t want to miss it!
+
+Sophia Rowland is a Senior Product Manager focusing on ModelOps and MLOps at SAS. Previously, Sophia was a Systems Engineer on a team that focuses on Data Science and ModelOps applications for the Financial Services industry. Sophia is an active speaker and author in the field of ModelOps. She has spoken at All Things Open and SAS Explore and has written dozens of blogs and articles for Open Data Science, SAS Communities, and the SAS Data Science Blog. Sophia is an alumnus of both UNC-Chapel Hill and Duke. At UNC-Chapel Hill, Sophia double majored in Computer Science and Psychology. At Duke, Sophia attended the Fuqua School of Business and completed a Master of Science in Quantitative Management: Business Analytics. After work, Sophia can be found reading, hiking, and baking.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+Δ
+
+Back to Top

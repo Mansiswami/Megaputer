@@ -1,0 +1,49 @@
+Editor's note: This post is co-authored by Sophia Rowland, SAS Model Manager Product Manager.
+When you think about top solutions and tools for MLOps, does SAS Model Manager come to mind? If not....now it will.
+Recently, IDC MarketScape deemed SAS a leader for Machine Learning Operations (MLOps) platforms. This is the first time IDC has evaluated MLOps platforms and it is one of the first analyst firms to do so.
+Not only has SAS been named a leader within the MLOps space, but SAS Model Manager  also outperforms nearly all other players, including DataRobot, Databricks, Dataiku, Domino Data Lab, Microsoft, AWS and GCP.
+
+SAS saw the need for proper governance, management and maintenance of models over 15 years ago, launching SAS Model Manager as a solution for ModelOps.
+And the solution has grown a lot since then. New features and capabilities for SAS Model Manager are released every month!
+In this post we will uncover what makes SAS Model Manager the top solution for ModelOps/MLOps.
+At SAS, we define ModelOps as an enterprise effort for the governance and lifecycle management of all models, including machine learning, knowledge graphs, rules, optimization, linguistic and agent-based models.
+Even though the two terms ModelOps and MLOps are often used interchangeably, there is a key difference. MLOps is an adaption of DevOps principles for machine learning models operationalization. As such, MLOps is defined as a subset of ModelOps. Additionally, MLOPs tends to be spearheaded by IT and software engineering resources, whereas ModelOps tends to be more business-driven.
+ 
+
+ 
+A robust ModelOps tool needs to do a few things well:
+Luckily for us, these are all things that SAS Model Manager does well.
+ 
+
+Let’s review each of these core capabilities in detail.
+Models ready to be operationalized should be stored with the appropriate metadata in an accessible and centralized location. This rules out someone’s inbox, an excel sheet or a data scientist’s notebook. Information needs to be accessible by those involved in the process, including our MLOps engineers, risk teams and data scientists. No one should be digging through code to find the metadata they need. SAS Model Manager provides a repository that stores data but also makes searchable, understandable and actionable.
+ 
+
+ 
+Model risk is not exclusive to financial institutions. Bad models incur a financial loss. Beyond regulatory requirements and fines, a bad model can lead to poor purchasing decisions, a loss in consumer trust, or worse. The model lifecycle should be documented with manual approval at key stages in the model’s usage. Additionally, model risk should be documented and mitigated. SAS Model Manager helps manage the model’s lifecycle as well as integrates with SAS Model Risk Management to build trust in models.
+ 
+
+Models should be tested and validated prior to production. Using the information within SAS Model Manager, organizations can quickly validate that their model’s input and output variables align with their expectations. Additionally, within SAS Model Manager, scoring tests can be defined, run and reviewed in just a few clicks.
+ 
+
+Model deployment should depend on how the model will be used to affected decisioning. Models scoring database tables should be deployed into the database. Models being used within cloud applications should be available as a container in that cloud. Additionally, models should not be recoded by IT prior to deployment, as this takes time and potentially introduces errors. SAS Model Manager deploys to a wide variety of locations, from in-database to containers and more, no recoding required.
+ 
+
+ 
+
+All models decay. Organizations need a way to monitor models over time to detect and react to decay. SAS Model Manager monitors model inputs, outputs, and performance over time. Numerous out-of-the-box charts are included in the monitoring report, but organizations can define their own Key Performance Indictors (KPIs) and charts for monitoring. Additionally, organizations can define when to be alerted for model decay so that they can act at the right time.
+
+ 
+A mature MLOps process will have a balance of repetitive system tasks with manual approvals. SAS Model Manager includes workflows to allow organizations to define their model lifecycle processes, leveraging automation and human oversight. But, SAS Model Manager’s open API architecture allows integration with other tools and larger processes.
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Marinela Profi is a Product Strategy Lead for Artificial Intelligence solutions at SAS, across the areas of market engagement, strategy, messaging, content and product readiness. Over the past 6 years, she also worked as a data scientist, analyzing data and developing AI models, to drive AI implementation within the following industries: Banking, Manufacturing, Insurance, Government and Energy. Marinela has a Bachelor’s in Econometrics, a Master of Science in Statistics, and Master’s in Business Administration (MBA). Marinela enjoys sharing her journey on LinkedIn, and on the main stage, to help those interested in a career in data and tech.
+Hi, this report from IDC only gives the results of SAS; can we access the entire IDC report on MLOps that includes all the vendors surveyed?
+
+Back to Top

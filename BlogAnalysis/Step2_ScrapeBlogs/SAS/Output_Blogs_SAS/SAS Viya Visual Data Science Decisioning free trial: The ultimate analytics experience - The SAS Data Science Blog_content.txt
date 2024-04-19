@@ -1,0 +1,13 @@
+Organizations that can interpret and analyze data are equipped to win in the digital economy. In the wake of COVID-19, Gartner says 69% of boards of directors have accelerated their digital business initiatives. Analytics is an important investment for the entire enterprise and organizations need to be confident in their chosen vendor. Why not discover for free how SAS® can help you prepare, explore, analyze, and visualize your data?
+With the SAS Visual Data Science Decisioning (VDSD) trial, you get the ultimate analytics experience with free access to all SAS Viya analytic capabilities for 14 days. ​SAS Visual Data Science Decisioning provides the ultimate experience covering the entire analytics lifecycle – from managing data, developing models, and deploying models to take decisions.
+SAS Visual Data Science Decisioning is powered by SAS® Viya® our AI, analytic and data management platform that runs on a modern, scalable architecture enabling confident decisions at every moment. 
+
+This free trial gives you access to SAS Viya capabilities including:
+Try one, or try them all. It's all included in your free trial.
+Each user can upload 1GB of non-PII (personally identifiable information) data. The following commonly used data sources are supported: Microsoft Excel spreadsheets, CSV files and SAS data sets.
+You can also add up to four more users from your organization (a total of five users, including yourself) to this trial experience. Every user just needs a SAS Profile and they’re good to go. An improved signup and trial experience ensure you'll learn new analytics and AI capabilities quickly than ever, with the option to extend its use if required. We have preloaded datasets and prebuilt pipelines for many of the data management, analytics and AI capabilities included in VDSD, as well as get quick support from the user community, support pages, and tutorials in case you have questions.
+Why wait? Get started with your free SAS trial today!
+Senior marketing professional with 20 years’ experience in the high tech software space. Experienced in Cloud software and services, current portfolio is the SAS Cloud.
+Comments are closed.
+
+Back to Top
