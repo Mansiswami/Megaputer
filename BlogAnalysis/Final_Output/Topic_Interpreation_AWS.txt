@@ -1,0 +1,140 @@
+﻿AWS
+- Used NLTK + GENSIM libraries
+Topics found via LDA:
+Topic 0: 0.019*"attention" + 0.009*"type," + 0.007*"model’s" + 0.006*"sdk" + 0.005*"series." + 0.005*"color" + 0.005*"revolutionizing" + 0.005*"savings" + 0.004*"aws" + 0.004*"cards"
+Topic 1: 0.018*"tokens" + 0.010*"\" + 0.009*"ticket" + 0.008*"chat" + 0.008*"aws" + 0.008*"generative" + 0.007*"maximum" + 0.007*"prompt" + 0.006*"ai" + 0.006*"amazon"
+Topic 2: 0.017*"aws" + 0.012*"data" + 0.010*"following" + 0.007*"delete" + 0.007*"user" + 0.006*"values" + 0.005*"solution" + 0.005*"sagemaker" + 0.005*"deployment." + 0.005*"used"
+Topic 3: 0.018*"data" + 0.012*"video" + 0.008*"latency," + 0.006*"use" + 0.005*"following" + 0.005*"ensures" + 0.004*"tag" + 0.004*"image" + 0.004*"digital" + 0.004*"user"
+Topic 4: 0.031*"fraud" + 0.011*"following" + 0.009*"data" + 0.009*"use" + 0.008*"aws" + 0.006*"also" + 0.005*"shown" + 0.005*"ml" + 0.004*"cluster" + 0.004*"solution"
+Topic 5: 0.022*"amazon" + 0.020*"data" + 0.017*"sagemaker" + 0.016*"aws" + 0.008*"model" + 0.007*"use" + 0.007*"models" + 0.006*"solution" + 0.006*"using" + 0.005*"security"
+Topic 6: 0.023*"super" + 0.012*"cost" + 0.011*"aws" + 0.008*"multi-tenant" + 0.008*"1" + 0.008*"upscaling" + 0.007*"data" + 0.007*"following:" + 0.007*"instance" + 0.007*"increases"
+Topic 7: 0.035*"amazon" + 0.018*"data" + 0.012*"aws" + 0.011*"ai" + 0.009*"using" + 0.009*"generative" + 0.007*"bedrock" + 0.006*"services" + 0.006*"chatbot" + 0.006*"use"
+Topic 8: 0.018*"user" + 0.014*"payload" + 0.011*"amazon" + 0.010*"parameters" + 0.010*"entertainment" + 0.010*"model" + 0.009*"indicates" + 0.006*"accelerators." + 0.005*"commentsthis" + 0.005*"highest"
+Topic 9: 0.015*"architect" + 0.014*"solutions" + 0.013*"customers" + 0.013*"ai/ml" + 0.012*"senior" + 0.011*"figure" + 0.008*"years" + 0.008*"amazon" + 0.007*"data" + 0.007*"aws"
+Topic 10: 0.039*"aws" + 0.009*"using" + 0.008*"services" + 0.008*"cloud" + 0.007*"solutions" + 0.006*"ai" + 0.006*"customers" + 0.006*"amazon" + 0.006*"partner" + 0.006*"resolution"
+Topic 11: 0.039*"following" + 0.012*"complete" + 0.009*"use" + 0.008*"code" + 0.008*"steps:" + 0.008*"steps" + 0.007*"data" + 0.007*"2" + 0.006*"knowledge" + 0.006*"memory"
+Topic 12: 0.047*"model" + 0.028*"data" + 0.013*"sagemaker" + 0.011*"use" + 0.009*"titan" + 0.008*"using" + 0.008*"amazon" + 0.006*"models" + 0.005*"inference" + 0.005*"images"
+Topic 13: 0.021*"throughput" + 0.016*"image" + 0.015*"amazon" + 0.012*"vector" + 0.011*"use" + 0.009*"response" + 0.008*"data" + 0.007*"cache" + 0.007*"instance" + 0.006*"need"
+Topic 14: 0.019*"models" + 0.010*"data" + 0.009*"model" + 0.009*"amazon" + 0.007*"number" + 0.007*"instance" + 0.007*"tensor" + 0.007*"accelerator" + 0.006*"container" + 0.006*"–"
+
+
+Topic and interpretation 
+
+
+Topic 1: AI Chat Systems
+This topic revolves around chat systems, possibly chatbots or customer support tickets. Keywords like "tokens," "chat," "generative," "prompt," "ai," and "amazon" suggest discussions about AI-driven chat systems or chatbot development using AWS services.
+
+
+Topic 2: Data Management with AWS
+This topic focuses on data management, with a strong emphasis on AWS services. Keywords like "aws," "data," "sagemaker," "deployment," and "used" indicate discussions related to managing and deploying data for AI and ML applications on AWS platforms.
+
+
+Topic 4: Fraud Detection with ML
+This topic focuses on fraud detection, possibly using machine learning (ML) and AWS services. Keywords like "fraud," "data," "aws," "ml," and "solution" mention data analysis for fraud detection and potential ML-based solutions to identify fraudulent activities using AWS.
+
+
+Topic 5: Amazon SageMaker and Data Security
+This topic revolves around Amazon SageMaker, AWS's machine learning service, and emphasizes data modeling, SageMaker for model training, and data security within these processes, highlighting the integration of AI and ML techniques in data security using AWS services.
+
+
+Topic 7: AI and Generative Models
+This topic focuses on AI and generative models, discussing the use of AWS services for implementing AI solutions, including chatbots or other generative models. Keywords like "amazon," "aws," "ai," "generative," and "chatbot" showcase the application of AI techniques and AWS services in developing intelligent systems.
+
+
+Topic 9: AI/ML Solutions and Senior Architects
+This topic discusses AI/ML solutions and the roles of senior architects in implementing these solutions. Keywords like "architect," "solutions," "ai/ml," "senior," "amazon," and "aws" indicate customer experiences, years of expertise, and the involvement of AWS in architecting AI and ML solutions.
+
+
+Topic 10: AWS Cloud Services for AI
+This topic focuses on AWS cloud services, discussing various solutions and services offered by AWS for AI applications. Keywords like "aws," "services," "cloud," "ai," "solutions," and "amazon" emphasize the adoption of AWS for implementing AI and ML solutions in the cloud environment.
+
+
+Topic 12: Amazon SageMaker and Model Inference
+This topic focuses on Amazon SageMaker and model inference techniques, discussing SageMaker for model development and inference, possibly for image processing or analysis. Keywords like "model," "sagemaker," "inference," "amazon," and "images" showcase the capabilities of AWS in facilitating AI and ML model training and inference tasks.
+
+
+AWS
+- Used NLTK + SCIKIT libraries
+
+
+Topic 0:
+canvas ml using dataset models training data use sagemaker model
+
+
+Topic 1:
+disease physical oneplan social time data climate figure health risk
+
+
+Topic 2:
+security learning customers cloud ai solutions services amazon data aws
+
+
+Topic 3:
+use glue lambda solution using redshift s3 aws amazon data
+
+
+Topic 4:
+solution resources create use aws example code complete steps following
+
+
+Topic 5:
+amazon post series events status customer quicksight use time data
+
+
+Topic 6:
+vpc solution service access cluster aws account ai using amazon
+
+
+Topic 7:
+requests llama aws latency throughput instance model security generative ai
+
+
+Topic 8:
+spark bedrock using knowledge user access use lake amazon data
+
+
+Topic 9:
+ai cloud access datasets based scale health models use data
+
+
+Interpretation 
+
+
+Topic 0: Machine Learning with SageMaker
+This topic seems to be about machine learning, particularly with Amazon SageMaker. Terms like "ml", "using", "dataset", "models", "training", "data", and "sagemaker" suggest discussions related to training machine learning models using SageMaker and datasets.
+
+
+Topic 1: Health and Climate Risk
+This topic appears to be about health and climate risk factors. Terms like "disease", "physical", "social", "climate", "health", and "risk" indicate discussions related to the impact of climate on health and the social factors contributing to disease.
+
+
+Topic 2: Security and Cloud Services
+This topic seems to be about security and cloud services provided by AWS. Terms like "security", "learning", "customers", "cloud", "ai", "solutions", "services", "amazon", and "aws" suggest discussions about security measures and AI solutions offered by AWS.
+
+
+Topic 3: AWS Solutions
+This topic is about various AWS solutions and services like Glue, Lambda, Redshift, and S3. Terms like "use", "glue", "lambda", "solution", "using", "redshift", "s3", "aws", and "amazon" indicate discussions related to the usage of these services for data processing and storage on AWS.
+
+
+Topic 4: Creating Solutions with AWS
+This topic seems to be about creating solutions using AWS resources. Terms like "solution", "resources", "create", "use", "aws", "example", "code", "complete", and "steps" suggest discussions related to building and deploying solutions on AWS.
+
+
+Topic 5: Events and Data Usage
+This topic appears to be about events, status updates, and data usage on Amazon's platform. Terms like "amazon", "post", "series", "events", "status", "customer", "quicksight", and "data" suggest discussions about event-based interactions and data usage patterns.
+
+
+Topic 6: VPC and Account Access
+This topic seems to be about Virtual Private Cloud (VPC) and account access on AWS. Terms like "vpc", "solution", "service", "access", "cluster", "aws", and "amazon" indicate discussions related to managing services and access within VPCs and AWS accounts.
+
+
+Topic 7: Performance and Security
+This topic appears to be about performance and security measures on AWS instances. Terms like "requests", "llama", "aws", "latency", "throughput", "instance", "model", "security", "generative", and "ai" suggest discussions related to optimizing performance and ensuring security in AWS environments.
+
+
+Topic 8: Data Processing with Spark
+This topic seems to be about data processing using Apache Spark. Terms like "spark", "bedrock", "using", "knowledge", "user", "access", "use", "lake", "amazon", and "data" suggest discussions related to utilizing Spark for data processing and management on AWS.
+
+
+Topic 9: AI and Data Access
+This topic is about AI, cloud services, and data access. Terms like "ai", "cloud", "access", "datasets", "based", "scale", "health", "models", and "use" suggest discussions related to AI applications, data access methods, and scaling health-related models.
