@@ -1,0 +1,123 @@
+﻿Scraped data (58 reviews)
+
+Topics found via LDA using GENSIM:
+
+Topic 0: 0.021*"data" + 0.009*"knime" + 0.006*"model" + 0.004*"science" + 0.003*"n" + 0.003*"models" + 0.003*"learning" + 0.003*"analytics" + 0.003*"ai" + 0.003*"also"
+Topic 1: 0.019*"data" + 0.008*"knime" + 0.005*"model" + 0.004*"n" + 0.004*"ai" + 0.004*"science" + 0.004*"distribution" + 0.004*"using" + 0.003*"use" + 0.003*"models"
+Topic 2: 0.016*"data" + 0.008*"knime" + 0.005*"model" + 0.004*"analytics" + 0.004*"ai" + 0.003*"use" + 0.003*"also" + 0.003*"using" + 0.003*"science" + 0.003*"like"
+Topic 3: 0.012*"data" + 0.010*"knime" + 0.005*"model" + 0.004*"science" + 0.004*"analytics" + 0.003*"ai" + 0.003*"models" + 0.003*"using" + 0.003*"n" + 0.003*"distribution"
+Topic 4: 0.021*"data" + 0.011*"knime" + 0.006*"model" + 0.005*"science" + 0.005*"n" + 0.004*"use" + 0.003*"node" + 0.003*"distribution" + 0.003*"models" + 0.003*"learning"
+Topic 5: 0.017*"data" + 0.010*"knime" + 0.006*"model" + 0.005*"science" + 0.004*"analytics" + 0.004*"node" + 0.004*"n" + 0.003*"ai" + 0.003*"distribution" + 0.003*"also"
+Topic 6: 0.016*"data" + 0.009*"knime" + 0.005*"model" + 0.004*"n" + 0.004*"distribution" + 0.003*"also" + 0.003*"ai" + 0.003*"use" + 0.003*"science" + 0.003*"node"
+Topic 7: 0.022*"data" + 0.008*"knime" + 0.006*"model" + 0.004*"analytics" + 0.004*"science" + 0.004*"n" + 0.004*"use" + 0.003*"node" + 0.003*"distribution" + 0.003*"ai"
+Topic 8: 0.015*"data" + 0.011*"knime" + 0.006*"model" + 0.004*"science" + 0.004*"ai" + 0.004*"n" + 0.004*"use" + 0.004*"analytics" + 0.003*"models" + 0.003*"learning"
+Topic 9: 0.021*"data" + 0.008*"knime" + 0.005*"science" + 0.004*"model" + 0.004*"n" + 0.003*"ai" + 0.003*"use" + 0.003*"learning" + 0.003*"node" + 0.003*"distribution"
+Topic 10: 0.016*"data" + 0.012*"knime" + 0.005*"model" + 0.004*"ai" + 0.004*"science" + 0.004*"analytics" + 0.004*"also" + 0.003*"distribution" + 0.003*"learning" + 0.003*"n"
+Topic 11: 0.024*"data" + 0.010*"knime" + 0.006*"model" + 0.004*"models" + 0.004*"science" + 0.004*"use" + 0.004*"analytics" + 0.004*"n" + 0.004*"ai" + 0.003*"learning"
+Topic 12: 0.014*"data" + 0.009*"knime" + 0.006*"science" + 0.006*"model" + 0.005*"analytics" + 0.004*"n" + 0.003*"use" + 0.003*"ai" + 0.003*"learning" + 0.003*"models"
+Topic 13: 0.012*"data" + 0.009*"knime" + 0.004*"n" + 0.004*"science" + 0.004*"analytics" + 0.003*"learning" + 0.003*"use" + 0.003*"model" + 0.003*"ai" + 0.003*"also"
+Topic 14: 0.014*"data" + 0.011*"knime" + 0.004*"science" + 0.004*"model" + 0.003*"use" + 0.003*"analytics" + 0.003*"learning" + 0.003*"also" + 0.002*"node" + 0.002*"n"
+
+Interpretation
+
+Topic 0: Utilization of KNIME for Scientific Data Analysis and Modeling
+This topic indicates a discussion around the utilization of KNIME for scientific data analysis and modeling. It involves considerations of various models, learning techniques, and analytics methods, possibly integrated with AI approaches.
+
+
+Topic 1: Modeling Data Distributions with KNIME in AI and Science
+Here, the discussion seems to be centered on the use of KNIME for modeling data distributions, particularly in the context of artificial intelligence and science. It implies exploring how KNIME facilitates the analysis and utilization of various data models.
+
+
+Topic 2: Analytics Applications of KNIME in Scientific Research
+This topic highlights the application of KNIME in analytics, possibly within scientific contexts. It suggests discussions on utilizing KNIME for data analysis and possibly comparing its effectiveness with other tools or methodologies.
+
+
+Topic 3: KNIME's Role in Analyzing Data Patterns in Scientific Research
+In this topic, KNIME's role in scientific data analytics and modeling is emphasized, with considerations for various analytical approaches and distributions of data. It suggests discussions on using KNIME for analyzing data patterns and distributions in scientific research.
+
+
+Topic 4: Utilizing KNIME for Modeling Complex Scientific Data
+Here, the focus is on the utilization of KNIME in modeling scientific data, possibly involving complex data structures and learning processes. It implies discussions on how KNIME facilitates the creation and analysis of models in scientific research.
+
+
+Topic 5: Node-Based Scientific Data Analysis with KNIME
+This topic suggests discussions around using KNIME for scientific data analytics, possibly involving node-based analysis processes. It implies exploring how KNIME enables the analysis and visualization of scientific data through node-based workflows.
+
+
+Topic 6: Analyzing Data Distributions in Scientific Research with KNIME
+Here, the discussion revolves around using KNIME for analyzing data distributions, possibly within scientific contexts. It implies considerations of various distribution patterns and their implications in scientific research.
+
+
+Topic 7: KNIME Analytics in Scientific Research Workflows
+This topic indicates a discussion on the utilization of KNIME for analytics in scientific research, involving considerations of various analytical approaches and methodologies. It suggests exploring how KNIME supports data analytics processes in scientific research workflows.
+
+
+Topic 8: Integrating AI Techniques with KNIME in Scientific Data Analytics
+Here, the focus seems to be on the application of KNIME in scientific data analytics and modeling, possibly involving AI techniques. It implies discussions on how KNIME integrates with AI methodologies to enhance scientific data analysis processes.
+
+
+Topic 9: Data Modeling and Distribution Analysis with KNIME in Scientific Research
+This topic suggests discussions around the application of KNIME in scientific research, focusing on data modeling and distribution analysis. It implies exploring how KNIME facilitates data analysis and modeling processes in scientific research workflows.
+
+
+Topic 10: Advanced Scientific Data Analysis with KNIME and AI
+Here, the discussion revolves around the utilization of KNIME in scientific data analytics and modeling, with considerations for AI and learning techniques. It implies exploring how KNIME integrates with AI methodologies to enhance scientific data analysis processes.
+
+
+Topic 11: Modeling Data Distributions and Analyzing Scientific Data with KNIME
+This topic indicates discussions on using KNIME for modeling data distributions and analyzing scientific data. It implies considerations of various modeling techniques and analytical approaches within KNIME workflows.
+
+
+Topic 12: Advanced Analytics Applications of KNIME in Scientific Research
+Here, the focus is on the application of KNIME in scientific data analytics, possibly involving complex analytical methodologies. It suggests discussions on how KNIME supports advanced analytics processes in scientific research.
+
+
+Topic 13: AI and Learning Techniques in Scientific Data Analysis with KNIME
+This topic suggests discussions around utilizing KNIME for scientific data analysis, possibly focusing on AI and learning techniques. It implies exploring how KNIME facilitates data analysis and modeling processes in scientific research.
+
+
+Topic 14: Node-Based Scientific Data Analysis and Visualization with KNIME
+Here, the discussion revolves around using KNIME for scientific data analysis and modeling, possibly involving node-based workflows. It implies exploring how KNIME supports data analysis and visualization processes in scientific research workflows.
+
+
+
+
+Topic modeling results using SCIKIT: 
+
+
+
+
+Topics found via LDA:
+Topic #0: option knime need knowledge hard use datum configuration information limited
+Topic #1: need cost support high memory run knime use datum tool
+Topic #2: platform visualization struggle difficult option ability hard problem solve challenge
+Topic #3: navigate processing crash high node challenge beginner learn platform knime
+Topic #4: like work need tool ability real analytics video make implement
+Topic #5: slow new install extension cost block want come friendly ui
+Topic #6: improve interface large end experience software image functionality old integrate
+Topic #7: software good real use available help thing friendly memory improve
+Topic #8: difficult analytic use datum available make advanced user knowledge software
+Topic #9: bit old user desktop general machine basic end confusing ui
+Topic #10: implement function little create text basic node easy simple hard
+Topic #11: time easy knime use help require limited processing little interface
+Topic #12: dislike try analysis provide list database hard datum difficult feature
+Topic #13: available beginner work tool use knime datum good thing provide
+Topic #14: use order work need run software open learn instal knime
+
+
+Interpretation
+1. Users find it hard to use Knime due to limited knowledge and understanding of configuration options and data.
+2. High costs and memory requirements are obstacles for users running Knime, especially when using certain tools and datasets.
+3. Users struggle with visualization and navigating the Knime platform, finding it challenging to solve problems and make decisions.
+4. Knime processing crashes frequently, particularly during high-load scenarios or when dealing with complex data nodes.
+5. Users express a need for better tools and capabilities in Knime to perform real analytics tasks, such as working with video data.
+6. The installation process of Knime extensions is slow and expensive, hindering users' ability to expand functionality and features.
+7. While Knime software is generally considered good, users seek improvements in user-friendliness, memory management, and available support.
+8. Knime's analytics tools are perceived as difficult to use, requiring advanced knowledge and expertise, which may limit its accessibility.
+9. The user interface of Knime is described as outdated and confusing for some users, especially those using desktop machines.
+10. Users find it challenging to implement functions in Knime, particularly for basic tasks, indicating a need for simpler solutions.
+11. Knime requires a significant amount of time to learn and use effectively, especially for users with limited processing capabilities.
+12. Users encounter difficulties in performing analysis and utilizing features in Knime, particularly with complex data analysis tasks.
+13. While Knime offers beginner-friendly tools, users seek improvements in tool availability and functionality to support their work.
+14. Users face challenges in running and installing Knime software, especially when working with open-source environments.
+15. Users express frustration with Knime's interface, database analysis tools, and overall feature set, finding them difficult to use and understand.
