@@ -1,0 +1,271 @@
+Dislikes
+"Over 6 months of using the SAS Viya platform, the main problem I have encountered is the lack of participation and contribution in SAS user forums and a majority of issues and problem encountered in using the tool remain unresolved. In my opinion the slow speed and the perceived lack of detailed user documentation is the main drawback in adopting the platform across many companies. SAS Viya is also an expensive proposition due to high licensing cost. It would probably take 12-18 months to look at a positive ROI in my opinion."
+"While SAS Viya boasts impressive capabilities, some users find the learning curve steep, especially for those new to the platform or transitioning from earlier SAS versions."
+"Complexity in initial setup; occasional interface lags. However, SAS Viya's robust analytics outweighs minor drawbacks for comprehensive insights."
+"I had credentials to do e-learnings, but for me it was nog clear which e-learning I should do and which would help me the best with learning in the fastest manner. Also, it is somewhat hard, if you compare it to for example Python, to find a solution if you are facing a problem."
+"While SAS Viya offers many benefits, it's important to consider potential drawbacks as it offers a wide range of benefits it will be more complex for the users to use."
+Overall everything looks good but as I see there are very less learning resources in the market.
+I've not come across any downsides or dislikes for this platform at all.
+"Features are less compared to other visualization tool (tableau, PowerBI), need to secure each and individual records from view is not acceptable."
+"SAS Viya Platform has a part that can be tough, the first step to learn it. This might be hard for those­ who don't know much about analytics. Even though this platform is strong, some operations can be­ hard and take time to learn we­ll. Also, its price might be too high for smaller groups or one­ person, making it harder for more pe­ople to use it."
+"The platform complexity, the high licensing and implementation costs and the lengthy learning curve need to utilize its features correctly. Additionally lack of documentation and support resources, as well as problems with SAS Viya's interoperability with other programs."
+"There are some growing pains with the new Viya. One annoying issue is autocomplete is a little too agressive at times and I don't yet have a natural way to bypass it. I like the approach VSCODE uses with autocomplete, it's there if you need it but it won't slow you down if you don't use it. The Viya implementation pauses and waits for a selection from the user and I find myself stuttering when I'd rather be coding. Another concern is problems becoming harder to troubleshoot. The desktop implementation of SAS felt more standardized across systems. With Viya moving things to the cloud when an issue arises it can be a guessing game between the program itself, the environment or the files being used. Viya is also more particular about the encoding of files than desktop SAS and we found our transition to be slowed by understanding why import processes and export products didn't always work with our other tools."
+I did see any downside to using SAS Viya but I would appreciate it if the makers of this software make it available to a larger audience. I have been using SAS applications for the last 7+ years and they were the first to develop such enterprise-level applications for statistical analysis. But I when I switched jobs in the same industry I did not see many companies using SAS applications.
+"Slow interfaces, high price-point, integration with open-source could still be better"
+"It depends totally on the cloud or your premise servers, you can’t install it in your laptop or PC. You need a very good server to SAS Viya works properly. The interaction with R and Python doesn’t have many examples or documentation."
+"It's a little hard to show distribution tables, I would like to have an option like 'show values as percentage of the total'"
+The UI is a little complex. It doesn't come to me intuitively.
+"I have concerns about the learning curve associated with SAS Viya and the initial setup complexity. Additionally, there might be preferences for open-source alternatives in certain situations."
+"the documentation is sometimes too thick and sends you from page to page, but that's because it's also a complete product with a lot of applicability, it's understandable"
+"while Viya is a product line that has been around for years, there are some growing pains. it is not just a programming language, it is an environment that needs to be refined to match the needs of the business."
+Nothing for now. Probably one thing is setting up the connections and moving data to cloud
+There's no much to dislike about SAS Viya but they can put more efforts on customer success for better results
+A requirement for an internet connection is quite limiting for some. But being a cloud-based platform is generally favorable for users.
+The product licenses cost and maintenance performance timings are bit more and need to reduce - will really help all customers. Every product can have fix avail until official dead line.
+"High-quality documentation and training resources are limited, making debugging very challenging at times"
+"The tool is clearly under development, and crashes are frequent while using the tool. In addition, there is also a bit of slowness. Perhaps those who use the non-academic version will not notice these problems. Finally, the machine learning models available automatically are still too simple."
+"I don't like that It doesn't clearly understand the stages of preprocessing, inputs, process and outputs."
+I don't see any problem since the problems of the past have been solved in the present by making the platform installable anywhere.
+It requires internet connection to run it that I find expensive when I work outdoors
+There are errors of connection from time to time that are solved just running them again. I dont have any explanation for this.
+I didn't find any downside of using this platform so far.
+The learning curve is quite steep but it's challenging at the same time. It looks like we need to stop using Enterprise Guide and some other tools.
+"Relatively steep learning curve for new users, especially those who are not familiar with SAS programming. Additionally, the complexity of certain advanced analytics capabilities may require specialized expertise to fully utilize. Some users have also expressed that the licensing costs for SAS Viya can be expensive, particularly for smaller organizations or individual users. It's important to note that these perceived challenges can vary depending on individual needs, prior experience, and specific use cases."
+"1. Integration Challenges: While SAS Viya offers openness and integration capabilities, integrating it into existing analytics ecosystems or workflows might still pose challenges. Organizations with established analytics processes and tools may need to invest time and effort in integrating SAS Viya smoothly and efficiently."
+"The least attractive characteristic of SAS Viya is its unflexible customization ability. Depending on the problem or the business demand, some analytic tools will not have the customization proprieties needed because the default setting does not reach some requirements. Moreover, some errors and bugs are hard to solve because the documentation does not necessarily cover them or error logs/messages are not clearly enough about the source problem."
+"I don't believe Viya is the most intuitive tool to use out there, and there are quite a lot of things to learn, in my opinion, to use the platform on even a relatively basic level. I believe more can be done to simplify various processes, and the ability to achieve different objectives through multiple paths, while making things more convenient, also sometimes adds clutter that might be better off not existing."
+Create new users with keycloak is a mess. The paths defined in the SAS Viya docs are not accurate for SAS Viya Pay-As-You-Go deployments. No place to find recommended paths for drivers / binary.
+"For now we can not really estamate how to spread the license cost to our users. Makes it hard to bring it as a leading product in our company. Also migration from SAS 9.4 to Viya is a challenge, especially in case of enterprise Guide projects"
+"It took me some time to learn the programming codes, and I had an easier time assimilating third-party information about applications than those linked in the SAS help. But I understand that the product is not aimed at laymen, and therefore, it does not need to be very intuitive."
+Improvement is needed on the UI/UX side.
+"Well, it's hard to fault such a complete product. To put some drawbacks when you come from a SAS 9.* platform until you get used to SAS Viya you have your difficulties, but they are solved when you see all the new features included."
+"Although SAS Viya offers many analytics capabilities, the learning curve can sometimes be difficult, especially for those unfamiliar with SAS code. However, the integration with Python is a significant aid."
+The initial set-up was tough and frustrating. I needed to contact IT to let me use the platform after several attempts to log in. Once that hurdle was out the way it was easy to use.
+"Actually, with the storage using the mode, we have presented some problems with not preserving the old files; we are looking for a strategy for don't have that kind of issues, also we are looking stabilization course we are presenting some issues in this tool"
+Restart the sas system timings can be improved and reduce the offline timings
+"Since I am graduating soon, I will no longer have free access to SAS Viya."
+Not as rapidly updated as those languages that are open-source.
+The choices of the machine learning and deep learning models are still limited.
+"Sometimes slow (could be my connection), not impressed with the implementation process"
+SAS lost in simplicity and so become more fragile
+"Formulas can be tricky, software speed sometimes a challenge. Rest is good."
+"some features have to be optimized, still not perfect"
+"Nothing till now, all seems to be good and fine"
+"It's so flexible and powerful, the number of options can be overwhelming"
+I just like that there is a limitation on the size of files that can be uploaded to the website
+Some administrators do not understand how useful it is to my work and it can be difficult to justify the cost.
+"No nos gusta el costo , puede ser muy alto cuando aun lo estas instalando y no lo puedes utilizar"
+Nothing to flag as per the usage it is great
+"The local support is not great, and there is not enough support locally."
+The report function of SAS Visual Analytics is slightly weaker than some industry competitors.
+"Well, I have been using it for the last 6 Months, and I haven't found anything that SAS need to update ;) I am happy with what the SAS Platform provides, but if the outlook is a little bit dark, it makes me uncomfortable during work."
+Since its still in its early stages there are few bugs here and there do i think it will improve with time
+Nothing like dislike everything is good with this.
+Wish there are an explanation of each capability and more analytical solutions.
+SAS Viya license cost is huge and need to reduce
+"It's limited to only few things like Machine Learning, Data Mining and Visual Analytics on Windows environment, so I hope more advanced features will be incorporated in the coming years."
+As of now there is no downside of SAS Viya
+There is one bug that needs to be fixed. That is refreshing or repromoting data sets from SAS studio to explore and visualize.
+I don't like that sometimes it feels too busy I get the whole flashy dashboards but also when it comes to certain integrations it isn't able to easily connect the data
+"SAS Visual Analytics, which is one of the features of SAS Viya, is comparatively not as good as other visualizations tools available in market"
+Limited to only visual data mining atleast for windows. Limitation to single machine environment could be a problem for some users. Could be difficult for first time users. Cost is also on the higher side.
+I didn't like how it was kind of difficult to navigate the site.
+A few procedures used in base SAS can not be used as is; we can use but can't get the benefits of the high computational power of CAS in-memory engine. Learning new coding and syntax is sometimes cumbersome.
+Some times it tales took long to execute a task
+CASL language is new to me. It takes a while to learn and navigate.
+We have a partner who don't have idea to up the information in the system.
+Even tho they have multiple dashboards they're able to show it is not easily configurable to meet the needs of what certain roles needs to see.
+The performance was slow when joining 2 cas tables. Data Visualization can still be better
+There aren't many communities or open source knowledge available about Sas Visual Forecasting. This brings about very few examples available for implementing open source in Sas Visual forecasting.
+"in SAS Studio, when connection is lost we can not find the journal of the last script ran"
+THE COST ITS VERY EXPENSIVE FOR MY BUSINESS
+Transition of SAS Grid to SAS Viya is not that simple
+"While there are some resources on the SAS website, there is not as much open source support (ie Google results) for Viya as there is for some other visual analytic software, although this is likely to improve over time."
+"Price, cost of capacitation and complication of implementation"
+Sometimes it takes longer to run a report when the dataset is huge. Some microservices crashed and went offline when running huge reports. The price could be unaffordable for small businesses.
+"Some time we need to write long code for small things like to calculate percentile value(p1, p99) for all the variables in a dataset then need to write a macro. However, in python we just need to write a single line code."
+"I think the focus for my team should have been more on the advantages of SAS Viya compared to SAS EG as a biostatistician and how to make a smooth transition from one to the other. They focused heavily on the compatibility of R/Python and Machine Learning, which we do not utilize. Our system is Windows-based, and SAS Viya living on a Linux server makes using it extremely cumbersome."
+"Due to the cloud-based nature, issues like log-in problems, and system downtime happen now and then. new users still struggle with the different coding compared to traditional SAS."
+I would like to see more advanced algorithms available (Deep Learning) as well as some basic know-how materials for novice users/students.
+There is no downside as such . Change management which is required to fully use this tool in Public sector organisation needs full thurst.
+"Nothing like dislike, all things are good just somewhere we need additional features."
+Not much. There were a few instances where I had to change the title of my files because the titles were too long and they would not accept them.
+i faced lacking of service / support systems. There not much training material available. Not that much advanced in Ai and Ml algorithm. There is limitations. If you provide large access to all algorithm that would be help full. Please make as much as material to learn easy-going.
+"To slow to use in Australia, why not using python power bi"
+discoonection of webservices sometimes but fairly good
+"I think additional instructions in layman's language should be provided for various functions. Perhaps, links to various ML algorithms would be useful as well."
+New codes and get familiar with new procedures.
+It would be great if there were more SAS certifications and classes available.
+Is dicult relize the integratio with apl
+It is not that user friendly and it takes you some time to get used to the platform.
+"Having to assign libaries before running code, being logged out of a viya window after what seems about an hour, the process of saving work is also tedious"
+As of now i don't found any specific contents.
+It should be more diverse and can expand its target audience.
+"With free access to the learners, eLearnings in the SAS Academics would be great if provided. But it is so lovely they are providing free access to the SAS"
+"Sometimes it was hard to find my already saved projects or open multiple projects at once. It sometimes did low slow. Other than that, I enjoyed using SAS Viya."
+"Without using the program, I no dislike it."
+"It requires the users to learn a new set of tools, as against something like MS Excel, with which people are already familiar."
+It can get some time to get used to understanding where data sets are being saved and returning to them.
+"I think they may include much more advanced features while writing a program. No, nothing regarding the solutions. I can suggest by including the solutions part or any chat boxes."
+"I don't like that we have to change sas to sas viya, mainly, normal work is very busy, no time to study new thing"
+"For people who are advanced coders, it might be uncomfortable to adjust."
+"It might be a bit overwhelming for beginners, as there are so many features for data analytics."
+I dislike the fact that it is limited to single machine environment
+You will need to learn and get use to the interface
+"Learning SAS Viya, to become SAS Viya intermediate programmer certified, is not easy to find."
+"As a student and in the learning phase, I didn't find any mistakes or dislikes till now. However, while installing, I felt it is time taking but can be manageable."
+"As I am a fresher, till now I didn't find any dislikes here, however I felt somewhat difficult in installing this software. But it is manageable and very comfortable to use."
+may be qualification testing and also cloud performance
+"Sometimes, Web applications (clone or remakes of old 9.4 Desktop Applications) lack in features or user interface quality over SAS 9.4 applications. That's the only downside I could see."
+"Server issue, although it is cloud, it cannot handle large data well. Also, sometimes features are not easy to use. More guidance is needed often"
+"The price is not ideal, it limits what companies/people can access it."
+"It doesn't support AIX platform, which is a very stable OS."
+SAS Viya offers so many tools and options that it is hard to learn all of them in a short time.
+Some of the AI function are pretty basic compared to other solutions.
+"Only available on kubernetes, not on RHEL. Security vulnerabilities need to be solved."
+"I was unsure if I could save the latest version, making me concerned that I lost some updated works in the platform."
+SAS Viya is laggy on my server. When running very large datasets it can also run into unexplained errors.
+Difficult to troubleshoot if issues occurred. need to raise to sas tech support but may take time for them to resolve
+"SAS Viya license charge is the main factor as it's alternatives are mostly open source platform so cost factor is one main disadvantage. Apart from this, needs proper awareness of all the products offered by SAS Viya as it required little different programing known as DS2 programming and products on SaS Viya are unstable need improvement to make them stable."
+Inflexibility with Visual Analytic visual objects
+"Like I said, it just doesn't compare to Tableau. To be fair, I didn't try a desktop version but I'm not even sure if that exists?"
+SAS Viya is a complex application and requires guidance and coming from a country like India found it very hard to have an instructor to teach me and understand the application completely
+"Not the most intuitive visualization tool, not open source so online support isn't as great"
+Its not free of use for college students
+It can be a bit slow at times in case heavy visualizations are added to a page of the dashboard/report.
+So far I have not experienced issues with SAS Viya
+Nothing so far... I am stilll learning.
+Time consuming to load data from old DB to Sas viya. But support from SAS Team was inevitable
+The one thing I would say I dislike about SAS Viya is that sometimes if you load big datasets it tends to become very slow and starts lagging.
+"It was difficult to navigate to a working page at first, having to go around several pages and open tutorials in order to utilize it."
+It was challenging to get started. The UI is a little intimidating.
+"taking time to learn and use, not get use to it"
+It gets hard when u try to personalize plots or do more advanced things.
+I havent found anything that I don't like
+I don't like the user-software interface. It feels like the SW was made without any thoughts given to how users would find it easier and more straightforward to work with.
+"It's like SAS Enterprise Miner, but w/more effort to set up, etc., so wouldn't be something I'd be excited to use at this time"
+The least helpful about SAS Viya is the cost.
+"I think the videos could have been more helpful, especially when it came to the certification exam, since what was tested was not entirely in the videos"
+Some features are old faishoned and can be improved
+"It is expensive, and not all organizations are willing to pay for it when other platforms like R are free of charge."
+"Lack of documentation, for example python. Still there is no proper guildeline how to integrate language in sas viya cluster"
+Documentations is not very extensive. Help is difficult to find as slight differences across various SAS products are different for Viya and may or may not work in Viya.
+It is not a complete version of SAS. A lot of features and function are not available.
+Switching from regular SAS to SAS Viya takes a bit time as I'm used SAS for years.
+The learning curve to understanding how the tools and environment are setup can take some time.
+new teachnoolgy takes little time to learn nothing much about disliking sas viya
+The character limits to column titles when importing data.
+I have not formally started using it yet post training
+The only down side I know is learning where everything is...
+Anything that is not part of a procedure is not very intuitive.
+"the price is slightly high, especially considering that there are open source options."
+"Mostly I liked everything in the Softwere , very difficult to as any dislike in this software, if this is free than I think more people will use , I'm happy with this software"
+"Needs lots of improvement, not as felxible as SAS 9.4"
+No significant complaints. I am having a positive experience as I continue to learn more.
+Nothing in specific. Maybe more company provided guided tutorial can be provided to complement the software. But this isnta deal breaker.
+Overall is good specially in in-memory analytics solution
+UI could have been better to navigate across.
+The web interface and the lack of custom functions
+I do not have negative comments. The learning and experience was positive.
+not user friendly and not too much materials to check yet
+There is nothing that I dislike about SAS Viya.
+Takes some learning to get more complicated analysis
+No desktop app available but the web app as smoother as that
+The cost of acquisition is high and also UI can be improved.
+May be not being open source and the learning curve is bit more difficult than regular solutions. Cost can be drawback as well.
+"Nothing to dislike here, everything is goid"
+Nothing as such as pretty useful tools for AI
+Perfoemance always very slow if we compare it with other visualization tools.
+Would help if it's a menu driven so people don't have to remember the commamds
+User interface is somewhat complex to use
+Overall experience is good. Need to improve in interface.
+Speed of the platform is relative low ..
+Installation on your machine. Better to use cloud more
+Some what Alteryx should work on there UI part as well connectivity with other ETL tools .
+No ability to run a workflow from a certain poiny.
+I wish you did more reading PDFs and pulling data from PDFs.
+Pricing may be steep for some organizations and there have been issues with licensing of upsold products or add-ons
+The only downside is potentially the barriers to entry. It is hard for people to understand the amazing capabilities of the platform unless they experience what it can do.
+There is nothing I dislike about Alteryx! It's a great product!
+"Data classification is not that up to the mark , though it also has the ability to predict and classify data."
+Dragging and dropping is a hassle . Need more tools to better organize data
+"There's a bit of a learning curve, but it's well worth the time to learn."
+Server is expensive! Avery from that everything is great!
+It's a little bit expensive and some tools that I used was for additional cost
+Cost is high. Hrs the biggest drawback. So it could be lowered
+It is a bit tough to understand some tools initially as it has a huge varity of tools.
+It could use some upgrades in terms of cost for AI and text mining
+"Nothing, it is absolutely amazing. Our organization is starting to adopt it more and more."
+"We wish there was a way to have to have the output not be hardcoded, have a way to drill through the data so someone who doesn't know alteryx can review the output."
+"Printing large workflows to PDF can be challenging, and version control generally is difficult, especially when dealing with workflows that run from Gallery with multiple output files."
+The free version is only valid for 7 days and have to go premium
+"Lots of great baseline tools, but also need to upgrade to get access to more tools."
+Not support special charaters and go down while data wrangling.
+Designers are Not a Mac compatibility...
+Pricing tier is not clear in their website
+Certain products are limited to different platforms (i.e. Auto ML only available on cloud)
+Embedded credentials can be challenging to deal with from a security perspective
+Sometimes requires multiple steps : widgets to perform actions that would be easier to program / maintain with additional orchestration.
+Takes investment to get out time savings and sometimes time savings are just time reinvestment into a process
+"Sometimes if the workflow is too complicated, the design space does look clumsy, but that's the way it is."
+I wish there was more ways to zoom in to the configuration pane.
+The price for a designer license and server
+"It's pricing, which highlyequal to the top notch data platforms"
+While doing data cleaning and data pre-processing it takes a lot of time. Alteryx should work on its scalability feature.
+One big issue is not working on MacBooks.
+It's expensive and different segments of the applications have higher barriers to entry
+Sometime it take lot of time to load and transform thr data .
+Nothing it's really good product but some of the server level reports required
+The SQL interface for input data sources is clunky.
+Getting into world of alteryx is quite challenging for the begginer.
+There are some limitations with Alteryx Gallery.
+Can't think of anything other than the price. but you get what you pay for.
+Very expensive and bit heavy in processing batches
+How difficult gallery setup is to use and schedule workflows.
+Training about some of the advanced concepts is not available
+"It is difficult to learn, especially coming from Excel"
+Suppose if more than one person is using the same workflow with in a server. The workflow became inconsistent and crashes the designer
+License is Expensive so entire team does not have a license
+Cost of licensing could be lower for more adoption
+Wish the learning curve was not as steep
+"The occasional glitch in technology where the user creates an invalid input, and there are no tips &amp; tricks to suggest how to correct the issue."
+It can be expensive for some smaller companies
+Different licensing for different suites
+The challenge and fear of students. So bad.
+"easy to use when you work in a collaborative folder with the files and several users utilize the same flow. Not very easy to resolve. Some complex tools may require more explanation from the company, like the Regex tool, but the community tries to compensate for it. Reports and graphs need to be improved also."
+Performance can be a lowdown for large worklow
+"Good things do not come cheap! You may see some benefit with a few licenses but the actual return is when you fully commit. This is an excellent problem for Alteryx, but certainly, something to keep in mind."
+"Not very useful in case of more minor data manipulations - excel is better suited for such cases. Given most users are more used to data manipulations in excel, it takes some time to get accustomed to tools available in Alteryx - but I guess that is an initial one-time investment"
+Sometimes it takes alot of time to run..
+Tools like intelligent suite are part of additional suite which involves additional cost
+There is nothing about alteryx that I dislike. It truly provides me with all the features I need and I am still growing and learning what the tool has to offer for my everyday tasks
+Reporting capabilities can definitely be improved. I would also like to see more robust security controls and measures.
+"Nothing. I am surprised when they create knew functionality and use cases, but I am quite pleased with it currently."
+The downside of the Alteryx is their visualization. that is not much great
+Not much but may a bit of comparison of files during version control
+Price--licenses are expensive compared to free coding languages &amp; IDEs like R/RStudio.
+At times it's not very intuitive. Only available on Windows.
+It is not an open source software so with the free version we can only get a few features so we need to buy this software to use all the features and it is quite expensive.
+"Could have add more visualization features, data accessibility from different types of files and merge or collobarate the workflow from varies data resources. Add more tools."
+"Sometimes, it can be slow to open. Also, scrolling on the workflow usually goes too fast, and you go past what you are looking for. I wish there was a way to ""pop out"" the workflow so you can view it full screen--this would be helpful for large, complicated workflows."
+Sometimes it is hard to debug where the workflow is failing
+The least helpful from my perspective is learning advanced solutions/tools. Basic and intermaediate level is covered widely by Alteryx University but more sophisticated problems usually require help of Alteryx community users.
+"Even though it is open source, to run pipelines, we need a paid license and Cost of license is high compared to other tools. it is compactable more on windows than other OS.it stores temporary data on disk it does not support any storage like S3, ADLS or Blob storage."
+its price :( its expensive on the other hand you know good ones are not cheap. There is no so much things about disadvantages.
+Some suggestions regarding the optimized workflow can be given.
+Licensing Cost of baseline product + add-ons
+Sometime flow are complicated and overlapping sometime creates the confusion
+Nothing have I found to dislike in it. But it is worth focusing on the point that tool has potential development and analytics capabilities as well but with little to no exposure so far hence it can potentially serve more than just an ETL tool.
+This Alteryx requires additional external API integrations. Mapping output is visually inadequate like mapping graphs and charts is a drawback for it which doesnot include many visual output options also.
+Alteryx is complex and has a learning curve; you have to be comfortable with data analytics
+"There are some limitations regarding uploading .xlxb files on Alteryx, which leads to converting binary excel files to regular excel files. This activity is time-consuming and cumbersome in some cases."
+Nothing much about this tool disappoints me. Everything works great. I think alteryx has a lot to give to its users. I feel the updates coming on alteryx making this product even better.
+It still is slightly lacking in shareable visualitics.
+I would love to see more graphic visual tools within Alteryx such as those features in tableu
+"The scheduler is a waste of money. It does not run on events, just on time. Alteryx kept our six grand when it didn't fit our needs. We want our money back for this useless upsell as a customer of 8+ years."
+"Sometimes while connecting multiple tools in the workflow, the connection becomes very clumsy; it just looks odd on the canvas, other than this, nothing specific. I wish Alteryx adds the capability to identify Excel - Formulas and formatting in the input files"
+"There's not much to dislike considering its ability to integrate with various applications. However, it could use better visualization features like tableau."
+Sometimes the application hangs and stops working with heavy files
+The platform is difficult to setup and may cause compliance issue
+It's sometimes hard to make sure that it's doing everything correctly. I often manually do some of the computations I'm performing in Alteryx (just for a couple of data points) to make sure that the way I set up the workflow worked as intended.
+Software cannot handle large chunk of data at one time. We have to summarise the data for this issue.

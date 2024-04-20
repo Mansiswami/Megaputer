@@ -1,0 +1,57 @@
+Dislikes
+"It provides various visualization tools, but sometimes available options are limited compared to other data analytics platforms. Sometimes it s challenging to work with unstructured data, such as text or image data."
+Platform can be challenging to learn and Navigate particularly for the beginners. And Knime sometime do crash when the processing of the nodes are high. It has some glitch too
+I try difficult to read data from some typed of Database (eg. Access)
+"Knime requires a lot of configuration for even the most simple excel tasks that are pretty challenging for new users to understand and work with. Apart from this, everything works well."
+KNIME can also be explored further for extra analytical tools and more manuals can be introduced. Otherwise vast visuals are available which a beginner can also use in their work
+"Without the Knime Server, it's hard to schedule ETLs pipelines. We need to do some workarounds with bash to execute the pipelines properly."
+The user interface can be improved; it's not very beginner friendly. It lags sometimes and becomes very slow when working with large files. It takes up a lot of memory just to start the software.
+User interface can be improved · Nodes repository has large number of functions but are difficult to locate and are sometimes confusing.
+Advanced changes to each component requires person to have JAVA knowledge.
+Some challenges while solving the problems. R&amp;D for the unique cases shall be difficult.
+As a beginner it can be challenging to navigate and learn how to use the platform.
+Processing time os very slow and have limited finctions in data transformation
+The interface is very old fashioned could make the front end much smooth for an overall smooth operation and experience
+"At this point there is nothing that I can say that I don't like about it , I still need to continue working more projects with it."
+It is not easy to learn how to use Knime and very less guidance is provided in its help section
+"The only thing I would say I disliked is the fact that once you have done your analysis, to share the analysis has some restrictions which you must then pay for. But I guess that's what they have to do to make money."
+It has limited features for data analytics which makes it less popular among users. And people prefer other softwares. If the company makes some more features in this than it will pe popular
+"Not Beginner Friendly: To be honest I'm actually quite proficient in this software. However, if I think from my intern's perspective I would say this software is very complicated."
+"Running the system with different modules requires a lot of system resources, requires more program optimizations."
+"Heavy, need high spec memory to run this application."
+"nothing , is a good tool, the ability to process video in real time"
+No ready to use analytics workflow available
+It is really difficult to prepare and clean data.
+"Sometimes, I feel the UI is crowded, so it gets confusing to work on it. The language used in KNIME is simpler, but I generally find myself using R much less than usual, which is not good as I end up forgetting some basic coding skills. Another thing that I don't like is that it uses a bunch of memory on your desktop, which impacts the machine's general efficiency."
+"KNIME Analytics usually takes a while to initialize if you have several modules installed, so install only the ones you need at certain time, otherwise opening it on desktop may take more than 5 minutes. Also, KNIME does not integrate with a large list of software. Another thing are error messages, that sometimes are shown while jobs are being done, which interrupts my work."
+"This is a software that is very complex and will take a while to learn. But they have many videos and examples, as well as a community of active support. Also, sometimes it can run slower when there are several nodes and extensions installed."
+"If you have never used a similar tool, KNIME may seem very hard to understand, so it will take a couple of months to learn. Also, when it comes to the community that provides support, most of them are not native english speakers, so it's hard to get in the same page when you're trying to reach for help."
+"KNIME is a very hard software that's complex even for programmers and coders. However, you can find videos and documents online, created by the same community, that will guide you through the platform. Also, visualization is not good enough. I think it can improve in order to make it more visually comprehensive."
+As it is an open source software so you might not get all the cool features you have in alteryx and other paid analytics tool.
+"KNIME Analytics is a very complex tool, so it has a steep learning curve. Another thing I don’t like about it is that it tends to use a lot of memory of your computer, which affects the general performance of the machine. KNIME Analytics is primary drag and drop and requires little to no coding."
+"You actually need more help than provided by block description if you want to do complex data analysis work. The user of KNIME Analytics needs to have a deep knowledge about R/Phyton in order to get the best out of the statistical analysis. If you want to do advanced data analysis and classification, it's mandatory to have engineering knowledge. There are some features that are not intuitive, such as how to use flow variables."
+"KNIME Documentation is poor, so it’s hard to find serious ans straightforward information out there. If you have any doubt, you may find yourself struggling to find a solution. Also, some tools for script writing and development are not easy to use, so you have to run tests to see how they perform, or some of them don't have enough features."
+"It can be difficult to find certain functionalities within the program. Additionally, it does struggle with larger datasets and seem to choke"
+There is nothing negative about this software. I found it very good to use it.
+If you are not familiar with R or python this tool will be very difficult to use. It may be nice to have some additional UI to supplement users without this experience
+Its already slow as cost of friendly UI and becomes even slower as you install extensions. Not to mention opening the software takes a lot of time too.
+Some of the options are not exactly what i used to need to proccess the information. The fluxes have (on a certain way) a limited amount of configuration options.
+"Certain API functionality still needs to be improved, primarily image mining plugins"
+It’s not scaled for larger data sets. It slows down or sometimes even crash. Also it won’t integrate with all the database providers
+Lack of technical support in the free version. Costing needs to be more economical.
+"Although the GUI feature makes it very easy to implement simple models, however on the downside it is hard to build complicated models sometimes."
+"I would appreciate more visualization and exporting capabilities. For instance, the ability to easily visualize the clusters produced with k-medoids, with medoids labeled."
+"The only thing that I don’t like in knime software is its interface, it’s kind of old."
+hard to import new function if want to add a new block. and it will become very slow when the database coming over 10 thousand
+I don't dislike it it's really great as it provides features listed above.
+Even though the knime software is very promising and really helps us with alot of things and we love it but the preliminary results are not available quickly if the real pipeling were used.
+Knime doesn’t really have to much of a background knowledge on how to use it so it can be very tricky at first
+"First time users might find it complicated given the interface as its a bit confusing. KNIME can help solve common business problems like clustering, segmentation, forecasting etc with ease using their drag n drop interface."
+"It may not be as flexible as other platforms such as tensorflow, but this is compensated by KNME's range of options."
+The user inter-phase looks a bit old school should be revamped to look more up to date.
+time to get accustomed with this platform; not always easy to use
+Knime can be a little glitchy from time to time
+"Easy to implement, but a little hard to implement secruity around the tool"
+Views could be better in order to show off. Not so easy to use
+Tends to need a faster computer to run.
+"the difficulty to write a concatenation string. Sure, there are js queries and sql that can do that for me, and i could write a function in to create a concatenation, but it seems like a basic function to have a simple node to concatenate text and numerical values."
