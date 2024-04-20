@@ -1,0 +1,48 @@
+﻿Scraped Data (62 reviews)
+
+
+Topic modeling results (top 10 pain points)- 
+Topics found via LDA:
+Topic #0: time set product dislike data factor major maybe little accurately
+Topic #1: dislike little need support functionality api good tool difficult complex
+Topic #2: software amazon model comprehend dislike accuracy provide result possible customisation
+Topic #3: easy need cost service require document comprehend work datum tool
+Topic #4: fail work product datum drawback content task domain time perform
+Topic #5: great multiple language market approach use customer problem consider ease
+Topic #6: great api software bit price maybe high dislike recommend single
+Topic #7: aws difficult year cost comprehend need datum dislike work use
+Topic #8: add customization analysis ability text language pricing accurate improve need
+Topic #9: text language use downside different tool work understand context recently
+
+
+Interpretation
+
+
+Topic #0: This topic seems to be about the time required for certain tasks or processes related to the product, possibly indicating issues with efficiency or speed.
+
+
+Topic #1: This topic mentions dislikes related to the difficulty in using the tool, possibly due to lack of support, complexity, or functionality.
+
+
+Topic #2: Here, the discussion revolves around dislikes related to the software's performance or accuracy, particularly in comprehending data or providing results.
+
+
+Topic #3: This topic suggests that the software may be perceived as difficult or costly to use, possibly requiring additional documentation or services to comprehend or work with.
+
+
+Topic #4: This topic highlights failures or drawbacks associated with the software, particularly in handling tasks or data within a specific domain.
+
+
+Topic #5: This topic emphasizes positive aspects of the software, such as its ability to support multiple languages or its market approach to addressing customer problems.
+
+
+Topic #6: Here, there seems to be a mixed sentiment about the software, with mentions of both positive attributes (e.g., API) and negative aspects (e.g., high price).
+
+
+Topic #7: This topic discusses difficulties or dislikes related to using AWS (Amazon Web Services), possibly due to cost, complexity, or difficulty in understanding and working with data.
+
+
+Topic #8: This topic suggests potential areas for improvement, such as adding customization options, enhancing text analysis capabilities, or improving accuracy and pricing models.
+
+
+Topic #9: The focus here seems to be on the use of different languages or tools in various contexts, possibly indicating challenges or downsides associated with these aspects.
