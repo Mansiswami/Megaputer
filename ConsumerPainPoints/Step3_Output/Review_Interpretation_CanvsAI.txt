@@ -1,0 +1,82 @@
+﻿Scraped Data (74 reviews) 
+Topic modeling results (top 10 pain points)
+
+
+Topics found via LDA:
+Topic #0: canvs lot ai tool customer question think love datum response little potential figure offer wish
+Topic #1: application work canvas dislike process experience topic code type ai truly improvement pull information thing
+Topic #2: training capability bit hard result nice comment input social feature hour feel analyze complicated come
+Topic #3: bit perfect support customer clunky good export easy like way dislike time response datum code
+Topic #4: come run dislike currently easy thing use good way support bit time response datum code
+Topic #5: customer great overall feature tool experience different love want response look view lot way time
+Topic #6: team want support customer smart process contact term people assist bucket tricky non offer feel
+Topic #7: time like type new example different friendly user response use need ai dislike minute know
+Topic #8: analysis canvs automatically datum work helpful bit need platform learn question feature ai thing like
+Topic #9: social start time team platform nuance language coding theme great reporting bit dislike ai helpful
+Topic #10: dislike manual feature ai product datum export information bit input result coding change complicated version
+Topic #11: theme unclear bit issue little sort understand love different wish say comment nice dislike provide
+Topic #12: improve good use ability limit dislike datum long analytic filter text wish feature customer way
+Topic #13: plan negative improve thing super good information easy use great far easily assist story code
+Topic #14: filter version people feature help curve learn product platform create easily great export ability code
+
+
+
+
+Interpretation 
+Topic #0: Product Evaluation and Customer Experience
+This topic seems to revolve around evaluating products or platforms based on features, team collaboration, customer experience, and overall ability. Users express sentiments of dislike towards certain aspects while acknowledging positive attributes. Discussions might involve assessing the platform's usability, feature set, and how well it meets customer needs.
+
+
+Topic #1: Ease of Use and Application Process
+Users find the application process and workflow somewhat cumbersome, expressing a desire for improvements in user experience and coding efficiency.
+
+
+Topic #2: Training and Capability Challenges
+Users perceive a difficulty in training and utilizing the tool to its full potential, especially in analyzing social data, indicating a need for more intuitive features and guidance.
+
+
+Topic #3: Customer Support and Export Functionality
+Users appreciate good customer support but express dissatisfaction with clunky export processes, seeking smoother interactions and data handling.
+
+
+Topic #4: Usability and Functionality
+Users find the current system somewhat challenging to use, suggesting a need for improvements in usability and functionality to streamline their processes.
+
+
+Topic #5: Overall Customer Experience and Features
+Users value various features but seek improvements in response time and customization options to enhance their overall experience.
+
+
+Topic #6: Team Support and Process Assistance
+Users desire better team support and assistance in navigating complex processes, highlighting a need for more effective communication and problem-solving.
+
+
+Topic #7: Time Efficiency and User-Friendliness
+Users seek more efficient ways of using the tool, emphasizing the importance of user-friendly interfaces and quick response times.
+
+
+Topic #8: Automated Analysis and Data Handling
+Users appreciate automated analysis capabilities but wish for more helpful features and guidance in working with data.
+
+
+Topic #9: Platform Nuances and Language Support
+Users face challenges with platform nuances and language support, indicating a need for better understanding and assistance in handling different languages and themes.
+
+
+Topic #10: Feature Limitations and Data Management
+Users encounter limitations in features and data management, expressing a desire for improved functionality and ease of use.
+
+Topic #11: Clarity and Understanding
+Users find certain aspects of the tool unclear or confusing, suggesting a need for better explanations and user guidance.
+
+
+Topic #12: Improvement Opportunities and Analytic Ability
+ Users see potential for improvement in analytic capabilities but desire better filtering and text analysis features.
+
+
+Topic #13: Product Improvements and Ease of Use
+Users appreciate the tool's capabilities but seek easier navigation and assistance in utilizing its features effectively.
+
+
+Topic #14:  Feature Assistance and Learning Curve
+Users appreciate various features but desire more assistance in learning and utilizing them, emphasizing the importance of a smoother learning curve.
