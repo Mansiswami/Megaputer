@@ -1,4 +1,4 @@
-# BlogAnalysis Project
+# Consulting Project Megaputer 
 
 This project focuses on analyzing blog data from competitors as part of the Megaputer Project. It involves multiple steps from scraping URLs to topic modeling and interpreting the results.
 
